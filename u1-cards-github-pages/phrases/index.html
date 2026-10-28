@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>综合英语1 · Unit 1 词组卡 · After Twenty Years</title>
+<link rel="manifest" href="../manifest.json">
+<meta name="app-build" content="v1.3.2-2026-10-28">
+<link rel="apple-touch-icon" href="../icon-180.png">
+<link rel="icon" type="image/png" href="../icon-192.png">>
+<meta name="theme-color" content="#1899d6">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script>
+/* 字体异步加载：字体 CDN 慢或不可用时，既不拖慢首屏，也不阻塞 Service Worker 注册 */
+(function(){
+  var u='https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap';
+  function add(){
+    if(document.getElementById('gf-css')) return;
+    var l=document.createElement('link');
+    l.id='gf-css'; l.rel='stylesheet'; l.href=u;
+    document.head.appendChild(l);
+  }
+  setTimeout(add, 800);
+})();
+</script>
+<style>
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --green:#58cc02; --green-dark:#46a302; --green-light:#d7ffb8; --green-bg:#e8f8dd;
+    --blue:#1cb0f6; --blue-dark:#1899d6; --blue-light:#ddf4ff;
+    --gold:#ffc800; --gold-dark:#e6a700;
+    --red:#ff4b4b; --red-dark:#e04343; --red-light:#ffe6e6;
+    --purple:#ce82ff; --purple-light:#f3e5ff;
+    --ink:#3c3c3c; --ink2:#777; --ink3:#afafaf;
+    --line:#e5e5e5; --line2:#f0f0f0;
+  }
+  body{font-family:'Nunito','Noto Sans SC',system-ui,sans-serif;background:#f7f9fb;color:var(--ink);padding-bottom:60px;}
+  header{background:linear-gradient(135deg,var(--green),#7bd62e);color:#fff;padding:18px 22px;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:40;}
+  header h1{font-size:22px;font-weight:900;letter-spacing:.3px;}
+  header .sub{font-size:13px;opacity:.92;margin-top:2px;}
+  .topbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 18px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:74px;z-index:30;}
+  .btn{border:none;border-radius:12px;padding:10px 16px;font-family:inherit;font-weight:800;font-size:14px;cursor:pointer;transition:.15s;box-shadow:0 3px 0 rgba(0,0,0,.12);}
+  .btn:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,.12);}
+  .btn-green{background:var(--green);color:#fff;}
+  .btn-blue{background:var(--blue);color:#fff;}
+  .btn-gold{background:var(--gold);color:#3c3c3c;}
+  .btn-ghost{background:#fff;color:var(--ink);border:2px solid var(--line);box-shadow:none;}
+  .btn-red{background:var(--red);color:#fff;}
+  .btn-purple{background:var(--purple);color:#fff;}
+  .btn-sm{padding:6px 11px;font-size:12px;border-radius:9px;}
+  .search{flex:1;min-width:180px;padding:9px 13px;border:2px solid var(--line);border-radius:11px;font-family:inherit;font-size:14px;font-weight:600;}
+  .chips{display:flex;gap:7px;flex-wrap:wrap;padding:0 18px 10px;background:#fff;}
+  .chip{border:2px solid var(--line);background:#fff;border-radius:20px;padding:5px 13px;font-weight:800;font-size:13px;cursor:pointer;color:var(--ink2);}
+  .chip.active{background:var(--blue);color:#fff;border-color:var(--blue);}
+  .wrap{max-width:1100px;margin:0 auto;padding:16px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;}
+  .flip-card{perspective:1700px;height:664px;cursor:pointer;touch-action:pan-y;}
+  .flip-inner{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d;}
+  .flip-card.flipped .flip-inner{transform:rotateY(180deg);}
+  .flip-front,.flip-back{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:18px;padding:18px 18px 14px;overflow:auto;-webkit-overflow-scrolling:touch;}
+  .flip-front{background:#fff;border:2px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding-bottom:0;overflow:hidden;}
+  .word-img{width:100%;height:220px;object-fit:contain;background:#f7f9fb;border-radius:12px;margin-top:26px;flex:none;}
+  .flip-back{background:#fff;border:2px solid var(--line);transform:rotateY(180deg);}
+  .word{font-size:30px;font-weight:900;color:var(--ink);}
+  .ph{color:var(--ink2);font-size:15px;margin-top:4px;font-family:'Noto Sans SC',serif;}
+  .pos{display:inline-block;background:var(--green-bg);color:var(--green-dark);border-radius:8px;padding:2px 10px;font-size:13px;font-weight:800;margin-top:8px;}
+  .cn{font-size:18px;color:var(--ink);margin-top:10px;font-weight:700;}
+  .en{font-size:15px;color:var(--ink2);margin-top:6px;}
+  .audio-row{display:flex;gap:10px;margin-top:16px;}
+  .play{flex:1;background:var(--blue-light);color:var(--blue-dark);border:none;border-radius:12px;padding:11px;font-weight:800;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;}
+  .play.word{border:2px solid var(--blue);}
+  .para-tag{position:absolute;top:12px;left:14px;background:var(--gold);color:#3c3c3c;font-size:12px;font-weight:900;border-radius:8px;padding:3px 9px;}
+  .mastered-badge{position:absolute;top:12px;right:14px;background:var(--green);color:#fff;font-size:12px;font-weight:900;border-radius:8px;padding:3px 9px;display:none;}
+  .flip-card.mastered .mastered-badge{display:block;}
+  .flip-card.mastered .flip-front, .flip-card.mastered .flip-back{background:#cdeccf;border:2px solid var(--green);box-shadow:0 4px 0 rgba(70,163,2,.20);}
+  .flip-card.mastered .flip-front .word{color:var(--green-dark);}
+  .flip-card.mastered .para-tag{background:rgba(70,163,2,.16);color:var(--green-dark);}
+  /* ---- 掌握层级 + 使用场景（方案C：卡底信息条） ---- */
+  .lvl{display:inline-block;border-radius:20px;padding:2px 9px;font-size:12px;font-weight:900;color:#fff;letter-spacing:.3px;flex:none;}
+  .lvl-a{background:#e6a700;}
+  .lvl-b{background:#1899d6;}
+  .lvl-c{background:#ff9600;}
+  .lvl-d{background:#9aa3ad;}
+  .lvl-cn{font-size:12.5px;font-weight:800;color:var(--ink);}
+  .scene{display:inline-block;background:#f2f4f7;color:#5b6673;border:1px solid #e2e6ec;border-radius:8px;padding:2px 8px;font-size:12px;font-weight:800;}
+  .meta-bar{margin-top:auto;width:calc(100% + 36px);margin-left:-18px;border-top:1px solid var(--line2);background:#fafbfc;padding:8px 16px;display:flex;align-items:center;gap:7px;border-radius:0 0 16px 16px;}
+  .meta-bar .sp{flex:1;}
+  .fc-body{flex:1 1 auto;min-height:0;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;justify-content:safe center;text-align:center;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  .flip-card.mastered .meta-bar{background:rgba(70,163,2,.10);border-top-color:rgba(70,163,2,.25);}
+  .wd-meta{display:flex;align-items:center;gap:8px;margin:6px 0 2px;flex-wrap:wrap;}
+  .def-en{font-size:1.12rem;line-height:1.45;color:var(--ink);font-weight:600;margin-top:10px;max-width:100%;}
+  .def-cn-wrap{margin-top:10px;}
+  .reveal-cn{border:none;background:var(--blue-light);color:var(--blue-dark);border-radius:10px;padding:6px 12px;font-weight:800;font-size:13px;cursor:pointer;}
+  .cn.hidden{display:none;}
+  .def-cn{font-size:17px;color:var(--ink);font-weight:700;margin-top:8px;}
+  .def-cn-text{font-size:16px;color:var(--ink2);font-weight:600;margin-top:6px;}
+  .def-card.static{cursor:default;background:#f4f8ff;border:1px solid var(--line2);border-radius:12px;padding:12px 14px;font-size:16px;color:var(--ink);font-weight:600;}
+  .back-sec{background:#fafbfc;border:1px solid var(--line2);border-radius:12px;padding:11px 13px;margin-bottom:11px;}
+  .back-sec h4{font-size:13px;font-weight:900;color:var(--blue-dark);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+  .back-sec .en{font-size:16px;color:var(--ink);margin:0;}
+  .back-sec .cn{font-size:14px;color:var(--ink2);font-weight:600;margin:3px 0 0;}
+  .hl{background:var(--gold-light,#fff3c4);background:#fff3c4;padding:0 4px;border-radius:5px;font-weight:800;color:#9a6b00;}
+  .pair-item{border:1px solid var(--line);border-radius:8px;padding:5px 9px;margin:3px 0;font-size:14px;font-weight:600;}
+  .ov{position:fixed;inset:0;background:rgba(20,30,40,.55);display:none;z-index:100;padding:18px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  .ov.show{display:flex;}
+  .ov>*{margin:auto;}
+  .panel{background:#fff;border-radius:18px;padding:24px;max-width:680px;width:100%;max-height:90vh;overflow:auto;box-shadow:0 10px 40px rgba(0,0,0,.25);}
+  .panel h2{font-size:21px;font-weight:900;margin-bottom:14px;}
+  .panel h3{font-size:16px;font-weight:900;margin:16px 0 8px;color:var(--blue-dark);}
+  .field{width:100%;padding:11px 13px;border:2px solid var(--line);border-radius:11px;font-family:inherit;font-size:15px;font-weight:700;margin-top:6px;}
+  label.lbl{font-weight:800;font-size:14px;display:block;margin-top:10px;}
+  .type-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0;}
+  .type-opt{border:2px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;font-weight:800;font-size:14px;display:flex;align-items:center;gap:8px;}
+  .type-opt input{transform:scale(1.3);}
+  .type-opt.adv{border-color:var(--purple);}
+  .q-card{background:#fff;border:2px solid var(--line);border-radius:18px;padding:22px;max-width:760px;width:100%;max-height:88vh;overflow-y:auto;-webkit-overflow-scrolling:touch;position:relative;margin:auto;}
+  .q-card::-webkit-scrollbar{width:9px;}
+  .q-card::-webkit-scrollbar-thumb{background:var(--line);border-radius:6px;}
+  .q-card::-webkit-scrollbar-thumb:hover{background:var(--ink2);}
+  body.locked{overflow:hidden;}
+  .exit-x{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);background:#fff;color:var(--ink2);font-size:16px;font-weight:900;cursor:pointer;z-index:5;}
+  .exit-x:hover{border-color:var(--red);color:var(--red);}
+  .def-card{border:2px solid var(--blue);background:var(--blue-light);border-radius:12px;padding:14px 16px;margin:10px 0;font-size:16.5px;font-weight:700;color:var(--ink);cursor:pointer;line-height:1.5;}
+  .def-card:hover{border-color:var(--blue-dark);}
+  .q-word-row{display:flex;align-items:center;justify-content:center;gap:12px;margin:10px 0;}
+  .q-word-row .w{font-size:30px;font-weight:900;color:var(--ink);}
+  .praise-pop{animation:pop .45s ease;}
+  @keyframes pop{0%{transform:scale(.6);opacity:0;}60%{transform:scale(1.12);}100%{transform:scale(1);opacity:1;}}
+  .base-chip{display:inline-block;background:var(--gold-light,#fff3c4);color:#9a6b00;font-weight:900;font-size:13px;border-radius:8px;padding:4px 10px;margin:6px 0;}
+  .hint-cn{font-size:14px;color:var(--ink2);margin:4px 0 6px;font-weight:600;}
+  .usage-why{margin-top:8px;text-align:left;border-top:1px solid rgba(0,0,0,.08);padding-top:8px;}
+  .why-line{font-size:14px;line-height:1.65;padding:4px 2px;border-bottom:1px dashed rgba(0,0,0,.08);font-weight:600;}
+  .why-line:last-child{border-bottom:0;}
+  .why-line.ok{color:var(--green-dark);}
+  .why-line.no{color:var(--red-dark);}
+  .why-line.tip{color:var(--ink2);font-weight:800;background:rgba(255,255,255,.55);border-radius:8px;padding:6px 8px;margin-top:4px;}
+  .q-type{display:inline-block;background:var(--blue-light);color:var(--blue-dark);font-weight:900;font-size:13px;border-radius:8px;padding:4px 11px;margin-bottom:12px;}
+  .q-type.adv{background:var(--purple-light);color:#8a2be2;}
+  .q-instr{font-size:16px;font-weight:800;margin-bottom:14px;color:var(--ink);}
+  .q-text{font-size:19px;font-weight:700;color:var(--ink);margin:10px 0;line-height:1.5;}
+  .q-text .blank{display:inline-block;min-width:90px;border-bottom:3px solid var(--blue);color:var(--blue);font-weight:900;padding:0 6px;}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0;font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;transition:.12s;}
+  .opt:hover{border-color:var(--blue);}
+  .opt.correct{background:var(--green-bg);border-color:var(--green);color:var(--green-dark);}
+  .opt.wrong{background:var(--red-light);border-color:var(--red);color:var(--red-dark);}
+  .opt.dim{opacity:.5;}
+  .opt-row{display:flex;align-items:center;gap:8px;margin:8px 0;}
+  .opt-row .opt{margin:0;flex:1;}
+  .opt-spk{flex:none;width:50px;height:50px;border:2px solid var(--line);background:#fff;border-radius:12px;font-size:19px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;}
+  .opt-spk:hover{border-color:var(--blue);background:var(--blue-light);}
+  .answer-input{width:100%;padding:13px 15px;border:2px solid var(--blue);border-radius:12px;font-family:inherit;font-size:18px;font-weight:800;margin:10px 0;text-transform:lowercase;}
+  .match-wrap{display:flex;gap:20px;margin:14px 0;}
+  .match-col{flex:1;display:flex;flex-direction:column;gap:10px;}
+  .match-item{border:2px solid var(--line);border-radius:12px;padding:12px;font-weight:800;font-size:15px;cursor:pointer;text-align:center;background:#fff;user-select:none;}
+  .match-item.sel{background:var(--gold);border-color:var(--gold-dark);}
+  .match-item.paired{background:var(--green-bg);border-color:var(--green);}
+  .match-item.wrong{background:var(--red-light);border-color:var(--red);}
+  .match-item.correct{background:var(--green-bg);border-color:var(--green);}
+  .lo-slots{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:58px;border-bottom:3px dashed var(--line);padding:8px 4px 12px;margin-bottom:16px;}
+  .lo-pool{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;}
+  .lo-tile{min-width:44px;height:48px;padding:0 8px;border:2px solid var(--line);border-radius:10px;background:#fff;font-size:22px;font-weight:900;color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;user-select:none;transition:.1s;}
+  .lo-tile:hover{border-color:var(--blue);}
+  .lo-tile.used{opacity:.22;pointer-events:none;}
+  .lo-slot-tile{min-width:44px;height:48px;padding:0 8px;border:2px solid var(--blue);border-radius:10px;background:var(--blue);color:#fff;font-size:22px;font-weight:900;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;user-select:none;}
+  .lo-slot-tile.wrongT{background:var(--red);border-color:var(--red);}
+  .pair-item b.hl-red{color:var(--red-dark);font-weight:800;}
+  .pair-item b.hl-em{font-weight:800;}
+  .form-note{color:var(--red-dark);font-weight:800;font-size:12px;margin-top:3px;}
+  .feedback{margin-top:14px;padding:12px 14px;border-radius:12px;font-weight:800;font-size:15px;display:none;}
+  .feedback.ok{display:block;background:var(--green-bg);color:var(--green-dark);}
+  .feedback.no{display:block;background:var(--red-light);color:var(--red-dark);}
+  .fireworks{position:fixed;inset:0;pointer-events:none;z-index:200;}
+  .progress-wrap{max-width:1100px;margin:0 auto;padding:10px 18px;}
+  .bar{height:14px;background:var(--line2);border-radius:10px;overflow:hidden;}
+  .bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--blue));width:0;transition:.4s;}
+  .bar.chal>i{background:linear-gradient(90deg,#8e24aa,#ce82ff);}
+  .chal-locked{opacity:.5;cursor:not-allowed!important;filter:grayscale(.6);}
+  .chal-block{margin-top:14px;border:2px solid #ce82ff;border-radius:12px;padding:12px 14px;background:#f7effc;}
+  .chal-block.fin{border-color:#2e7d32;background:#e8f5e9;}
+  .chal-pair{font-size:14px;line-height:1.8;font-weight:600;color:var(--ink2);}
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:12px;}
+  .stat{background:#fff;border:2px solid var(--line);border-radius:14px;padding:14px;text-align:center;}
+  .stat .n{font-size:26px;font-weight:900;color:var(--green-dark);}
+  .stat .t{font-size:13px;color:var(--ink2);font-weight:700;margin-top:2px;}
+  .wrong-item{border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0;background:#fff;}
+  .wrong-item .meta{font-size:12px;color:var(--ink2);font-weight:800;}
+  .wrong-item .q{font-size:15px;font-weight:700;margin:4px 0;}
+  .wrong-item .given{color:var(--red-dark);font-weight:800;}
+  .wrong-item .corr{color:var(--green-dark);font-weight:800;}
+  .wrong-remove{margin-top:8px;color:var(--green-dark)!important;border-color:var(--green)!important;background:#f2fbf2!important;font-weight:900;}
+  .stu-name{font-weight:900;color:#fff;}
+  .hint{font-size:12px;color:var(--ink2);margin-top:4px;}
+  .small{font-size:12.5px;color:var(--ink2);}
+  .pill{display:inline-block;background:var(--blue-light);color:var(--blue-dark);border-radius:8px;padding:3px 9px;font-size:12px;font-weight:800;margin:2px;}
+  .pill.miss{background:var(--red-light);color:var(--red-dark);}
+  .wd-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:4px;}
+  .wd-word{font-size:30px;font-weight:900;color:var(--ink);}
+  .wd-ph{font-size:15px;color:var(--blue-dark);font-weight:700;}
+  .wd-pos{font-size:13px;color:var(--ink2);font-weight:800;font-style:italic;}
+  .wd-cn{font-size:17px;font-weight:800;margin:6px 0 2px;}
+  .wd-en{font-size:14.5px;color:var(--ink2);font-weight:600;line-height:1.5;}
+  .wd-sec{background:#fafbfc;border:1px solid var(--line2);border-radius:12px;padding:11px 13px;margin-top:10px;}
+  .wd-sec h4{font-size:13px;font-weight:900;color:var(--blue-dark);margin-bottom:6px;}
+  .wd-sec .en{font-size:15.5px;}
+  .wd-sec .cn{font-size:13.5px;color:var(--ink2);font-weight:600;margin-top:3px;}
+  .type-list{margin-top:8px;}
+  .type-item{display:flex;align-items:center;gap:9px;border:2px solid var(--line);border-radius:11px;padding:9px 12px;margin:6px 0;font-weight:800;font-size:14px;cursor:default;}
+  .type-item .t-ico{flex:none;width:22px;text-align:center;font-weight:900;}
+  .type-item .t-name{flex:1;}
+  .type-item .t-lvl{flex:none;font-size:11px;color:var(--ink2);font-weight:800;text-transform:uppercase;}
+  .type-item .t-go{flex:none;font-size:12px;color:var(--blue-dark);font-weight:900;}
+  .type-item{cursor:pointer;}
+  .type-item .t-sub{flex:none;font-size:11px;font-weight:900;color:var(--blue-dark);background:#e8f1ff;border:1px solid #c9dcfb;border-radius:8px;padding:1px 7px;white-space:nowrap;}
+  .type-item .t-non{font-size:10px;font-weight:800;color:#8a8a8a;background:#f1f3f4;border-radius:6px;padding:1px 5px;margin-left:5px;white-space:nowrap;}
+  .type-item.done{background:var(--green-bg);border-color:var(--green);}
+  .type-item.done .t-ico{color:var(--green-dark);}
+  .type-item.miss{background:#fff;cursor:pointer;}
+  .type-item.miss .t-ico{color:var(--ink3);}
+  .type-item.miss:hover{border-color:var(--blue);background:var(--blue-light);}
+  .type-item.miss:hover .t-go{color:var(--blue-dark);}
+  .sync-code{width:100%;height:110px;border:2px solid var(--line);border-radius:11px;padding:9px 11px;font-family:monospace;font-size:11px;font-weight:600;resize:none;line-height:1.4;color:var(--ink);background:#fafbfc;}
+  .sync-code:focus{outline:none;border-color:var(--blue);}
+  .sync-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0;}
+  .sync-hr{border:none;border-top:2px dashed var(--line);margin:16px 0;}
+  .qr-holder{display:flex;justify-content:center;padding:10px;background:#fff;border:2px solid var(--line);border-radius:12px;margin:8px 0;}
+  .qr-holder.hide{display:none;}
+  .qr-holder svg{width:220px;height:220px;}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:11px 18px;border-radius:12px;font-weight:800;z-index:300;opacity:0;transition:.3s;pointer-events:none;}
+  .toast.show{opacity:1;}
+  @media(max-width:600px){.grid{grid-template-columns:1fr;}.topbar{position:static;}.type-grid{grid-template-columns:1fr;}}
+  /* ---- mobile scroll fix (2026-10-27): no nested scrollers / no 3D layer on phones ---- */
+  @media(max-width:600px){
+    .flip-card{height:auto;min-height:0;perspective:none;}
+    .flip-inner{height:auto;transition:none;transform-style:flat;}
+    .flip-card.flipped .flip-inner{transform:none;}
+    .flip-front,.flip-back{position:relative;height:auto;width:100%;backface-visibility:visible;transform:none;overflow:visible;}
+    .flip-front{min-height:420px;}
+    .flip-back{display:none;}
+    .flip-card.flipped .flip-front{display:none;}
+    .flip-card.flipped .flip-back{display:block;}
+    .fc-body{overflow-y:visible;}
+  }
+.q-text.q-sent{font-size:19px;line-height:1.62;text-align:left;white-space:normal;background:#f7f9fb;border:1px solid var(--line);border-radius:12px;padding:12px 14px;}
+.q-text.q-sent .blank{min-width:86px;}
+</style>
+<style>
+/* ===== cover splash (v2.0) ===== */
+#coverOv{position:fixed;inset:0;z-index:9999;background:#16233f url('../assets/cover.jpg') center/cover no-repeat;display:flex;align-items:flex-end;justify-content:center;transition:opacity .55s ease;cursor:pointer}
+#coverOv.out{opacity:0;pointer-events:none}
+#coverOv::before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(10,18,38,.12) 40%,rgba(8,14,30,.8) 100%)}
+.cov-inner{position:relative;text-align:center;padding:0 20px 9vh;width:100%;max-width:560px;box-sizing:border-box}
+.cov-title{font-size:clamp(30px,7vw,46px);font-weight:800;color:#fff;letter-spacing:.5px;text-shadow:0 3px 14px rgba(0,0,0,.55)}
+.cov-sub{margin-top:8px;font-size:clamp(13px,3.4vw,17px);color:#dfe6ff;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.cov-btn{margin-top:26px;padding:14px 46px;border:none;border-radius:999px;background:#58cc02;color:#fff;font-size:18px;font-weight:700;box-shadow:0 6px 18px rgba(88,204,2,.45);cursor:pointer;font-family:inherit}
+.cov-btn:active{transform:scale(.97)}
+
+</style>
+<style>
+  header{background:linear-gradient(135deg,var(--blue),var(--blue-dark));}
+  header .sub .pill{background:rgba(255,255,255,.22);color:#fff;}
+  .flip-card{height:600px;}
+  .word{font-size:27px;line-height:1.18;word-break:break-word;}
+  .word.long{font-size:21px;}
+  .flip-front .pos{background:var(--blue-light);color:var(--blue-dark);}
+  .flip-card.mastered .flip-front .word{color:var(--green-dark);}
+  .q-sent{font-size:17px;line-height:1.6;}
+  .opt.sent{font-size:15px;line-height:1.5;font-weight:600;}
+  .usage-tag{display:inline-block;background:var(--gold-light,#fff3c4);color:#9a6b00;font-weight:900;font-size:13px;border-radius:8px;padding:4px 10px;margin-bottom:10px;}
+  .pfill-no{font-size:12.5px;color:var(--ink2);font-weight:700;margin-top:6px;}
+  .cat-note{font-size:13px;color:var(--ink2);font-weight:700;}
+</style>
+<style>
+/* ---- 按课文顺序分组 (2026-10-27) ---- */
+.btn.on{background:var(--blue,#3b82f6);color:#fff;border-color:var(--blue,#3b82f6);box-shadow:0 3px 0 rgba(0,0,0,.12);}
+.pgroup{grid-column:1/-1;display:flex;align-items:baseline;gap:10px;padding:14px 2px 6px;margin-bottom:-4px;border-bottom:2px solid var(--line,#e5eaf2);scroll-margin-top:118px;}
+.pgroup b{font-size:17px;color:var(--blue-dark,#1e40af);}
+.pgroup span{font-size:12px;font-weight:800;color:var(--ink2,#6b7a90);}
+.chip.pchip.on{background:var(--blue,#3b82f6);color:#fff;border-color:var(--blue,#3b82f6);}
+</style>
+<style>
+/* ===== 合并版 v1.1：返回单元首页 ===== */
+.hub-home{flex:none;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+  background:#fff;color:#3c3c3c;border:2px solid #e5e5e5;box-shadow:none;
+  padding:8px 12px;font-size:13px;border-radius:11px;font-weight:800;}
+.hub-home:hover{background:#f7f9fb}
+.hub-home:active{transform:translateY(1px)}
+/* 常驻「返回首页」浮标：滚动到任意深度都能一键回单元页（独立 PWA 无浏览器返回键） */
+.hub-fab{position:fixed;left:12px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:85;
+  display:inline-flex;align-items:center;gap:5px;padding:10px 14px;border-radius:999px;
+  background:#fff;border:2px solid #e5e5e5;box-shadow:0 4px 14px rgba(20,40,70,.16);
+  text-decoration:none;color:#3c3c3c;font-weight:800;font-size:13px;font-family:inherit;
+  line-height:1;opacity:.94;}
+.hub-fab:hover{opacity:1}
+.hub-fab:active{transform:translateY(1px)}
+/* 测试致谢 */
+.cov-credit{margin:20px auto 0;max-width:360px;text-align:center;
+  text-shadow:0 2px 14px rgba(0,0,0,.9),0 1px 3px rgba(0,0,0,.75);
+  animation:fadeUp .8s .3s both;}
+.cov-credit::before{content:'';display:block;width:34px;height:2px;border-radius:2px;
+  background:rgba(255,255,255,.38);margin:0 auto 14px;}
+.cc-lead{display:block;font-size:12.5px;font-weight:700;color:rgba(234,241,255,.86);letter-spacing:.4px;}
+.cc-names{display:block;margin-top:5px;font-size:16.5px;font-weight:900;color:#fff;letter-spacing:.7px;}
+.cc-tail{display:block;margin-top:5px;font-size:12.5px;font-weight:600;color:rgba(234,241,255,.86);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.cov-credit{animation:none}}
+.hub-credit{max-width:1100px;margin:6px auto 34px;padding:20px 22px 0;text-align:center;
+  font-size:13px;line-height:1.8;color:#9aa3af;font-weight:600;border-top:1px dashed #e5e9ef;
+  text-wrap:balance;}
+.hub-credit b{color:#6f7683;font-weight:900;}
+</style>
+</head>
+<body>
+<script src="../shared/hub-bridge.js" data-card="phrases"></script>
+<a class="hub-fab" href="../index.html" title="返回单元首页">← 首页</a>
+
+<div id="coverOv">
+  <div class="cov-inner">
+    <div class="cov-title">After Twenty Years</div>
+    <div class="cov-sub">综合英语1 · Unit 1 词组卡 · Phrases &amp; Collocations · 47 条</div>
+    <button class="cov-btn" id="covStart">开始学习 ▶</button>
+  </div>
+</div>
+
+<header>
+  <h1>综合英语1 · Unit 1 <span style="opacity:.85">After Twenty Years</span></h1>
+  <div class="sub">Phrase Cards &amp; Practice · <span id="stuName" class="stu-name"></span> <span class="pill" style="opacity:.55;font-size:11px;">v1.3.2 · 2026-10-28</span></div>
+</header>
+
+<div class="topbar">
+  <a class="btn hub-home" href="../index.html">← 单元首页</a>
+  <input class="search" id="search" placeholder="Search phrase / meaning / sentence…">
+  <button class="btn btn-blue" id="startPracticeBtn">▶ Start Practice</button>
+  <button class="btn btn-ghost" id="wrongBtn">📒 Wrong Notebook</button>
+  <button class="btn btn-ghost" id="progressBtn">📊 My Progress</button>
+  <button class="btn btn-ghost" id="weakBtn">🎯 Not Mastered</button>
+  <button class="btn btn-purple" id="chalBtn" title="完成全部词组通关后解锁">🏆 Final Challenge</button>
+  <button class="btn btn-ghost" id="switchBtn">👤 Student</button>
+  <button class="btn btn-ghost" id="syncBtn">⇄ Export / Import</button>
+  <button class="btn btn-ghost" id="paraSortBtn">📖 按课文顺序</button>
+  <input type="file" id="importFile" accept="application/json" style="display:none">
+</div>
+<div class="chips" id="chips"></div>
+<div class="chips" id="paraChips" style="display:none"></div>
+
+<div class="progress-wrap">
+  <div class="bar"><i id="masterBar"></i></div>
+  <div class="small" id="masterTxt" style="margin-top:4px;"></div>
+  <div class="bar chal" id="chalBarWrap" style="display:none;margin-top:8px;"><i id="chalBar"></i></div>
+  <div class="small" id="chalTxt" style="display:none;margin-top:2px;"></div>
+</div>
+
+<div class="wrap">
+  <div class="grid" id="cards"></div>
+</div>
+
+<div class="ov" id="nameOv">
+  <div class="panel">
+    <h2>👋 Welcome!</h2>
+    <p class="small">Please enter your name. Your progress will be saved under this name on this device.</p>
+    <label class="lbl">Your name</label>
+    <input class="field" id="nameInput" placeholder="e.g. Zhang San" maxlength="30">
+    <div id="stuListBox" class="hint"></div>
+    <button class="btn btn-blue" id="nameOk" style="margin-top:14px;width:100%;">Start</button>
+  </div>
+</div>
+
+<div class="ov" id="setupOv">
+  <div class="panel">
+    <h2>🛠 Practice Settings</h2>
+    <h3>Level</h3>
+    <div class="type-grid" id="levelGrid">
+      <label class="type-opt"><input type="radio" name="lvl" value="all" checked> All Types</label>
+      <label class="type-opt"><input type="radio" name="lvl" value="basic"> Basic Only</label>
+      <label class="type-opt adv"><input type="radio" name="lvl" value="advanced"> Advanced Only</label>
+    </div>
+    <h3>Question Types</h3>
+    <div class="type-grid" id="typeGrid"></div>
+    <h3>Range</h3>
+    <div class="type-grid">
+      <label class="type-opt"><input type="radio" name="rng" value="all" checked> All Phrases</label>
+      <label class="type-opt"><input type="radio" name="rng" value="weak"> Not-yet-mastered only</label>
+      <label class="type-opt"><input type="radio" name="rng" value="wrong" id="rngWrongOpt"> Wrong Notebook only</label>
+    </div>
+    <h3>Number of questions</h3>
+    <input class="field" id="qcount" type="number" value="20" min="1" max="400">
+    <button class="btn btn-blue" id="beginBtn" style="margin-top:16px;width:100%;">Begin ▶</button>
+  </div>
+</div>
+
+<div class="ov" id="qOv"><div class="q-card" id="qCard"></div></div>
+<div class="ov" id="exitOv"><div class="panel" id="exitPanel" style="max-width:430px;"></div></div>
+<div class="ov" id="resOv"><div class="panel" id="resPanel"></div></div>
+<div class="ov" id="wrongOv"><div class="panel" id="wrongPanel"></div></div>
+<div class="ov" id="progOv"><div class="panel" id="progPanel"></div></div>
+<div class="ov" id="weakOv"><div class="panel" id="weakPanel"></div></div>
+<div class="ov" id="phraseOv"><div class="panel" id="phrasePanel"></div></div>
+<div class="ov" id="syncOv"><div class="panel" id="syncPanel"></div></div>
+<div class="ov" id="chalOv"><div class="panel" id="chalPanel" style="max-width:540px;"></div></div>
+
+<canvas class="fireworks" id="fw"></canvas>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= 数据 ================= */
+const PHRASES = [{"p":"belong to","cn":"属于；是……的所有物","en":"to be owned by somebody; to be a member or a part of a particular group or place","grp":"动词短语","cat":"v","para":"2","src":"The majority of the doors belonged to business places that had long since closed.","srcCn":"大部分门都属于早就打烊的店铺。","note":"无被动语态，一般不用于进行时；后接 to。","usage":[{"sense":"属于","opts":["This old watch belonged to my grandfather before he gave it to me.","This dictionary is belonged to the school library, so please return it.","The white house belongs to my uncle and aunt last year.","The football belongs of the boy in the red jacket."],"ans":"This old watch belonged to my grandfather before he gave it to me.","why":"A. ✓ 正确。该句用 belong to 表达“属于”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。belong to 不用于被动语态。\nC. ✗ 错误。belongs 是一般现在时，与 last year 连用应说 belonged to。\nD. ✗ 错误。介词固定用 to，不用 of。\n📌 考点：无被动语态，一般不用于进行时；后接 to。"},{"sense":"属于","opts":["Do you know which office this desk belongs to?","He is belonging to a small club in the centre of the city.","The credit for the whole plan belongs for every one of us.","That beautiful garden is belonged to the old hotel across the road."],"ans":"Do you know which office this desk belongs to?","why":"A. ✓ 正确。该句用 belong to 表达“属于”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。belong to 通常只用一般现在时，不用于进行时或被动。\nC. ✗ 错误。介词只能是 to。\nD. ✗ 错误。belong to 不用于被动语态，is belonged to 结构不成立，应改为 belongs to the old hotel across the road。\n📌 考点：无被动语态，一般不用于进行时；后接 to。"}],"fill":[{"s":"The smart phone on the desk ________ ________ my roommate.","a":"belongs to","cn":"桌上的那部手机是我室友的。"},{"s":"These seats in Row F ________ ________ the guests from Chicago.","a":"belong to","cn":"F 排这几个座位是芝加哥来的客人的。"}],"pfill":[{"s":"Does this bicycle belong ___ Tom or to you?","a":"to","cn":""},{"s":"Nobody knows which company the empty warehouse belongs ___ these days.","a":"to","cn":""}]},{"p":"change into","cn":"把……变成；变成","en":"to make somebody or something become something different; to turn into","grp":"动词短语","cat":"v","para":"31","src":"It sometimes changes a good man into a bad one.","srcCn":"有时候，二十年会把一个好人变成坏人。","note":"change A into B＝使 A 变成 B；change into + 衣服＝换上（衣服）。","usage":[{"sense":"变成（使转变）","opts":["Only twenty years — surely not long enough to change a good man into a bad one.","He changed his thin coat into before going out.","The waiter changed into our order twice last night.","Please change into this address before you post the letter."],"ans":"Only twenty years — surely not long enough to change a good man into a bad one.","why":"A. ✓ 正确。该句用 change into 表达“变成（使转变）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。into 是介词，后面必须接宾语（换成什么），缺宾语句子不成立。\nC. ✗ 错误。change into 后接“变成的结果或换上的衣物”，不接“订单”。\nD. ✗ 错误。“改地址”应说 change the address，change into 不接地址。\n📌 考点：change A into B＝使 A 变成 B；change into + 衣服＝换上（衣服）。"},{"sense":"换上（衣服）","opts":["She changed into her best dress before the reunion dinner.","The caterpillar will change a butterfly next spring.","He was so wet that he changed out of dry clothes at once.","Twenty years of prison changed him for a hard, silent man."],"ans":"She changed into her best dress before the reunion dinner.","why":"A. ✓ 正确。该句用 change into 表达“换上（衣服）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。缺介词 into：毛虫是“变成”蝴蝶，应说 change into a butterfly。\nC. ✗ 错误。语义矛盾：人湿了应换下湿衣服（changed out of the wet clothes），而不是“换下干衣服”。\nD. ✗ 错误。change sb for sth 搭配不成立，表“使某人变成”须用 change sb into sb。\n📌 考点：change A into B＝使 A 变成 B；change into + 衣服＝换上（衣服）。","stem":"Which sentence uses “change” correctly?"}],"fill":[{"s":"Who would believe that twenty years could ________ a good man ________ a bad one?","a":"change into","cn":"谁能相信二十年会把一个好人变成坏人？"},{"s":"She went upstairs to ________ ________ her best dress before the party.","a":"change into","cn":"她上楼去换上自己最好的裙子。（change into + 衣服＝换上）"}],"pfill":[{"s":"Years in the West can change an honest man ___ a criminal.","a":"into","cn":""},{"s":"He changed ___ his working clothes and started the engine.","a":"into","cn":""}]},{"p":"compete with","cn":"与……竞争；与……较量","en":"to try to be more successful than somebody else; to take part in a contest against somebody","grp":"动词短语","cat":"v","para":"13","src":"I've had to compete with some of the sharpest brains going to get my money.","srcCn":"为了赚钱，我不得不跟那些最精明的脑袋较量。","note":"compete with/against + 对手；compete for + 争夺的目标。","usage":[{"sense":"与……竞争","opts":["A small shop can hardly compete with the big chain stores on price.","Our team will compete with the first prize at the sports meet.","She competes of her older brother whenever they play chess.","They sat up all night competing with the plan for next year."],"ans":"A small shop can hardly compete with the big chain stores on price.","why":"A. ✓ 正确。该句用 compete with 表达“与……竞争”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“争夺奖品”用 compete for the prize。\nC. ✗ 错误。介词应是 with/against，不是 of。\nD. ✗ 错误。compete with 后接人或对手，不接 plan。\n📌 考点：compete with/against + 对手；compete for + 争夺的目标。","stem":"以下关于 compete 的短语，哪一句使用正确？"},{"sense":"与……竞争","opts":["Out West he had to compete with men much sharper than himself.","Bob came a thousand miles to compete with a better position in the company.","Jimmy never had to compete of anybody for money.","The clerks compete against the deadline every single month."],"ans":"Out West he had to compete with men much sharper than himself.","why":"A. ✓ 正确。该句用 compete with 表达“与……竞争”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“竞争某个职位”用 compete for a position。\nC. ✗ 错误。介词 of 错误。\nD. ✗ 错误。“赶在截止日前”用 race against the deadline，不用 compete。\n📌 考点：compete with/against + 对手；compete for + 争夺的目标。","stem":"以下关于 compete 的短语，哪一句使用正确？"}],"fill":[{"s":"Small bookshops find it hard to ________ ________ the big online sellers.","a":"compete with","cn":"小书店很难跟大型网上书店竞争。"},{"s":"As a boy he had to ________ ________ two clever brothers for his parents' attention.","a":"compete with","cn":"小时候他得跟两个聪明的哥哥争夺父母的关注。"}],"pfill":[{"s":"No local company can compete ___ a national chain on price.","a":"with","cn":""},{"s":"He said he had to compete ___ the sharpest brains in Chicago.","a":"with","cn":""}]},{"p":"hear from sb.","cn":"收到某人的音信；得到……的消息","en":"to receive news, a letter or a telephone call from somebody","grp":"动词短语","cat":"v","para":"8","src":"Haven't you heard from your friend since you left?","srcCn":"你走了以后一直没得到朋友的消息吗？","note":"hear from + 人／机构；hear of＝听说有、听说到（不含“收到音信”）。","usage":[{"sense":"收到……的音信","opts":["I haven't heard from my old roommate since she moved to Chicago.","I heard from a strange noise in the kitchen late last night.","They heard from their teacher's advice and changed the whole plan.","He heard from that the meeting had been put off again."],"ans":"I haven't heard from my old roommate since she moved to Chicago.","why":"A. ✓ 正确。该句用 hear from sb. 表达“收到……的音信”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“听见声音”用 hear a noise。\nC. ✗ 错误。“听从劝告”用 take/follow one's advice。\nD. ✗ 错误。hear from 不接 that 从句。\n📌 考点：hear from + 人／机构；hear of＝听说有、听说到（不含“收到音信”）。","stem":"以下关于 hear 的介词搭配，哪一句使用正确？"},{"sense":"收到……的音信","opts":["Write to me as soon as you get there — I'd love to hear from you.","We look forward to hear from you before the end of this week.","I heard of my sister last week and she sounded very happy.","Did you hear from to your parents while you were abroad?"],"ans":"Write to me as soon as you get there — I'd love to hear from you.","why":"A. ✓ 正确。该句用 hear from sb. 表达“收到……的音信”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。look forward to 中 to 是介词，后须用 hearing from。\nC. ✗ 错误。把 hear of（听说过）误当hear from（收到音信）。\nD. ✗ 错误。介词重复。\n📌 考点：hear from + 人／机构；hear of＝听说有、听说到（不含“收到音信”）。","stem":"以下关于 hear 的介词搭配，哪一句使用正确？"}],"fill":[{"s":"Have you ________ ________ Bob since he left for the West?","a":"heard from","cn":"Bob 动身去西部后，你收到过他的信吗？"},{"s":"Please write soon; we would be glad to ________ ________ you again.","a":"hear from","cn":"请尽快来信，我们很高兴能再收到你的消息。"}],"pfill":[{"s":"I have not heard ___ my old friend since last spring.","a":"from","cn":""},{"s":"You will hear ___ the department about your application next week.","a":"from","cn":""}]},{"p":"know of","cn":"知道有；听说过（并未深入了解）","en":"to know that somebody or something exists; to have heard about something without knowing it well","grp":"动词短语","cat":"v","para":"26","src":"Come on, Bob; we'll go around to a place I know of, and have a good long talk about old times.","srcCn":"走吧，Bob，我们去一个我知道的地方，好好聊聊从前。","note":"know of 强调间接知晓、听说过；know sb well 表熟识，不加 of。","usage":[{"sense":"知道有；听说过","opts":["Do you know of any quiet restaurant near the hardware store?","I know of Mr Wells very well — we were boys together in New York.","She knows of three foreign languages and speaks them all fluently.","He is knowing of a small hotel round the corner at the moment."],"ans":"Do you know of any quiet restaurant near the hardware store?","why":"A. ✓ 正确。该句用 know of 表达“知道有；听说过”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。熟识某人用 know sb（well），不加 of。\nC. ✗ 错误。“懂三门外语”用 knows languages。\nD. ✗ 错误。know 不用于进行时。\n📌 考点：know of 强调间接知晓、听说过；know sb well 表熟识，不加 of。","stem":"以下关于 know 的短语，哪一句使用正确？"},{"sense":"知道有；听说过","opts":["I don't know the man himself, but I know of his family.","I know of every word he said at the meeting last night.","Do you know of where he keeps his money these days?","Nobody knew of that the old restaurant had been torn down."],"ans":"I don't know the man himself, but I know of his family.","why":"A. ✓ 正确。该句用 know of 表达“知道有；听说过”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。知道说话内容用 know what/everything he said，不用 know of。\nC. ✗ 错误。know of 后不接疑问词从句，应为 know where。\nD. ✗ 错误。know of 不接 that 从句。\n📌 考点：know of 强调间接知晓、听说过；know sb well 表熟识，不加 of。","stem":"以下关于 know 的短语，哪一句使用正确？"}],"fill":[{"s":"I don't know the owner personally, but I ________ ________ his little shop.","a":"know of","cn":"我跟老板不熟，但我知道他那家小店。"},{"s":"Do you ________ ________ a place where we can talk without being heard?","a":"know of","cn":"你知道有什么说话不会被别人听见的地方吗？"}],"pfill":[{"s":"I know ___ a small cafe round the corner; shall we go there?","a":"of","cn":""},{"s":"Nobody in that street knew ___ the appointment made twenty years before.","a":"of","cn":""}]},{"p":"lose track of","cn":"失去与……的联系；不知……的去向","en":"to no longer know where somebody is or what is happening to them","grp":"动词短语","cat":"v","para":"9","src":"But after a year or two we lost track of each other.","srcCn":"可是一两年之后，我们就彼此失去了联系。","note":"后接人或事物，介词 of 不可换；与 lose (弄丢东西) 不同。","usage":[{"sense":"失去联系","opts":["We wrote for a time, and then we lost track of each other completely.","She is losing track of her old friends since she moved to Chicago.","She lost track with her brother after he moved to Chicago.","We lost track of to each other again after the war was over."],"ans":"We wrote for a time, and then we lost track of each other completely.","why":"A. ✓ 正确。该句用 lose track of 表达“失去联系”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。现在进行时不与 since 时间点连用，应说 have lost track of ... since ...。\nC. ✗ 错误。介词固定用 of，不是 with。\nD. ✗ 错误。of 与 to 重复，介词只能用 of。\n📌 考点：后接人或事物，介词 of 不可换；与 lose (弄丢东西) 不同。","stem":"以下关于 lose track 的介词搭配，哪一句使用正确？"},{"sense":"失去联系","opts":["Twenty years is a long time; no wonder they lost track of each other.","Keep writing to me, or we will lose track to each other again.","He was lost track of by his friends after the failure.","I have lost track from how many letters I wrote to him that year."],"ans":"Twenty years is a long time; no wonder they lost track of each other.","why":"A. ✓ 正确。该句用 lose track of 表达“失去联系”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。介词用 of，不是 to 或 from。\nC. ✗ 错误。lose track of 不用于被动语态。\nD. ✗ 错误。介词用 of，不是 to 或 from。\n📌 考点：后接人或事物，介词 of 不可换；与 lose (弄丢东西) 不同。","stem":"以下关于 lose track 的介词搭配，哪一句使用正确？"}],"fill":[{"s":"After a year or two out West they ________ ________ ________ each other.","a":"lost track of","cn":"在西部待了一两年之后，他们就断了联系。"},{"s":"Do write regularly — I don't want to ________ ________ ________ you again.","a":"lose track of","cn":"一定要常写信，我不想再跟你失去联系。"}],"pfill":[{"s":"Somehow the two friends lost track ___ each other after 1900.","a":"of","cn":""},{"s":"The police never lost track ___ the man wanted in Chicago.","a":"of","cn":""}]},{"p":"speak up","cn":"开口说话；（也作）大声说","en":"to begin to speak, especially after staying silent; to speak louder or more clearly","grp":"动词短语","cat":"v","para":"3","src":"As the policeman walked up to him, the man spoke up quickly.","srcCn":"警察朝他走过去时，那人连忙开口说话。","note":"不及物，不接宾语；两义：①开口说话 ②说大声些。","usage":[{"sense":"说大声些","opts":["The hall was noisy, so the chairman asked us to speak up.","He spoke up his mind at the meeting yesterday afternoon.","Please speak up the announcement to the whole class right now.","She speaked up at the meeting and gave her opinion clearly."],"ans":"The hall was noisy, so the chairman asked us to speak up.","why":"A. ✓ 正确。该句用 speak up 表达“说大声些”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。speak up 不接宾语，不能说 spoke up his mind；表达想法应说 spoke his mind 或 spoke up and said what he thought。\nC. ✗ 错误。speak up 不接宾语，不能说 speak up the announcement；向全班宣读通知应说 read out the announcement to the whole class。\nD. ✗ 错误。speak 的过去式是 spoke，不是 speaked。\n📌 考点：不及物，不接宾语；两义：①开口说话 ②说大声些。"},{"sense":"开口说话","opts":["When nobody else would answer, Mary spoke up and told the truth.","Trying doors as he went, he spoke up the street very slowly.","The officer spoke up his club and took a step or two forward.","You must speak up him about the lost watch immediately."],"ans":"When nobody else would answer, Mary spoke up and told the truth.","why":"A. ✓ 正确。该句用 speak up 表达“开口说话”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。speak up 不接宾语，不能说 spoke up the street；沿街走应说 walked up the street 或 started up the street。\nC. ✗ 错误。speak up 不接宾语，不能说 spoke up his club；挥动警棍应说 swung his club。\nD. ✗ 错误。speak up 不接宾语，不能说 speak up him；对某人说应说 speak to him。\n📌 考点：不及物，不接宾语；两义：①开口说话 ②说大声些。"}],"fill":[{"s":"As the officer came nearer, the man in the doorway ________ ________ quickly.","a":"spoke up","cn":"警察走近时，门道里的人赶紧开了口。"},{"s":"We can't hear you at the back — please ________ ________.","a":"speak up","cn":"后排听不见你，请大点声说。"}],"pfill":[{"s":"Please speak ___; the students at the back cannot hear you.","a":"up","cn":""},{"s":"Nobody dared to answer, so at last Bob spoke ___ in a low voice.","a":"up","cn":""}]},{"p":"start for","cn":"动身去（某地）","en":"to leave and begin a journey to a place; to set out for a place","grp":"动词短语","cat":"v","para":"7","src":"The next morning I was to start for the West to make my fortune.","srcCn":"第二天清晨我就要动身去西部去闯一份家业。","note":"for 后接目的地；出发时间用 at，不用 for。","usage":[{"sense":"动身去（某地）","opts":["We started for Chicago just after midnight, with very little money.","He started for a new job as soon as he arrived in the city.","The first lesson starts for ten o'clock every Monday morning.","They started for the reason nobody has explained to us yet."],"ans":"We started for Chicago just after midnight, with very little money.","why":"A. ✓ 正确。该句用 start for 表达“动身去（某地）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。start for 后接地点，找工作应说 look for a job。\nC. ✗ 错误。钟点前用 at。\nD. ✗ 错误。把 for 误作原因连词。\n📌 考点：for 后接目的地；出发时间用 at，不用 for。","stem":"以下关于 start 的介词搭配，哪一句使用正确？"},{"sense":"动身去（某地）","opts":["Jimmy's friend was only eighteen when he started for the West.","The next morning he started to the little village on foot.","They will start on dawn tomorrow, whatever the weather is like.","Bob started for the newspaper that he had read in the train."],"ans":"Jimmy's friend was only eighteen when he started for the West.","why":"A. ✓ 正确。该句用 start for 表达“动身去（某地）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。目的地前缺介词 for，应说 started for the village。\nC. ✗ 错误。黎明用 at dawn。\nD. ✗ 错误。start for 后须接地点，不接 newspaper。\n📌 考点：for 后接目的地；出发时间用 at，不用 for。","stem":"以下关于 start 的介词搭配，哪一句使用正确？"}],"fill":[{"s":"The next morning he was to ________ ________ the West to make his fortune.","a":"start for","cn":"第二天清晨他就要动身去西部闯荡。"},{"s":"They decided to ________ ________ New York before the rain began.","a":"start for","cn":"他们决定趁雨还没下动身去纽约。"}],"pfill":[{"s":"The next morning I was to start ___ the West with almost no money.","a":"for","cn":""},{"s":"They started ___ Chicago as soon as the short note had been read.","a":"for","cn":""}]},{"p":"start up the street","cn":"沿街走去（up 表沿……向前，不表向上）","en":"to set off along a street; here up shows movement along something, not upward","grp":"动词短语","cat":"v","para":"27","src":"The two men started up the street, arm in arm.","srcCn":"两个人臂挽着臂沿街走去。","note":"up the street＝沿这条街向前；start up the car＝发动车子（另一义）。","usage":[{"sense":"沿街走去","opts":["The two old friends started up the street together, arm in arm.","The lift started up the street and stopped at the tenth floor.","He started up his old car and drove away slowly.","The price of bread started up ten pence last winter."],"ans":"The two old friends started up the street together, arm in arm.","why":"A. ✓ 正确。该句用 start up the street 表达“沿街走去”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。start up the street 表示沿街走，电梯上行不能用。\nC. ✗ 错误。start up the car 是发动引擎。\nD. ✗ 错误。价格上涨用 went up 或 rose by。\n📌 考点：up the street＝沿这条街向前；start up the car＝发动车子（另一义）。","stem":"以下关于 start up 的短语，哪一句使用正确？"},{"sense":"沿街走去","opts":["They started up the street towards the brilliant drugstore on the corner.","She started up the letter to her brother that very evening.","The cold rain started up a steady blow before midnight.","He started up the cigar and waited quietly for his old friend."],"ans":"They started up the street towards the brilliant drugstore on the corner.","why":"A. ✓ 正确。该句用 start up the street 表达“沿街走去”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。写信动笔应说 started writing。\nC. ✗ 错误。风势渐起用 rose to a steady blow。\nD. ✗ 错误。点雪茄用 lit a cigar。\n📌 考点：up the street＝沿这条街向前；start up the car＝发动车子（另一义）。","stem":"以下关于 start up 的短语，哪一句使用正确？"}],"fill":[{"s":"When they left the doorway, the two men ________ ________ ________ ________, arm in arm.","a":"started up the street","cn":"离开门道后，那两个人臂挽着臂沿街走去。"},{"s":"Instead of waiting here, let's ________ ________ ________ ________ and look for a cab.","a":"start up the street","cn":"别在这儿等着了，咱们沿街走去找辆马车吧。"}],"pfill":[{"s":"The two men started ___ the street and soon turned into a side road.","a":"up","cn":""},{"s":"The officer watched them start ___ the street before he moved on.","a":"up","cn":""}]},{"p":"tear down","cn":"拆掉；拆除","en":"to pull or knock a building down; to destroy a structure completely","grp":"动词短语","cat":"v","para":"5","src":"'Until five years ago,' said the policeman. 'It was torn down then.'","srcCn":"“到五年前还在，”警察说，“那时候被拆掉了。”","note":"tear down＝拆毁建筑；tear up＝撕碎；tear off＝扯下。","usage":[{"sense":"拆掉","opts":["Big Joe Brady's restaurant was torn down five years ago.","He tore down the letter as soon as he had finished reading it.","Please tear down a piece of paper and write your name on it.","The little boy tore down when he heard the bad news."],"ans":"Big Joe Brady's restaurant was torn down five years ago.","why":"A. ✓ 正确。该句用 tear down 表达“拆掉”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。把信撕碎用 tore up。\nC. ✗ 错误。扯下一张纸用 tore off。\nD. ✗ 错误。哭出来用 burst into tears。\n📌 考点：tear down＝拆毁建筑；tear up＝撕碎；tear off＝扯下。"},{"sense":"拆掉","opts":["They are going to tear down the old hardware store next month.","She was so angry that she tore down the note into little pieces.","A tear down ran slowly and silently down her cheek.","The workmen tore down across the street to help him."],"ans":"They are going to tear down the old hardware store next month.","why":"A. ✓ 正确。该句用 tear down 表达“拆掉”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。撕成碎片用 tore up。\nC. ✗ 错误。把名词 tear（泪水）与小品词 down 硬凑。\nD. ✗ 错误。穿过大街用 ran across。\n📌 考点：tear down＝拆毁建筑；tear up＝撕碎；tear off＝扯下。"}],"fill":[{"s":"The old restaurant where the two friends dined was ________ ________ long ago.","a":"torn down","cn":"两个朋友吃饭的那家老餐馆早就被拆掉了。"},{"s":"Workmen came early to ________ ________ the empty houses at the corner.","a":"tear down","cn":"工人们一早就来拆街角那几栋空房子。"}],"pfill":[{"s":"'Big Joe' Brady's was torn ___ five years ago, just after you left.","a":"down","cn":""},{"s":"The city will tear ___ the old block before the winter comes.","a":"down","cn":""}]},{"p":"turn up","cn":"出现；露面","en":"to arrive or appear, especially after being waited for","grp":"动词短语","cat":"v","para":"9","src":"I came a thousand miles to stand in this door tonight, and it's worth it if my old partner turns up.","srcCn":"我赶了一千英里今晚站在这扇门口，只要老搭档露面，就值了。","note":"另义：调大音量 / 偶然发现；本单元取“出现；露面”。","usage":[{"sense":"出现；露面","opts":["It is worth the long wait if my old partner turns up at ten.","The missing letter turned up by him yesterday morning.","He turned up the old photograph to his mother with a big smile.","The black car turned up the corner and disappeared at once."],"ans":"It is worth the long wait if my old partner turns up at ten.","why":"A. ✓ 正确。该句用 turn up 表达“出现；露面”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。turn up 不及物，无被动语态。\nC. ✗ 错误。“把照片拿给母亲看”应说 showed the photograph to his mother。\nD. ✗ 错误。转过街角应说 turned the corner。\n📌 考点：另义：调大音量 / 偶然发现；本单元取“出现；露面”。"},{"sense":"出现；露面","opts":["She promised to come, but she never turned up at the appointed place.","Turn up it quickly, or we shall miss the last train.","He turned up the note in his hand and began to read it aloud.","Everybody turned up their coats against the cold driving rain."],"ans":"She promised to come, but she never turned up at the appointed place.","why":"A. ✓ 正确。该句用 turn up 表达“出现；露面”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。代词宾语须放在小品词前，应说 Turn it up。\nC. ✗ 错误。“拿起纸条”应说 picked up the note。\nD. ✗ 错误。应为 turned up their collars（竖起衣领），且非此义。\n📌 考点：另义：调大音量 / 偶然发现；本单元取“出现；露面”。"}],"fill":[{"s":"I'll wait another half hour — surely he will ________ ________ soon.","a":"turn up","cn":"我再等半小时，他一定会露面的。"},{"s":"She said she would be there, but she never ________ ________ that night.","a":"turned up","cn":"她说会到，可那天晚上始终没露面。"}],"pfill":[{"s":"If my old partner turns ___ tonight, then the long journey was worth it.","a":"up","cn":""},{"s":"Not one of the men they were waiting for turned ___ that cold night.","a":"up","cn":""}]},{"p":"walk up to sb.","cn":"朝某人走过去（up 表靠近，不表方向）","en":"to go towards somebody until one is close enough to speak to them; here up shows getting nearer","grp":"动词短语","cat":"v","para":"3","src":"As the policeman walked up to him, the man spoke up quickly.","srcCn":"警察朝他走过去时，那人连忙开口说话。","note":"up to 后接人；up to 另可表“多达；由……决定”。","usage":[{"sense":"朝某人走过去","opts":["The policeman walked up to him and asked what he was doing there.","He walked up to upstairs and fetched his long dark overcoat.","The visitors walk up to the hill top yesterday morning.","She walked up to home before the cold rain began to fall."],"ans":"The policeman walked up to him and asked what he was doing there.","why":"A. ✓ 正确。该句用 walk up to sb. 表达“朝某人走过去”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。up to 与 upstairs 语义重复，应说 walked upstairs。\nC. ✗ 错误。时态错误，walk 与 yesterday 连用应为 walked。\nD. ✗ 错误。回家应说 walked home，不加 to。\n📌 考点：up to 后接人；up to 另可表“多达；由……决定”。"},{"sense":"朝某人走过去","opts":["A tall man in a long overcoat walked up to me and grasped my hands.","It walks up to twenty miles from the station to the old village.","The man walked up to manager and asked for a job at once.","We walked up to there in twenty minutes and bought a paper."],"ans":"A tall man in a long overcoat walked up to me and grasped my hands.","why":"A. ✓ 正确。该句用 walk up to sb. 表达“朝某人走过去”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。it（距离）不能作 walk up to 的主语。\nC. ✗ 错误。manager 前缺定冠词 the。\nD. ✗ 错误。up to 与 there 连用冗余，应说 walked there。\n📌 考点：up to 后接人；up to 另可表“多达；由……决定”。"}],"fill":[{"s":"A stranger ________ ________ ________ me and asked whether I was Bob.","a":"walked up to","cn":"一个陌生人朝我走过来，问我是不是 Bob。"},{"s":"Don't ________ ________ ________ the officer; wait here until he comes.","a":"walk up to","cn":"别朝警察走过去，在这儿等他过来。"}],"pfill":[{"s":"As the policeman walked ___ to the man in the doorway, the man spoke.","a":"up","cn":""},{"s":"A tall man walked up ___ Bob and grasped both his hands.","a":"to","cn":""}]},{"p":"work out","cn":"算出；安排妥当；弄清楚","en":"to arrange or plan something successfully; to calculate something; to find the answer to something","grp":"动词短语","cat":"v","para":"7","src":"We figured that in twenty years each of us ought to have our fate worked out and our fortunes made.","srcCn":"我们估摸着，二十年后各自的命运都该安排妥当、家业也该创下了。","note":"代词宾语须放在 out 前（work it out）；另义：锻炼身体。","usage":[{"sense":"安排妥当；算出","opts":["They had their fate worked out long before the two men met again.","He work out the answer without any help yesterday.","The problem was hard, and nobody could work out it in time.","She worked out her club and went out for a walk in the rain."],"ans":"They had their fate worked out long before the two men met again.","why":"A. ✓ 正确。该句用 work out 表达“安排妥当；算出”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。时态错误，主语 He 且句末有 yesterday，应用 worked out。\nC. ✗ 错误。代词宾语必须放在小品词前，应说 work it out。\nD. ✗ 错误。worked out her club 中 work out 不接表示所属物的 club；work out 表示“算出、解决或安排”，此处语义不成立。\n📌 考点：代词宾语须放在 out 前（work it out）；另义：锻炼身体。"},{"sense":"弄清；算出","opts":["Give me a minute and I will work out how much we owe you.","I stayed up all night to work out for tomorrow's examination.","He worked out of the room without saying a word to anybody.","You must work out your own dinner before nine every evening."],"ans":"Give me a minute and I will work out how much we owe you.","why":"A. ✓ 正确。该句用 work out 表达“弄清；算出”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。备考用 prepare for / study for。\nC. ✗ 错误。走出房间用 walked out of。\nD. ✗ 错误。做饭用 cook。\n📌 考点：代词宾语须放在 out 前（work it out）；另义：锻炼身体。"}],"fill":[{"s":"In twenty years each of us should have our fate ________ ________.","a":"worked out","cn":"二十年后，我们各自的命运都该安排妥当。"},{"s":"I simply cannot ________ ________ why he never wrote to me again.","a":"work out","cn":"我实在弄不明白他为什么再没给我写信。"}],"pfill":[{"s":"Each of us ought to have his fate worked ___ by that time.","a":"out","cn":""},{"s":"Can anyone work ___ how long the man had been waiting there?","a":"out","cn":""}]},{"p":"be set with small diamonds","cn":"镶着小钻石","en":"(of jewellery) to have small precious stones fixed into its surface","grp":"动词短语","cat":"v","para":"10","src":"The waiting man pulled out a handsome watch, the lids of it set with small diamonds.","srcCn":"等待的人掏出一块很漂亮的表，表盖上镶着小钻石。","note":"be set with + 镶嵌物；set a date/time＝约定时间。","usage":[{"sense":"镶着（宝石）","opts":["The lids of his watch were set with small diamonds.","They set with a date and a time twenty years ago tonight.","The jeweller will set with the ring by the end of this week.","Those small diamonds were set by the watch at the factory."],"ans":"The lids of his watch were set with small diamonds.","why":"A. ✓ 正确。该句用 be set with small diamonds 表达“镶着（宝石）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。约时间应说 set a date and a time。\nC. ✗ 错误。镶嵌某物应说 set the ring with diamonds。\nD. ✗ 错误。介词用 with 表材料，by 表施动者。\n📌 考点：be set with + 镶嵌物；set a date/time＝约定时间。"},{"sense":"镶着（宝石）","opts":["Her ring was set with three very small diamonds.","The watch was set by diamonds, the old jeweller said quietly.","Twenty small diamonds were set with the thief last night.","I set with small diamonds before breakfast every morning."],"ans":"Her ring was set with three very small diamonds.","why":"A. ✓ 正确。该句用 be set with small diamonds 表达“镶着（宝石）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。镶嵌材料用 with，不用 by。\nC. ✗ 错误。语义倒置。\nD. ✗ 错误。缺宾语且语态错误。\n📌 考点：be set with + 镶嵌物；set a date/time＝约定时间。"}],"fill":[{"s":"The lids of his handsome watch ________ ________ ________ small diamonds.","a":"were set with","cn":"他那块漂亮的手表盖上镶着小钻石。"},{"s":"Her tiepin ________ ________ ________ a single large diamond.","a":"was set with","cn":"她的领带夹上镶着一整颗大钻石。"}],"pfill":[{"s":"The lids of the watch were set ___ small diamonds.","a":"with","cn":""},{"s":"Her ring was set ___ three tiny stones that shone brightly.","a":"with","cn":""}]},{"p":"at least","cn":"至少；起码","en":"not less than the number or amount mentioned; used to give the smallest figure","grp":"介词短语","cat":"prep","para":"16","src":"I should say not! I'll give him half an hour at least.","srcCn":"我才不呢！我至少要再等他半小时。","note":"放在数量之后或句末；in the least＝丝毫（多用于否定句）。","usage":[{"sense":"至少","opts":["Give him half an hour at least — he may still turn up tonight.","He waited for half at least an hour and then walked slowly away.","At least of all the shops in this street, only one was open.","The man from the West was at least taken to the police station."],"ans":"Give him half an hour at least — he may still turn up tonight.","why":"A. ✓ 正确。该句用 at least 表达“至少”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。at least 须置于数量之后，不可插在 half 与 an hour 之间。\nC. ✗ 错误。表示“在……之中”用 of all ...，不用 at least of。\nD. ✗ 错误。处语义变成“最后被带走”，应为 finally。\n📌 考点：放在数量之后或句末；in the least＝丝毫（多用于否定句）。"},{"sense":"至少","opts":["It must cost at least fifty dollars to stay one night in such a hotel.","There must be at least of ten men waiting outside the police station.","He gave least at half an hour to his old friend from the West.","That handsome watch was worth in least two hundred dollars."],"ans":"It must cost at least fifty dollars to stay one night in such a hotel.","why":"A. ✓ 正确。该句用 at least 表达“至少”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。at least 后不加 of。\nC. ✗ 错误。语序颠倒。\nD. ✗ 错误。介词须为 at，不是 in。\n📌 考点：放在数量之后或句末；in the least＝丝毫（多用于否定句）。"}],"fill":[{"s":"I'll give him another half an hour ________ ________ before I go.","a":"at least","cn":"我再等他至少半小时才走。"},{"s":"Twenty years ago it cost ________ ________ fifty dollars to eat at Big Joe's.","a":"at least","cn":"二十年前在老乔餐馆吃一顿至少要五十美元。"}],"pfill":[{"s":"I will give him half an hour ___ least before I am on my way.","a":"at","cn":""},{"s":"It is ___ least ten minutes since you were placed under arrest.","a":"at","cn":""}]},{"p":"for a time","cn":"有一段时间；一度","en":"for some period; for a while, but not for ever","grp":"介词短语","cat":"prep","para":"9","src":"Well, yes, for a time we wrote, said the other.","srcCn":"哦，写过一阵子——有一段时间我们还通着信。","note":"表过去“某一段时间”，与 for the time being（暂时）不同。","usage":[{"sense":"有一段时间","opts":["For a time we wrote to each other, and then we lost track of each other.","He has been waiting here for a time since ten o'clock last night.","The appointment was made for a time of twenty years ago tonight.","I shall meet you at the restaurant at a time we agreed long ago."],"ans":"For a time we wrote to each other, and then we lost track of each other.","why":"A. ✓ 正确。该句用 for a time 表达“有一段时间”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。for a time 表过去某一段时间，不能与 since + 点时间搭配。\nC. ✗ 错误。混淆 time 的所指。\nD. ✗ 错误。应用 at the time（在那时）。\n📌 考点：表过去“某一段时间”，与 for the time being（暂时）不同。"},{"sense":"有一段时间","opts":["They kept a small restaurant on this very block for a time.","For a time being he stayed in a cheap hotel near the station.","The two old friends talked for the a time about the days gone by.","He waited for a time exactly ten o'clock before he spoke up."],"ans":"They kept a small restaurant on this very block for a time.","why":"A. ✓ 正确。该句用 for a time 表达“有一段时间”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“暂时”是 for the time being，不是 for a time being。\nC. ✗ 错误。冠词用法错误。\nD. ✗ 错误。等待到十点应用 until ten o'clock。\n📌 考点：表过去“某一段时间”，与 for the time being（暂时）不同。"}],"fill":[{"s":"Well, yes, ________ ________ ________ we wrote to each other quite often.","a":"for a time","cn":"嗯，是的，有一段时间我们常通信。"},{"s":"He ran a cigar store on this avenue ________ ________ ________ before going West.","a":"for a time","cn":"他去西部之前，在这条街上开过一阵子雪茄店。"}],"pfill":[{"s":"___ a time we wrote to each other, and then the letters stopped.","a":"for","cn":""},{"s":"He kept very early hours ___ a time after he came back home.","a":"for","cn":""}]},{"p":"for show","cn":"为了装样子；只为好看","en":"intended only to impress other people; not meant for real use","grp":"介词短语","cat":"prep","para":"1","src":"The impressiveness was normal and not for show, for spectators were few.","srcCn":"他那了不起的气派是自然的，不是装样子——因为看客寥寥。","note":"常与 not 连用：not for show＝不是做给别人看的。","usage":[{"sense":"装样子","opts":["His slow, impressive walk was quite natural and not for show.","The officer's watch was made of gold for show of his wealth.","Let us go to for show the new restaurant on the corner tonight.","He bought that expensive tiepin for the show off to old friends."],"ans":"His slow, impressive walk was quite natural and not for show.","why":"A. ✓ 正确。该句用 for show 表达“装样子”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“夸耀财富”不用 for show of。\nC. ✗ 错误。go to for show the new restaurant 把 for show 插在 go to 与宾语之间，语序错误；应说 go to the new restaurant for show。\nD. ✗ 错误。把名词的 show 与 show off（炫耀）混为一谈。\n📌 考点：常与 not 连用：not for show＝不是做给别人看的。"},{"sense":"装样子","opts":["Nothing about the guardian of the peace was for show; that was simply how he walked.","Because spectators were few, his impressiveness was normal and for show.","She keeps early hours for show of her neighbours along the street.","For show me the note, he said nothing at all and walked away."],"ans":"Nothing about the guardian of the peace was for show; that was simply how he walked.","why":"A. ✓ 正确。该句用 for show 表达“装样子”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。该句把 his impressiveness was normal and for show 并列，等于说他的气派“正常且是装样子”，与原文“毫不做作”的意思正好相反。\nC. ✗ 错误。for show of her neighbours 不能表示“给邻居看”；应说 to show off to her neighbours 或 for her neighbours to see。\nD. ✗ 错误。把 for show 误当动词（向……展示应为 show me）。\n📌 考点：常与 not 连用：not for show＝不是做给别人看的。"}],"fill":[{"s":"The policeman's air of superiority was natural and not ________ ________.","a":"for show","cn":"那警察的优越感是自然的，不是装出来的。"},{"s":"These fine winter clothes are for use, not ________ ________.","a":"for show","cn":"这些好冬装是穿的，不是摆样子的。"}],"pfill":[{"s":"His impressiveness was normal and not ___ show, for spectators were few.","a":"for","cn":""},{"s":"He keeps that old stick not for use but ___ show.","a":"for","cn":""}]},{"p":"in existence","cn":"现存；还存在着（还活着）","en":"existing now; still alive or still present at the present time","grp":"介词短语","cat":"prep","para":"22","src":"I was certain I'd find you here if you were still in existence.","srcCn":"我确信，只要你还活着，我就能在这儿找到你。","note":"常置句末或被 still 修饰；中间不加冠词。","usage":[{"sense":"还活着；现存","opts":["I was certain I would find you here if you were still in existence.","These old business places have been in existence since fifty years.","There exist in a fine little restaurant on this very block.","The oldest tree now in existence was planted by the road last year."],"ans":"I was certain I would find you here if you were still in existence.","why":"A. ✓ 正确。该句用 in existence 表达“还活着；现存”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。since 后接时间点，一段时间应用 for fifty years。\nC. ✗ 错误。There exist in a fine little restaurant 把 exist 误作及物存在句；应说 There is a fine little restaurant，exist 后也不直接接 in a ...。\nD. ✗ 错误。自相矛盾（最老的树不可能去年才种）。\n📌 考点：常置句末或被 still 修饰；中间不加冠词。"},{"sense":"现存；还活着","opts":["It is said to be the oldest shop of its kind still in existence.","No one knows how long such little lunch counters will be in the existence.","In existence the note was handed to Bob by a plain clothes man.","That kind of ancient hotel has not in existence for a whole century."],"ans":"It is said to be the oldest shop of its kind still in existence.","why":"A. ✓ 正确。该句用 in existence 表达“现存；还活着”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。固定搭配不加冠词 the。\nC. ✗ 错误。把它误作句首状语。\nD. ✗ 错误。缺少 been。\n📌 考点：常置句末或被 still 修饰；中间不加冠词。"}],"fill":[{"s":"I was sure I would find you here if you were still ________ ________.","a":"in existence","cn":"我肯定只要你还在人世，我就能在这里找到你。"},{"s":"It is one of the oldest lunch counters still ________ ________ in this quarter.","a":"in existence","cn":"这是这一带还开着的最老的快餐柜台之一。"}],"pfill":[{"s":"I was certain I'd find you here if you were still ___ existence.","a":"in","cn":""},{"s":"This is said to be the oldest hardware store ___ existence here.","a":"in","cn":""}]},{"p":"on earth","cn":"世界上；（加强语气）究竟；到底","en":"in the world; used for emphasis, especially after nobody, nothing, what, how, where","grp":"介词短语","cat":"prep","para":"7","src":"You couldn't have dragged Jimmy out of New York; he thought it was the only place on earth.","srcCn":"你休想把 Jimmy 拖出纽约——他觉得那是世界上最好的地方。","note":"两义：①世界上（＝in the world）②究竟（加强疑问语气）。","usage":[{"sense":"世界上","opts":["He thought New York was the only place on earth for a man like Jimmy.","Put the travelling bag on earth beside the old dark doorway.","They built a fine restaurant on earth twenty years ago tonight.","There was nobody happier on the earth than Bob that very night."],"ans":"He thought New York was the only place on earth for a man like Jimmy.","why":"A. ✓ 正确。该句用 on earth 表达“世界上”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“在地上”用 on the ground/floor，不用 on earth。\nC. ✗ 错误。把 on earth 当作地点状语。\nD. ✗ 错误。习惯搭配不加 the。\n📌 考点：两义：①世界上（＝in the world）②究竟（加强疑问语气）。"},{"sense":"究竟（强调）","opts":["Nobody on earth could have guessed that he was a plain clothes man.","What on the earth are you doing in that dark doorway at night?","He keeps early hours on earth and walks his beat every evening.","Where on the earth is 'Big Joe' Brady's Restaurant standing now?"],"ans":"Nobody on earth could have guessed that he was a plain clothes man.","why":"A. ✓ 正确。该句用 on earth 表达“究竟（强调）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。强调义固定搭配无定冠词 the。\nC. ✗ 错误。keeps early hours on earth 把强调义 on earth 当作地点状语；这里与“究竟”的强调义无关，语义不通。\nD. ✗ 错误。强调义固定搭配无定冠词 the。\n📌 考点：两义：①世界上（＝in the world）②究竟（加强疑问语气）。"}],"fill":[{"s":"He thought New York was the only place ________ ________ worth living in.","a":"on earth","cn":"他觉得纽约是世界上唯一值得住的地方。"},{"s":"What ________ ________ made you come back to this cold street tonight?","a":"on earth","cn":"到底是什么让你今晚回到这条冷清的街上？"}],"pfill":[{"s":"He thought it was the only place ___ earth where a man could live.","a":"on","cn":""},{"s":"Nobody ___ earth could have told you that twenty years ago.","a":"on","cn":""}]},{"p":"on one's way","cn":"在途中；要走了；即将","en":"in the course of going somewhere; about to leave, or on the road to doing something","grp":"介词短语","cat":"prep","para":"15","src":"I'll be on my way. Hope your friend comes around all right.","srcCn":"我这就走了。祝你朋友顺顺当当来。","note":"one's 随主语变为 my/his/her 等；on one's way to doing＝快要做成某事。","usage":[{"sense":"在途中；就要走","opts":["I'll be on my way now; good night, sir, said the policeman.","He is on his way of becoming one of the sharpest brains in the West.","The note was handed to Bob when he was on his way for the station.","She walked on her way through the crowded hallway yesterday evening."],"ans":"I'll be on my way now; good night, sir, said the policeman.","why":"A. ✓ 正确。该句用 on one's way 表达“在途中；就要走”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“快要成为……”用 on one's way to becoming。\nC. ✗ 错误。去某地用 on one's way to the station。\nD. ✗ 错误。冗余，应说 walked through the hallway。\n📌 考点：one's 随主语变为 my/his/her 等；on one's way to doing＝快要做成某事。"},{"sense":"在途中","opts":["On his way to the drugstore he met an old friend from New York.","On way to the West he lost track of every one of his friends.","I shall be in my way before the big clock strikes ten tonight.","He is well on his way of getting a position in a city department."],"ans":"On his way to the drugstore he met an old friend from New York.","why":"A. ✓ 正确。该句用 on one's way 表达“在途中”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。物主代词不可省。\nC. ✗ 错误。介词用 on 不是 in。\nD. ✗ 错误。“快要得到”用 on his way to getting。\n📌 考点：one's 随主语变为 my/his/her 等；on one's way to doing＝快要做成某事。"}],"fill":[{"s":"It is nearly ten o'clock; I really must be ________ ________ ________ now.","a":"on my way","cn":"快十点了，我真的得走了。"},{"s":"Bob is well ________ ________ ________ to making a fortune in the West.","a":"on his way","cn":"Bob 眼看就要在西部发财了。"}],"pfill":[{"s":"I'll be ___ my way before the rain gets any heavier.","a":"on","cn":""},{"s":"He met Bob when he was ___ his way to a little place he knew of.","a":"on","cn":""}]},{"p":"on the beat","cn":"在巡逻中；在巡区值勤","en":"(of a policeman) walking about and watching a fixed area or route","grp":"介词短语","cat":"prep","para":"1","src":"The policeman on the beat moved up the avenue impressively.","srcCn":"值班巡逻的警察气派十足地沿大道走去。","note":"指警察的固定巡区；另一 music 义“合拍”。","usage":[{"sense":"在巡逻","opts":["The policeman on the beat moved up the avenue impressively.","He beat the policeman on at midnight near the hardware store.","The officer on the beat were talking to a shopkeeper.","She is walking on beat along this avenue every evening now."],"ans":"The policeman on the beat moved up the avenue impressively.","why":"A. ✓ 正确。该句用 on the beat 表达“在巡逻”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。beat the policeman on at midnight 把介词 on 悬空，并把 beat 变成“打人”；既语序错误，也完全偏离“巡逻”义。\nC. ✗ 错误。主谓不一致，The officer ... were 应为 was。\nD. ✗ 错误。习惯搭配须带 the，应说 on the beat。\n📌 考点：指警察的固定巡区；另一 music 义“合拍”。"},{"sense":"在巡逻","opts":["Every night he was out on the beat, whatever the weather was like.","Trying doors as he went, he kept on the beat of the loud drum.","The two young policemen went on beat together after ten o'clock.","Do you know the man on beat a hundred miles away from this city?"],"ans":"Every night he was out on the beat, whatever the weather was like.","why":"A. ✓ 正确。该句用 on the beat 表达“在巡逻”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。用“节拍”义。\nC. ✗ 错误。缺少定冠词 the。\nD. ✗ 错误。缺少定冠词 the。\n📌 考点：指警察的固定巡区；另一 music 义“合拍”。"}],"fill":[{"s":"He has been out ________ ________ ________ every night for twenty years.","a":"on the beat","cn":"二十年来他每晚都在这一带巡逻。"},{"s":"Do you know the young policeman ________ ________ ________ along this avenue?","a":"on the beat","cn":"你认识沿这条大道巡逻的那位年轻警察吗？"}],"pfill":[{"s":"The policeman ___ the beat moved up the avenue impressively.","a":"on","cn":""},{"s":"He has been out ___ the beat every single night this week.","a":"on","cn":""}]},{"p":"on time","cn":"准时；按时","en":"at the exact or arranged time; punctually","grp":"介词短语","cat":"prep","para":"33","src":"Bob: I was at the appointed place on time.","srcCn":"Bob：我准时到了约定的地点。","note":"on time＝准时；in time＝及时（赶得上）。","usage":[{"sense":"准时","opts":["I was at the appointed place on time, exactly as we had agreed.","He walked on time to reach the drugstore before it was closed.","Please come on the time tomorrow morning, or we shall be late.","Twenty years had passed on time before the two men met again."],"ans":"I was at the appointed place on time, exactly as we had agreed.","why":"A. ✓ 正确。该句用 on time 表达“准时”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“赶在某处关门前到达”用 in time to reach。\nC. ✗ 错误。固定短语不加 the。\nD. ✗ 错误。Twenty years had passed on time 把 on time（准时）与时间段连用，语义变成“二十年准时过去了”，不合逻辑。\n📌 考点：on time＝准时；in time＝及时（赶得上）。"},{"sense":"准时","opts":["The short note said: I was at the appointed place on time.","We waited for him on time and then went in to dinner.","The watch was five minutes slow, so we were not on the time.","If Jimmy is still alive he will be here at time tonight."],"ans":"The short note said: I was at the appointed place on time.","why":"A. ✓ 正确。该句用 on time 表达“准时”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。wait 不与 on time 搭配（“等到他”直接说 waited for him）。\nC. ✗ 错误。固定短语不加 the。\nD. ✗ 错误。介词应为 on，不是 at。\n📌 考点：on time＝准时；in time＝及时（赶得上）。"}],"fill":[{"s":"Bob was at the appointed place ________ ________, but Jimmy never came.","a":"on time","cn":"Bob 准时到了约定地点，可 Jimmy 始终没来。"},{"s":"Please be ________ ________ tomorrow; the night train leaves at ten sharp.","a":"on time","cn":"明天请准时，夜班火车十点整发车。"}],"pfill":[{"s":"I was at the appointed place ___ time when you struck the match.","a":"on","cn":""},{"s":"He always arrives ___ time, whatever the weather may be.","a":"on","cn":""}]},{"p":"under arrest","cn":"被逮捕；在押","en":"held by the police; officially caught and no longer free to go","grp":"介词短语","cat":"prep","para":"31","src":"You've been under arrest for ten minutes, 'Silky' Bob.","srcCn":"你已经被捕十分钟了，‘Silky’ Bob。","note":"名词短语，无时态变化；持续时间用 for。","usage":[{"sense":"被逮捕","opts":["You have been under arrest since I came up to you in that doorway.","He is under arrest by ten minutes and must come to the station.","The policeman put the tall man under the arrest at once.","Chicago wants a chat with him, so he has already been under arrested."],"ans":"You have been under arrest since I came up to you in that doorway.","why":"A. ✓ 正确。该句用 under arrest 表达“被逮捕”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。持续时间用 for，不用 by。\nC. ✗ 错误。固定搭配无冠词。\nD. ✗ 错误。把名词短语误当动词被动。\n📌 考点：名词短语，无时态变化；持续时间用 for。"},{"sense":"被逮捕","opts":["Silky Bob was still under arrest when they reached the bright drugstore.","The judge kept him under arrest since twenty years ago last spring.","He was placed under a arrest by the officer in the long overcoat.","Go quietly, or I shall put you under the arrested at once."],"ans":"Silky Bob was still under arrest when they reached the bright drugstore.","why":"A. ✓ 正确。该句用 under arrest 表达“被逮捕”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。时态与 since 搭配失当。\nC. ✗ 错误。固定搭配无冠词 a。\nD. ✗ 错误。put you under the arrested 把名词短语 under arrest 中的 arrest 改成过去分词 arrested，固定搭配不成立；应说 put you under arrest。\n📌 考点：名词短语，无时态变化；持续时间用 for。"}],"fill":[{"s":"You have been ________ ________ for ten minutes now, Bob.","a":"under arrest","cn":"Bob，你已经被捕十分钟了。"},{"s":"The man from the West was still ________ ________ when the note was handed to him.","a":"under arrest","cn":"递给他纸条时，那个西部来的人仍处在被捕状态。"}],"pfill":[{"s":"You have been ___ arrest for ten minutes, 'Silky' Bob.","a":"under","cn":""},{"s":"He was placed ___ arrest as soon as he struck the match.","a":"under","cn":""}]},{"p":"with the air of","cn":"带着……的神气／派头","en":"with the manner or look of somebody; appearing to be a person of that kind","grp":"介词短语","cat":"prep","para":"2","src":"The officer, with his strongly built form and slight air of superiority, made a fine picture of a guardian of the peace.","srcCn":"那警察身板结实，带着一点优越感的神气，构成一幅治安卫士的好画面。","note":"of 后接名词或动名词，不接句子。","usage":[{"sense":"带着……的神气","opts":["He answered with the air of a man who is used to being obeyed.","She opened the letter with the air for a child at Christmas.","The officer walked up the avenue with a air of quiet superiority.","He spoke with the air of the restaurant had never been torn down."],"ans":"He answered with the air of a man who is used to being obeyed.","why":"A. ✓ 正确。该句用 with the air of 表达“带着……的神气”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。介词用 of，不用 for。\nC. ✗ 错误。冠词应为 the。\nD. ✗ 错误。of 后不能接从句。\n📌 考点：of 后接名词或动名词，不接句子。"},{"sense":"带着……的神气","opts":["With the air of a successful man from the West, Bob began to tell his story.","He waited there with the air to a guardian of the peace on his beat.","She listened with air of somebody who already knew the sad truth.","He is with the air of twenty hard years in the West behind him."],"ans":"With the air of a successful man from the West, Bob began to tell his story.","why":"A. ✓ 正确。该句用 with the air of 表达“带着……的神气”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。介词用 of，不用 to。\nC. ✗ 错误。缺少 the。\nD. ✗ 错误。He is with the air of twenty hard years behind him 把 with 短语误作表语；with the air of 是方式状语，不能这样说明主语状态。\n📌 考点：of 后接名词或动名词，不接句子。"}],"fill":[{"s":"He answered ________ ________ ________ ________ a man who is never refused.","a":"with the air of","cn":"他回答时带着一副从没被人拒绝过的人的神气。"},{"s":"She smiled ________ ________ ________ ________ somebody who has waited a long time.","a":"with the air of","cn":"她笑了笑，带着一副等了很久的人才有的神情。"}],"pfill":[{"s":"He answered ___ the air of a man who is used to being obeyed.","a":"with","cn":""},{"s":"She listened with the air ___ a person who already knew the truth.","a":"of","cn":""}]},{"p":"by that time","cn":"到那时；到那时为止","en":"before or not later than that moment; when that moment arrives","grp":"介词短语","cat":"prep","para":"16","src":"If Jimmy is alive on earth he'll be here by that time.","srcCn":"只要 Jimmy 还在人世，到那个时候他准会到这里。","note":"常与完成时或将来时连用；by the time 后接从句。","usage":[{"sense":"到那时","opts":["Give him half an hour; he will surely be here by that time.","He will arrive by that time of his life in the far distant West.","By that time twenty years it was much too late to see him.","He was a slow walker by that time tomorrow morning."],"ans":"Give him half an hour; he will surely be here by that time.","why":"A. ✓ 正确。该句用 by that time 表达“到那时”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“在他一生中”应用 in his life。\nC. ✗ 错误。By that time twenty years 把 by that time 与时长 twenty years 直接叠加，时间状语位置也混乱；应说 By that time, twenty years had passed ...。\nD. ✗ 错误。时态矛盾，was 不能与 by that time tomorrow（将来时间）连用。\n📌 考点：常与完成时或将来时连用；by the time 后接从句。"},{"sense":"到那时为止","opts":["By that time the ancient restaurant had already been torn down.","By that time of our meeting twenty years ago, he was gone.","Wait for him by that time if you like; I must be on my way.","Be here on ten o'clock sharp by that time, said the tall officer."],"ans":"By that time the ancient restaurant had already been torn down.","why":"A. ✓ 正确。该句用 by that time 表达“到那时为止”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。“在我们约定的那个时刻”用 at the time of our meeting。\nC. ✗ 错误。wait 不与 by that time 搭配。\nD. ✗ 错误。该句把具体钟点 ten o'clock 与 by that time 叠用，介词也应为 at ten o'clock，时间和句法都冗余。\n📌 考点：常与完成时或将来时连用；by the time 后接从句。"}],"fill":[{"s":"Give him another half an hour; he will be here ________ ________ ________.","a":"by that time","cn":"再给他半小时，到那时他一定会到。"},{"s":"The poor old watch had stopped working ________ ________ ________.","a":"by that time","cn":"到那时，那块旧表早就不走了。"}],"pfill":[{"s":"Give him half an hour; he will be here ___ that time.","a":"by","cn":""},{"s":"The fine old restaurant had gone ___ that time, Bob.","a":"by","cn":""}]},{"p":"a gust of wind","cn":"一阵风","en":"a sudden strong rush of wind","grp":"名词短语","cat":"other","para":"1","src":"Chilly gusts of wind with a taste of rain in them had almost emptied the streets.","srcCn":"带着雨意的阵阵寒风几乎已经把街上的人都吹空了。","note":"gust 可数；a gust of + 名词，of 不可换。","usage":[{"sense":"一阵风","opts":["A sudden gust of wind almost blew his hat into the empty street.","The wind was a gust of very strong all that cold evening.","Chilly gusts of the wind had emptied the avenue long before ten.","Please shut the door, for a gust of came straight into the room."],"ans":"A sudden gust of wind almost blew his hat into the empty street.","why":"A. ✓ 正确。该句用 a gust of wind 表达“一阵风”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。结构颠倒且词性混乱。\nC. ✗ 错误。加了多余的 the。\nD. ✗ 错误。缺 of，不成短语。\n📌 考点：gust 可数；a gust of + 名词，of 不可换。"},{"sense":"一阵风","opts":["Chilly gusts of wind, with a taste of rain in them, swept the empty streets.","There was a strong wind of gust blowing hard at midnight last night.","The thin trees bent under a gust of moving slowly down the avenue.","Nobody was left there except a lonely gust of the cold rain."],"ans":"Chilly gusts of wind, with a taste of rain in them, swept the empty streets.","why":"A. ✓ 正确。该句用 a gust of wind 表达“一阵风”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。语序颠倒，应为 gusts of wind。\nC. ✗ 错误。a gust of moving slowly down the avenue 中 a gust of 后缺中心名词 wind，moving slowly 也不能作 gust 的补足语，结构残缺。\nD. ✗ 错误。a lonely gust of the cold rain 搭配不当：gust 指“一阵风”，不能直接接 of the cold rain。\n📌 考点：gust 可数；a gust of + 名词，of 不可换。"}],"fill":[{"s":"A sudden ________ ________ ________ almost blew the note out of his hand.","a":"gust of wind","cn":"一阵突如其来的风差点把纸条吹出他的手。"},{"s":"A cold ________ ________ ________ came down the avenue with a taste of rain.","a":"gust of wind","cn":"一股带着雨意的冷风沿大道吹过来。"}],"pfill":[{"s":"A sudden gust ___ wind almost emptied the quiet streets.","a":"of","cn":""},{"s":"Chilly gusts ___ wind swept down the dark avenue that night.","a":"of","cn":""}]},{"p":"all right","cn":"没事；别紧张；（应答）行，可以","en":"everything is fine (used to calm somebody); also used to say yes to a suggestion","grp":"其他短语","cat":"other","para":"4","src":"'It's all right, officer,' he said, confidently.","srcCn":"“没事，警官，”他镇定地说。","note":"作安抚、应答语；That's right＝你说得对，不是一回事。","usage":[{"sense":"没事；别紧张","opts":["It's all right, officer; I am only waiting for an old friend here.","They waited all right half an hour and then walked slowly away.","I hope your old friend comes around all rights this cold night.","Put the unlighted cigar all right into the box beside the door."],"ans":"It's all right, officer; I am only waiting for an old friend here.","why":"A. ✓ 正确。该句用 all right 表达“没事；别紧张”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。把 all right 误当“正好”（应为 a good half an hour）。\nC. ✗ 错误。all right 无复数。\nD. ✗ 错误。Put the unlighted cigar all right into the box 把 all right（没问题、安然无恙）当作方式状语；应说 put it safely/right into the box。\n📌 考点：作安抚、应答语；That's right＝你说得对，不是一回事。"},{"sense":"行，可以（应答）","opts":["Come on then — all right, let's go round to that place I know of.","It was a very fine picture of a guardian of all right, was it not?","He is twenty years old and quite all right at working out sums.","The officer with his slightest air of all right moved up the avenue."],"ans":"Come on then — all right, let's go round to that place I know of.","why":"A. ✓ 正确。该句用 all right 表达“行，可以（应答）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。all right 是独立的表语/应答语，不能作 of、at 的宾语，也不能作后置定语。\nC. ✗ 错误。all right 是独立的表语/应答语，不能作 of、at 的宾语，也不能作后置定语。\nD. ✗ 错误。all right 是独立的表语/应答语，不能作 of、at 的宾语，也不能作后置定语。\n📌 考点：作安抚、应答语；That's right＝你说得对，不是一回事。"}],"fill":[{"s":"It's ________ ________, officer; I'm simply waiting for a friend here.","a":"all right","cn":"没事，警官；我只是在这儿等一位朋友。"},{"s":"Then come along — ________ ________, I'll go with you to that little place.","a":"all right","cn":"那就走吧——行，我跟你去那个小地方。"}],"pfill":[]},{"p":"arm in arm","cn":"臂挽着臂","en":"with each person's arm linked through the other's, standing or walking very close together","grp":"其他短语","cat":"other","para":"27","src":"The two men started up the street, arm in arm.","srcCn":"两个人臂挽着臂沿街走去。","note":"固定用单数 arm，不加冠词，一般作状语。","usage":[{"sense":"臂挽着臂","opts":["The two men started up the street, arm in arm, talking about old times.","They walked away with the arms in arm towards the corner drugstore.","Hand in the hand they crossed the brilliantly lighted avenue.","Arm in his arm, Bob went quietly towards the police station."],"ans":"The two men started up the street, arm in arm, talking about old times.","why":"A. ✓ 正确。该句用 arm in arm 表达“臂挽着臂”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。固定搭配无冠词、须用单数 arm。\nC. ✗ 错误。“手拉手”是 hand in hand。\nD. ✗ 错误。固定搭配无冠词、须用单数 arm。\n📌 考点：固定用单数 arm，不加冠词，一般作状语。"},{"sense":"臂挽着臂","opts":["The friends went down the avenue arm in arm, just as years before.","Arms in arms, the two of them reached the bright drugstore soon.","He held the officer arm in an arm all along that cold long street.","Arm in arm of pictures of the two men hung above the counter."],"ans":"The friends went down the avenue arm in arm, just as years before.","why":"A. ✓ 正确。该句用 arm in arm 表达“臂挽着臂”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。不能用复数 Arms in arms。\nC. ✗ 错误。held the officer arm in an arm 把固定短语 arm in arm 拆成 an arm；应说 held the officer's arm 或 walked arm in arm with the officer。\nD. ✗ 错误。把它误用成名词短语主语。\n📌 考点：固定用单数 arm，不加冠词，一般作状语。"}],"fill":[{"s":"The two old friends came down the avenue ________ ________ ________.","a":"arm in arm","cn":"两个老朋友臂挽着臂沿大道走来。"},{"s":"________ ________ ________, they walked towards the drugstore on the corner.","a":"arm in arm","cn":"他们臂挽着臂朝街角那家药房走去。"}],"pfill":[{"s":"The two men started up the street, arm ___ arm.","a":"in","cn":""},{"s":"They walked arm ___ arm down the peaceful avenue side by side.","a":"in","cn":""}]},{"p":"sure as fate","cn":"一点不假；确确实实","en":"without any doubt; used to emphasise that something is certainly true","grp":"其他短语","cat":"other","para":"22","src":"'It's Bob, sure as fate,' exclaimed the new arrival, grasping both the other's hands with his own.","srcCn":"“这是 Bob，一点不假，”来人大声说道，一把抓住对方的双手。","note":"插入语，用于强调；fate 前不加冠词，无数变化。","usage":[{"sense":"一点不假","opts":["It's Bob, sure as fate — twenty years have not changed his nose.","Sure as the fates, said the guardian of the peace rather quietly.","The appointed place was sure as fate beside the old hardware store.","He was certain, sure as fate as twenty hard years of waiting."],"ans":"It's Bob, sure as fate — twenty years have not changed his nose.","why":"A. ✓ 正确。该句用 sure as fate 表达“一点不假”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。fate 前不加冠词，也不取复数。\nC. ✗ 错误。sure as fate 是插入强调语，不作表语或定语。\nD. ✗ 错误。sure as fate 是插入强调语，不作表语或定语。\n📌 考点：插入语，用于强调；fate 前不加冠词，无数变化。"},{"sense":"一点不假","opts":["You are Bob, sure as fate, though this light has changed you a little.","He walked sure as fate up the avenue while trying every door.","It may be sure as fate true that twenty years ago they dined here.","Keep early hours and everything will be sure as fate all well."],"ans":"You are Bob, sure as fate, though this light has changed you a little.","why":"A. ✓ 正确。该句用 sure as fate 表达“一点不假”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。把 sure as fate 误作方式状语修饰 walked（它是独立插入语，不修饰动词）。\nC. ✗ 错误。It may be sure as fate true 把独立插入语 sure as fate 硬塞进 may be ... true 的表语结构，句法不成立。\nD. ✗ 错误。everything will be sure as fate all well 结构混乱；sure as fate 是独立插入语，不能这样充当表语补足语。\n📌 考点：插入语，用于强调；fate 前不加冠词，无数变化。"}],"fill":[{"s":"It's Bob, ________ ________ ________, though twenty years have gone by.","a":"sure as fate","cn":"一点不假，这就是 Bob，虽然二十年过去了。"},{"s":"________ ________ ________, I knew I would find you in this old doorway.","a":"sure as fate","cn":"一点不假，我就知道会在这扇旧门口找到你。"}],"pfill":[]},{"p":"now and then","cn":"不时；偶尔","en":"from time to time; occasionally, though not regularly","grp":"副词短语","cat":"other","para":"2","src":"Now and then you might see the lights of a cigar store or of an all-night lunch counter.","srcCn":"你会不时地看到雪茄店或者通宵快餐柜台的灯光。","note":"＝from time to time；另有 now ..., then ...（一时……一时……）的成对用法。","usage":[{"sense":"不时；偶尔","opts":["We hear from our old Chicago friends now and then, though not often.","Now and then of the guests had already left before ten o'clock.","Please come now and then at half past nine every single evening.","The policeman turned now and then his club with clever movements."],"ans":"We hear from our old Chicago friends now and then, though not often.","why":"A. ✓ 正确。该句用 now and then 表达“不时；偶尔”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。now and then 是频度副词短语，不能修饰名词、不能表示“定期”。\nC. ✗ 错误。now and then at half past nine every single evening 表示“每天晚上九点半”，与“偶尔”的频度含义矛盾。\nD. ✗ 错误。及物结构缺失介词。\n📌 考点：＝from time to time；另有 now ..., then ...（一时……一时……）的成对用法。"},{"sense":"一时……一时……（成对）","opts":["Now and then the waiting man looked hopefully down the empty street.","Now and then doubtful he looked slowly down the peaceful avenue.","He is now happy, and then he was sad again every cold evening.","Now twenty years ago and then last night, nothing here has changed."],"ans":"Now and then the waiting man looked hopefully down the empty street.","why":"A. ✓ 正确。该句用 now and then 表达“一时……一时……（成对）”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。Now and then doubtful he looked 把频度短语 now and then 直接修饰 doubtful，位置和词性都不对；应说 Now and then he looked doubtful ...。\nC. ✗ 错误。把 now 与 then 拆开用时态混乱，now and then 不表示“一时……一时……”。\nD. ✗ 错误。Now twenty years ago and then last night 把 now and then 拆成两个时间点，语义变成“现在、二十年前、昨晚”，与“偶尔”无关。\n📌 考点：＝from time to time；另有 now ..., then ...（一时……一时……）的成对用法。"}],"fill":[{"s":"We still write to each other ________ ________ ________, though not very often.","a":"now and then","cn":"我们仍然不时通信，只是不太频繁。"},{"s":"I hear from Jimmy ________ ________ ________, usually once or twice a year.","a":"now and then","cn":"我偶尔能收到 Jimmy 的信，通常一年一两次。"}],"pfill":[]},{"p":"so long","cn":"再见（口语告别语）","en":"goodbye (informal and friendly)","grp":"其他短语","cat":"other","para":"16","src":"So long, officer, said the other.","srcCn":"再见了，警官，另一个人说。","note":"告别语；so long as＝只要（连词短语），注意区分。","usage":[{"sense":"再见","opts":["So long, officer; I shall give him another half an hour at least.","So long, Jimmy, and I see you again twenty years from tonight.","It took so long twenty years for the two of them to meet again.","He waited for a friend for so long the officer came along the beat."],"ans":"So long, officer; I shall give him another half an hour at least.","why":"A. ✓ 正确。该句用 so long 表达“再见”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。I see 应为 I shall see（一般将来时）。\nC. ✗ 错误。It took so long twenty years for ... 把 so long 当作“很久”，又直接叠加 twenty years，时间表达结构混乱。\nD. ✗ 错误。该句把 so long 当作“很久”并直接接 the officer came along，缺少 for 等连接，句子结构不成立。\n📌 考点：告别语；so long as＝只要（连词短语），注意区分。"},{"sense":"再见","opts":["Well, so long, Jimmy — mind how you get along out in the West.","So long I have waited here that my cigar has quite gone out.","So long twenty years passed, and nothing at all changed between them.","He will be here by that time, so long him at once in the doorway."],"ans":"Well, so long, Jimmy — mind how you get along out in the West.","why":"A. ✓ 正确。该句用 so long 表达“再见”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。So long I have waited here that ... 把 so long 当作“如此之久”并引导结果，结构不成立；应说 I have waited here so long that ...。\nC. ✗ 错误。该句把 so long 当作“经过很久”，再与 twenty years passed 叠用，句法不通。\nD. ✗ 错误。该句把 so long 误作祈使动词，so long him at once 不成立；告别语必须独立使用。\n📌 考点：告别语；so long as＝只要（连词短语），注意区分。"}],"fill":[{"s":"________ ________, officer; I'll wait for him another half hour.","a":"so long","cn":"再见，警官；我再等他半小时。"},{"s":"Well, ________ ________, Bob — write to me whenever you can.","a":"so long","cn":"好吧，再见，Bob——有空就给我写信。"}],"pfill":[]},{"p":"bless my heart","cn":"我的天哪；哎呀（表示惊讶、高兴）","en":"an old-fashioned exclamation of surprise, pleasure or relief","grp":"其他短语","cat":"other","para":"22","src":"'Bless my heart!' exclaimed the new arrival, grasping both the other's hands with his own.","srcCn":"“我的天哪！”来人喊道，用他的双手握住对方的双手。","note":"独立感叹语；heart 用单数，不与主语人称变化。","usage":[{"sense":"哎呀；我的天哪","opts":["Bless my heart! It really is Bob after these twenty long years.","Bless my hearts, all twenty of them were standing in the doorway.","He blessed my heart before going quietly to the police station.","It is a blessing my heart that the short note was ever found."],"ans":"Bless my heart! It really is Bob after these twenty long years.","why":"A. ✓ 正确。该句用 bless my heart 表达“哎呀；我的天哪”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。heart 用单数。\nC. ✗ 错误。感叹语不能拆作动词谓语。\nD. ✗ 错误。感叹语不能拆作动词谓语。\n📌 考点：独立感叹语；heart 用单数，不与主语人称变化。"},{"sense":"哎呀；我的天哪","opts":["Bless my heart, he said, I was certain I would find you here.","To bless my heart, he asked the waiter for a very strong drink.","The guardian of the peace blessed his heart and swung his club.","Bless the heart of me twenty years ago, said nobody at all."],"ans":"Bless my heart, he said, I was certain I would find you here.","why":"A. ✓ 正确。该句用 bless my heart 表达“哎呀；我的天哪”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。感叹语独立使用，不能作不定式目的状语、谓语或名词词组。\nC. ✗ 错误。该句把感叹语 bless my heart 拆成谓语 blessed his heart，意思变成“祝福他的心”，不再是感叹。\nD. ✗ 错误。该句把 bless my heart 改成名词词组 the heart of me，不能独立充当感叹语。\n📌 考点：独立感叹语；heart 用单数，不与主语人称变化。"}],"fill":[{"s":"________ ________ ________! It is Bob, sure as fate.","a":"bless my heart","cn":"我的天哪！一点不假，这是 Bob。"},{"s":"________ ________ ________, how tall you have grown in twenty years!","a":"bless my heart","cn":"哎呀，二十年间你竟长这么高了！"}],"pfill":[]},{"p":"cast a watchful eye down the street","cn":"警觉地扫视街道","en":"to look carefully and warily along a street","grp":"动宾搭配","cat":"vn","para":"2","src":"Trying doors as he went, swinging his club with many clever movements, turning now and then to cast his watchful eye down the peaceful street...","srcCn":"他一边走着一边试着门，巧妙地挥动着警棍，不时回头把他警觉的目光投向那条平静的街道……","note":"cast one's eye down/along the street；watchful＝警觉的、留神的。","usage":[{"sense":"警觉地扫视街道","opts":["Every few steps he cast a watchful eye down the empty street.","Trying doors as he went, he cast a watchful ear down the street.","A watchful eye was cast down him by the guardian of the peace.","He cast a watchful eye down the peaceful street in by himself."],"ans":"Every few steps he cast a watchful eye down the empty street.","why":"A. ✓ 正确。该句用 cast a watchful eye down the street 表达“警觉地扫视街道”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。eye 不可换成 ear。\nC. ✗ 错误。cast one's eye down + 地点，不接人。\nD. ✗ 错误。down the peaceful street in by himself 中 in 与 by himself 叠加，介词多余、结构混乱；应说 down the street by himself。\n📌 考点：cast one's eye down/along the street；watchful＝警觉的、留神的。"},{"sense":"警觉地扫视街道","opts":["Turning now and then, he cast his watchful eye down the peaceful street.","Please cast a watchful eye down the fish for tonight's dinner.","She casted a watchful eye along the dark hallway late last night.","Watchful eyes were casting down the street every ten minutes."],"ans":"Turning now and then, he cast his watchful eye down the peaceful street.","why":"A. ✓ 正确。该句用 cast a watchful eye down the street 表达“警觉地扫视街道”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。宾语须是 street 一类的地点。\nC. ✗ 错误。cast 的过去式仍是 cast，不是 casted。\nD. ✗ 错误。Watchful eyes were casting down the street 把 cast 用作不及物且缺少宾语 eye；应说 He cast a watchful eye down the street ...。\n📌 考点：cast one's eye down/along the street；watchful＝警觉的、留神的。"}],"fill":[{"s":"Turning now and then, the officer would ________ the peaceful street before moving on.","a":"cast a watchful eye down","cn":"那警察不时回头，把警觉的目光投向平静的街道。"},{"s":"He stopped at the corner to ________ the dark avenue one last time.","a":"cast a watchful eye down","cn":"他在街角停下，最后警觉地扫视了一遍那条昏暗的大道。"}],"pfill":[{"s":"He cast his watchful eye ___ the peaceful street before moving on.","a":"down","cn":""},{"s":"Now and then he cast a careful eye ___ the empty street.","a":"down","cn":""}]},{"p":"keep early hours","cn":"（街区）早早打烊；（人）早睡早起","en":"to go to bed early or (of a district) to become quiet early in the evening","grp":"动宾搭配","cat":"vn","para":"2","src":"The area was one that kept early hours.","srcCn":"那一带属于早早歇夜的街区。","note":"hours 恒用复数；主语可以是人，也可以是街区。","usage":[{"sense":"早早歇息／早早打烊","opts":["This whole area kept early hours; by ten the streets were empty.","They kept an early hour every night in that little hardware store.","The busy schedule kept early hours for them to finish the work.","He kept his shop early hours even on Friday and Saturday nights."],"ans":"This whole area kept early hours; by ten the streets were empty.","why":"A. ✓ 正确。该句用 keep early hours 表达“早早歇息／早早打烊”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。hours 恒用复数。\nC. ✗ 错误。The busy schedule kept early hours 主语应是“人”，不是 schedule；keep early hours 表示人早睡早起，日程不能作主语。\nD. ✗ 错误。kept his shop early hours 把 keep early hours 与 keep his shop open/closed 混用，early hours 不能作 shop 的宾语补足；应说 kept his shop closed early。\n📌 考点：hours 恒用复数；主语可以是人，也可以是街区。"},{"sense":"早早歇息","opts":["We keep early hours here — you will not get a meal after ten.","Keep early hour tonight, for tomorrow we start for the West.","Twenty years ago this same street was keeping early hour too.","He kept early hours last night and will keep it tomorrow night, too."],"ans":"We keep early hours here — you will not get a meal after ten.","why":"A. ✓ 正确。该句用 keep early hours 表达“早早歇息”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。hours 须用复数。\nC. ✗ 错误。hours 须用复数。\nD. ✗ 错误。代词应用 them 指代 early hours，不能用 it。\n📌 考点：hours 恒用复数；主语可以是人，也可以是街区。"}],"fill":[{"s":"In this quarter most people ________ ________ ________; the whole street sleeps by ten.","a":"keep early hours","cn":"这一带大多数人早睡，整条街十点就静了。"},{"s":"We ________ ________ ________ in our house, so please telephone before nine.","a":"keep early hours","cn":"我们家睡得早，所以请九点前打电话。"}],"pfill":[]},{"p":"swing one's club","cn":"挥动警棍","en":"to wave or brandish the short heavy stick carried by a policeman","grp":"动宾搭配","cat":"vn","para":"2","src":"Trying doors as he went, swinging his club with many clever movements...","srcCn":"他一边走一边试着门，巧妙地挥动着警棍……","note":"one's 随主语变化；swing — swung — swung。","usage":[{"sense":"挥动警棍","opts":["The policeman swung his club with many clever movements as he walked.","He swung his heavy club for the short note that Bob handed him.","Trying doors as he went, he swung his watch down the empty street.","Swinging club his with clever movements, he looked quite impressive."],"ans":"The policeman swung his club with many clever movements as he walked.","why":"A. ✓ 正确。该句用 swing one's club 表达“挥动警棍”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。swung his heavy club for the short note 把 swing 与 for 目的状语强行搭配，语义变成“为纸条挥棍”；应说 swung his club and took the note。\nC. ✗ 错误。该句把宾语换成 watch，swung his watch down the empty street 语义不通；这里应说 swung his club。\nD. ✗ 错误。Swinging club his with clever movements 语序错误；应说 Swinging his club with clever movements。\n📌 考点：one's 随主语变化；swing — swung — swung。"},{"sense":"挥动警棍","opts":["Having swung his club, the policeman took a step or two down the street.","He swung his club into a new shirt before the party began.","Bob swang his club and began to outline the history of his career.","The guardian of the peace swung his club into asking a question."],"ans":"Having swung his club, the policeman took a step or two down the street.","why":"A. ✓ 正确。该句用 swing one's club 表达“挥动警棍”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。混淆了词组：“换上新衬衫”应说 changed into a new shirt，不是 swung his club into。\nC. ✗ 错误。swing 的过去式是 swung，不是 swang。\nD. ✗ 错误。swung his club into asking a question 把 swing into 当作“转而问”，搭配不成立；应说 then asked a question。\n📌 考点：one's 随主语变化；swing — swung — swung。"}],"fill":[{"s":"________ ________ ________, the officer took a step or two and moved on.","a":"swinging his club","cn":"他挥了挥警棍，往前挪了一两步就走了。"},{"s":"Watch how he ________ ________ ________ — twenty years on the beat have made him skilful.","a":"swings his club","cn":"看他挥警棍的样子——巡逻二十年让他练得十分熟练。"}],"pfill":[]},{"p":"empty the streets","cn":"把街上的人吹（赶）空","en":"to make the streets become empty of people","grp":"动宾搭配","cat":"vn","para":"1","src":"Chilly gusts of wind with a taste of rain in them had almost emptied the streets.","srcCn":"带着雨意的阵阵寒风几乎已经把街道上的人吹空了。","note":"empty 在此作动词“使……变空”；streets 用复数。","usage":[{"sense":"把街道清空","opts":["Chilly gusts of wind had almost emptied the streets before ten o'clock.","He emptied the streets of his pockets before entering the bright drugstore.","Please empty the streets of your boots before coming into the hall.","Twenty empty years have the streets since they parted at the door."],"ans":"Chilly gusts of wind had almost emptied the streets before ten o'clock.","why":"A. ✓ 正确。该句用 empty the streets 表达“把街道清空”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。该句把“清空街道”与 empty A of B（掏空容器）混用；掏口袋的主语应是人，不能是 he emptied the streets of his pockets。\nC. ✗ 错误。empty 与 empty of 的用法混淆。\nD. ✗ 错误。Twenty empty years have the streets 把 empty 当动词却写成 have + 名词，缺过去分词和完整宾语结构；应说 Twenty empty years had emptied the streets。\n📌 考点：empty 在此作动词“使……变空”；streets 用复数。"},{"sense":"把街道清空","opts":["The cold rain and the rising wind soon emptied the quiet avenue completely.","The strong guardian of the peace emptied his club down the street.","A taste of rain emptied every single room in the old hotel.","Empty the streets for the speech when you have read this short note."],"ans":"The cold rain and the rising wind soon emptied the quiet avenue completely.","why":"A. ✓ 正确。该句用 empty the streets 表达“把街道清空”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。宾语须为街道、大道一类的词，不能是警棍或房间。\nC. ✗ 错误。宾语须为街道、大道一类的词，不能是警棍或房间。\nD. ✗ 错误。Empty the streets for the speech when ... 语义变成“为演讲清空街道”，与“读完便条后”不搭；empty the streets 的宾语和目的不成立。\n📌 考点：empty 在此作动词“使……变空”；streets 用复数。"}],"fill":[{"s":"The chilly wind ________ ________ ________ long before ten o'clock that night.","a":"emptied the streets","cn":"那晚十点不到，寒风就把街上的人吹空了。"},{"s":"A fine cold rain soon ________ ________ ________ of the last few passengers.","a":"emptied the streets","cn":"一场冷雨很快就把最后几个行人也赶走了。"}],"pfill":[]},{"p":"slow one's walk","cn":"放慢脚步","en":"to reduce one's walking speed; to begin to walk more slowly","grp":"动宾搭配","cat":"vn","para":"3","src":"Halfway down a certain block, the policeman suddenly slowed his walk.","srcCn":"走到某个街区的半途，警察突然放慢了脚步。","note":"slow 在此作动词；口语中也说 slow down one's walk。","usage":[{"sense":"放慢脚步","opts":["Halfway down the block the policeman suddenly slowed his walk.","He slowed down his club and then walked away very slowly.","Slowing his walk, the wind rose to a steady blow at midnight.","Please slow the streets when you reach the old hardware store."],"ans":"Halfway down the block the policeman suddenly slowed his walk.","why":"A. ✓ 正确。该句用 slow one's walk 表达“放慢脚步”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。宾语是 walk，不是 club 或 streets。\nC. ✗ 错误。分词短语的逻辑主语应是人，不能是 the wind。\nD. ✗ 错误。宾语是 walk，不是 club 或 streets。\n📌 考点：slow 在此作动词；口语中也说 slow down one's walk。"},{"sense":"放慢脚步","opts":["The officer slowed his walk and then came to a sudden stop.","She slowed her walking by taking off her shoes immediately.","The sudden blow slowly slowed Jimmy's hand while he read the note.","To slow one's walk upon ten minutes is not at all an easy thing."],"ans":"The officer slowed his walk and then came to a sudden stop.","why":"A. ✓ 正确。该句用 slow one's walk 表达“放慢脚步”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。习惯搭配是 slow one's walk，不用 slow one's walking。\nC. ✗ 错误。宾语应是脚步而不是手。\nD. ✗ 错误。slow one's walk upon ten minutes 中 upon ten minutes 表示时间点或期限不成立；应说 take ten minutes to slow one's walk 或 slow one's walk for ten minutes。\n📌 考点：slow 在此作动词；口语中也说 slow down one's walk。"}],"fill":[{"s":"At the corner the tall officer quietly ________ his walk and watched the dark doorway.","a":"slowed his walk","cn":"在拐角处，高个子警官悄悄放慢脚步，注视着那扇黑洞洞的门。"},{"s":"Seeing a man in the doorway, he ________ ________ ________ at once.","a":"slowed his walk","cn":"看见门道里有人，他立刻放慢了脚步。"}],"pfill":[]},{"p":"make an appointment","cn":"定一个约会；约定见面","en":"to arrange to meet somebody at a fixed time and place","grp":"动宾搭配","cat":"vn","para":"4","src":"It's an appointment made twenty years ago.","srcCn":"这是二十年前定下的一个约会。","note":"make an appointment (with sb)；赴约＝fill/keep an appointment。","usage":[{"sense":"约定见面","opts":["Twenty years ago tonight we made an appointment to meet here again.","I made an appointment by twenty years ago tonight in old New York.","Please put an appointment on the doctor before you go out West.","They made an appointment to each other after the dinner was over."],"ans":"Twenty years ago tonight we made an appointment to meet here again.","why":"A. ✓ 正确。该句用 make an appointment 表达“约定见面”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。介词 by 多余。\nC. ✗ 错误。与医生约定应说 make an appointment with the doctor。\nD. ✗ 错误。搭配应为 make an appointment with sb，不用 to。\n📌 考点：make an appointment (with sb)；赴约＝fill/keep an appointment。"},{"sense":"约定见面","opts":["We agreed that night to make an appointment for the same date twenty years later.","The doctor made an appointment of me for the next morning.","He made an appointment twenty years long and then never returned.","To make an appointment you must first empty the streets completely."],"ans":"We agreed that night to make an appointment for the same date twenty years later.","why":"A. ✓ 正确。该句用 make an appointment 表达“约定见面”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。介词错误，与医生约定应说 make an appointment with the doctor。\nC. ✗ 错误。appointment 不与“二十年时长”连用。\nD. ✗ 错误。语义荒谬。\n📌 考点：make an appointment (with sb)；赴约＝fill/keep an appointment。"}],"fill":[{"s":"They agreed that night to ________ ________ ________ for exactly twenty years later.","a":"make an appointment","cn":"那晚他们约定，整整二十年后再相见。"},{"s":"I'd like to ________ ________ ________ with the manager about my application.","a":"make an appointment","cn":"我想跟经理约个时间谈我的申请。"}],"pfill":[]},{"p":"fill the appointment","cn":"赴约；践约","en":"to keep an appointment; to be present at the arranged time and place","grp":"动宾搭配","cat":"vn","para":"18","src":"In the door of the hardware store the man who had come a thousand miles to fill an appointment with the friend of his youth smoked his cigar and waited.","srcCn":"五金店门里，那个赶了一千英里来赴青年时代朋友之约的人抽着雪茄等着。","note":"fill an appointment＝按约到场（旧式用法，相当于 keep the appointment）。","usage":[{"sense":"赴约","opts":["He had come a thousand miles to fill an appointment with the friend of his youth.","Please fill the appointment by writing your name on this note.","Twenty years ago tonight Jim made a fine picture of the appointment.","The old note was used to fill an appointment of twenty years."],"ans":"He had come a thousand miles to fill an appointment with the friend of his youth.","why":"A. ✓ 正确。该句用 fill the appointment 表达“赴约”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。fill the appointment 指赴约，不是填写。\nC. ✗ 错误。换了词组。\nD. ✗ 错误。fill an appointment of twenty years 中 of twenty years 修饰 appointment，变成“二十年的 appointment”；应说 fill the appointment made twenty years ago。\n📌 考点：fill an appointment＝按约到场（旧式用法，相当于 keep the appointment）。"},{"sense":"赴约","opts":["Bob kept his word and came back to fill the appointment made twenty years before.","I shall fill an appointment when I have read this short note twice.","He filled his cigar before going to the appointed place at ten.","To fill the appointment, the drugstore was brilliant with electric lights."],"ans":"Bob kept his word and came back to fill the appointment made twenty years before.","why":"A. ✓ 正确。该句用 fill the appointment 表达“赴约”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。语义变成“当……时赴约”，不合逻辑。\nC. ✗ 错误。宾语换成 cigar。\nD. ✗ 错误。主语不当。\n📌 考点：fill an appointment＝按约到场（旧式用法，相当于 keep the appointment）。"}],"fill":[{"s":"He came a thousand miles to ________ ________ ________ with the friend of his youth.","a":"fill the appointment","cn":"他赶了一千英里来赴青年时代朋友的约。"},{"s":"Nothing could stop him from trying to ________ ________ ________ that night.","a":"fill the appointment","cn":"那天夜里，没有什么能阻止他去赴约。"}],"pfill":[]},{"p":"make a picture of","cn":"构成一幅……的画面；描绘出","en":"to form or present an image of somebody or something","grp":"动宾搭配","cat":"vn","para":"2","src":"The officer, with his strongly built form and slight air of superiority, made a fine picture of a guardian of the peace.","srcCn":"那警察身板结实，带着一点优越感，构成一幅治安卫士的好画面。","note":"of 后接被描绘的对象。","usage":[{"sense":"构成……的画面","opts":["With his strongly built form he made a fine picture of a guardian of the peace.","He drew a fine picture of the two men walking arm in arm along the street.","The old film made a picture of watching them play with an old club.","Please make a picture on twenty years ago tonight for all of us."],"ans":"With his strongly built form he made a fine picture of a guardian of the peace.","why":"A. ✓ 正确。该句用 make a picture of 表达“构成……的画面”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。用的是 drew，没有使用词组 make a picture of。\nC. ✗ 错误。made a picture of watching them play 中 of 后接动名词短语，make a picture of 后应接被描绘的人或物；且 film 作主语不当。\nD. ✗ 错误。介词 on 多余，应为 make a picture of ...。\n📌 考点：of 后接被描绘的对象。"},{"sense":"构成……的画面","opts":["The two men, talking eagerly together, made a picture of close friendship.","She made a picture by the fine old note in her trembling hand.","To make a picture of the empty streets is to empty them entirely.","He made the picture of with his strongly built form and slow walk."],"ans":"The two men, talking eagerly together, made a picture of close friendship.","why":"A. ✓ 正确。该句用 make a picture of 表达“构成……的画面”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。介词错。\nC. ✗ 错误。逻辑循环。\nD. ✗ 错误。缺宾语。\n📌 考点：of 后接被描绘的对象。"}],"fill":[{"s":"The tall officer ________ ________ ________ ________ a guardian of the peace.","a":"made a picture of","cn":"那位高个警察构成一幅治安卫士的画面。"},{"s":"The lighted windows helped to ________ ________ ________ ________ the old quarter at night.","a":"make a picture of","cn":"亮着的窗户把夜里的老城区勾勒成一幅画面。"}],"pfill":[{"s":"He made a fine picture ___ a guardian of the peace.","a":"of","cn":""},{"s":"The bright windows helped make a picture ___ the quiet old street.","a":"of","cn":""}]},{"p":"make one's fortune","cn":"发财；发迹","en":"to become rich; to earn a large amount of money","grp":"动宾搭配","cat":"vn","para":"7","src":"The next morning I was to start for the West to make my fortune.","srcCn":"第二天清晨我就要动身去西部闯一番家业。","note":"one's 随主语变化；fortune 一般不用复数。","usage":[{"sense":"发财","opts":["He went out West to make his fortune and never came back to New York.","Twenty years ago we made fortune together out in far-off Chicago.","He made his fortune on selling watches in the small hardware store.","He made his fortunes twice, in restaurants and then in the railways."],"ans":"He went out West to make his fortune and never came back to New York.","why":"A. ✓ 正确。该句用 make one's fortune 表达“发财”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。须有物主代词 his/my 等。\nC. ✗ 错误。“靠……发财”应说 by selling，介词 on 错误。\nD. ✗ 错误。fortune 一般不用复数。\n📌 考点：one's 随主语变化；fortune 一般不用复数。"},{"sense":"发财","opts":["Bob had made his fortune in the West, though not always quite honestly.","The long dark overcoat made his fortune before it grew cold.","I have had to compete with the sharpest brains to make fortune.","To make onefortune you must first leave everyone you love behind."],"ans":"Bob had made his fortune in the West, though not always quite honestly.","why":"A. ✓ 正确。该句用 make one's fortune 表达“发财”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。主语应是人，不是大衣。\nC. ✗ 错误。缺物主代词 my/his。\nD. ✗ 错误。onefortune 拼写粘连，应为 one's fortune；物主代词也不能省略或写成 one。\n📌 考点：one's 随主语变化；fortune 一般不用复数。"}],"fill":[{"s":"The next morning he was to start for the West to ________ ________ ________.","a":"make his fortune","cn":"第二天清晨他就要动身去西部发财。"},{"s":"If you are sharp enough, you will ________ ________ ________ out there too.","a":"make your fortune","cn":"只要够精明，你在那儿也能发财。"}],"pfill":[]},{"p":"strike a match","cn":"划火柴","en":"to rub a match against a rough surface so that it starts burning","grp":"动宾搭配","cat":"vn","para":"6","src":"The man in the doorway struck a match and lit his cigar.","srcCn":"门道里的人划了一根火柴，点上了雪茄。","note":"strike — struck — struck；light — lit — lit。","usage":[{"sense":"划火柴","opts":["The man in the doorway struck a match and lit his cigar quietly.","Please strike a match to this electric lamp on the wall upstairs.","Bob struck a match for twenty cigarettes all at the same time.","The cold wind struck match by match until nothing at all was left."],"ans":"The man in the doorway struck a match and lit his cigar quietly.","why":"A. ✓ 正确。该句用 strike a match 表达“划火柴”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。电灯不用火柴点。\nC. ✗ 错误。一根火柴不能同时点二十支烟。\nD. ✗ 错误。The cold wind struck match by match 让 cold wind 主动“划火柴”，主语不当；match by match 表示“一根接一根”，与 strike 搭配也不自然。\n📌 考点：strike — struck — struck；light — lit — lit。"},{"sense":"划火柴","opts":["Then he struck another match, and the light showed a pale, square-jawed face.","She struck a nice match of her old friends twenty years later.","To strike a match you must first empty the peaceful streets.","He struck a match down a watchful eye and walked slowly away."],"ans":"Then he struck another match, and the light showed a pale, square-jawed face.","why":"A. ✓ 正确。该句用 strike a match 表达“划火柴”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。match 此处是“火柴”，不是“相配的人”。\nC. ✗ 错误。语义荒谬。\nD. ✗ 错误。struck a match down a watchful eye 把 down a watchful eye 当作方向状语，搭配不成立；strike a match 后不能接“目光”。\n📌 考点：strike — struck — struck；light — lit — lit。"}],"fill":[{"s":"The waiting man ________ ________ ________ and the flame lit up his pale face.","a":"struck a match","cn":"等待的人划了一根火柴，火光照亮了他苍白的脸。"},{"s":"Would you ________ ________ ________ so that I can read this short note?","a":"strike a match","cn":"能请你划根火柴，让我看看这张短笺吗？"}],"pfill":[]},{"p":"release one's arm","cn":"松开某人的手臂","en":"to stop holding somebody's arm; to let go of it","grp":"动宾搭配","cat":"vn","para":"29","src":"The man from the West stopped suddenly and released his arm.","srcCn":"西部来的人突然停下脚步，松开了自己的手臂。","note":"release＝松开、放开；one's 随主语变化。","usage":[{"sense":"松开手臂","opts":["The man from the West stopped suddenly and released his arm.","He released his arm from twenty years ago beside the old doorway.","Please release your arm to the two men walking arm in arm.","She released her arm around the bright drugstore on the corner."],"ans":"The man from the West stopped suddenly and released his arm.","why":"A. ✓ 正确。该句用 release one's arm 表达“松开手臂”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。release 的宾语是被松开的那只手臂，不能接时间或地点。\nC. ✗ 错误。介词 to 不当。\nD. ✗ 错误。release 的宾语是被松开的那只手臂，不能接时间或地点。\n📌 考点：release＝松开、放开；one's 随主语变化。"},{"sense":"松开手臂","opts":["Realising who was standing beside him, he released his arm at once.","Twenty long years of waiting released one's arm at five to ten.","Release your arm twenty years before it is too late tonight.","He released his arm of a man who ran this street long ago."],"ans":"Realising who was standing beside him, he released his arm at once.","why":"A. ✓ 正确。该句用 release one's arm 表达“松开手臂”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。主语应是人，不能是“等待的岁月”。\nC. ✗ 错误。Release your arm twenty years before it is too late 把 release one's arm 与 twenty years before 混用，语义变成“提前二十年松开手臂”，不合逻辑。\nD. ✗ 错误。介词 of 用错。\n📌 考点：release＝松开、放开；one's 随主语变化。"}],"fill":[{"s":"Recognising the face, the man from the West suddenly ________ ________ ________.","a":"released his arm","cn":"认出那张脸后，西部来的人猛地松开了手臂。"},{"s":"She saw the plain clothes man and ________ ________ ________ immediately.","a":"released her arm","cn":"她看见了便衣警察，立刻松开了手臂。"}],"pfill":[]},{"p":"unfold the paper","cn":"展开那张纸","en":"to open out a folded piece of paper so that it can be read","grp":"动宾搭配","cat":"vn","para":"32","src":"The man from the West unfolded the little piece of paper handed to him.","srcCn":"西部来的人展开了递给他的那小张纸。","note":"unfold＝展开（fold 折叠的反义）。","usage":[{"sense":"展开纸张","opts":["He unfolded the little piece of paper and began to read it by the window.","Twenty years had unfolded the paper before Bob came to the doorway.","Please unfold the paper to the history of his whole career.","She unfolded her cigar and lit it at once in the dark doorway."],"ans":"He unfolded the little piece of paper and began to read it by the window.","why":"A. ✓ 正确。该句用 unfold the paper 表达“展开纸张”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。主语应是人，不能是“二十年”。\nC. ✗ 错误。介词 to 不当。\nD. ✗ 错误。宾语换成雪茄。\n📌 考点：unfold＝展开（fold 折叠的反义）。"},{"sense":"展开纸张","opts":["His hands trembled a little as he unfolded the short note from Jimmy.","He folded the paper open and read the note twice in complete silence.","Unfold the streets before you start for the West, said nobody.","The guardian of the peace unfolded a match to light his cigar."],"ans":"His hands trembled a little as he unfolded the short note from Jimmy.","why":"A. ✓ 正确。该句用 unfold the paper 表达“展开纸张”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。fold open 与 unfold 混用不成立。\nC. ✗ 错误。宾语应是纸而不是街道、火柴。\nD. ✗ 错误。unfolded a match 搭配错误：火柴应说 struck a match；unfold 的宾语应是 paper、note 一类可展开物。\n📌 考点：unfold＝展开（fold 折叠的反义）。"}],"fill":[{"s":"With trembling fingers he ________ ________ ________ and read it by the window.","a":"unfolded the paper","cn":"他用颤抖的手指展开那张纸，就着窗口读起来。"},{"s":"Please ________ ________ ________ and see what your old friend wrote to you.","a":"unfold the paper","cn":"请把纸展开，看看你的老朋友写了什么。"}],"pfill":[]},{"p":"light a cigar","cn":"点雪茄","en":"to set a cigar burning; to begin to smoke it","grp":"动宾搭配","cat":"vn","para":"6","src":"The man in the doorway struck a match and lit his cigar.","srcCn":"门道里的人划根火柴，点上了雪茄。","note":"light — lit — lit；lighted 多作定语（a lighted cigar）。","usage":[{"sense":"点雪茄","opts":["He struck a match and lit his cigar, waiting quietly in the doorway.","He lighted a cigar's history of twenty years out in the West.","Please light a cigar to Bob before you leave this cold street.","The empty streets were lighting a cigar in the doorway at ten."],"ans":"He struck a match and lit his cigar, waiting quietly in the doorway.","why":"A. ✓ 正确。该句用 light a cigar 表达“点雪茄”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。宾语应是雪茄而不是“历史”。\nC. ✗ 错误。light a cigar to Bob 中 to Bob 不能表示“给 Bob 点雪茄”；应说 light a cigar for Bob 或 light Bob's cigar。\nD. ✗ 错误。主语应是人。\n📌 考点：light — lit — lit；lighted 多作定语（a lighted cigar）。"},{"sense":"点雪茄","opts":["Bob lit another cigar and began to talk about his fine career.","He lit a cigar down the peaceful street with many clever movements.","She lit her cigar of twenty years ago tonight with a match.","To light a cigar you should first empty the cold empty streets."],"ans":"Bob lit another cigar and began to talk about his fine career.","why":"A. ✓ 正确。该句用 light a cigar 表达“点雪茄”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。light the cigar 不带 down the street 一类的方向状语。\nC. ✗ 错误。lit her cigar of twenty years ago tonight 把 of twenty years ago 修饰 cigar，语义变成“二十年前的雪茄”，不合逻辑。\nD. ✗ 错误。语义荒谬。\n📌 考点：light — lit — lit；lighted 多作定语（a lighted cigar）。"}],"fill":[{"s":"He struck a match to ________ ________ ________ and then began to explain.","a":"light a cigar","cn":"他划根火柴点上雪茄，然后开始解释。"},{"s":"Would you like to ________ ________ ________ while you wait for your friend?","a":"light a cigar","cn":"你等朋友的时候想点支雪茄吗？"}],"pfill":[]},{"p":"do the job","cn":"干这件事；完成这项工作","en":"to carry out a particular task or piece of work","grp":"动宾搭配","cat":"vn","para":"33","src":"Somehow I couldn't do it myself, so I went around and got a plain clothes man to do the job.","srcCn":"不知怎的我自己下不了手，于是绕过去找了个便衣来干这件事。","note":"the job 指具体的某件事，job 用单数。","usage":[{"sense":"干这件事","opts":["I couldn't do it myself, so I got a plain clothes man to do the job.","She did the job to strike a match beside the dark old doorway.","The workers did they job quickly and went home before six.","He asked me to do job for him while he was away out West."],"ans":"I couldn't do it myself, so I got a plain clothes man to do the job.","why":"A. ✓ 正确。该句用 do the job 表达“干这件事”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。did the job to strike a match 把 do the job 与目的不定式连用，语义变成“干这件事去划火柴”，不合逻辑。\nC. ✗ 错误。物主代词错误，应说 did their job。\nD. ✗ 错误。job 前须有 the。\n📌 考点：the job 指具体的某件事，job 用单数。"},{"sense":"完成这项工作","opts":["Send Tom; he is the man who always does the job quietly and well.","Do the job of this short note before you unfold the little paper.","The two policemen did the jobs of the whole avenue last night.","To do the job, somebody must first lose track of each other."],"ans":"Send Tom; he is the man who always does the job quietly and well.","why":"A. ✓ 正确。该句用 do the job 表达“完成这项工作”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。介词使用不当。\nC. ✗ 错误。job 在具体事上用单数。\nD. ✗ 错误。To do the job, somebody must first lose track of each other 目的与“彼此失联”矛盾，语义不成立。\n📌 考点：the job 指具体的某件事，job 用单数。"}],"fill":[{"s":"Somehow he couldn't do it himself, so he sent another man to ________ ________ ________.","a":"do the job","cn":"不知为什么他下不了手，于是派了另一个人去干这件事。"},{"s":"Ask Wells — he is the one who always manages to ________ ________ ________ well.","a":"do the job","cn":"找 Wells 吧——他总是能把事情办好。"}],"pfill":[]},{"p":"outline the history","cn":"概述……的经历／来龙去脉","en":"to give the main points of somebody's past career or of something that happened","grp":"动宾搭配","cat":"vn","para":"27","src":"The man from the West, full of pride at his success, was beginning to outline the history of his career.","srcCn":"西部来的人对自己的成功得意洋洋，开始讲述自己奋斗的来龙去脉。","note":"outline 在此作动词“概述”；outline the history of + 对象。","usage":[{"sense":"概述……的经历","opts":["Full of pride, he began to outline the history of his whole career.","Please outline me the history before I read the note twice.","She outlined his club with many clever movements along the street.","Twenty years have outlined the history since they last dined here."],"ans":"Full of pride, he began to outline the history of his whole career.","why":"A. ✓ 正确。该句用 outline the history 表达“概述……的经历”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。双宾语结构不成立，应说 outline the history to me。\nC. ✗ 错误。outline 的宾语应是经历、历史一类抽象词，不是警棍。\nD. ✗ 错误。主语应是人，不是“二十年”。\n📌 考点：outline 在此作动词“概述”；outline the history of + 对象。"},{"sense":"概述……的经历","opts":["In the letter he outlined the history of the twenty years he had spent out West.","Outline the history down the empty street with your watchful eyes.","The guardian of the peace outlined a fine picture of his own club.","Bob outlined twenty minutes at least while waiting in the doorway."],"ans":"In the letter he outlined the history of the twenty years he had spent out West.","why":"A. ✓ 正确。该句用 outline the history 表达“概述……的经历”，词形、时态、主谓一致和固定搭配均成立。\nB. ✗ 错误。方向状语多余且不合逻辑。\nC. ✗ 错误。outline 的宾语应是经历而非画面。\nD. ✗ 错误。outlined twenty minutes 把 outline 的宾语换成时间长度，搭配不成立；outline 后应接 history、career 等。\n📌 考点：outline 在此作动词“概述”；outline the history of + 对象。"}],"fill":[{"s":"He was only too glad to ________ ________ ________ of his career out West.","a":"outline the history","cn":"他太乐意讲述自己在西部闯荡的经历。"},{"s":"In a few words she ________ ________ ________ of the twenty years since they parted.","a":"outlined the history","cn":"她寥寥数语就概述了他们分别后这二十年的经历。"}],"pfill":[]}];
+const TOTAL = PHRASES.length;
+const CATS = [
+  {k:"v", n:"动词短语 Verb Phrases", i:"🟢"},
+  {k:"prep", n:"介词短语 Prepositional", i:"🔵"},
+  {k:"other", n:"其他短语 Others", i:"🟠"},
+  {k:"vn", n:"动宾搭配 v+n Collocations", i:"🟣"}
+];
+const TYPES = [
+  {id:'def_to_ph', name:'Definition → Phrase', level:'basic',    en:'Read the English definition, then choose the phrase.'},
+  {id:'cn_to_ph',  name:'CN → Phrase',         level:'basic',    en:'Choose the English phrase for the Chinese meaning.'},
+  {id:'ph_to_def', name:'Phrase → Definition', level:'basic',    en:'Choose the correct English meaning of the phrase.'},
+  {id:'usage',     name:'Correct Usage',       level:'advanced', en:'Choose the sentence in which the phrase is used correctly.'},
+  {id:'fill',      name:'Phrase Fill',         level:'advanced', en:'Complete the sentence with the phrase (Chinese given).'},
+  {id:'prep',      name:'Preposition Fill',    level:'advanced', en:'Fill in the missing preposition / particle only.'},
+];
+
+/* ================= 存储 ================= */
+const PREFIX='u1atw_p_';
+function b64(s){ return encodeURIComponent(s); }
+function keyStu(name){ return PREFIX+'stu_'+b64(name); }
+function loadStudents(){ try{ return JSON.parse(localStorage.getItem(PREFIX+'students')||'[]'); }catch(e){ return []; } }
+function saveStudents(a){ localStorage.setItem(PREFIX+'students',JSON.stringify(a)); if(window.Hub)Hub.setRoster(a); }
+function getCurrent(){ return localStorage.getItem(PREFIX+'current')||''; }
+function setCurrent(n){ localStorage.setItem(PREFIX+'current',n); if(window.Hub)Hub.setCurrent(n); }
+function loadRec(n){ try{ return JSON.parse(localStorage.getItem(keyStu(n))||'null'); }catch(e){ return null; } }
+function defaultRec(){ return {items:{}, wrong:[]}; }
+function saveRec(n,r){ localStorage.setItem(keyStu(n),JSON.stringify(r)); }
+let CUR=getCurrent();
+let REC=CUR?(loadRec(CUR)||defaultRec()):defaultRec();
+/* 旧版错题记录的键名与 v1.1 不一致（usage 无“序号|”前缀），答对永远无法累计到 3 次。
+   载入时统一迁移：按“正确答案”回定位小题序号，重写 qp / si，miss/right 计数保留。 */
+function newWrongId(){ return 'w_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,8); }
+function normalizeWrong(){
+  if(!REC.wrong||!REC.wrong.length) return;
+  let changed=false;
+  /* 旧记录没有稳定 id；移除时若按 word/type/qp 反查，遇到重复记录会删错或删不干净。 */
+  REC.wrong.forEach(r=>{ if(!r._wid){ r._wid=newWrongId(); changed=true; } });
+  REC.wrong.forEach(r=>{
+    if(r.type!=='usage') return;
+    if(typeof r.si==='number'&&r.si>=0&&/^\d+\|/.test(r.qp||'')) return;
+    const it=PHRASES.find(x=>x.p===r.word); if(!it) return;
+    const items=subItems(it,'usage');
+    let si=-1;
+    if(r.correct) si=items.findIndex(x=>x.a===r.correct);
+    if(si<0&&r.sn&&typeof r.sn.si==='number'&&r.sn.si>=0&&r.sn.si<items.length) si=r.sn.si;
+    if(si<0) si=0;
+    r.si=si;
+    r.qp=si+'|'+(items[si]?items[si].p:'');
+    if(r.sn){ r.sn=Object.assign({},r.sn,{si:si}); }
+    changed=true;
+  });
+  /* 同一小题的历史重复记录合并，避免“删掉一条、列表里还剩一条”的假象。 */
+  const seen={}, merged=[];
+  REC.wrong.forEach(r=>{
+    const k=wrongKey(r);
+    if(!seen[k]){ seen[k]=r; merged.push(r); return; }
+    const old=seen[k];
+    old.miss=(old.miss||1)+(r.miss||1);
+    old.right=Math.max(old.right||0,r.right||0);
+    if((r.ts||0)>(old.ts||0)){
+      old.ts=r.ts; old.given=r.given; old.correct=r.correct; old.q=r.q; old.sn=r.sn||old.sn;
+    }
+    changed=true;
+  });
+  if(merged.length!==REC.wrong.length){ REC.wrong=merged; changed=true; }
+  if(changed&&CUR) saveRec(CUR,REC);
+}
+const SUB_TYPES={usage:'usage', fill:'fill', prep:'pfill'};
+/* 必须在 SUB_TYPES 初始化后再迁移：normalizeWrong 会调用 subItems。 */
+normalizeWrong();
+function practiceTypes(it){
+  let t=['def_to_ph','cn_to_ph','ph_to_def','usage','fill'];
+  if(it.pfill && it.pfill.length) t.push('prep');
+  return t;
+}
+function availTypes(it){ return practiceTypes(it); }
+function subItems(it,type){
+  const k=SUB_TYPES[type]; if(!k) return [];
+  const arr=it[k]||[];
+  if(type==='usage') return arr.map(u=>({p:u.sense, a:u.ans, h:u.why, o:u.opts, stem:u.stem||''}));
+  return arr.map(f=>({p:f.s, a:f.a, h:(type==='prep'?'':(f.cn||''))}));
+}
+/* 快照必须带小题序号 si：usage 的两个小题 sense 文本完全相同，
+   靠 prompt 文本回查会永远命中第 0 题（2026-10-28 修复） */
+function subSnap(type,it,idx){ return {t:type,si:(typeof idx==='number'?idx:-1),p:it.p,a:it.a,h:it.h,pt:''}; }
+function typeKey(it){ return it.p; }
+function subMask(it,type){
+  const items=subItems(it,type); const n=items.length;
+  if(!n) return null;
+  const rec=REC.items[it.p];
+  const d=rec&&rec.sub&&rec.sub[type]&&Array.isArray(rec.sub[type].d)?rec.sub[type].d:null;
+  if(!d&&rec&&rec.passed&&rec.passed[type]) return new Array(n).fill(true);
+  const m=new Array(n).fill(false);
+  if(d) for(let i=0;i<n&&i<d.length;i++) m[i]=!!d[i];
+  return m;
+}
+function subDone(it,type){
+  const items=subItems(it,type); if(!items.length) return null;
+  const m=subMask(it,type)||new Array(items.length).fill(false);
+  return {done:m.filter(Boolean).length,n:items.length};
+}
+function typePassed(it,type){
+  const rec=REC.items[it.p]; const passed=(rec&&rec.passed)||{};
+  const s=subDone(it,type);
+  if(!s) return !!passed[type];
+  if(passed[type]&&!(rec&&rec.sub&&rec.sub[type])) return true;
+  return s.done>=s.n;
+}
+function isMastered(it){
+  if(!REC.items[it.p]) return false;
+  return availTypes(it).every(t=>typePassed(it,t));
+}
+function markPass(it,type,si){
+  if(!REC.items[it.p]) REC.items[it.p]={passed:{}};
+  if(!REC.items[it.p].passed) REC.items[it.p].passed={};
+  const items=subItems(it,type);
+  if(!items.length){ REC.items[it.p].passed[type]=true; if(CUR) saveRec(CUR,REC); return; }
+  if(!REC.items[it.p].sub) REC.items[it.p].sub={};
+  const n=items.length;
+  const cur=REC.items[it.p].sub[type]; let d;
+  if(cur&&Array.isArray(cur.d)) d=cur.d.slice(0,n);
+  else if(REC.items[it.p].passed[type]) d=new Array(n).fill(true);
+  else d=new Array(n).fill(false);
+  while(d.length<n) d.push(false);
+  if(typeof si==='number'&&si>=0&&si<n) d[si]=true;
+  REC.items[it.p].sub[type]={d:d,n:n};
+  REC.items[it.p].passed[type]=d.every(Boolean);
+  if(CUR) saveRec(CUR,REC);
+}
+const FILLISH=['usage','fill','prep'];
+/* 错题唯一键：usage 的两个小题 sense 相同，必须加序号区分，否则两次错会合并成一条 */
+function qpOf(q){
+  if(!q) return '';
+  if(FILLISH.indexOf(q.type)<0) return '';
+  const pre=(q.type==='usage')?((typeof q.si==='number'&&q.si>=0?q.si:'x')+'|'):'';
+  return pre+(q.prompt||'');
+}
+function snapQp(snap){
+  if(!snap) return '';
+  if(FILLISH.indexOf(snap.t)<0) return '';
+  const pre=(snap.t==='usage')?((typeof snap.si==='number'&&snap.si>=0?snap.si:'x')+'|'):'';
+  return pre+(snap.p||'');
+}
+function addWrong(it,type,qtext,given,correct,snap){
+  const qp=snapQp(snap);
+  const sidx=(snap&&typeof snap.si==='number')?snap.si:-1;
+  const hit=REC.wrong.filter(r=>r.word===it.p&&r.type===type&&(r.qp||'')===qp).pop();
+  if(hit){ hit.miss=(hit.miss||1)+1; hit.given=given; hit.correct=correct; hit.q=qtext; hit.ts=Date.now(); hit.si=sidx; if(snap) hit.sn=snap; if(!hit._wid) hit._wid=newWrongId(); }
+  else REC.wrong.push({_wid:newWrongId(),word:it.p,type:type,q:qtext,given:given,correct:correct,ts:Date.now(),miss:1,right:0,sn:snap||null,qp:qp,si:sidx});
+  if(REC.wrong.length>600) REC.wrong=REC.wrong.slice(-600);
+  if(CUR) saveRec(CUR,REC);
+}
+function wrongKey(r){ return r.word+'||'+r.type+'||'+(r.qp||''); }
+function noteRight(it,type,qp){
+  qp=qp||'';
+  let hit=REC.wrong.filter(r=>r.word===it.p&&r.type===type&&(r.qp||'')===qp).pop();
+  /* 兼容旧记录：qp/si 与当前小题不完全一致时，若该词组该题型只有一条错题，
+     仍把答对次数计入它，避免“反复答对但永远显示 0/3”。 */
+  if(!hit){
+    const same=REC.wrong.filter(r=>r.word===it.p&&r.type===type);
+    if(same.length===1) hit=same[0];
+  }
+  if(!hit) return null;
+  hit.right=(hit.right||0)+1; hit.lastTs=Date.now();
+  if(CUR) saveRec(CUR,REC);
+  return hit;
+}
+function dropWrong(k){ REC.wrong=REC.wrong.filter(r=>wrongKey(r)!==k); if(CUR) saveRec(CUR,REC); }
+function dropWrongById(id){ REC.wrong=REC.wrong.filter(r=>r._wid!==id); if(CUR) saveRec(CUR,REC); }
+function dropWrongEl(el){
+  if(!el||!el.getAttribute) return;
+  const wid=el.getAttribute('data-wid'), k=el.getAttribute('data-k');
+  if(!wid&&!k) return;
+  if(wid) dropWrongById(wid); else dropWrong(k);
+  const flash='已移出错题本 ✓';
+  if(document.getElementById('wrongOv').classList.contains('show')){ openWrong(); toast(flash); }
+  else { el.closest('.small')&&(el.closest('.small').innerHTML=flash); toast(flash); }
+}
+function chooseStuEl(el){ const n=el&&el.getAttribute?el.getAttribute('data-n'):''; if(n) chooseStu(n); }
+
+/* ================= 通用工具 ================= */
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1800); }
+function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+/* usage 解析：每个选项独立一行，正确/错误/考点分色显示 */
+function usageWhyHtml(text){
+  return String(text||'').split('\n').filter(Boolean).map(function(line){
+    var cls=/^[A-D]\. ✓/.test(line)?'ok':(/^[A-D]\. ✗/.test(line)?'no':'tip');
+    return '<div class="why-line '+cls+'">'+esc(line)+'</div>';
+  }).join('');
+}
+let voices=[];
+function loadVoices(){ try{ voices=speechSynthesis.getVoices(); }catch(e){} }
+if('speechSynthesis' in window){ speechSynthesis.onvoiceschanged=loadVoices; loadVoices(); }
+function speak(text){
+  try{
+    const u=new SpeechSynthesisUtterance(text); u.lang='en-US'; u.rate=0.92;
+    const v=voices.find(x=>/en[-_]US/i.test(x.lang)&&/female|aria|zira|samantha/i.test(x.name))||voices.find(x=>/en[-_]US/i.test(x.lang))||voices[0];
+    if(v) u.voice=v;
+    window.speechSynthesis.speak(u);
+  }catch(e){}
+}
+function speakPhrase(idx){ const it=PHRASES[idx]; if(it) speak(it.p); }
+function foldChars(s){ return String(s)
+  .replace(/[\u200B-\u200F\u2060\uFEFF]/g,'')
+  .replace(/\u3000/g,' ')
+  .replace(/[\uFF01-\uFF5E]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0xFEE0);})
+  .replace(/[\u2010-\u2015\u2212\uFE63\uFF0D\u00AD]/g,'-')
+  .replace(/[\u2018\u2019]/g,"'")
+  .replace(/\u00A0/g,' '); }
+function normAns(s){ return foldChars(s==null?'':s).trim().toLowerCase().replace(/\s*-\s*/g,'-').replace(/\s+/g,' '); }
+function ansMatch(given,answer){
+  const g=normAns(given); if(!g) return false;
+  const A=normAns(answer); if(!A) return false;
+  if(g===A) return true;
+  const loose=x=>normAns(x).replace(/\s+/g,'-').replace(/[^a-z0-9'/-]/g,'-').replace(/-+/g,'-').replace(/^-+|-+$/g,'');
+  return loose(given)===loose(answer);
+}
+function sameAns(a,b){ const A=normAns(a),B=normAns(b); if(!A||!B) return false; return A===B||A.split('/').some(x=>B.split('/').indexOf(x)>=0); }
+function randPick(arr,n){ const a=arr.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a.slice(0,n); }
+function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+function hlPhrase(text,phr){
+  if(!phr) return esc(text);
+  const core=phr.replace(/\b(one's|sb\.|sth\.)\b/g,'').split(' ').filter(w=>w.length>2).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+  if(!core.length) return esc(text);
+  let re;
+  try{ re=new RegExp('\\b('+core.join('|')+')(s|es|ed|d|ing)?\\b','gi'); }catch(e){ return esc(text); }
+  return esc(text).replace(re,m=>'<span class="hl">'+m+'</span>');
+}
+
+/* ================= 卡片 ================= */
+let activeCat='all', searchTerm='', paraSort=false;
+function renderChips(){
+  const c=document.getElementById('chips');
+  let html='<div class="chip '+(activeCat==='all'?'active':'')+'" data-c="all">All '+TOTAL+'</div>';
+  CATS.forEach(cat=>{
+    const n=PHRASES.filter(x=>x.cat===cat.k).length;
+    html+='<div class="chip '+(activeCat===cat.k?'active':'')+'" data-c="'+cat.k+'">'+cat.i+' '+esc(cat.n)+' <span style="opacity:.7">'+n+'</span></div>';
+  });
+  c.innerHTML=html;
+  c.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{activeCat=ch.dataset.c;renderChips();renderCards();});
+}
+function renderCards(){
+  const g=document.getElementById('cards'); g.innerHTML='';
+  const term=searchTerm.trim().toLowerCase();
+  let list=PHRASES.filter(it=>activeCat==='all'||it.cat===activeCat);
+  if(term){
+    list=list.filter(it=>[it.p,it.cn,it.en,it.src,it.srcCn,it.note].join(' ').toLowerCase().indexOf(term)>=0);
+  }
+  if(paraSort){ list=list.map(function(x,i){return [x,i];}).sort(function(a,b){return (parseInt(a[0].para,10)||9999)-(parseInt(b[0].para,10)||9999)||(a[1]-b[1]);}).map(function(p){return p[0];}); }
+  const _pc={}; if(paraSort) list.forEach(function(x){const k=String(x.para||'?');_pc[k]=(_pc[k]||0)+1;});
+  let _lastPara=null;
+  list.forEach(it=>{
+    const gi=PHRASES.indexOf(it);
+    const total=availTypes(it).length;
+    const done=availTypes(it).filter(t=>typePassed(it,t)).length;
+    const longCls=it.p.length>18?' long':'';
+    const div=document.createElement('div');
+    div.className='flip-card'+(isMastered(it)?' mastered':'');
+    div.innerHTML=
+      '<div class="flip-inner">'+
+        '<div class="flip-front">'+
+          '<div class="para-tag">Para '+esc(it.para)+'</div>'+
+          '<div class="mastered-badge">✓ Mastered</div>'+
+          '<div class="fc-body">'+
+            '<div class="word'+longCls+'">'+esc(it.p)+'</div>'+
+            '<div class="def-cn-wrap" style="margin-top:12px;">'+
+              '<button class="reveal-cn" onclick="event.stopPropagation();toggleCn(this)">显示中文释义</button>'+
+              '<div class="cn hidden">'+esc(it.cn)+'</div>'+
+            '</div>'+
+            '<div class="en def-en" style="font-size:14px;">'+esc(it.en)+'</div>'+
+            '<div class="audio-row" style="width:100%;">'+
+              '<button class="play word" onclick="event.stopPropagation();speakPhrase('+gi+')">🔊 Phrase</button>'+
+            '</div>'+
+          '</div>'+
+          '<div class="meta-bar">'+
+            '<span class="scene">'+esc(it.cat==='v'?'动词短语':it.cat==='prep'?'介词短语':it.cat==='vn'?'动宾搭配':'其他')+'</span>'+
+            '<span class="sp"></span>'+
+            '<span class="small">题型 '+done+'/'+total+'</span>'+
+          '</div>'+
+        '</div>'+
+        '<div class="flip-back">'+
+          '<div class="back-sec"><h4>📖 Textbook Sentence</h4>'+
+            '<div class="en" style="font-size:15px;">'+hlPhrase(it.src,it.p)+'</div>'+
+            '<div class="cn">'+esc(it.srcCn)+'</div></div>'+
+          '<div class="back-sec"><h4>💡 Usage Note</h4><div class="en" style="font-size:14px;">'+esc(it.note)+'</div></div>'+
+          '<div class="back-sec"><h4>🇬🇧 English Definition</h4><div class="en" style="font-size:14px;">'+esc(it.en)+'</div></div>'+
+        '</div>'+
+      '</div>';
+    div.onclick=()=>openPhrase(it);
+    if(paraSort&&String(it.para||'?')!==_lastPara){const k=String(it.para||'?');const hd=document.createElement('div');hd.className='pgroup';hd.id='pg_'+k;hd.innerHTML='<b>Para '+esc(k)+'</b><span>'+_pc[k]+' 条</span>';g.appendChild(hd);_lastPara=k;}
+    g.appendChild(div);
+  });
+  if(paraSort){const pc=document.getElementById('paraChips');pc.innerHTML=Object.keys(_pc).sort(function(a,b){return (parseInt(a,10)||9999)-(parseInt(b,10)||9999);}).map(function(k){return '<div class="chip pchip" data-p="'+k+'">P'+k+' · '+_pc[k]+'</div>';}).join('');}
+  updateMasterBar();
+}
+function toggleCn(btn){ const wrap=btn.parentElement; const cn=wrap.querySelector('.cn'); if(cn) cn.classList.remove('hidden'); btn.style.display='none'; }
+/* ===== 合并版 v1.1：向单元首页汇报真实掌握进度 ===== */
+function publishProgress(){
+  try{
+    if(!CUR) return;
+    var m=0;
+    PHRASES.forEach(function(it){ if(isMastered(it)) m++; });
+    localStorage.setItem(PREFIX+'sum_'+b64(CUR), JSON.stringify({
+      m:m, t:PHRASES.length, w:(REC.wrong||[]).length, s:CUR, ts:Date.now()
+    }));
+  }catch(e){}
+}
+function updateMasterBar(){
+  const done=PHRASES.filter(isMastered).length;
+  const pct=Math.round(done/TOTAL*100);
+  document.getElementById('masterBar').style.width=pct+'%';
+  let suffix='';
+  if(done>=TOTAL){
+    const ch=REC.chal;
+    if(ch&&ch.finished) suffix=' · 🏆 Final Challenge 完成，全部通关';
+    else if(ch) suffix=' · 🏆 Final Challenge '+chalDoneCount()+'/'+ch.qs.length+'（必须完成）';
+    else suffix=' · 🏆 还差 Final Challenge 一轮';
+  }
+  document.getElementById('masterTxt').textContent='Mastered '+done+' / '+TOTAL+' phrases ('+pct+'%)'+suffix;
+  publishProgress();
+  updateChalUI();
+}
+
+function openPhrase(it){
+  const total=availTypes(it).length;
+  const done=availTypes(it).filter(t=>typePassed(it,t)).length;
+  let th='<div class="type-list">';
+  practiceTypes(it).forEach(t=>{
+    const td=TYPES.find(x=>x.id===t);
+    const doneT=typePassed(it,t); const s=subDone(it,t);
+    const prog=s?'<span class="t-sub">'+s.done+'/'+s.n+' 题</span>':'';
+    const ico=doneT?'✓':'○';
+    const go=s?(s.done>=s.n?'▶ 重做全部 '+s.n+' 道':'▶ 练完剩下 '+(s.n-s.done)+' 道'):'▶ practice';
+    th+='<div class="type-item '+(doneT?'done':'miss')+'" data-p="'+esc(it.p)+'" data-t="'+t+'" onclick="practiceOne(this.dataset.p,this.dataset.t)" title="点击进入练习">'+
+        '<span class="t-ico">'+ico+'</span><span class="t-name">'+esc(td?td.name:'')+'</span>'+prog+
+        '<span class="t-lvl">'+esc(td?td.level:'')+'</span><span class="t-go">'+go+'</span></div>';
+  });
+  th+='</div>';
+  const gi=PHRASES.indexOf(it);
+  const panel=document.getElementById('phrasePanel');
+  panel.innerHTML='<button class="exit-x" title="Close" onclick="closeOv(\'phraseOv\')">✕</button>'+
+    '<div class="wd-head"><div class="wd-word">'+esc(it.p)+'</div>'+
+    '<div class="wd-pos">'+esc(it.grp)+'</div>'+
+    '<button class="btn btn-blue btn-sm" onclick="speakPhrase('+gi+')">🔊 Phrase</button></div>'+
+    '<div class="wd-meta"><span class="scene">Para '+esc(it.para)+'</span></div>'+
+    '<div class="wd-cn">'+esc(it.cn)+'</div>'+
+    '<div class="wd-sec"><h4>🇬🇧 English Definition</h4><div class="en">'+esc(it.en)+'</div></div>'+
+    '<div class="wd-sec"><h4>📖 Textbook Sentence</h4><div class="en">'+hlPhrase(it.src,it.p)+'</div><div class="cn">'+esc(it.srcCn)+'</div></div>'+
+    '<div class="wd-sec"><h4>💡 Usage Note</h4><div class="en">'+esc(it.note)+'</div></div>'+
+    '<h3 style="margin-top:16px;">Question Progress <span class="small">('+done+'/'+total+')</span></h3>'+
+    '<p class="small">✓ 该题型已全过 · ○ 未全过。点任意一行进入练习：<b>会从该题型起，自动依次练完这个单词其余未通过的题型</b>，中途无需退出重进。</p>'+
+    th;
+  openOv('phraseOv');
+}
+
+/* ================= 出题 ================= */
+function otherPool(it){
+  // 干扰项优先同类别，其次全表
+  const same=PHRASES.filter(x=>x!==it&&x.cat===it.cat);
+  const rest=PHRASES.filter(x=>x!==it&&x.cat!==it.cat);
+  return shuffle(same).concat(shuffle(rest));
+}
+function makeQuestion(it,type,snap){
+  const q={type:type, word:it.p, wi:PHRASES.indexOf(it)};
+  const pool=otherPool(it);
+  if(type==='def_to_ph'){
+    q.prompt=it.en;
+    let opts=shuffle([it.p].concat(randPick(pool.filter(x=>!sameAns(x.p,it.p)),3).map(x=>x.p)));
+    if(snap&&snap.o&&snap.o.length===4) opts=snap.o.slice();
+    if(opts.indexOf(it.p)<0) opts[3]=it.p;
+    q.options=opts; q.answer=it.p; q.cnHint=it.cn;
+  } else if(type==='cn_to_ph'){
+    q.prompt=it.cn;
+    let opts=shuffle([it.p].concat(randPick(pool.filter(x=>x.cn!==it.cn),3).map(x=>x.p)));
+    if(snap&&snap.o&&snap.o.length===4) opts=snap.o.slice();
+    if(opts.indexOf(it.p)<0) opts[3]=it.p;
+    q.options=opts; q.answer=it.p;
+  } else if(type==='ph_to_def'){
+    q.prompt=it.p;
+    let opts=shuffle([it.en].concat(randPick(pool.filter(x=>x.en!==it.en),3).map(x=>x.en)));
+    if(snap&&snap.o&&snap.o.length===4) opts=snap.o.slice();
+    if(opts.indexOf(it.en)<0) opts[3]=it.en;
+    q.options=opts; q.answer=it.en;
+  } else {
+    const items=subItems(it,type);
+    let idx=-1;
+    if(snap){
+      /* 1) 首选序号（唯一可靠） 2) 退化为文本+答案匹配 3) 再退化为文本匹配 */
+      if(typeof snap.si==='number'&&snap.si>=0&&snap.si<items.length) idx=snap.si;
+      else{
+        const key=snap.p||(snap.item&&snap.item.p)||'';
+        if(key){
+          const ak=snap.a||(snap.item&&snap.item.a)||'';
+          idx=items.findIndex(x=>x.p===key&&(!ak||x.a===ak));
+          if(idx<0) idx=items.findIndex(x=>x.p===key);
+        }
+      }
+    }
+    if(idx<0||!items[idx]) idx=Math.floor(Math.random()*items.length);
+    const f=items[idx];
+    q.prompt=f.p; q.answer=f.a;
+    q.si=idx;
+    if(type==='usage'){ q.options=shuffle(f.o?f.o.slice():[f.a]); q.hint=f.h; q.sense=f.p; if(f.stem) q.stem=f.stem; }
+    else if(type==='fill'){ q.hint=f.h; }
+    else { q.hint=''; }
+  }
+  return q;
+}
+function findItem(it,p){
+  const f=subItems(it,'usage').concat(subItems(it,'fill'),subItems(it,'prep')).find(x=>x.p===p);
+  return f||null;
+}
+function findItemIdx(it,p){
+  return subItems(it,FILLISH.find(t=>subItems(it,t).some(x=>x.p===p))||'fill').findIndex(x=>x.p===p);
+}
+function qSnap(q){
+  if(!q) return null;
+  const si=(typeof q.si==='number')?q.si:-1;
+  const s={t:q.type,si:si,p:q.prompt,a:q.answer,item:{p:q.prompt,a:q.answer,h:q.hint||''}};
+  if(q.options) { s.o=q.options.slice(); s.item.o=q.options.slice(); }
+  return s;
+}
+
+/* ================= 会话 ================= */
+let SESSION=null,QIDX=0,RETRY=[],RETRY_ROUND=0,CURQ=null,ANSWERED=false,CHAL_MODE=false;
+function openOv(id){
+  document.querySelectorAll('.ov').forEach(o=>{ if(o.id!==id) o.classList.remove('show'); });
+  document.getElementById(id).classList.add('show');
+  if(id==='qOv') document.body.classList.add('locked');
+}
+function closeOv(id){ const el=document.getElementById(id); if(el) el.classList.remove('show'); if(id==='qOv') document.body.classList.remove('locked'); }
+function setupTypeGrid(){
+  const g=document.getElementById('typeGrid'); g.innerHTML='';
+  TYPES.forEach(t=>{
+    const lab=document.createElement('label');
+    lab.className='type-opt'+(t.level==='advanced'?' adv':'');
+    lab.innerHTML='<input type="checkbox" value="'+t.id+'" checked> '+t.name+' <span class="small">('+t.level+')</span>';
+    g.appendChild(lab);
+  });
+}
+function selectedTypes(){
+  const lvl=document.querySelector('input[name=lvl]:checked').value;
+  const checked=[...document.querySelectorAll('#typeGrid input:checked')].map(x=>x.value);
+  return TYPES.filter(t=>(lvl==='all'||t.level===lvl)&&checked.indexOf(t.id)>=0).map(t=>t.id);
+}
+function buildSession(items,types,count,keepOrder){
+  let units=[];
+  items.forEach(it=>{ types.forEach(t=>{
+    if(practiceTypes(it).indexOf(t)<0) return;
+    const its=subItems(it,t);
+    if(!its.length){ units.push({it:it,t:t,sn:null}); return; }
+    const m=subMask(it,t)||[];
+    const pend=its.map((x,i)=>i).filter(i=>!m[i]);
+    (pend.length?pend:its.map((x,i)=>i)).forEach(i=>units.push({it:it,t:t,sn:subSnap(t,its[i],i)}));
+  }); });
+  if(!keepOrder) shuffle(units);
+  if(count<units.length) units=units.slice(0,count);
+  return units;
+}
+function startSession(units){
+  SESSION=units; QIDX=0; RETRY=[]; RETRY_ROUND=0;
+  openOv('qOv'); renderQuestion();
+}
+function renderQuestion(){
+  if(!SESSION||QIDX>=SESSION.length){ return finishRound(); }
+  const u=SESSION[QIDX];
+  CURQ=makeQuestion(u.it,u.t,u.sn);
+  if(typeof u.ci==='number') CURQ.chalIdx=u.ci;
+  ANSWERED=false; picked=null;
+  const tdef=TYPES.find(t=>t.id===CURQ.type);
+  /* 题型内序号 + 题型总数（按单词串联练习时给学习者定位） */
+  const sameU=SESSION.filter(x=>x.t===u.t&&x.it===u.it);
+  const posInType=sameU.indexOf(u)+1;
+  const typeSeq=[...new Set(SESSION.map(x=>x.t))];
+  const typeNo=typeSeq.indexOf(u.t)+1;
+  let html='<button class="exit-x" title="Exit" onclick="askExit()">✕</button>';
+  const prev=(QIDX>0)?SESSION[QIDX-1]:null;
+  if(prev&&prev.t!==u.t){
+    html+='<div style="margin:0 0 12px;padding:8px 12px;border-radius:12px;background:rgba(28,176,246,.12);border:1px solid rgba(28,176,246,.35);font-size:13px;font-weight:800;color:#0b6fa4;">↪ 已自动进入下一题型：'+esc(tdef.name)+' · 题型 '+typeNo+'/'+typeSeq.length+'</div>';
+  }
+  html+='<div class="q-type'+(FILLISH.indexOf(CURQ.type)>=0?' adv':'')+'">'+esc(tdef.name)+' · '+esc(tdef.level)+(sameU.length>1?'　·　第 '+posInType+'/'+sameU.length+' 题':'')+'</div>';
+  html+='<div class="q-instr">'+esc(tdef.en)+'</div>';
+  if(CURQ.type==='def_to_ph'||CURQ.type==='ph_to_def'){
+    html+='<div class="q-word-row"><span class="w" style="font-size:21px;line-height:1.4;">'+esc(CURQ.prompt)+'</span>'+
+          '<button class="btn btn-blue btn-sm" onclick="speak(\''+esc(CURQ.prompt).replace(/'/g,"\\'")+'\')">🔊</button></div>';
+    if(CURQ.type==='def_to_ph') html+='<div class="hint-cn">💡 English definition above — choose the phrase it defines.</div>';
+    CURQ.options.forEach(o=>{ html+='<button class="opt" data-v="'+esc(o)+'" onclick="pickOpt(this)">'+esc(o)+'</button>'; });
+  } else if(CURQ.type==='cn_to_ph'){
+    html+='<div class="q-text" style="font-size:22px;">'+esc(CURQ.prompt)+'</div>';
+    CURQ.options.forEach(o=>{ html+='<button class="opt" data-v="'+esc(o)+'" onclick="pickOpt(this)">'+esc(o)+'</button>'; });
+  } else if(CURQ.type==='usage'){
+    html+='<div class="usage-tag">Sense / 义项：'+esc(CURQ.sense)+'　·　'+esc(PHRASES[CURQ.wi].cn)+'</div>';
+    /* 个别小题（如 change into 的“换衣”义）选项考的是动词多种搭配，题干按数据里自定义的 stem 出 */
+    html+='<div class="q-text">'+(CURQ.stem?esc(CURQ.stem):('Which sentence uses <b>“'+esc(PHRASES[CURQ.wi].p)+'”</b> correctly?'))+'</div>';
+    CURQ.options.forEach(o=>{ html+='<button class="opt sent" data-v="'+esc(o)+'" onclick="pickOpt(this)">'+esc(o)+'</button>'; });
+  } else if(CURQ.type==='fill'){
+    html+='<div class="q-text q-sent">'+esc(CURQ.prompt).replace(/_{2,}/g,'<span class="blank">&nbsp;</span>')+'</div>';
+    html+='<div class="hint-cn">💬 '+esc(CURQ.hint)+'</div>';
+    html+='<input class="answer-input" id="ans" placeholder="type the phrase…" autocomplete="off">';
+    html+='<button class="btn btn-blue" id="submit">Check</button>';
+  } else if(CURQ.type==='prep'){
+    html+='<div class="q-text q-sent">'+esc(CURQ.prompt).replace(/_{3,}/g,'<span class="blank" style="min-width:60px;">&nbsp;</span>')+'</div>';
+    html+='<div class="pfill-no">⚠ No translation given — think about the fixed preposition / particle.</div>';
+    html+='<input class="answer-input" id="ans" placeholder="one word only…" autocomplete="off" style="max-width:220px;">';
+    html+='<button class="btn btn-blue" id="submit">Check</button>';
+  }
+  html+='<div class="feedback" id="fb"></div>';
+  const card=document.getElementById('qCard');
+  card.innerHTML=html; card.scrollTop=0;
+  const sub=document.getElementById('submit'); if(sub) sub.onclick=submitAnswer;
+  const inp=document.getElementById('ans'); if(inp){ inp.focus(); inp.onkeydown=e=>{ if(e.key==='Enter') submitAnswer(); }; }
+}
+let picked=null;
+function pickOpt(el){
+  if(ANSWERED) return;
+  document.querySelectorAll('.opt').forEach(o=>o.classList.remove('sel'));
+  el.classList.add('sel'); picked=el.dataset.v;
+  if(CURQ&&(CURQ.type==='cn_to_ph'||CURQ.type==='def_to_ph')) speak(picked);
+  submitAnswer();
+}
+function submitAnswer(){
+  const fb=document.getElementById('fb'); if(!fb) return;
+  if(ANSWERED) return; ANSWERED=true;
+  let correct=false,given='';
+  if(CURQ.type==='fill'||CURQ.type==='prep'){
+    given=(document.getElementById('ans')||{}).value||''; given=given.trim();
+    if(!given){ ANSWERED=false; toast('Please type your answer'); return; }
+    correct=ansMatch(given,CURQ.answer);
+  } else {
+    if(!picked){ ANSWERED=false; toast('Please choose an answer'); return; }
+    given=picked; correct=ansMatch(picked,CURQ.answer);
+  }
+  const it=PHRASES[CURQ.wi];
+  const baseChip=(CURQ.type==='fill')?'<div class="base-chip">'+esc(it.cn)+'</div>':'';
+  if(correct){
+    ding();
+    fb.className='feedback ok praise-pop'; fb.textContent='✓ '+PRAISE[Math.floor(Math.random()*PRAISE.length)];
+    fb.innerHTML+=baseChip;
+    markPass(it,CURQ.type,CURQ.si);
+    /* Final Challenge：答对该题即存档；走 Retry 后答对同样会写入 */
+    if(typeof CURQ.chalIdx==='number'&&REC.chal&&Array.isArray(REC.chal.done)){
+      REC.chal.done[CURQ.chalIdx]=true;
+      if(CUR) saveRec(CUR,REC);
+      updateChalUI();
+    }
+    const _hit=noteRight(it,CURQ.type,qpOf(CURQ));
+    if(_hit){
+      const _r=_hit.right||0, _k=wrongKey(_hit), _wid=_hit._wid||'';
+      const _link='<a href="#" data-wid="'+esc(_wid)+'" data-k="'+esc(_k)+'" onclick="dropWrongEl(this);return false;" style="color:#2f7d32;font-weight:800;">从错题本移除 ›</a>';
+      if(_r>=3) fb.innerHTML+='<div class="small" style="margin-top:6px;">🎉 已累计答对 3 次，这道题已达标 — '+_link+'</div>';
+      else fb.innerHTML+='<div class="small" style="margin-top:6px;">已累计答对 '+_r+'/3 次（满 3 次自动达标；如计数异常可直接 '+_link+'）</div>';
+    }
+    if(CURQ.type==='fill'||CURQ.type==='prep'){
+      const inp=document.getElementById('ans'); if(inp) inp.disabled=true;
+      const sb=document.getElementById('submit'); if(sb) sb.style.display='none';
+      fb.innerHTML+='<div class="hint-cn" style="margin-top:8px;">'+esc(filledPrompt(CURQ.prompt,CURQ.answer,false))+'</div>';
+    } else {
+      document.querySelectorAll('.opt').forEach(o=>{ if(ansMatch(o.dataset.v,CURQ.answer)) o.classList.add('correct'); else o.classList.add('dim'); });
+      if(CURQ.type==='usage'&&CURQ.hint) fb.innerHTML+='<div class="usage-why">'+usageWhyHtml(CURQ.hint)+'</div>';
+    }
+    fb.insertAdjacentHTML('afterend','<button class="btn btn-blue" id="contBtn" style="margin-top:12px;width:100%;">'+nextLabel()+'</button><button class="btn btn-ghost" id="quitBtn" style="margin-top:8px;width:100%;">Exit ✕</button>');
+  } else {
+    fb.className='feedback no';
+    fb.innerHTML='✗ Correct answer: <b>'+esc(CURQ.answer)+'</b>'+baseChip;
+    addWrong(it,CURQ.type,questionText(CURQ),given,CURQ.answer,qSnap(CURQ));
+    RETRY.push([it,CURQ.type,qSnap(CURQ),CURQ.chalIdx]);
+    if(CURQ.type==='fill'||CURQ.type==='prep'){
+      const inp=document.getElementById('ans'); if(inp) inp.disabled=true;
+      const sb=document.getElementById('submit'); if(sb) sb.style.display='none';
+      fb.innerHTML+='<div class="hint-cn" style="margin-top:8px;">'+esc(filledPrompt(CURQ.prompt,CURQ.answer,true))+'</div>';
+      if(CURQ.type==='fill'&&CURQ.hint) fb.innerHTML+='<div class="hint-cn">💬 '+esc(CURQ.hint)+'</div>';
+      if(CURQ.type==='prep') fb.innerHTML+='<div class="hint-cn">'+esc(it.p)+' ＝ '+esc(it.cn)+'</div>';
+    } else {
+      document.querySelectorAll('.opt').forEach(o=>{ if(ansMatch(o.dataset.v,CURQ.answer)) o.classList.add('correct'); else if(o.dataset.v===picked) o.classList.add('wrong'); else o.classList.add('dim'); });
+      if(CURQ.type==='usage'&&CURQ.hint) fb.innerHTML+='<div class="usage-why">'+usageWhyHtml(CURQ.hint)+'</div>';
+    }
+    fb.insertAdjacentHTML('afterend','<button class="btn btn-blue" id="contBtn" style="margin-top:12px;width:100%;">'+nextLabel()+'</button><button class="btn btn-ghost" id="quitBtn" style="margin-top:8px;width:100%;">Exit ✕</button>');
+  }
+  document.getElementById('contBtn').onclick=()=>{ QIDX++; renderQuestion(); };
+  document.getElementById('quitBtn').onclick=()=>{ doExit(); };
+  document.getElementById('contBtn').focus();
+}
+const PRAISE=['Excellent!','Great job!','Well done!','Perfect!','Nice work!','Awesome!'];
+/* 双空填空回显：两个空各填答案的一个词，避免“change into change into”式重复 */
+function filledPrompt(prompt,ans,quote){
+  const parts=String(ans).trim().split(/\s+/);
+  const blanks=String(prompt).match(/_{2,}/g)||[];
+  let i=0;
+  return String(prompt).replace(/_{2,}/g,function(){
+    const w=(blanks.length>1&&parts.length===blanks.length)?(parts[i++]||ans):ans;
+    return quote?('「'+w+'」'):w;
+  });
+}
+function ding(){
+  try{
+    const c=new (window.AudioContext||window.webkitAudioContext)();
+    const o=c.createOscillator(),g=c.createGain();
+    o.connect(g); g.connect(c.destination); o.type='sine';
+    o.frequency.setValueAtTime(880,c.currentTime); o.frequency.setValueAtTime(1174.66,c.currentTime+0.09);
+    g.gain.setValueAtTime(0.15,c.currentTime); g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+0.4);
+    o.start(); o.stop(c.currentTime+0.42);
+  }catch(e){}
+}
+function questionText(q){ return (q.prompt||'')+' '+(q.answer||''); }
+/* 按单词串联练习：最后一题显示“完成本轮”，跨题型时提示“下一题型” */
+function nextLabel(){
+  const cur=SESSION&&SESSION[QIDX]; const nx=SESSION&&SESSION[QIDX+1];
+  if(!nx) return '完成本轮 ✓';
+  if(cur&&nx.t!==cur.t) return '下一题型 ▶';
+  return 'Next ▶';
+}
+function askExit(){
+  document.getElementById('exitPanel').innerHTML='<h2>Exit Practice?</h2>'+
+    '<p class="small" style="margin-top:6px;">Your progress so far has been saved. Wrong answers are kept in your Wrong Notebook.</p>'+
+    '<div style="display:flex;gap:10px;margin-top:16px;">'+
+    '<button class="btn btn-ghost" style="flex:1;" onclick="closeOv(\'exitOv\')">Keep Practicing</button>'+
+    '<button class="btn btn-red" style="flex:1;" onclick="doExit()">Exit</button></div>';
+  openOv('exitOv');
+}
+function doExit(){ closeOv('exitOv'); closeOv('qOv'); SESSION=null; CURQ=null; CHAL_MODE=false; renderCards(); updateChalUI(); toast('Progress saved ✓'); }
+function finishRound(){
+  closeOv('qOv');
+  if(RETRY.length&&RETRY_ROUND<3){
+    const n=RETRY.length; RETRY_ROUND++;
+    SESSION=RETRY.map(([it,t,sn,ci])=>({it:it,t:t,sn:sn,ci:(typeof ci==='number'?ci:undefined)})); RETRY=[]; QIDX=0;
+    toast('Retry '+n+' wrong question(s)… (round '+RETRY_ROUND+')');
+    setTimeout(()=>{ openOv('qOv'); renderQuestion(); },600);
+    return;
+  }
+  RETRY=[]; RETRY_ROUND=0;
+  const wasChal=CHAL_MODE; CHAL_MODE=false;
+  if(wasChal&&REC.chal){ finishChallenge(); return; }
+  fireworks();
+  const done=PHRASES.filter(isMastered).length;
+  const ch=REC.chal;
+  let chalHtml='';
+  if(ch){
+    const d=chalDoneCount(), n=ch.qs.length, fin=ch.finished||d>=n;
+    chalHtml='<div class="chal-block'+(fin?' fin':'')+'">'+
+      '<div style="font-weight:900;font-size:15px;">🏆 Final Challenge：'+(fin?'<span style="color:#2e7d32;">全部完成 ✓</span>':'<span style="color:#8e24aa;">'+d+' / '+n+' 已完成</span>')+'</div>'+
+      '<div class="small" style="margin-top:4px;">'+(fin?'全部词组通关 + 一轮随机抽题完成，本单元彻底毕业。':'还剩 '+(n-d)+' 道抽定的题；必须全部完成才算最终通关。')+'</div>'+
+      (fin?'':'<button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');startChallenge()">▶ 继续 Final Challenge</button>')+
+      '</div>';
+  }
+  let unlockHtml='';
+  if(allMastered()&&(!ch||!ch.finished)){
+    unlockHtml='<div class="chal-block">'+
+      '<div style="font-weight:900;font-size:16px;">🎉 全部词组已通关，还差最后一关</div>'+
+      '<div class="small" style="margin-top:6px;">完成 <b>一轮随机抽题</b>：每个词组随机抽 1 题、题型尽量均匀；抽题只进行一次，可退出续做。</div>'+
+      '<button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');openChal()">🏆 进入 Final Challenge ▶</button></div>';
+  }
+  document.getElementById('resPanel').innerHTML='<h2>🎉 Round Complete!</h2>'+
+    '<p class="small">Student: <b>'+esc(CUR)+'</b></p>'+
+    '<div class="stat-grid">'+
+      '<div class="stat"><div class="n">'+done+'</div><div class="t">Phrases Mastered</div></div>'+
+      '<div class="stat"><div class="n">'+TOTAL+'</div><div class="t">Total Phrases</div></div>'+
+      '<div class="stat" style="cursor:pointer;" onclick="closeOv(\'resOv\');openWrong();"><div class="n">'+REC.wrong.length+'</div><div class="t">Wrong Records ↗</div></div>'+
+    '</div>'+unlockHtml+chalHtml+
+    '<p style="margin-top:14px;font-weight:800;">Great job! All questions in this round were answered correctly.</p>'+
+    '<button class="btn btn-purple" style="margin-top:14px;width:100%;" onclick="closeOv(\'resOv\');openWrong();">📒 Review Wrong Notebook</button>'+
+    '<button class="btn btn-blue" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');renderCards();">Back to Cards</button>';
+  openOv('resOv');
+}
+/* ================= Final Challenge：全部词组通关后随机抽一轮 ================= */
+function allMastered(){ return PHRASES.every(isMastered); }
+function chalDoneCount(){ const ch=REC.chal; return (ch&&Array.isArray(ch.done))?ch.done.filter(Boolean).length:0; }
+function drawChallenge(){
+  closeOv('chalOv');
+  if(REC.chal){ startChallenge(); return; }
+  const pool=shuffle(PHRASES.slice()), useCount={}, qs=[];
+  pool.forEach(function(it){
+    const ts=availTypes(it);
+    let best=ts[0], bestN=Infinity;
+    shuffle(ts.slice()).forEach(function(t){ const n=useCount[t]||0; if(n<bestN){ bestN=n; best=t; } });
+    useCount[best]=(useCount[best]||0)+1;
+    qs.push({p:it.p,t:best,sn:qSnap(makeQuestion(it,best))});
+  });
+  REC.chal={qs:qs,done:qs.map(()=>false),finished:false};
+  if(CUR) saveRec(CUR,REC);
+  startChallenge();
+}
+function startChallenge(){
+  const ch=REC.chal; if(!ch){ openChal(); return; }
+  const units=[];
+  ch.qs.forEach(function(d,i){
+    if(ch.done[i]) return;
+    const it=PHRASES.find(function(x){ return x.p===d.p; }); if(!it) return;
+    units.push({it:it,t:d.t,sn:d.sn,ci:i});
+  });
+  if(!units.length){ finishChallenge(); return; }
+  closeOv('chalOv');
+  startSession(units);
+  CHAL_MODE=true;
+  toast('Final Challenge：剩余 '+units.length+' 题');
+}
+function finishChallenge(){
+  const ch=REC.chal;
+  if(!ch){ openChal(); return; }
+  const n=ch.qs.length, d=chalDoneCount(), allDone=n>0&&d>=n;
+  if(allDone&&!ch.finished){ ch.finished=true; if(CUR) saveRec(CUR,REC); }
+  updateMasterBar();
+  fireworks();
+  document.getElementById('resPanel').innerHTML='<h2>'+(allDone?'🎉🏆 全部通关！':'⏸ Final Challenge 暂停')+'</h2>'+
+    '<p class="small">Student: <b>'+esc(CUR)+'</b></p>'+
+    '<div class="stat-grid">'+
+      '<div class="stat"><div class="n">'+PHRASES.filter(isMastered).length+'</div><div class="t">Phrases Mastered</div></div>'+
+      '<div class="stat"><div class="n">'+(allDone?n:d+'/'+n)+'</div><div class="t">Challenge Done</div></div>'+
+      '<div class="stat" style="cursor:pointer;" onclick="closeOv(\'resOv\');openWrong();"><div class="n">'+REC.wrong.length+'</div><div class="t">Wrong Records ↗</div></div>'+
+    '</div>'+
+    (allDone?'<div class="chal-block fin"><div style="font-weight:900;color:#2e7d32;">🏆 随机抽题 Final Challenge：全部完成 ✓（'+n+'/'+n+'）</div><div class="small" style="margin-top:4px;">全部词组通关 + 一轮随机抽题完成 — 本单元彻底毕业！本页可截图存档。</div></div>'
+      :'<div class="chal-block"><div style="font-weight:900;">🏆 Final Challenge：'+d+' / '+n+' 已完成</div><div class="small" style="margin-top:4px;">还有 '+(n-d)+' 道未完成（含本轮未答对的题）。必须全部完成才算最终通关。</div><button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');startChallenge()">▶ 继续挑战</button></div>')+
+    '<button class="btn btn-purple" style="margin-top:14px;width:100%;" onclick="closeOv(\'resOv\');openWrong();">📒 Review Wrong Notebook</button>'+
+    '<button class="btn btn-blue" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');renderCards();">Back to Cards</button>';
+  openOv('resOv');
+}
+function updateChalUI(){
+  const btn=document.getElementById('chalBtn'); if(!btn) return;
+  const ch=REC.chal, unlocked=allMastered();
+  if(unlocked){
+    btn.disabled=false; btn.classList.remove('chal-locked');
+    if(ch&&ch.finished) btn.innerHTML='🏆 Final Challenge ✓';
+    else if(ch) btn.innerHTML='🏆 Final Challenge '+chalDoneCount()+'/'+ch.qs.length;
+    else btn.innerHTML='🏆 Final Challenge ▶';
+  } else {
+    btn.disabled=true; btn.classList.add('chal-locked');
+    btn.innerHTML='🏆 Final Challenge 🔒';
+  }
+  const wrap=document.getElementById('chalBarWrap'), txt=document.getElementById('chalTxt');
+  if(!wrap||!txt) return;
+  if(ch){
+    const d=chalDoneCount(), n=ch.qs.length, pct=n?Math.round(d/n*100):0;
+    wrap.style.display=''; txt.style.display='';
+    document.getElementById('chalBar').style.width=pct+'%';
+    txt.innerHTML='🏆 Final Challenge（随机抽题）：<b>'+d+' / '+n+'</b>（'+pct+'%）'+(ch.finished?' · 已全部完成 ✓':'');
+  } else { wrap.style.display='none'; txt.style.display='none'; }
+}
+function openChal(){
+  if(!allMastered()){ toast('🔒 完成全部 '+TOTAL+' 个词组通关后解锁 Final Challenge'); return; }
+  const ch=REC.chal, panel=document.getElementById('chalPanel');
+  if(!ch){
+    panel.innerHTML='<button class="exit-x" title="Close" onclick="closeOv(\'chalOv\')">✕</button>'+
+      '<h2>🎉🏆 恭喜全部词组通关！</h2>'+
+      '<p class="small">你已完成全部 <b>'+TOTAL+'</b> 个词组。最后一步：完成 <b>一轮随机抽题</b>，才算本单元最终通关。</p>'+
+      '<div class="chal-block"><div class="chal-pair">🎲 每个词组随机抽 <b>1 道</b>题，共 '+TOTAL+' 道，题型尽量均匀</div>'+
+      '<div class="chal-pair">📌 抽题只进行一次，抽完题目固定</div>'+
+      '<div class="chal-pair">⏸ 可随时退出，下次从没做完的题继续</div>'+
+      '<div class="chal-pair">📊 进度显示在上方紫色进度条</div></div>'+
+      '<button class="btn btn-purple" style="margin-top:14px;width:100%;" onclick="drawChallenge()">🎲 抽题并开始 ▶</button>'+
+      '<button class="btn btn-ghost" style="margin-top:8px;width:100%;" onclick="closeOv(\'chalOv\')">稍后再说</button>';
+  } else if(!ch.finished){
+    const d=chalDoneCount(), n=ch.qs.length;
+    panel.innerHTML='<button class="exit-x" title="Close" onclick="closeOv(\'chalOv\')">✕</button>'+
+      '<h2>🏆 Final Challenge · 进行中</h2>'+
+      '<p class="small">本轮共抽定 <b>'+n+'</b> 道题（题目固定），已完成 <b>'+d+'</b> 道，还剩 '+(n-d)+' 道。</p>'+
+      '<div class="bar chal" style="margin:10px 0;"><i style="width:'+(n?Math.round(d/n*100):0)+'%;"></i></div>'+
+      '<button class="btn btn-green" style="width:100%;" onclick="startChallenge()">▶ 继续做题</button>'+
+      '<button class="btn btn-ghost" style="margin-top:8px;width:100%;" onclick="closeOv(\'chalOv\')">稍后再做（进度已保存）</button>';
+  } else {
+    panel.innerHTML='<button class="exit-x" title="Close" onclick="closeOv(\'chalOv\')">✕</button>'+
+      '<h2>🏆 Final Challenge · 已完成 ✓</h2>'+
+      '<p class="small">🎉 全部 '+ch.qs.length+' 道随机抽题都已完成！全部词组通关 + 随机抽题一轮 — 本单元彻底毕业！</p>'+
+      '<div class="stat-grid"><div class="stat"><div class="n">'+TOTAL+'</div><div class="t">Phrases Mastered</div></div>'+
+      '<div class="stat"><div class="n">'+ch.qs.length+'</div><div class="t">Challenge Done</div></div></div>'+
+      '<button class="btn btn-green" style="margin-top:14px;width:100%;" onclick="closeOv(\'chalOv\')">Close</button>';
+  }
+  openOv('chalOv');
+}
+
+function fireworks(){
+  const cv=document.getElementById('fw'),ctx=cv.getContext('2d');
+  cv.width=innerWidth; cv.height=innerHeight;
+  const parts=[],colors=['#58cc02','#1cb0f6','#ffc800','#ce82ff','#ff4b4b'];
+  for(let b=0;b<6;b++){ const cx=Math.random()*cv.width,cy=Math.random()*cv.height*0.6+60;
+    for(let i=0;i<60;i++){ const a=Math.PI*2*i/60,sp=Math.random()*6+3;
+      parts.push({x:cx,y:cy,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:1,col:colors[b%colors.length]}); } }
+  let t=0;
+  (function tick(){
+    ctx.clearRect(0,0,cv.width,cv.height);
+    parts.forEach(p=>{ p.x+=p.vx;p.y+=p.vy;p.vy+=0.12;p.life-=0.012; ctx.globalAlpha=Math.max(0,p.life); ctx.fillStyle=p.col; ctx.fillRect(p.x,p.y,4,4); });
+    t++; if(t<120) requestAnimationFrame(tick); else ctx.clearRect(0,0,cv.width,cv.height);
+  })();
+}
+
+/* ================= 错题本 / 进度 / 未掌握 ================= */
+function redoWrong(n){
+  const list=REC.wrong.slice(-n);
+  const units=list.map(r=>{
+    const it=PHRASES.find(x=>x.p===r.word);
+    if(!it) return null;
+    /* 快照缺失/过旧时用记录里的 si 兜底，确保重做的是同一道小题 */
+    let sn=r.sn||null;
+    const si=(typeof r.si==='number')?r.si:-1;
+    if(sn){ if(!(typeof sn.si==='number'&&sn.si>=0)&&si>=0) sn=Object.assign({},sn,{si:si}); }
+    else sn={t:r.type,si:si,p:r.qp,a:r.correct,h:''};
+    return {it:it,t:r.type,sn:sn};
+  }).filter(Boolean);
+  if(!units.length){ toast('没有可重做的错题'); return; }
+  closeOv('wrongOv'); startSession(units);
+}
+function openWrong(){
+  const panel=document.getElementById('wrongPanel');
+  if(!REC.wrong.length){
+    panel.innerHTML='<h2>📒 Wrong Notebook</h2><p class="small">No wrong answers yet. Keep practicing!</p>'+
+      '<button class="btn btn-ghost" style="margin-top:12px;" onclick="closeOv(\'wrongOv\')">Close</button>';
+    openOv('wrongOv'); return;
+  }
+  const total=REC.wrong.length, ready=REC.wrong.filter(r=>(r.right||0)>=3), pending=total-ready.length;
+  let cand=total<=8?Array.from({length:total-1},(_,i)=>i+1):[5,10,20,30,50].filter(x=>x<total);
+  const uniq=[...new Set(cand.concat([total]))];
+  const dflt=uniq.indexOf(20)>=0?20:(uniq.indexOf(10)>=0?10:total);
+  let html='<h2>📒 Wrong Notebook</h2><p class="small">Student: <b>'+esc(CUR)+'</b> · '+total+' record(s) · <b style="color:#c62828;">待巩固 '+pending+'</b> · <b style="color:#2e7d32;">已达标 '+ready.length+'</b></p>';
+  html+='<h3>How many questions this round?</h3><div class="sync-row">';
+  uniq.forEach(n=>{ html+='<button class="btn '+(n===dflt?'btn-blue':'btn-ghost')+' btn-sm" onclick="redoWrong('+n+')">'+(n>=total?'All ('+total+')':n)+'</button>'; });
+  html+='</div><p class="small" style="margin-top:8px;">累计答对 3 次会自动标记“已达标”；若计数异常或你确认已掌握，也可以对任意一条<b>手动移出</b>。</p>';
+  REC.wrong.slice().reverse().forEach(r=>{
+    const tdef=TYPES.find(t=>t.id===r.type);
+    const right=r.right||0, doneOK=right>=3;
+    html+='<div class="wrong-item"><div class="meta">'+esc(r.word)+' · '+esc(tdef?tdef.name:r.type)+' · 错 '+r.miss+' 次 · 答对 '+right+' 次</div>'+
+      '<div class="q">'+esc(r.q||'').slice(0,220)+'</div>'+
+      '<div class="q"><span class="given">你的答案：'+esc(r.given||'')+'</span>　<span class="corr">正确：'+esc(r.correct||'')+'</span></div>'+
+      '<button type="button" class="btn btn-ghost btn-sm wrong-remove" data-wid="'+esc(r._wid||'')+'" data-k="'+esc(wrongKey(r))+'" onclick="dropWrongEl(this)">'+(doneOK?'✓ 已达标 · 从错题本移除':'手动移出错题本')+'</button>'+
+      (doneOK?'':'<div class="small" style="margin-top:4px;">还差 '+(3-right)+' 次自动达标；如已掌握可直接手动移出。</div>')+
+      '</div>';
+  });
+  html+='<button class="btn btn-ghost" style="margin-top:12px;width:100%;" onclick="closeOv(\'wrongOv\')">Close</button>';
+  panel.innerHTML=html; openOv('wrongOv');
+}
+function openProg(){
+  const done=PHRASES.filter(isMastered).length;
+  let html='<h2>📊 My Progress</h2><p class="small">Student: <b>'+esc(CUR)+'</b></p>';
+  CATS.forEach(cat=>{
+    const list=PHRASES.filter(x=>x.cat===cat.k);
+    const d=list.filter(isMastered).length;
+    html+='<div style="margin:10px 0;"><div style="font-weight:800;font-size:14px;">'+cat.i+' '+esc(cat.n)+'　'+d+'/'+list.length+'</div>'+
+      '<div class="bar" style="margin-top:4px;"><i style="width:'+Math.round(d/list.length*100)+'%;"></i></div></div>';
+  });
+  html+='<h3>Detail</h3><div style="max-height:340px;overflow:auto;">';
+  PHRASES.forEach(it=>{
+    const t=availTypes(it),x=t.filter(y=>typePassed(it,y)).length;
+    html+='<div class="pill '+(x>=t.length?'':'miss')+'" style="cursor:pointer;" onclick="closeOv(\'progOv\');openPhrase(PHRASES['+PHRASES.indexOf(it)+'])">'+esc(it.p)+' '+x+'/'+t.length+'</div>';
+  });
+  html+='</div>';
+  const ch=REC.chal;
+  if(ch){
+    const d=chalDoneCount(), n=ch.qs.length, fin=ch.finished||d>=n;
+    html+='<div class="chal-block'+(fin?' fin':'')+'"><div style="font-weight:900;">🏆 Final Challenge：'+(fin?'全部完成 ✓':'<span style="color:#8e24aa;">'+d+' / '+n+' 已完成</span>')+'</div>'+
+      '<div class="small" style="margin-top:4px;">'+(fin?'全部词组通关 + 一轮随机抽题完成。':'必须完成这一轮随机抽题，才算最终通关。')+'</div></div>';
+  } else if(allMastered()){
+    html+='<div class="chal-block"><div style="font-weight:900;">🏆 Final Challenge：待开始</div><div class="small" style="margin-top:4px;">全部词组已通关，还差一轮随机抽题。</div></div>';
+  }
+  html+='<button class="btn btn-ghost" style="margin-top:12px;width:100%;" onclick="closeOv(\'progOv\')">Close</button>';
+  document.getElementById('progPanel').innerHTML=html; openOv('progOv');
+}
+function openWeak(){
+  const list=PHRASES.filter(it=>!isMastered(it));
+  let html='<h2>🎯 Not Mastered</h2>';
+  if(!list.length){
+    const ch=REC.chal;
+    if(ch&&ch.finished) html+='<p class="small">全部 47 个词组已掌握，Final Challenge 也已完成 — 本单元彻底通关。</p>';
+    else if(ch) html+='<p class="small">全部 47 个词组已掌握，但 Final Challenge 还剩 '+(ch.qs.length-chalDoneCount())+' 题；必须完成才判定最终通关。</p>'+
+      '<button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'weakOv\');openChal()">🏆 继续 Final Challenge</button>';
+    else html+='<p class="small">全部 47 个词组已掌握，但还差一轮 Final Challenge 随机抽题；完成后才判定最终通关。</p>'+
+      '<button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'weakOv\');openChal()">🏆 进入 Final Challenge</button>';
+  } else{
+    html+='<p class="small">'+list.length+' phrase(s) left. Tap one to open its practice list.</p>';
+    html+='<div style="max-height:380px;overflow:auto;">';
+    list.forEach(it=>{
+      const t=availTypes(it),x=t.filter(y=>typePassed(it,y)).length;
+      html+='<div class="wrong-item" style="cursor:pointer;" onclick="closeOv(\'weakOv\');openPhrase(PHRASES['+PHRASES.indexOf(it)+'])">'+
+        '<div class="meta">'+esc(it.grp)+' · Para '+esc(it.para)+' · '+x+'/'+t.length+'</div>'+
+        '<div class="q">'+esc(it.p)+' — '+esc(it.cn)+'</div></div>';
+    });
+    html+='</div>';
+    html+='<button class="btn btn-blue" style="margin-top:12px;width:100%;" onclick="practiceAllWeak()">▶ 练这 '+list.length+' 条的全部未过题</button>';
+  }
+  html+='<button class="btn btn-ghost" style="margin-top:10px;width:100%;" onclick="closeOv(\'weakOv\')">Close</button>';
+  document.getElementById('weakPanel').innerHTML=html; openOv('weakOv');
+}
+function practiceAllWeak(){
+  const items=PHRASES.filter(it=>!isMastered(it));
+  const units=buildSession(items,TYPES.map(t=>t.id),400);
+  closeOv('weakOv');
+  if(!units.length){ toast('没有未掌握的题'); return; }
+  startSession(units);
+}
+/* 按单词练习：从点击的题型起，串行练完该词其余未通过题型，无需退出重进 */
+function practiceOne(p,type){
+  const it=PHRASES.find(x=>x.p===p); if(!it) return;
+  const all=practiceTypes(it);
+  const i0=all.indexOf(type);
+  const order=i0>=0?all.slice(i0).concat(all.slice(0,i0)):all.slice();
+  let units=[];
+  order.forEach((t,k)=>{
+    if(k>0&&typePassed(it,t)) return;          // 已 ✓ 的题型跳过；点击的那一型始终保留
+    buildSession([it],[t],50,true).forEach(u=>units.push(u));
+  });
+  if(!units.length){ toast('暂无该题型的题'); return; }
+  closeOv('phraseOv'); startSession(units);
+}
+
+/* ================= 导出 / 导入 ================= */
+function openSync(){
+  const json=JSON.stringify({v:1,stu:CUR,rec:REC});
+  document.getElementById('syncPanel').innerHTML='<h2>⇄ Export / Import</h2>'+
+    '<p class="small">换设备或换浏览器时为防止进度丢失：先 <b>导出</b> 得到 u1-phrase-progress.json，在新设备的位置方式<b>导入</b>同一个文件即可。</p>'+
+    '<h3>Export</h3><button class="btn btn-blue" style="width:100%;" onclick="exportRec()">⬇ Download progress file</button>'+
+    '<h3>Import</h3><button class="btn btn-ghost" style="width:100%;" onclick="document.getElementById(\'importFile\').click()">⬆ Choose progress file…</button>'+
+    '<p class="small" style="margin-top:8px;">当前：'+esc(CUR||'(无)')+' · 已掌握 '+PHRASES.filter(isMastered).length+'/'+TOTAL+' 条 · 错题 '+REC.wrong.length+' 条</p>'+
+    '<button class="btn btn-ghost" style="margin-top:12px;width:100%;" onclick="closeOv(\'syncOv\')">Close</button>';
+  openOv('syncOv');
+}
+function exportRec(){
+  try{
+    const blob=new Blob([JSON.stringify({v:1,stu:CUR,rec:REC},null,1)],{type:'application/json'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download='u1-phrase-progress-'+(CUR||'anon')+'.json';
+    document.body.appendChild(a); a.click();
+    setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },400);
+    toast('已导出 ✓');
+  }catch(e){ toast('导出失败'); }
+}
+function importRec(file){
+  const fr=new FileReader();
+  fr.onload=function(){
+    try{
+      const d=JSON.parse(fr.result);
+      if(!d||!d.rec) throw 0;
+      const name=(d.stu||CUR||'Student').slice(0,30);
+      REC=d.rec; if(!REC.items) REC.items={}; if(!Array.isArray(REC.wrong)) REC.wrong=[];
+      normalizeWrong();
+      if(loadStudents().indexOf(name)<0) saveStudents(loadStudents().concat([name]));
+      CUR=name; setCurrent(name); saveRec(name,REC);
+      document.getElementById('stuName').textContent=name;
+      renderCards(); toast('导入成功 ✓'); closeOv('syncOv');
+    }catch(e){ toast('文件格式不对'); }
+  };
+  fr.readAsText(file);
+}
+
+/* ================= 学生选择 ================= */
+function showNameModal(){
+  if(CUR){ document.getElementById('stuName').textContent=CUR; renderCards(); return; }
+  const names=loadStudents();
+  document.getElementById('stuListBox').innerHTML=names.length?('已在使用的名字：'+names.map(n=>'<span class="pill" data-n="'+esc(n)+'" onclick="chooseStuEl(this)">'+esc(n)+'</span>').join('')):
+    '<span class="small">首次使用请输入姓名，进度保存在本机。</span>';
+  openOv('nameOv');
+  setTimeout(()=>document.getElementById('nameInput').focus(),120);
+}
+function chooseStu(n){
+  CUR=n; setCurrent(n);
+  REC=loadRec(n)||defaultRec();
+  if(!REC.items) REC.items={}; if(!Array.isArray(REC.wrong)) REC.wrong=[];
+  normalizeWrong();
+  document.getElementById('stuName').textContent=n;
+  closeOv('nameOv'); renderCards(); toast('Welcome back, '+n+'!');
+}
+function doNameOk(){
+  const v=(document.getElementById('nameInput').value||'').trim();
+  if(!v){ toast('Please enter your name'); return; }
+  chooseStu(v.slice(0,30));
+}
+
+/* ================= 初始化 ================= */
+document.getElementById('covStart').addEventListener('click',function(ev){
+  ev.stopPropagation();
+  const ov=document.getElementById('coverOv');
+  if(ov.classList.contains('out')) return;
+  ov.classList.add('out');
+  setTimeout(function(){ ov.style.display='none'; showNameModal(); },600);
+});
+document.getElementById('nameOk').onclick=doNameOk;
+document.getElementById('nameInput').onkeydown=e=>{ if(e.key==='Enter') doNameOk(); };
+document.getElementById('startPracticeBtn').onclick=()=>{ setupTypeGrid(); openOv('setupOv'); };
+document.getElementById('wrongBtn').onclick=openWrong;
+document.getElementById('progressBtn').onclick=openProg;
+document.getElementById('weakBtn').onclick=openWeak;
+document.getElementById('chalBtn').onclick=openChal;
+document.getElementById('switchBtn').onclick=()=>{ setCurrent(''); location.reload(); };
+document.getElementById('syncBtn').onclick=openSync;
+/* ---- 按课文顺序 (2026-10-27) ---- */
+document.getElementById('paraSortBtn').onclick=function(){
+  paraSort=!paraSort;
+  this.classList.toggle('on',paraSort);
+  document.getElementById('paraChips').style.display=paraSort?'flex':'none';
+  renderCards();
+  window.scrollTo({top:0,behavior:'smooth'});
+};
+document.getElementById('paraChips').onclick=function(e){
+  const b=e.target.closest('.pchip'); if(!b) return;
+  const t=document.getElementById('pg_'+b.dataset.p);
+  if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+};
+document.getElementById('importFile').onchange=e=>{ const f=e.target.files[0]; if(f) importRec(f); e.target.value=''; };
+document.getElementById('search').oninput=e=>{ searchTerm=e.target.value; renderCards(); };
+document.getElementById('beginBtn').onclick=()=>{
+  const types=selectedTypes();
+  if(!types.length){ toast('Please choose at least one question type'); return; }
+  const rng=document.querySelector('input[name=rng]:checked').value;
+  let pool=PHRASES;
+  if(rng==='weak') pool=PHRASES.filter(it=>!isMastered(it));
+  if(rng==='wrong'){
+    const set={}; REC.wrong.forEach(r=>set[r.word]=1);
+    pool=PHRASES.filter(it=>set[it.p]);
+  }
+  const count=Math.max(1,Math.min(400,parseInt(document.getElementById('qcount').value,10)||20));
+  const units=buildSession(pool,types,count);
+  closeOv('setupOv');
+  if(!units.length){ toast('没有符合范围的题目'); return; }
+  startSession(units);
+};
+document.querySelectorAll('.ov').forEach(o=>{
+  o.addEventListener('click',function(e){ if(e.target===this&&this.id!=='qOv'&&this.id!=='nameOv') this.classList.remove('show'); });
+});
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ document.querySelectorAll('.ov').forEach(o=>o.classList.remove('show')); document.body.classList.remove('locked'); } });
+renderChips();
+showNameModal();
+renderCards();
+</script>
+<script>
+/* 合并版：注册根级 Service Worker（原版未注册，无法离线/安装）；立即注册，不等 load */
+if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){
+  navigator.serviceWorker.register('../sw.js').catch(()=>{});
+}
+</script>
+</body>
+</html>

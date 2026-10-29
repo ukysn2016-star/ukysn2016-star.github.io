@@ -252,6 +252,13 @@
 .wd-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0 2px;}
 /* 词详情里的配图居中（2026-10-29） */
 #wordPanel .word-img{display:block;margin:10px auto;max-height:220px;}
+/* ---- 按课文顺序分组 (2026-10-29，对齐词组卡) ---- */
+.btn.on{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 3px 0 rgba(0,0,0,.12);}
+.pgroup{grid-column:1/-1;display:flex;align-items:baseline;gap:10px;padding:14px 2px 6px;margin-bottom:-4px;
+  border-bottom:2px solid var(--line);scroll-margin-top:190px;}
+.pgroup b{font-size:17px;color:var(--blue-dark);}
+.pgroup span{font-size:12px;font-weight:800;color:var(--ink2);}
+.chip.pchip.on{background:var(--blue);color:#fff;border-color:var(--blue);}
 </style>
 <style>
 /* ===== 合并版：返回单元首页 ===== */
@@ -328,9 +335,11 @@
   <button class="btn btn-ghost" id="cnBtn" title="默认隐藏中文：点卡片上的按钮逐张显示；这里可一键全显/全隐">🀄 全部显示中文</button>
   <button class="btn btn-ghost" id="switchBtn">👤 Student</button>
   <button class="btn btn-ghost" id="syncBtn">⇄ Sync</button>
+  <button class="btn btn-ghost" id="paraSortBtn" title="按课文段落分组显示">📖 按课文顺序</button>
   <input type="file" id="importFile" accept="application/json" style="display:none">
 </div>
 <div class="chips" id="chips"></div>
+<div class="chips" id="paraChips" style="display:none"></div>
 <div class="done-fab" id="doneFab" title="已答对小题 / 全部应掌握小题" onclick="openProgress()">0/0</div>
 
 <div class="progress-wrap">
@@ -666,7 +675,7 @@ function speak(text, btn){
 function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1800); }
 
 // ---------- rendering study cards ----------
-let activeCat='all', searchTerm='';
+let activeCat='all', searchTerm='', paraSort=false;
 function renderChips(){
   const c=document.getElementById('chips');
   let html=`<div class="chip ${activeCat==='all'?'active':''}" data-c="all">All</div>`;
@@ -703,6 +712,14 @@ function renderCards(){
   if(term){
     list=list.filter(w=>[w.w,w.ph,w.en,w.cn,w.scene,w.etym,w.srcEn,w.srcCn,...w.forms.map(f=>f.join(' ')),...w.colloc.map(f=>f.join(' '))].join(' ').toLowerCase().includes(term));
   }
+  if(paraSort){
+    list=list.map((x,i)=>[x,i])
+      .sort((a,b)=>((parseInt(a[0].para,10)||9999)-(parseInt(b[0].para,10)||9999))||(a[1]-b[1]))
+      .map(p=>p[0]);
+  }
+  const _pc={};
+  if(paraSort) list.forEach(x=>{const k=String(x.para||'?');_pc[k]=(_pc[k]||0)+1;});
+  let _lastPara=null;
   list.forEach((w,idx)=>{
     const formsHtml=w.forms.map(f=>`<div class="pair-item">${esc(f[0])} <span class="small">${esc(f[1])}</span></div>`).join('')||'<span class="small">—</span>';
     const collocHtml=w.colloc.map(f=>`<div class="pair-item">${esc(f[0])} <span class="small">${esc(f[1])}</span></div>`).join('')||'<span class="small">—</span>';
@@ -741,8 +758,23 @@ function renderCards(){
         </div>
       </div>`;
     div.onclick=()=>openWordDetail(w);
+    if(paraSort){
+      const k=String(w.para||'?');
+      if(k!==_lastPara){
+        const hd=document.createElement('div');
+        hd.className='pgroup'; hd.id='pg_'+k;
+        hd.innerHTML='<b>Para '+esc(k)+'</b><span>'+_pc[k]+' 词</span>';
+        g.appendChild(hd); _lastPara=k;
+      }
+    }
     g.appendChild(div);
   });
+  if(paraSort){
+    const pc=document.getElementById('paraChips');
+    pc.innerHTML=Object.keys(_pc)
+      .sort((a,b)=>((parseInt(a,10)||9999)-(parseInt(b,10)||9999)))
+      .map(k=>'<div class="chip pchip" data-p="'+k+'">P'+k+' · '+_pc[k]+'</div>').join('');
+  }
   updateMasterBar();
 }
 function resolveW(x){ return (typeof x==='number') ? (VOCAB[x]||null) : (VOCAB.find(w=>w.w===x)||null); }
@@ -1792,6 +1824,19 @@ document.getElementById('weakBtn').onclick=openWeak;
 document.getElementById('chalBtn').onclick=openChal;
 document.getElementById('switchBtn').onclick=showNameModal;
 document.getElementById('syncBtn').onclick=openSync;
+/* ---- 按课文顺序 (2026-10-29) ---- */
+document.getElementById('paraSortBtn').onclick=function(){
+  paraSort=!paraSort;
+  this.classList.toggle('on',paraSort);
+  document.getElementById('paraChips').style.display=paraSort?'flex':'none';
+  renderCards();
+  window.scrollTo({top:0,behavior:'smooth'});
+};
+document.getElementById('paraChips').onclick=function(e){
+  const b=e.target.closest('.pchip'); if(!b) return;
+  const t=document.getElementById('pg_'+b.dataset.p);
+  if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+};
 document.getElementById('importFile').onchange=e=>{ if(e.target.files[0]) importBackup(e.target.files[0]); };
 document.getElementById('nameOk').onclick=confirmName;
 document.getElementById('beginBtn').onclick=()=>{

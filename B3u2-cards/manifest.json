@@ -1,0 +1,25 @@
+{
+  "name": "综合英语3 U2 学习卡 · Groundless Beliefs",
+  "short_name": "U2学习卡",
+  "description": "《Groundless Beliefs》生词卡 + 词组卡合辑：28 个生词、90 条核心短语，支持听写、拼写、配对、用法辨析与课文语境练习，可离线使用。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait",
+  "background_color": "#f7f9fb",
+  "theme_color": "#58cc02",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "生词卡", "short_name": "生词卡", "url": "./words/index.html" },
+    { "name": "词组卡", "short_name": "词组卡", "url": "./phrases/index.html" }
+  ],
+  "prefer_related_applications": false
+}

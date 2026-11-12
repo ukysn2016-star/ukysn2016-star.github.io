@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>综合英语1 · Unit 2 词组卡 · The Nightingale and the Rose</title>
+<link rel="manifest" href="../manifest.json">
+<meta name="app-build" content="v1.3-2026-11-11">
+<link rel="apple-touch-icon" href="../icon-180.png">
+<link rel="icon" type="image/png" href="../icon-192.png">>
+<meta name="theme-color" content="#1899d6">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script>
+/* 字体异步加载：字体 CDN 慢或不可用时，既不拖慢首屏，也不阻塞 Service Worker 注册 */
+(function(){
+  var u='https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap';
+  function add(){
+    if(document.getElementById('gf-css')) return;
+    var l=document.createElement('link');
+    l.id='gf-css'; l.rel='stylesheet'; l.href=u;
+    document.head.appendChild(l);
+  }
+  setTimeout(add, 800);
+})();
+</script>
+<style>
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --green:#58cc02; --green-dark:#46a302; --green-light:#d7ffb8; --green-bg:#e8f8dd;
+    --blue:#1cb0f6; --blue-dark:#1899d6; --blue-light:#ddf4ff;
+    --gold:#ffc800; --gold-dark:#e6a700;
+    --red:#ff4b4b; --red-dark:#e04343; --red-light:#ffe6e6;
+    --purple:#ce82ff; --purple-light:#f3e5ff;
+    --ink:#3c3c3c; --ink2:#777; --ink3:#afafaf;
+    --line:#e5e5e5; --line2:#f0f0f0;
+  }
+  body{font-family:'Nunito','Noto Sans SC',system-ui,sans-serif;background:#f7f9fb;color:var(--ink);padding-bottom:60px;}
+  header{background:linear-gradient(135deg,var(--green),#7bd62e);color:#fff;padding:18px 22px;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:40;}
+  header h1{font-size:22px;font-weight:900;letter-spacing:.3px;}
+  header .sub{font-size:13px;opacity:.92;margin-top:2px;}
+  .topbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 18px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:74px;z-index:30;}
+  .btn{border:none;border-radius:12px;padding:10px 16px;font-family:inherit;font-weight:800;font-size:14px;cursor:pointer;transition:.15s;box-shadow:0 3px 0 rgba(0,0,0,.12);}
+  .btn:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,.12);}
+  .btn-green{background:var(--green);color:#fff;}
+  .btn-blue{background:var(--blue);color:#fff;}
+  .btn-gold{background:var(--gold);color:#3c3c3c;}
+  .btn-ghost{background:#fff;color:var(--ink);border:2px solid var(--line);box-shadow:none;}
+  .btn-red{background:var(--red);color:#fff;}
+  .btn-purple{background:var(--purple);color:#fff;}
+  .btn-sm{padding:6px 11px;font-size:12px;border-radius:9px;}
+  .search{flex:1;min-width:180px;padding:9px 13px;border:2px solid var(--line);border-radius:11px;font-family:inherit;font-size:14px;font-weight:600;}
+  .chips{display:flex;gap:7px;flex-wrap:wrap;padding:0 18px 10px;background:#fff;}
+  .chip{border:2px solid var(--line);background:#fff;border-radius:20px;padding:5px 13px;font-weight:800;font-size:13px;cursor:pointer;color:var(--ink2);}
+  .chip.active{background:var(--blue);color:#fff;border-color:var(--blue);}
+  .wrap{max-width:1100px;margin:0 auto;padding:16px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;}
+  .flip-card{perspective:1700px;height:664px;cursor:pointer;touch-action:pan-y;}
+  .flip-inner{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d;}
+  .flip-card.flipped .flip-inner{transform:rotateY(180deg);}
+  .flip-front,.flip-back{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:18px;padding:18px 18px 14px;overflow:auto;-webkit-overflow-scrolling:touch;}
+  .flip-front{background:#fff;border:2px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding-bottom:0;overflow:hidden;}
+  .word-img{width:100%;height:220px;object-fit:contain;background:#f7f9fb;border-radius:12px;margin-top:26px;flex:none;}
+  .flip-back{background:#fff;border:2px solid var(--line);transform:rotateY(180deg);}
+  .word{font-size:30px;font-weight:900;color:var(--ink);}
+  .ph{color:var(--ink2);font-size:15px;margin-top:4px;font-family:'Noto Sans SC',serif;}
+  .pos{display:inline-block;background:var(--green-bg);color:var(--green-dark);border-radius:8px;padding:2px 10px;font-size:13px;font-weight:800;margin-top:8px;}
+  .cn{font-size:18px;color:var(--ink);margin-top:10px;font-weight:700;}
+  .en{font-size:15px;color:var(--ink2);margin-top:6px;}
+  .audio-row{display:flex;gap:10px;margin-top:16px;}
+  .play{flex:1;background:var(--blue-light);color:var(--blue-dark);border:none;border-radius:12px;padding:11px;font-weight:800;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;}
+  .play.word{border:2px solid var(--blue);}
+  .para-tag{position:absolute;top:12px;left:14px;background:var(--gold);color:#3c3c3c;font-size:12px;font-weight:900;border-radius:8px;padding:3px 9px;}
+  .mastered-badge{position:absolute;top:12px;right:14px;background:var(--green);color:#fff;font-size:12px;font-weight:900;border-radius:8px;padding:3px 9px;display:none;}
+  .flip-card.mastered .mastered-badge{display:block;}
+  .flip-card.mastered .flip-front, .flip-card.mastered .flip-back{background:#cdeccf;border:2px solid var(--green);box-shadow:0 4px 0 rgba(70,163,2,.20);}
+  .flip-card.mastered .flip-front .word{color:var(--green-dark);}
+  .flip-card.mastered .para-tag{background:rgba(70,163,2,.16);color:var(--green-dark);}
+  /* ---- 掌握层级 + 使用场景（方案C：卡底信息条） ---- */
+  .lvl{display:inline-block;border-radius:20px;padding:2px 9px;font-size:12px;font-weight:900;color:#fff;letter-spacing:.3px;flex:none;}
+  .lvl-a{background:#e6a700;}
+  .lvl-b{background:#1899d6;}
+  .lvl-c{background:#ff9600;}
+  .lvl-d{background:#9aa3ad;}
+  .lvl-cn{font-size:12.5px;font-weight:800;color:var(--ink);}
+  .scene{display:inline-block;background:#f2f4f7;color:#5b6673;border:1px solid #e2e6ec;border-radius:8px;padding:2px 8px;font-size:12px;font-weight:800;}
+  .meta-bar{margin-top:auto;width:calc(100% + 36px);margin-left:-18px;border-top:1px solid var(--line2);background:#fafbfc;padding:8px 16px;display:flex;align-items:center;gap:7px;border-radius:0 0 16px 16px;}
+  .meta-bar .sp{flex:1;}
+  .fc-body{flex:1 1 auto;min-height:0;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;justify-content:safe center;text-align:center;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  .flip-card.mastered .meta-bar{background:rgba(70,163,2,.10);border-top-color:rgba(70,163,2,.25);}
+  .wd-meta{display:flex;align-items:center;gap:8px;margin:6px 0 2px;flex-wrap:wrap;}
+  .def-en{font-size:1.12rem;line-height:1.45;color:var(--ink);font-weight:600;margin-top:10px;max-width:100%;}
+  .def-cn-wrap{margin-top:10px;}
+  .reveal-cn{border:none;background:var(--blue-light);color:var(--blue-dark);border-radius:10px;padding:6px 12px;font-weight:800;font-size:13px;cursor:pointer;}
+  .cn.hidden{display:none;}
+  .def-cn{font-size:17px;color:var(--ink);font-weight:700;margin-top:8px;}
+  .def-cn-text{font-size:16px;color:var(--ink2);font-weight:600;margin-top:6px;}
+  .def-card.static{cursor:default;background:#f4f8ff;border:1px solid var(--line2);border-radius:12px;padding:12px 14px;font-size:16px;color:var(--ink);font-weight:600;}
+  .back-sec{background:#fafbfc;border:1px solid var(--line2);border-radius:12px;padding:11px 13px;margin-bottom:11px;}
+  .back-sec h4{font-size:13px;font-weight:900;color:var(--blue-dark);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+  .back-sec .en{font-size:16px;color:var(--ink);margin:0;}
+  .back-sec .cn{font-size:14px;color:var(--ink2);font-weight:600;margin:3px 0 0;}
+  .hl{background:var(--gold-light,#fff3c4);background:#fff3c4;padding:0 4px;border-radius:5px;font-weight:800;color:#9a6b00;}
+  .pair-item{border:1px solid var(--line);border-radius:8px;padding:5px 9px;margin:3px 0;font-size:14px;font-weight:600;}
+  .ov{position:fixed;inset:0;background:rgba(20,30,40,.55);display:none;z-index:100;padding:18px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  .ov.show{display:flex;}
+  .ov>*{margin:auto;}
+  .panel{background:#fff;border-radius:18px;padding:24px;max-width:680px;width:100%;max-height:90vh;overflow:auto;box-shadow:0 10px 40px rgba(0,0,0,.25);}
+  .panel h2{font-size:21px;font-weight:900;margin-bottom:14px;}
+  .panel h3{font-size:16px;font-weight:900;margin:16px 0 8px;color:var(--blue-dark);}
+  .field{width:100%;padding:11px 13px;border:2px solid var(--line);border-radius:11px;font-family:inherit;font-size:15px;font-weight:700;margin-top:6px;}
+  label.lbl{font-weight:800;font-size:14px;display:block;margin-top:10px;}
+  .type-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0;}
+  .type-opt{border:2px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;font-weight:800;font-size:14px;display:flex;align-items:center;gap:8px;}
+  .type-opt input{transform:scale(1.3);}
+  .type-opt.adv{border-color:var(--purple);}
+  .q-card{background:#fff;border:2px solid var(--line);border-radius:18px;padding:22px;max-width:760px;width:100%;max-height:88vh;overflow-y:auto;-webkit-overflow-scrolling:touch;position:relative;margin:auto;}
+  .q-card::-webkit-scrollbar{width:9px;}
+  .q-card::-webkit-scrollbar-thumb{background:var(--line);border-radius:6px;}
+  .q-card::-webkit-scrollbar-thumb:hover{background:var(--ink2);}
+  body.locked{overflow:hidden;}
+  .exit-x{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);background:#fff;color:var(--ink2);font-size:16px;font-weight:900;cursor:pointer;z-index:5;}
+  .exit-x:hover{border-color:var(--red);color:var(--red);}
+  .def-card{border:2px solid var(--blue);background:var(--blue-light);border-radius:12px;padding:14px 16px;margin:10px 0;font-size:16.5px;font-weight:700;color:var(--ink);cursor:pointer;line-height:1.5;}
+  .def-card:hover{border-color:var(--blue-dark);}
+  .q-word-row{display:flex;align-items:center;justify-content:center;gap:12px;margin:10px 0;}
+  .q-word-row .w{font-size:30px;font-weight:900;color:var(--ink);}
+  .praise-pop{animation:pop .45s ease;}
+  @keyframes pop{0%{transform:scale(.6);opacity:0;}60%{transform:scale(1.12);}100%{transform:scale(1);opacity:1;}}
+  .base-chip{display:inline-block;background:var(--gold-light,#fff3c4);color:#9a6b00;font-weight:900;font-size:13px;border-radius:8px;padding:4px 10px;margin:6px 0;}
+  .hint-cn{font-size:14px;color:var(--ink2);margin:4px 0 6px;font-weight:600;}
+  .usage-why{margin-top:8px;text-align:left;border-top:1px solid rgba(0,0,0,.08);padding-top:8px;}
+  .why-line{font-size:14px;line-height:1.65;padding:4px 2px;border-bottom:1px dashed rgba(0,0,0,.08);font-weight:600;}
+  .why-line:last-child{border-bottom:0;}
+  .why-line.ok{color:var(--green-dark);}
+  .why-line.no{color:var(--red-dark);}
+  .why-line.tip{color:var(--ink2);font-weight:800;background:rgba(255,255,255,.55);border-radius:8px;padding:6px 8px;margin-top:4px;}
+  .q-type{display:inline-block;background:var(--blue-light);color:var(--blue-dark);font-weight:900;font-size:13px;border-radius:8px;padding:4px 11px;margin-bottom:12px;}
+  .q-type.adv{background:var(--purple-light);color:#8a2be2;}
+  .q-instr{font-size:16px;font-weight:800;margin-bottom:14px;color:var(--ink);}
+  .q-text{font-size:19px;font-weight:700;color:var(--ink);margin:10px 0;line-height:1.5;}
+  .q-text .blank{display:inline-block;min-width:90px;border-bottom:3px solid var(--blue);color:var(--blue);font-weight:900;padding:0 6px;}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0;font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;transition:.12s;}
+  .opt:hover{border-color:var(--blue);}
+  .opt.correct{background:var(--green-bg);border-color:var(--green);color:var(--green-dark);}
+  .opt.wrong{background:var(--red-light);border-color:var(--red);color:var(--red-dark);}
+  .opt.dim{opacity:.5;}
+  .opt-row{display:flex;align-items:center;gap:8px;margin:8px 0;}
+  .opt-row .opt{margin:0;flex:1;}
+  .opt-spk{flex:none;width:50px;height:50px;border:2px solid var(--line);background:#fff;border-radius:12px;font-size:19px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;}
+  .opt-spk:hover{border-color:var(--blue);background:var(--blue-light);}
+  .answer-input{width:100%;padding:13px 15px;border:2px solid var(--blue);border-radius:12px;font-family:inherit;font-size:18px;font-weight:800;margin:10px 0;text-transform:lowercase;}
+  .match-wrap{display:flex;gap:20px;margin:14px 0;}
+  .match-col{flex:1;display:flex;flex-direction:column;gap:10px;}
+  .match-item{border:2px solid var(--line);border-radius:12px;padding:12px;font-weight:800;font-size:15px;cursor:pointer;text-align:center;background:#fff;user-select:none;}
+  .match-item.sel{background:var(--gold);border-color:var(--gold-dark);}
+  .match-item.paired{background:var(--green-bg);border-color:var(--green);}
+  .match-item.wrong{background:var(--red-light);border-color:var(--red);}
+  .match-item.correct{background:var(--green-bg);border-color:var(--green);}
+  .lo-slots{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:58px;border-bottom:3px dashed var(--line);padding:8px 4px 12px;margin-bottom:16px;}
+  .lo-pool{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;}
+  .lo-tile{min-width:44px;height:48px;padding:0 8px;border:2px solid var(--line);border-radius:10px;background:#fff;font-size:22px;font-weight:900;color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;user-select:none;transition:.1s;}
+  .lo-tile:hover{border-color:var(--blue);}
+  .lo-tile.used{opacity:.22;pointer-events:none;}
+  .lo-slot-tile{min-width:44px;height:48px;padding:0 8px;border:2px solid var(--blue);border-radius:10px;background:var(--blue);color:#fff;font-size:22px;font-weight:900;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;user-select:none;}
+  .lo-slot-tile.wrongT{background:var(--red);border-color:var(--red);}
+  .pair-item b.hl-red{color:var(--red-dark);font-weight:800;}
+  .pair-item b.hl-em{font-weight:800;}
+  .form-note{color:var(--red-dark);font-weight:800;font-size:12px;margin-top:3px;}
+  .feedback{margin-top:14px;padding:12px 14px;border-radius:12px;font-weight:800;font-size:15px;display:none;}
+  .feedback.ok{display:block;background:var(--green-bg);color:var(--green-dark);}
+  .feedback.no{display:block;background:var(--red-light);color:var(--red-dark);}
+  .fireworks{position:fixed;inset:0;pointer-events:none;z-index:200;}
+  .progress-wrap{max-width:1100px;margin:0 auto;padding:10px 18px;}
+  .bar{height:14px;background:var(--line2);border-radius:10px;overflow:hidden;}
+  .bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--blue));width:0;transition:.4s;}
+  .bar.chal>i{background:linear-gradient(90deg,#8e24aa,#ce82ff);}
+  .chal-locked{opacity:.5;cursor:not-allowed!important;filter:grayscale(.6);}
+  .chal-block{margin-top:14px;border:2px solid #ce82ff;border-radius:12px;padding:12px 14px;background:#f7effc;}
+  .chal-block.fin{border-color:#2e7d32;background:#e8f5e9;}
+  .chal-pair{font-size:14px;line-height:1.8;font-weight:600;color:var(--ink2);}
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:12px;}
+  .stat{background:#fff;border:2px solid var(--line);border-radius:14px;padding:14px;text-align:center;}
+  .stat .n{font-size:26px;font-weight:900;color:var(--green-dark);}
+  .stat .t{font-size:13px;color:var(--ink2);font-weight:700;margin-top:2px;}
+  .wrong-item{border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0;background:#fff;}
+  .wrong-item .meta{font-size:12px;color:var(--ink2);font-weight:800;}
+  .wrong-item .q{font-size:15px;font-weight:700;margin:4px 0;}
+  .wrong-item .given{color:var(--red-dark);font-weight:800;}
+  .wrong-item .corr{color:var(--green-dark);font-weight:800;}
+  .wrong-remove{margin-top:8px;color:var(--green-dark)!important;border-color:var(--green)!important;background:#f2fbf2!important;font-weight:900;}
+  .stu-name{font-weight:900;color:#fff;}
+  .hint{font-size:12px;color:var(--ink2);margin-top:4px;}
+  .small{font-size:12.5px;color:var(--ink2);}
+  .pill{display:inline-block;background:var(--blue-light);color:var(--blue-dark);border-radius:8px;padding:3px 9px;font-size:12px;font-weight:800;margin:2px;}
+  .pill.miss{background:var(--red-light);color:var(--red-dark);}
+  .wd-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:4px;}
+  .wd-word{font-size:30px;font-weight:900;color:var(--ink);}
+  .wd-ph{font-size:15px;color:var(--blue-dark);font-weight:700;}
+  .wd-pos{font-size:13px;color:var(--ink2);font-weight:800;font-style:italic;}
+  .wd-cn{font-size:17px;font-weight:800;margin:6px 0 2px;}
+  .wd-en{font-size:14.5px;color:var(--ink2);font-weight:600;line-height:1.5;}
+  .wd-sec{background:#fafbfc;border:1px solid var(--line2);border-radius:12px;padding:11px 13px;margin-top:10px;}
+  .wd-sec h4{font-size:13px;font-weight:900;color:var(--blue-dark);margin-bottom:6px;}
+  .wd-sec .en{font-size:15.5px;}
+  .wd-sec .cn{font-size:13.5px;color:var(--ink2);font-weight:600;margin-top:3px;}
+  .type-list{margin-top:8px;}
+  .type-item{display:flex;align-items:center;gap:9px;border:2px solid var(--line);border-radius:11px;padding:9px 12px;margin:6px 0;font-weight:800;font-size:14px;cursor:default;}
+  .type-item .t-ico{flex:none;width:22px;text-align:center;font-weight:900;}
+  .type-item .t-name{flex:1;}
+  .type-item .t-lvl{flex:none;font-size:11px;color:var(--ink2);font-weight:800;text-transform:uppercase;}
+  .type-item .t-go{flex:none;font-size:12px;color:var(--blue-dark);font-weight:900;}
+  .type-item{cursor:pointer;}
+  .type-item .t-sub{flex:none;font-size:11px;font-weight:900;color:var(--blue-dark);background:#e8f1ff;border:1px solid #c9dcfb;border-radius:8px;padding:1px 7px;white-space:nowrap;}
+  .type-item .t-non{font-size:10px;font-weight:800;color:#8a8a8a;background:#f1f3f4;border-radius:6px;padding:1px 5px;margin-left:5px;white-space:nowrap;}
+  .type-item.done{background:var(--green-bg);border-color:var(--green);}
+  .type-item.done .t-ico{color:var(--green-dark);}
+  .type-item.miss{background:#fff;cursor:pointer;}
+  .type-item.miss .t-ico{color:var(--ink3);}
+  .type-item.miss:hover{border-color:var(--blue);background:var(--blue-light);}
+  .type-item.miss:hover .t-go{color:var(--blue-dark);}
+  .sync-code{width:100%;height:110px;border:2px solid var(--line);border-radius:11px;padding:9px 11px;font-family:monospace;font-size:11px;font-weight:600;resize:none;line-height:1.4;color:var(--ink);background:#fafbfc;}
+  .sync-code:focus{outline:none;border-color:var(--blue);}
+  .sync-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0;}
+  .sync-hr{border:none;border-top:2px dashed var(--line);margin:16px 0;}
+  .qr-holder{display:flex;justify-content:center;padding:10px;background:#fff;border:2px solid var(--line);border-radius:12px;margin:8px 0;}
+  .qr-holder.hide{display:none;}
+  .qr-holder svg{width:220px;height:220px;}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:11px 18px;border-radius:12px;font-weight:800;z-index:300;opacity:0;transition:.3s;pointer-events:none;}
+  .toast.show{opacity:1;}
+  @media(max-width:600px){.grid{grid-template-columns:1fr;}.topbar{position:static;}.type-grid{grid-template-columns:1fr;}}
+  /* ---- mobile scroll fix (2026-10-27): no nested scrollers / no 3D layer on phones ---- */
+  @media(max-width:600px){
+    .flip-card{height:auto;min-height:0;perspective:none;}
+    .flip-inner{height:auto;transition:none;transform-style:flat;}
+    .flip-card.flipped .flip-inner{transform:none;}
+    .flip-front,.flip-back{position:relative;height:auto;width:100%;backface-visibility:visible;transform:none;overflow:visible;}
+    .flip-front{min-height:420px;}
+    .flip-back{display:none;}
+    .flip-card.flipped .flip-front{display:none;}
+    .flip-card.flipped .flip-back{display:block;}
+    .fc-body{overflow-y:visible;}
+  }
+.q-text.q-sent{font-size:19px;line-height:1.62;text-align:left;white-space:normal;background:#f7f9fb;border:1px solid var(--line);border-radius:12px;padding:12px 14px;}
+.q-text.q-sent .blank{min-width:86px;}
+</style>
+<style>
+/* ===== cover splash (v2.0) ===== */
+#coverOv{position:fixed;inset:0;z-index:9999;background:#16233f url('../assets/cover.jpg') center/cover no-repeat;display:flex;align-items:flex-end;justify-content:center;transition:opacity .55s ease;cursor:pointer}
+#coverOv{background-size:cover;background-position:center;background-repeat:no-repeat}
+#coverOv.out{opacity:0;pointer-events:none}
+#coverOv::before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(10,18,38,.12) 40%,rgba(8,14,30,.8) 100%)}
+.cov-inner{position:relative;text-align:center;padding:0 20px 20vh;width:100%;max-width:560px;box-sizing:border-box}
+.cov-title{display:none}
+.cov-sub{margin-top:8px;font-size:clamp(13px,3.4vw,17px);color:#dfe6ff;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.cov-btn{margin-top:26px;padding:14px 46px;border:none;border-radius:999px;background:#58cc02;color:#fff;font-size:18px;font-weight:700;box-shadow:0 6px 18px rgba(88,204,2,.45);cursor:pointer;font-family:inherit}
+.cov-btn:active{transform:scale(.97)}
+
+</style>
+<style>
+  header{background:linear-gradient(135deg,var(--blue),var(--blue-dark));}
+  header .sub .pill{background:rgba(255,255,255,.22);color:#fff;}
+  .flip-card{height:600px;}
+  .word{font-size:27px;line-height:1.18;word-break:break-word;}
+  .word.long{font-size:21px;}
+  .flip-front .pos{background:var(--blue-light);color:var(--blue-dark);}
+  .flip-card.mastered .flip-front .word{color:var(--green-dark);}
+  .q-sent{font-size:17px;line-height:1.6;}
+  .opt.sent{font-size:15px;line-height:1.5;font-weight:600;}
+  .usage-tag{display:inline-block;background:var(--gold-light,#fff3c4);color:#9a6b00;font-weight:900;font-size:13px;border-radius:8px;padding:4px 10px;margin-bottom:10px;}
+  .pfill-no{font-size:12.5px;color:var(--ink2);font-weight:700;margin-top:6px;}
+  .cat-note{font-size:13px;color:var(--ink2);font-weight:700;}
+</style>
+<style>
+/* ---- 按课文顺序分组 (2026-10-27) ---- */
+.btn.on{background:var(--blue,#3b82f6);color:#fff;border-color:var(--blue,#3b82f6);box-shadow:0 3px 0 rgba(0,0,0,.12);}
+.pgroup{grid-column:1/-1;display:flex;align-items:baseline;gap:10px;padding:14px 2px 6px;margin-bottom:-4px;border-bottom:2px solid var(--line,#e5eaf2);scroll-margin-top:118px;}
+.pgroup b{font-size:17px;color:var(--blue-dark,#1e40af);}
+.pgroup span{font-size:12px;font-weight:800;color:var(--ink2,#6b7a90);}
+.chip.pchip.on{background:var(--blue,#3b82f6);color:#fff;border-color:var(--blue,#3b82f6);}
+</style>
+<style>
+/* ===== 合并版：返回单元首页 ===== */
+.hub-home{flex:none;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+  background:#fff;color:#3c3c3c;border:2px solid #e5e5e5;box-shadow:none;
+  padding:8px 12px;font-size:13px;border-radius:11px;font-weight:800;}
+.hub-home:hover{background:#f7f9fb}
+.hub-home:active{transform:translateY(1px)}
+/* 常驻「返回首页」浮标：滚动到任意深度都能一键回单元页（独立 PWA 无浏览器返回键） */
+.hub-fab{position:fixed;left:12px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:85;
+  display:inline-flex;align-items:center;gap:5px;padding:10px 14px;border-radius:999px;
+  background:#fff;border:2px solid #e5e5e5;box-shadow:0 4px 14px rgba(20,40,70,.16);
+  text-decoration:none;color:#3c3c3c;font-weight:800;font-size:13px;font-family:inherit;
+  line-height:1;opacity:.94;}
+.hub-fab:hover{opacity:1}
+.hub-fab:active{transform:translateY(1px)}
+</style>
+</head>
+<body>
+<script src="../shared/hub-bridge.js" data-card="phrases"></script>
+<a class="hub-fab" href="../index.html" title="返回单元首页">← 首页</a>
+
+<div id="coverOv">
+  <div class="cov-inner">
+    <div class="cov-title">The Nightingale and the Rose</div>
+    <div class="cov-sub">综合英语1 · Unit 2 词组卡 · Phrases &amp; Collocations · 37 条</div>
+    <button class="cov-btn" id="covStart">开始学习 ▶</button>
+  </div>
+</div>
+
+<header>
+  <h1>综合英语1 · Unit 2 <span style="opacity:.85">The Nightingale and the Rose</span></h1>
+  <div class="sub">Phrase Cards &amp; Practice · <span id="stuName" class="stu-name"></span> <span class="pill" style="opacity:.55;font-size:11px;">v1.3 · 2026-11-11 · 新封面 · 去机械发音</span></div>
+</header>
+
+<div class="topbar">
+  <a class="btn hub-home" href="../index.html">← 单元首页</a>
+  <input class="search" id="search" placeholder="Search phrase / meaning / sentence…">
+  <button class="btn btn-blue" id="startPracticeBtn">▶ Start Practice</button>
+  <button class="btn btn-ghost" id="wrongBtn">📒 Wrong Notebook</button>
+  <button class="btn btn-ghost" id="progressBtn">📊 My Progress</button>
+  <button class="btn btn-ghost" id="weakBtn">🎯 Not Mastered</button>
+  <button class="btn btn-purple" id="chalBtn" title="完成全部词组通关后解锁">🏆 Final Challenge</button>
+  <button class="btn btn-ghost" id="switchBtn">👤 Student</button>
+  <button class="btn btn-ghost" id="syncBtn">⇄ Export / Import</button>
+  <button class="btn btn-ghost" id="paraSortBtn">📖 按课文顺序</button>
+  <input type="file" id="importFile" accept="application/json" style="display:none">
+</div>
+<div class="chips" id="chips"></div>
+<div class="chips" id="paraChips" style="display:none"></div>
+
+<div class="progress-wrap">
+  <div class="bar"><i id="masterBar"></i></div>
+  <div class="small" id="masterTxt" style="margin-top:4px;"></div>
+  <div class="bar chal" id="chalBarWrap" style="display:none;margin-top:8px;"><i id="chalBar"></i></div>
+  <div class="small" id="chalTxt" style="display:none;margin-top:2px;"></div>
+</div>
+
+<div class="wrap">
+  <div class="grid" id="cards"></div>
+</div>
+
+<div class="ov" id="nameOv">
+  <div class="panel">
+    <h2>👋 Welcome!</h2>
+    <p class="small">Please enter your name. Your progress will be saved under this name on this device.</p>
+    <label class="lbl">Your name</label>
+    <input class="field" id="nameInput" placeholder="e.g. Zhang San" maxlength="30">
+    <div id="stuListBox" class="hint"></div>
+    <button class="btn btn-blue" id="nameOk" style="margin-top:14px;width:100%;">Start</button>
+  </div>
+</div>
+
+<div class="ov" id="setupOv">
+  <div class="panel">
+    <h2>🛠 Practice Settings</h2>
+    <h3>Level</h3>
+    <div class="type-grid" id="levelGrid">
+      <label class="type-opt"><input type="radio" name="lvl" value="all" checked> All Types</label>
+      <label class="type-opt"><input type="radio" name="lvl" value="basic"> Basic Only</label>
+      <label class="type-opt adv"><input type="radio" name="lvl" value="advanced"> Advanced Only</label>
+    </div>
+    <h3>Question Types</h3>
+    <div class="type-grid" id="typeGrid"></div>
+    <h3>Range</h3>
+    <div class="type-grid">
+      <label class="type-opt"><input type="radio" name="rng" value="all" checked> All Phrases</label>
+      <label class="type-opt"><input type="radio" name="rng" value="weak"> Not-yet-mastered only</label>
+      <label class="type-opt"><input type="radio" name="rng" value="wrong" id="rngWrongOpt"> Wrong Notebook only</label>
+    </div>
+    <h3>Number of questions</h3>
+    <input class="field" id="qcount" type="number" value="20" min="1" max="400">
+    <button class="btn btn-blue" id="beginBtn" style="margin-top:16px;width:100%;">Begin ▶</button>
+  </div>
+</div>
+
+<div class="ov" id="qOv"><div class="q-card" id="qCard"></div></div>
+<div class="ov" id="exitOv"><div class="panel" id="exitPanel" style="max-width:430px;"></div></div>
+<div class="ov" id="resOv"><div class="panel" id="resPanel"></div></div>
+<div class="ov" id="wrongOv"><div class="panel" id="wrongPanel"></div></div>
+<div class="ov" id="progOv"><div class="panel" id="progPanel"></div></div>
+<div class="ov" id="weakOv"><div class="panel" id="weakPanel"></div></div>
+<div class="ov" id="phraseOv"><div class="panel" id="phrasePanel"></div></div>
+<div class="ov" id="syncOv"><div class="panel" id="syncPanel"></div></div>
+<div class="ov" id="chalOv"><div class="panel" id="chalPanel" style="max-width:540px;"></div></div>
+
+<canvas class="fireworks" id="fw"></canvas>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= 数据 ================= */
+const PHRASES=[{"p":"play upon a musical instrument","cn":"演奏（乐器）","en":"to play music on an instrument","grp":"动词短语","cat":"v","para":"7","src":"“The musicians will sit in their gallery,” said the young Student,”and play upon their stringed instruments, and my love will dance to the sound of the harp and the violin.","srcCn":"“乐师们将会坐在长廊，奏起弦乐，”年轻的学生说，“我的心上人将随着竖琴与小提琴的音乐翩翩起舞。她跳起舞来足不沾地，轻盈无比。但是她不会与我跳舞，因为我没有红玫瑰献给她。”说着，他就一头扑在草地上，双手捂住脸，哭了起来。","note":"play upon / on an instrument 表示「演奏乐器」，upon 较正式；易错：不用 play at / play in。 【来源】课文 P7 原句；中文照抄《课文参考译文_U2.md》P7 全段；例句均教师自撰。","usage":[{"sense":"演奏（乐器）","opts":["The musicians will play upon their stringed instruments at the ball.","The musicians will play at their stringed instruments at the ball.","The musicians will play in their stringed instruments at the ball.","The musicians will play with their stringed instruments at the ball."],"ans":"The musicians will play upon their stringed instruments at the ball.","why":"A. ✓ 正确。演奏（乐器）；本句中 play upon 的形式、搭配与时态均成立。\nB. ✗ 错误。play at 不是该短语的固定形式／介词，应改为 play upon。\nC. ✗ 错误。play in 同样不成立，固定说法是 play upon。\nD. ✗ 错误。play with 改变了固定搭配，正确形式为 play upon。\n📌 考点：play upon / on an instrument 表示「演奏乐器」，upon 较正式；易错：不用 play at / play in。"},{"sense":"演奏（乐器）","opts":["The musicians played upon their stringed instruments all evening.","The musicians play at their stringed instruments all evening.","The musicians play in their stringed instruments all evening.","The musicians play with their stringed instruments all evening."],"ans":"The musicians played upon their stringed instruments all evening.","why":"A. ✓ 正确。演奏（乐器）；本句中 played upon 的形式、搭配与时态均成立。\nB. ✗ 错误。play at 不是该短语的固定形式／介词，应改为 played upon。\nC. ✗ 错误。play in 同样不成立，固定说法是 played upon。\nD. ✗ 错误。play with 改变了固定搭配，正确形式为 played upon。\n📌 考点：play upon / on an instrument 表示「演奏乐器」，upon 较正式；易错：不用 play at / play in。"}],"fill":[{"s":"The musicians will ________ ________ their stringed instruments at the ball.","a":"play upon","cn":"乐师们将在舞会上演奏弦乐器。"},{"s":"The musicians ________ ________ their stringed instruments all evening.","a":"played upon","cn":"乐师们整晚都在演奏弦乐器。"}],"pfill":[]},{"p":"dance to the music","cn":"随着音乐跳舞","en":"to move in time to a piece of music","grp":"动词短语","cat":"v","para":"7","src":"“The musicians will sit in their gallery,” said the young Student,”and play upon their stringed instruments, and my love will dance to the sound of the harp and the violin.","srcCn":"“乐师们将会坐在长廊，奏起弦乐，”年轻的学生说，“我的心上人将随着竖琴与小提琴的音乐翩翩起舞。她跳起舞来足不沾地，轻盈无比。但是她不会与我跳舞，因为我没有红玫瑰献给她。”说着，他就一头扑在草地上，双手捂住脸，哭了起来。","note":"dance to sth 表示「随……的节拍起舞」，介词固定用 to；易错：dance with sb 是「与某人共舞」。 【来源】课文 P7 原句；中文照抄《课文参考译文_U2.md》P7 全段；例句均教师自撰。","usage":[{"sense":"随着音乐跳舞","opts":["She will dance to the music of the harp and the violin.","She will dance with the music of the harp and the violin.","She will dance by the music of the harp and the violin.","She will dance on the music of the harp and the violin."],"ans":"She will dance to the music of the harp and the violin.","why":"A. ✓ 正确。随着音乐跳舞；本句中 dance to 的形式、搭配与时态均成立。\nB. ✗ 错误。dance with 不是该短语的固定形式／介词，应改为 dance to。\nC. ✗ 错误。dance by 同样不成立，固定说法是 dance to。\nD. ✗ 错误。dance on 改变了固定搭配，正确形式为 dance to。\n📌 考点：dance to sth 表示「随……的节拍起舞」，介词固定用 to；易错：dance with sb 是「与某人共舞」。"},{"sense":"随着音乐跳舞","opts":["They danced to the music until dawn.","They dance with the music until dawn.","They dance by the music until dawn.","They dance on the music until dawn."],"ans":"They danced to the music until dawn.","why":"A. ✓ 正确。随着音乐跳舞；本句中 danced to 的形式、搭配与时态均成立。\nB. ✗ 错误。dance with 不是该短语的固定形式／介词，应改为 danced to。\nC. ✗ 错误。dance by 同样不成立，固定说法是 danced to。\nD. ✗ 错误。dance on 改变了固定搭配，正确形式为 danced to。\n📌 考点：dance to sth 表示「随……的节拍起舞」，介词固定用 to；易错：dance with sb 是「与某人共舞」。"}],"fill":[{"s":"She will ________ ________ the music of the harp and the violin.","a":"dance to","cn":"她将随着竖琴与小提琴的乐曲起舞。"},{"s":"They ________ ________ the music until dawn.","a":"danced to","cn":"他们随着音乐一直跳到天亮。"}],"pfill":[{"s":"She will dance ___ the music of the harp and the violin.","a":"to","cn":""},{"s":"They danced ___ the music until dawn.","a":"to","cn":""}]},{"p":"shoot through a place","cn":"（疼痛等）穿过、掠过","en":"(of a pain or feeling) to pass quickly through","grp":"动词短语","cat":"v","para":"40","src":"So the Nightingale pressed closer against the thorn, and the thorn touched her heart, and a fierce pang of pain shot through her.Bitter, bitter was the pain, and wilder and wilder grew her song,for she sang of the Love that is perfected by Death, of the Love that dies not in the tomb.","srcCn":"于是，夜莺就贴得更紧，尖刺触到了她的心脏，剧烈的疼痛传遍了她的全身。她的疼痛越剧烈，她的歌声越宏亮。她在歌唱因死亡而完美的爱，那即便在坟墓里也永远不会消失的爱。","note":"shoot through 表示「（疼痛、感觉）迅速穿过」，主语常是 pang / pain；易错：不用 shoot across。 【来源】课文 P40 原句；中文照抄《课文参考译文_U2.md》P40 全段；例句均教师自撰。","usage":[{"sense":"（疼痛等）穿过、掠过","opts":["A fierce pang of pain shot through her body.","A fierce pang of pain shot across her body.","A fierce pang of pain shot in her body.","A fierce pang of pain shoot through of her body."],"ans":"A fierce pang of pain shot through her body.","why":"A. ✓ 正确。（疼痛等）穿过、掠过；本句中 shot through 的形式、搭配与时态均成立。\nB. ✗ 错误。shot across 不是该短语的固定形式／介词，应改为 shot through。\nC. ✗ 错误。shot in 同样不成立，固定说法是 shot through。\nD. ✗ 错误。shoot through of 改变了固定搭配，正确形式为 shot through。\n📌 考点：shoot through 表示「（疼痛、感觉）迅速穿过」，主语常是 pang / pain；易错：不用 shoot across。"},{"sense":"（疼痛等）穿过、掠过","opts":["A sudden fear shoots through him whenever he hears that song.","A sudden fear shot across him whenever he hears that song.","A sudden fear shot in him whenever he hears that song.","A sudden fear shoot through of him whenever he hears that song."],"ans":"A sudden fear shoots through him whenever he hears that song.","why":"A. ✓ 正确。（疼痛等）穿过、掠过；本句中 shoots through 的形式、搭配与时态均成立。\nB. ✗ 错误。shot across 不是该短语的固定形式／介词，应改为 shoots through。\nC. ✗ 错误。shot in 同样不成立，固定说法是 shoots through。\nD. ✗ 错误。shoot through of 改变了固定搭配，正确形式为 shoots through。\n📌 考点：shoot through 表示「（疼痛、感觉）迅速穿过」，主语常是 pang / pain；易错：不用 shoot across。"}],"fill":[{"s":"A fierce pang of pain ________ ________ her body.","a":"shot through","cn":"一阵剧痛穿透了她的身体。"},{"s":"A sudden fear ________ ________ him whenever he hears that song.","a":"shoots through","cn":"每当他听到那首歌，一阵突如其来的恐惧便掠过全身。"}],"pfill":[]},{"p":"go with this color","cn":"与（衣服／颜色）相配","en":"to match or suit something in colour or style","grp":"动词短语","cat":"v","para":"50","src":"“I am afraid it will not go with my dress,” she answered; “and,besides, the Chamberlain’s nephew has sent me some real jewels, and everybody knows that jewels cost far more than flowers.”","srcCn":"“恐怕它和我的衣服不相配。”她答道，“再说，皇宫内务总管的侄子已经给我送来了珠宝。而大家都知道珠宝要比花值钱。”","note":"go with sth 表示「与……相配」，介词固定用 with；易错：go on with 是「继续做」。 【来源】课文 P50 原句；中文照抄《课文参考译文_U2.md》P50 全段；例句均教师自撰。","usage":[{"sense":"与（衣服／颜色）相配","opts":["I am afraid the red rose will not go with my dress.","I am afraid the red rose will not go on with my dress.","I am afraid the red rose will not go to my dress.","I am afraid the red rose will not go in my dress."],"ans":"I am afraid the red rose will not go with my dress.","why":"A. ✓ 正确。与（衣服／颜色）相配；本句中 go with 的形式、搭配与时态均成立。\nB. ✗ 错误。go on with 不是该短语的固定形式／介词，应改为 go with。\nC. ✗ 错误。go to 同样不成立，固定说法是 go with。\nD. ✗ 错误。go in 改变了固定搭配，正确形式为 go with。\n📌 考点：go with sth 表示「与……相配」，介词固定用 with；易错：go on with 是「继续做」。"},{"sense":"与（衣服／颜色）相配","opts":["The crimson ribbon went with her new gown perfectly.","The crimson ribbon go on with her new gown perfectly.","The crimson ribbon go to her new gown perfectly.","The crimson ribbon go in her new gown perfectly."],"ans":"The crimson ribbon went with her new gown perfectly.","why":"A. ✓ 正确。与（衣服／颜色）相配；本句中 went with 的形式、搭配与时态均成立。\nB. ✗ 错误。go on with 不是该短语的固定形式／介词，应改为 went with。\nC. ✗ 错误。go to 同样不成立，固定说法是 went with。\nD. ✗ 错误。go in 改变了固定搭配，正确形式为 went with。\n📌 考点：go with sth 表示「与……相配」，介词固定用 with；易错：go on with 是「继续做」。"}],"fill":[{"s":"I am afraid the red rose will not ________ ________ my dress.","a":"go with","cn":"恐怕这朵红玫瑰和我的裙子不相配。"},{"s":"The crimson ribbon ________ ________ her new gown perfectly.","a":"went with","cn":"那条深红丝带和她的礼服非常相配。"}],"pfill":[{"s":"I am afraid the red rose will not go ___ my dress.","a":"with","cn":""},{"s":"The crimson ribbon went ___ her new gown perfectly.","a":"with","cn":""}]},{"p":"sing of","cn":"歌唱、歌颂","en":"to sing about a person or thing","grp":"动词短语","cat":"v","para":"4","src":"“Night after night have I sung of him, though I knew him not and now I see him.”","srcCn":"“我终于找到一个真正的情种了。”夜莺说，“我年复一年，每天晚上都在为这样的人歌唱。现在，我终于找到了他。”","note":"sing of sb/sth 表示「歌颂、吟唱到……」，介词用 of；课文用完成式 have I sung of him。 【来源】课文 P4 原句；中文照抄《课文参考译文_U2.md》P4 全段；例句均教师自撰。","usage":[{"sense":"歌唱、歌颂","opts":["Night after night the Nightingale would sing of her true lover.","Night after night the Nightingale would sing about of her true lover.","Night after night the Nightingale would sing for her true lover.","Night after night the Nightingale would sing on her true lover."],"ans":"Night after night the Nightingale would sing of her true lover.","why":"A. ✓ 正确。歌唱、歌颂；本句中 sing of 的形式、搭配与时态均成立。\nB. ✗ 错误。sing about of 不是该短语的固定形式／介词，应改为 sing of。\nC. ✗ 错误。sing for 同样不成立，固定说法是 sing of。\nD. ✗ 错误。sing on 改变了固定搭配，正确形式为 sing of。\n📌 考点：sing of sb/sth 表示「歌颂、吟唱到……」，介词用 of；课文用完成式 have I sung of him。"},{"sense":"歌唱、歌颂","opts":["The poet sang of the beauty of the red rose.","The poet sing about of the beauty of the red rose.","The poet sing for the beauty of the red rose.","The poet sing on the beauty of the red rose."],"ans":"The poet sang of the beauty of the red rose.","why":"A. ✓ 正确。歌唱、歌颂；本句中 sang of 的形式、搭配与时态均成立。\nB. ✗ 错误。sing about of 不是该短语的固定形式／介词，应改为 sang of。\nC. ✗ 错误。sing for 同样不成立，固定说法是 sang of。\nD. ✗ 错误。sing on 改变了固定搭配，正确形式为 sang of。\n📌 考点：sing of sb/sth 表示「歌颂、吟唱到……」，介词用 of；课文用完成式 have I sung of him。"}],"fill":[{"s":"Night after night the Nightingale would ________ ________ her true lover.","a":"sing of","cn":"夜莺一夜又一夜地歌唱她心中的真情人。"},{"s":"The poet ________ ________ the beauty of the red rose.","a":"sang of","cn":"诗人歌颂红玫瑰的美丽。"}],"pfill":[{"s":"Night after night the Nightingale would sing ___ her true lover.","a":"of","cn":""},{"s":"The poet sang ___ the beauty of the red rose.","a":"of","cn":""}]},{"p":"hold sb. in one's arms","cn":"把某人拥在怀里","en":"to put your arms around someone","grp":"动词短语","cat":"v","para":"5","src":"I shall hold her in my arms, and she will lean her head upon my shoulder, and her hand will be clasped in mine.","srcCn":"“明天晚上，王子要举行舞会，”年轻的学生咕噜道，“我的心上人也将前往。如果我有一枝红玫瑰，我就能和她共舞到黎明。我就会把她紧紧搂在怀里，让她的头靠在我的肩膀上。但是现在我的花园里没有红玫瑰，我到时只好孤独地坐着，任由我的心破碎。”","note":"hold sb in one's arms 表示「拥抱」，介词固定用 in，物主代词随主语变化。 【来源】课文 P5 原句；中文照抄《课文参考译文_U2.md》P5 全段；例句均教师自撰。","usage":[{"sense":"把某人拥在怀里","opts":["I shall hold her in my arms when the music starts.","I shall hold her on my arms when the music starts.","I shall hold her with my arms when the music starts.","I shall hold her at my arms when the music starts."],"ans":"I shall hold her in my arms when the music starts.","why":"A. ✓ 正确。把某人拥在怀里；本句中 hold her in my arms 的形式、搭配与时态均成立。\nB. ✗ 错误。hold her on my arms 不是该短语的固定形式／介词，应改为 hold her in my arms。\nC. ✗ 错误。hold her with my arms 同样不成立，固定说法是 hold her in my arms。\nD. ✗ 错误。hold her at my arms 改变了固定搭配，正确形式为 hold her in my arms。\n📌 考点：hold sb in one's arms 表示「拥抱」，介词固定用 in，物主代词随主语变化。"},{"sense":"把某人拥在怀里","opts":["He held her in his arms as they danced.","He hold her on my arms as they danced.","He hold her with my arms as they danced.","He hold her at my arms as they danced."],"ans":"He held her in his arms as they danced.","why":"A. ✓ 正确。把某人拥在怀里；本句中 held her in his arms 的形式、搭配与时态均成立。\nB. ✗ 错误。hold her on my arms 不是该短语的固定形式／介词，应改为 held her in his arms。\nC. ✗ 错误。hold her with my arms 同样不成立，固定说法是 held her in his arms。\nD. ✗ 错误。hold her at my arms 改变了固定搭配，正确形式为 held her in his arms。\n📌 考点：hold sb in one's arms 表示「拥抱」，介词固定用 in，物主代词随主语变化。"}],"fill":[{"s":"I shall ________ ________ ________ ________ ________ when the music starts.","a":"hold her in my arms","cn":"音乐响起时，我要把她拥在怀里。"},{"s":"He ________ ________ ________ ________ ________ as they danced.","a":"held her in his arms","cn":"跳舞时他把她拥在怀里。"}],"pfill":[{"s":"I shall hold her ___ my arms when the music starts.","a":"in","cn":""},{"s":"He held her ___ his arms as they danced.","a":"in","cn":""}]},{"p":"soar into the air","cn":"腾空而起","en":"to rise rapidly into the sky","grp":"动词短语","cat":"v","para":"13","src":"Suddenly she spread her brown wings for flight, and soared into the air.","srcCn":"突然，她展开她那褐色的翅膀，冲向天空，像影子一样飞过了小树林，又像影子一样飞过了花园。","note":"soar into the air 中的 into 表方向变化；易错：in the air 只表静态「在空中」。 【来源】课文 P13 原句；中文照抄《课文参考译文_U2.md》P13 全段；例句均教师自撰。","usage":[{"sense":"腾空而起","opts":["The Nightingale began to soar into the air above the garden.","The Nightingale began to soar in the air above the garden.","The Nightingale began to soar onto the air above the garden.","The Nightingale began to soar up the air above the garden."],"ans":"The Nightingale began to soar into the air above the garden.","why":"A. ✓ 正确。腾空而起；本句中 soar into 的形式、搭配与时态均成立。\nB. ✗ 错误。soar in 不是该短语的固定形式／介词，应改为 soar into。\nC. ✗ 错误。soar onto 同样不成立，固定说法是 soar into。\nD. ✗ 错误。soar up 改变了固定搭配，正确形式为 soar into。\n📌 考点：soar into the air 中的 into 表方向变化；易错：in the air 只表静态「在空中」。"},{"sense":"腾空而起","opts":["She spread her wings and soared into the air.","She spread her wings and soar in the air.","She spread her wings and soar onto the air.","She spread her wings and soar up the air."],"ans":"She spread her wings and soared into the air.","why":"A. ✓ 正确。腾空而起；本句中 soared into 的形式、搭配与时态均成立。\nB. ✗ 错误。soar in 不是该短语的固定形式／介词，应改为 soared into。\nC. ✗ 错误。soar onto 同样不成立，固定说法是 soared into。\nD. ✗ 错误。soar up 改变了固定搭配，正确形式为 soared into。\n📌 考点：soar into the air 中的 into 表方向变化；易错：in the air 只表静态「在空中」。"}],"fill":[{"s":"The Nightingale began to ________ ________ the air above the garden.","a":"soar into","cn":"夜莺开始腾空而起，飞上花园上空。"},{"s":"She spread her wings and ________ ________ the air.","a":"soared into","cn":"她展开双翅，腾空而起。"}],"pfill":[{"s":"The Nightingale began to soar ___ the air above the garden.","a":"into","cn":""},{"s":"She spread her wings and soared ___ the air.","a":"into","cn":""}]},{"p":"linger on","cn":"迟迟不散、逗留不去","en":"to remain or continue for longer than expected","grp":"动词短语","cat":"v","para":"43","src":"The white Moon heard it,and she forgot the dawn, and lingered on in the sky.","srcCn":"然后，她用尽全力发出了最后的歌声。皎洁的月亮听见了她的歌，她忘记了黎明，依然挂在天空。红玫瑰听见了她的歌，狂喜地颤抖，在寒冷的黎明绽放了它的全部花瓣。","note":"linger on 表示「持续不去」，on 含「继续」义；易错：linger in 后接地点。 【来源】课文 P43 原句；中文照抄《课文参考译文_U2.md》P43 全段；例句均教师自撰。","usage":[{"sense":"迟迟不散、逗留不去","opts":["The sweet song seemed to linger on in the quiet garden.","The sweet song seemed to linger in in the quiet garden.","The sweet song seemed to linger at in the quiet garden.","The sweet song seemed to linger over in the quiet garden."],"ans":"The sweet song seemed to linger on in the quiet garden.","why":"A. ✓ 正确。迟迟不散、逗留不去；本句中 linger on 的形式、搭配与时态均成立。\nB. ✗ 错误。linger in 不是该短语的固定形式／介词，应改为 linger on。\nC. ✗ 错误。linger at 同样不成立，固定说法是 linger on。\nD. ✗ 错误。linger over 改变了固定搭配，正确形式为 linger on。\n📌 考点：linger on 表示「持续不去」，on 含「继续」义；易错：linger in 后接地点。"},{"sense":"迟迟不散、逗留不去","opts":["The white Moon lingered on in the sky and forgot the dawn.","The white Moon linger in in the sky and forgot the dawn.","The white Moon linger at in the sky and forgot the dawn.","The white Moon linger over in the sky and forgot the dawn."],"ans":"The white Moon lingered on in the sky and forgot the dawn.","why":"A. ✓ 正确。迟迟不散、逗留不去；本句中 lingered on 的形式、搭配与时态均成立。\nB. ✗ 错误。linger in 不是该短语的固定形式／介词，应改为 lingered on。\nC. ✗ 错误。linger at 同样不成立，固定说法是 lingered on。\nD. ✗ 错误。linger over 改变了固定搭配，正确形式为 lingered on。\n📌 考点：linger on 表示「持续不去」，on 含「继续」义；易错：linger in 后接地点。"}],"fill":[{"s":"The sweet song seemed to ________ ________ in the quiet garden.","a":"linger on","cn":"甜美的歌声似乎在寂静的花园里久久不散。"},{"s":"The white Moon ________ ________ in the sky and forgot the dawn.","a":"lingered on","cn":"白月迟迟挂在天上，忘了黎明将至。"}],"pfill":[{"s":"The sweet song seemed to linger ___ in the quiet garden.","a":"on","cn":""},{"s":"The white Moon lingered ___ in the sky and forgot the dawn.","a":"on","cn":""}]},{"p":"stain it with","cn":"用……染红／染色","en":"to colour or mark something with a liquid","grp":"动词短语","cat":"v","para":"26","src":"“If you want a red rose,” said the Tree, “you must build it out of music by moonlight, and stain it with your own heart's blood.","srcCn":"“如果你想得到一朵红玫瑰，”树说道，“你就必须在月光下以音乐来创造它，然后用你心里的鲜血去染红它。你必须用你的胸膛紧紧抵住我身上的一根刺为我歌唱。你必须为我歌唱整整一夜，让刺穿透你的心脏，使你的生命之血流进我的血管，变成我的血。”","note":"stain sth with sth 表示「用……染色」，with 引出材料；课文为 stain it with your own heart's blood。 【来源】课文 P26 原句；中文照抄《课文参考译文_U2.md》P26 全段；例句均教师自撰。","usage":[{"sense":"用……染红／染色","opts":["You must stain it with your own heart's blood.","You must stain it by your own heart's blood.","You must stain it of your own heart's blood.","You must stain it in your own heart's blood."],"ans":"You must stain it with your own heart's blood.","why":"A. ✓ 正确。用……染红／染色；本句中 stain it with 的形式、搭配与时态均成立。\nB. ✗ 错误。stain it by 不是该短语的固定形式／介词，应改为 stain it with。\nC. ✗ 错误。stain it of 同样不成立，固定说法是 stain it with。\nD. ✗ 错误。stain it in 改变了固定搭配，正确形式为 stain it with。\n📌 考点：stain sth with sth 表示「用……染色」，with 引出材料；课文为 stain it with your own heart's blood。"},{"sense":"用……染红／染色","opts":["She stained it with the juice of dark berries.","She stain it by the juice of dark berries.","She stain it of the juice of dark berries.","She stain it in the juice of dark berries."],"ans":"She stained it with the juice of dark berries.","why":"A. ✓ 正确。用……染红／染色；本句中 stained it with 的形式、搭配与时态均成立。\nB. ✗ 错误。stain it by 不是该短语的固定形式／介词，应改为 stained it with。\nC. ✗ 错误。stain it of 同样不成立，固定说法是 stained it with。\nD. ✗ 错误。stain it in 改变了固定搭配，正确形式为 stained it with。\n📌 考点：stain sth with sth 表示「用……染色」，with 引出材料；课文为 stain it with your own heart's blood。"}],"fill":[{"s":"You must ________ ________ ________ your own heart's blood.","a":"stain it with","cn":"你必须用自己心血把它染红。"},{"s":"She ________ ________ ________ the juice of dark berries.","a":"stained it with","cn":"她用深色浆果的汁液把它染了色。"}],"pfill":[{"s":"You must stain it ___ your own heart's blood.","a":"with","cn":""},{"s":"She stained it ___ the juice of dark berries.","a":"with","cn":""}]},{"p":"pay for","cn":"为……付出（代价）","en":"to give something in return for something else","grp":"动词短语","cat":"v","para":"27","src":"“Death is a great price to pay for a red rose,” cried the Nightingale, “and Life is very dear to all.","srcCn":"“用生命来换取一朵红玫瑰，代价的确很高昂。”夜莺喊道，“生命对每个人都是珍贵的。可是，爱情比生命更重要。再说，一只鸟的心与一个人的心相比，又算得了什么?”","note":"pay for sth 表示「为……付代价／付钱」，for 引出所换之物；易错：pay sb 是「付款给某人」。 【来源】课文 P27 原句；中文照抄《课文参考译文_U2.md》P27 全段；例句均教师自撰。","usage":[{"sense":"为……付出（代价）","opts":["Death is a great price to pay for a red rose.","Death is a great price to pay to a red rose.","Death is a great price to pay on a red rose.","Death is a great price to pay with a red rose."],"ans":"Death is a great price to pay for a red rose.","why":"A. ✓ 正确。为……付出（代价）；本句中 pay for 的形式、搭配与时态均成立。\nB. ✗ 错误。pay to 不是该短语的固定形式／介词，应改为 pay for。\nC. ✗ 错误。pay on 同样不成立，固定说法是 pay for。\nD. ✗ 错误。pay with 改变了固定搭配，正确形式为 pay for。\n📌 考点：pay for sth 表示「为……付代价／付钱」，for 引出所换之物；易错：pay sb 是「付款给某人」。"},{"sense":"为……付出（代价）","opts":["He paid for the book with his last coins.","He pay to the book with his last coins.","He pay on the book with his last coins.","He pay with the book with his last coins."],"ans":"He paid for the book with his last coins.","why":"A. ✓ 正确。为……付出（代价）；本句中 paid for 的形式、搭配与时态均成立。\nB. ✗ 错误。pay to 不是该短语的固定形式／介词，应改为 paid for。\nC. ✗ 错误。pay on 同样不成立，固定说法是 paid for。\nD. ✗ 错误。pay with 改变了固定搭配，正确形式为 paid for。\n📌 考点：pay for sth 表示「为……付代价／付钱」，for 引出所换之物；易错：pay sb 是「付款给某人」。"}],"fill":[{"s":"Death is a great price to ________ ________ a red rose.","a":"pay for","cn":"为得到一朵红玫瑰，死亡是极高的代价。"},{"s":"He ________ ________ the book with his last coins.","a":"paid for","cn":"他用最后的几枚硬币付了书钱。"}],"pfill":[{"s":"Death is a great price to pay ___ a red rose.","a":"for","cn":""},{"s":"He paid ___ the book with his last coins.","a":"for","cn":""}]},{"p":"sweep over the garden","cn":"掠过花园","en":"to move quickly across an area","grp":"动词短语","cat":"v","para":"28","src":"So she spread her brown wings for flight, and soared into the air.She swept over the garden like a shadow, and like a shadow she sailed through the grove.","srcCn":"于是，夜莺展开双翅，飞向蓝天。她像影子一样飞过了花园，又像影子一样飞过了小树林。","note":"sweep over 表示「掠过、扫过」，over 指从上方越过；易错：不用 sweep on。 【来源】课文 P28 原句；中文照抄《课文参考译文_U2.md》P28 全段；例句均教师自撰。","usage":[{"sense":"掠过花园","opts":["A cold wind will sweep over the garden before dawn.","A cold wind will sweep on the garden before dawn.","A cold wind will sweep in the garden before dawn.","A cold wind will sweep at the garden before dawn."],"ans":"A cold wind will sweep over the garden before dawn.","why":"A. ✓ 正确。掠过花园；本句中 sweep over 的形式、搭配与时态均成立。\nB. ✗ 错误。sweep on 不是该短语的固定形式／介词，应改为 sweep over。\nC. ✗ 错误。sweep in 同样不成立，固定说法是 sweep over。\nD. ✗ 错误。sweep at 改变了固定搭配，正确形式为 sweep over。\n📌 考点：sweep over 表示「掠过、扫过」，over 指从上方越过；易错：不用 sweep on。"},{"sense":"掠过花园","opts":["She swept over the garden like a shadow.","She sweep on the garden like a shadow.","She sweep in the garden like a shadow.","She sweep at the garden like a shadow."],"ans":"She swept over the garden like a shadow.","why":"A. ✓ 正确。掠过花园；本句中 swept over 的形式、搭配与时态均成立。\nB. ✗ 错误。sweep on 不是该短语的固定形式／介词，应改为 swept over。\nC. ✗ 错误。sweep in 同样不成立，固定说法是 swept over。\nD. ✗ 错误。sweep at 改变了固定搭配，正确形式为 swept over。\n📌 考点：sweep over 表示「掠过、扫过」，over 指从上方越过；易错：不用 sweep on。"}],"fill":[{"s":"A cold wind will ________ ________ the garden before dawn.","a":"sweep over","cn":"黎明前一阵寒风将掠过花园。"},{"s":"She ________ ________ the garden like a shadow.","a":"swept over","cn":"她像影子一样掠过花园。"}],"pfill":[{"s":"A cold wind will sweep ___ the garden before dawn.","a":"over","cn":""},{"s":"She swept ___ the garden like a shadow.","a":"over","cn":""}]},{"p":"at last","cn":"终于","en":"in the end; after a long time","grp":"介词短语","cat":"prep","para":"4","src":"“Here at last is a true lover,” said the Nightingale.","srcCn":"“我终于找到一个真正的情种了。”夜莺说，“我年复一年，每天晚上都在为这样的人歌唱。现在，我终于找到了他。”","note":"at last 是固定副词短语，介词固定用 at；易错：at the last 意为「在最后一刻」。 【来源】课文 P4 原句；中文照抄《课文参考译文_U2.md》P4 全段；例句均教师自撰。","usage":[{"sense":"终于","opts":["Here at last is a true lover.","Here in last is a true lover.","Here on last is a true lover.","Here at the last is a true lover."],"ans":"Here at last is a true lover.","why":"A. ✓ 正确。终于；本句中 at last 的形式、搭配与时态均成立。\nB. ✗ 错误。in last 不是该短语的固定形式／介词，应改为 at last。\nC. ✗ 错误。on last 同样不成立，固定说法是 at last。\nD. ✗ 错误。at the last 改变了固定搭配，正确形式为 at last。\n📌 考点：at last 是固定副词短语，介词固定用 at；易错：at the last 意为「在最后一刻」。"},{"sense":"终于","opts":["At last the long winter came to an end.","In last the long winter came to an end.","On last the long winter came to an end.","At the last the long winter came to an end."],"ans":"At last the long winter came to an end.","why":"A. ✓ 正确。终于；本句中 At last 的形式、搭配与时态均成立。\nB. ✗ 错误。in last 不是该短语的固定形式／介词，应改为 At last。\nC. ✗ 错误。on last 同样不成立，固定说法是 At last。\nD. ✗ 错误。at the last 改变了固定搭配，正确形式为 At last。\n📌 考点：at last 是固定副词短语，介词固定用 at；易错：at the last 意为「在最后一刻」。"}],"fill":[{"s":"Here ________ ________ is a true lover.","a":"at last","cn":"我终于找到了一个真正的有情人。"},{"s":"________ ________ the long winter came to an end.","a":"At last","cn":"漫长的冬天终于结束了。"}],"pfill":[{"s":"Here ___ last is a true lover.","a":"at","cn":""},{"s":"___ last the long winter came to an end.","a":"at","cn":""}]},{"p":"in the air","cn":"在空中；（气氛）弥漫","en":"up in the sky; (of a feeling) present but not expressed","grp":"介词短语","cat":"prep","para":"8","src":"“Why is he weeping?” asked a little Green Lizard, as he ran past him with his tail in the air.","srcCn":"“他为什么哭？”一只绿蜥蜴问道，他跑过学生的身边，尾巴翘得高高的。","note":"in the air 表示「在空中」，也引申为「（某种气氛）弥漫」；介词固定用 in。 【来源】课文 P8 原句；中文照抄《课文参考译文_U2.md》P8 全段；例句均教师自撰。","usage":[{"sense":"在空中；（气氛）弥漫","opts":["The little Green Lizard ran past with his tail in the air.","The little Green Lizard ran past with his tail on the air.","The little Green Lizard ran past with his tail at the air.","The little Green Lizard ran past with his tail into the air."],"ans":"The little Green Lizard ran past with his tail in the air.","why":"A. ✓ 正确。在空中；（气氛）弥漫；本句中 in the air 的形式、搭配与时态均成立。\nB. ✗ 错误。on the air 不是该短语的固定形式／介词，应改为 in the air。\nC. ✗ 错误。at the air 同样不成立，固定说法是 in the air。\nD. ✗ 错误。into the air 改变了固定搭配，正确形式为 in the air。\n📌 考点：in the air 表示「在空中」，也引申为「（某种气氛）弥漫」；介词固定用 in。"},{"sense":"在空中；（气氛）弥漫","opts":["There was a smell of rain in the air that evening.","There was a smell of rain on the air that evening.","There was a smell of rain at the air that evening.","There was a smell of rain into the air that evening."],"ans":"There was a smell of rain in the air that evening.","why":"A. ✓ 正确。在空中；（气氛）弥漫；本句中 in the air 的形式、搭配与时态均成立。\nB. ✗ 错误。on the air 不是该短语的固定形式／介词，应改为 in the air。\nC. ✗ 错误。at the air 同样不成立，固定说法是 in the air。\nD. ✗ 错误。into the air 改变了固定搭配，正确形式为 in the air。\n📌 考点：in the air 表示「在空中」，也引申为「（某种气氛）弥漫」；介词固定用 in。"}],"fill":[{"s":"The little Green Lizard ran past with his tail ________ ________ ________.","a":"in the air","cn":"小绿蜥蜴翘着尾巴跑了过去。"},{"s":"There was a smell of rain ________ ________ ________ that evening.","a":"in the air","cn":"那天傍晚空气里有一股雨味。"}],"pfill":[{"s":"The little Green Lizard ran past with his tail ___ the air.","a":"in","cn":""},{"s":"There was a smell of rain ___ the air that evening.","a":"in","cn":""}]},{"p":"in this age","cn":"在这个时代","en":"in the present period of history","grp":"介词短语","cat":"prep","para":"52","src":"In fact,it is quite unpractical, and, as in this age to be practical is everything, I shall go back to Philosophy and study Metaphysics.”","srcCn":"“爱情是多么愚蠢啊!” 那学生边走边说。“都赶不上逻辑学的一半儿有用。其实，它根本不实用。而在这个年代，讲求实际就是一切。我还是回到哲学中去，学学形而上学。”","note":"in this age 表示「在当今时代」，介词用 in；课文以此引出「务实至上」的反讽。 【来源】课文 P52 原句；中文照抄《课文参考译文_U2.md》P52 全段；例句均教师自撰。","usage":[{"sense":"在这个时代","opts":["In this age to be practical is everything.","At this age to be practical is everything.","On this age to be practical is everything.","For this age to be practical is everything."],"ans":"In this age to be practical is everything.","why":"A. ✓ 正确。在这个时代；本句中 in this age 的形式、搭配与时态均成立。\nB. ✗ 错误。at this age 不是该短语的固定形式／介词，应改为 in this age。\nC. ✗ 错误。on this age 同样不成立，固定说法是 in this age。\nD. ✗ 错误。for this age 改变了固定搭配，正确形式为 in this age。\n📌 考点：in this age 表示「在当今时代」，介词用 in；课文以此引出「务实至上」的反讽。"},{"sense":"在这个时代","opts":["In this age few people still read poetry aloud.","At this age few people still read poetry aloud.","On this age few people still read poetry aloud.","For this age few people still read poetry aloud."],"ans":"In this age few people still read poetry aloud.","why":"A. ✓ 正确。在这个时代；本句中 In this age 的形式、搭配与时态均成立。\nB. ✗ 错误。at this age 不是该短语的固定形式／介词，应改为 In this age。\nC. ✗ 错误。on this age 同样不成立，固定说法是 In this age。\nD. ✗ 错误。for this age 改变了固定搭配，正确形式为 In this age。\n📌 考点：in this age 表示「在当今时代」，介词用 in；课文以此引出「务实至上」的反讽。"}],"fill":[{"s":"________ ________ ________ to be practical is everything.","a":"in this age","cn":"在这个时代，讲求实际就是一切。"},{"s":"________ ________ ________ few people still read poetry aloud.","a":"In this age","cn":"在这个时代，很少有人还朗读诗歌。"}],"pfill":[{"s":"___ this age to be practical is everything.","a":"in","cn":""},{"s":"___ this age few people still read poetry aloud.","a":"in","cn":""}]},{"p":"upon my word","cn":"哎呀；说真的（惊叹）","en":"used to express surprise or annoyance","grp":"介词短语","cat":"prep","para":"51","src":"“Well, upon my word, you are very ungrateful,” said the Student angrily; and he threw the rose into the street, where it fell into the gutter, and a cart‑wheel went over it.","srcCn":"“好哇，我真没想到你会这样不知好歹。”那学生气愤地说，说完就把玫瑰扔到了大街上，玫瑰滚进了污水沟里，被车轮辗过。","note":"upon my word 是旧式惊叹语，介词固定用 upon；upon 不在本卡介词池，故不出填空。 【来源】课文 P51 原句；中文照抄《课文参考译文_U2.md》P51 全段；例句均教师自撰。","usage":[{"sense":"哎呀；说真的（惊叹）","opts":["Well, upon my word, you are very ungrateful!","Well, on my word, you are very ungrateful!","Well, at my word, you are very ungrateful!","Well, in my word, you are very ungrateful!"],"ans":"Well, upon my word, you are very ungrateful!","why":"A. ✓ 正确。哎呀；说真的（惊叹）；本句中 upon my word 的形式、搭配与时态均成立。\nB. ✗ 错误。on my word 不是该短语的固定形式／介词，应改为 upon my word。\nC. ✗ 错误。at my word 同样不成立，固定说法是 upon my word。\nD. ✗ 错误。in my word 改变了固定搭配，正确形式为 upon my word。\n📌 考点：upon my word 是旧式惊叹语，介词固定用 upon；upon 不在本卡介词池，故不出填空。"},{"sense":"哎呀；说真的（惊叹）","opts":["Upon my word, I have never heard such a song.","On my word, I have never heard such a song.","At my word, I have never heard such a song.","In my word, I have never heard such a song."],"ans":"Upon my word, I have never heard such a song.","why":"A. ✓ 正确。哎呀；说真的（惊叹）；本句中 Upon my word 的形式、搭配与时态均成立。\nB. ✗ 错误。on my word 不是该短语的固定形式／介词，应改为 Upon my word。\nC. ✗ 错误。at my word 同样不成立，固定说法是 Upon my word。\nD. ✗ 错误。in my word 改变了固定搭配，正确形式为 Upon my word。\n📌 考点：upon my word 是旧式惊叹语，介词固定用 upon；upon 不在本卡介词池，故不出填空。"}],"fill":[{"s":"Well, ________ ________ ________, you are very ungrateful!","a":"upon my word","cn":"哎呀，说真的，你太不知好歹了！"},{"s":"________ ________ ________, I have never heard such a song.","a":"Upon my word","cn":"说真的，我从没听过这样的歌。"}],"pfill":[]},{"p":"in return","cn":"作为回报","en":"as a way of repaying someone","grp":"介词短语","cat":"prep","para":"29","src":"All that I ask of you in return is that you will be a true lover..”","srcCn":"年轻的学生还躺在草地上，他俊美的眼睛还含着眼泪。“别伤心了，”夜莺喊道，“高兴起来吧。你会得到红玫瑰的。我将在月光下以音乐来创造它，用我自己心脏的鲜血来染红它。我所要求的唯一回报是你要成为一个真正有情有义之人。”","note":"in return (for sth) 表示「作为回报」，介词固定用 in；易错：不用 on return。 【来源】课文 P29 原句；中文照抄《课文参考译文_U2.md》P29 全段；例句均教师自撰。","usage":[{"sense":"作为回报","opts":["All that I ask of you in return is that you will be a true lover.","All that I ask of you on return is that you will be a true lover.","All that I ask of you at return is that you will be a true lover.","All that I ask of you for return is that you will be a true lover."],"ans":"All that I ask of you in return is that you will be a true lover.","why":"A. ✓ 正确。作为回报；本句中 in return 的形式、搭配与时态均成立。\nB. ✗ 错误。on return 不是该短语的固定形式／介词，应改为 in return。\nC. ✗ 错误。at return 同样不成立，固定说法是 in return。\nD. ✗ 错误。for return 改变了固定搭配，正确形式为 in return。\n📌 考点：in return (for sth) 表示「作为回报」，介词固定用 in；易错：不用 on return。"},{"sense":"作为回报","opts":["She gave him a rose in return for his kindness.","She gave him a rose on return for his kindness.","She gave him a rose at return for his kindness.","She gave him a rose for return for his kindness."],"ans":"She gave him a rose in return for his kindness.","why":"A. ✓ 正确。作为回报；本句中 in return 的形式、搭配与时态均成立。\nB. ✗ 错误。on return 不是该短语的固定形式／介词，应改为 in return。\nC. ✗ 错误。at return 同样不成立，固定说法是 in return。\nD. ✗ 错误。for return 改变了固定搭配，正确形式为 in return。\n📌 考点：in return (for sth) 表示「作为回报」，介词固定用 in；易错：不用 on return。"}],"fill":[{"s":"All that I ask of you ________ ________ is that you will be a true lover.","a":"in return","cn":"我唯一要求的回报，是你要做一个真正的有情人。"},{"s":"She gave him a rose ________ ________ for his kindness.","a":"in return","cn":"她回赠他一朵玫瑰以答谢他的好意。"}],"pfill":[{"s":"All that I ask of you ___ return is that you will be a true lover.","a":"in","cn":""},{"s":"She gave him a rose ___ return for his kindness.","a":"in","cn":""}]},{"p":"for want of","cn":"因缺少","en":"because of a lack of something","grp":"介词短语","cat":"prep","para":"3","src":"“Ah, I have read all that the wise men have written, and all the secrets of philosophy are mine, yet for want of a red rose is my life made wretched.”","srcCn":"“寻遍我的花园，可居然找不到一朵红玫瑰！”他哭喊道，他那俊美的眼睛里充满了泪水。“啊，我读过所有智者们写的书，熟知所有哲学的奥秘。然而就因为缺少一朵红玫瑰，生活却变得如此不幸。”","note":"for want of sth 表示「因缺乏……」，介词固定用 for；课文 P3 为 for want of a red rose is my life made wretched。 【来源】课文 P3 原句；中文照抄《课文参考译文_U2.md》P3 全段；例句均教师自撰。","usage":[{"sense":"因缺少","opts":["For want of a red rose his life was made wretched.","In want of a red rose his life was made wretched.","With want of a red rose his life was made wretched.","At want of a red rose his life was made wretched."],"ans":"For want of a red rose his life was made wretched.","why":"A. ✓ 正确。因缺少；本句中 for want of 的形式、搭配与时态均成立。\nB. ✗ 错误。in want of 不是该短语的固定形式／介词，应改为 for want of。\nC. ✗ 错误。with want of 同样不成立，固定说法是 for want of。\nD. ✗ 错误。at want of 改变了固定搭配，正确形式为 for want of。\n📌 考点：for want of sth 表示「因缺乏……」，介词固定用 for；课文 P3 为 for want of a red rose is my life made wretched。"},{"sense":"因缺少","opts":["For want of money the plan was abandoned.","In want of money the plan was abandoned.","With want of money the plan was abandoned.","At want of money the plan was abandoned."],"ans":"For want of money the plan was abandoned.","why":"A. ✓ 正确。因缺少；本句中 For want of 的形式、搭配与时态均成立。\nB. ✗ 错误。in want of 不是该短语的固定形式／介词，应改为 For want of。\nC. ✗ 错误。with want of 同样不成立，固定说法是 For want of。\nD. ✗ 错误。at want of 改变了固定搭配，正确形式为 For want of。\n📌 考点：for want of sth 表示「因缺乏……」，介词固定用 for；课文 P3 为 for want of a red rose is my life made wretched。"}],"fill":[{"s":"________ ________ ________ a red rose his life was made wretched.","a":"for want of","cn":"就因为缺少一朵红玫瑰，他的生活变得不幸。"},{"s":"________ ________ ________ money the plan was abandoned.","a":"For want of","cn":"因缺少经费，计划被放弃了。"}],"pfill":[{"s":"___ want of a red rose his life was made wretched.","a":"for","cn":""},{"s":"___ want of money the plan was abandoned.","a":"for","cn":""}]},{"p":"be dear to sb.","cn":"对某人来说珍贵","en":"to be greatly valued by someone","grp":"其他短语","cat":"other","para":"27","src":"“Death is a great price to pay for a red rose,” cried the Nightingale, “and Life is very dear to all.","srcCn":"“用生命来换取一朵红玫瑰，代价的确很高昂。”夜莺喊道，“生命对每个人都是珍贵的。可是，爱情比生命更重要。再说，一只鸟的心与一个人的心相比，又算得了什么?”","note":"be dear to sb 表示「对某人来说很珍贵」，介词固定用 to；易错：不用 dear for sb。 【来源】课文 P27 原句；中文照抄《课文参考译文_U2.md》P27 全段；例句均教师自撰。","usage":[{"sense":"对某人来说珍贵","opts":["Life is dear to all living things.","Life is dear for all living things.","Life is dear with all living things.","Life is dear of all living things."],"ans":"Life is dear to all living things.","why":"A. ✓ 正确。对某人来说珍贵；本句中 is dear to 的形式、搭配与时态均成立。\nB. ✗ 错误。is dear for 不是该短语的固定形式／介词，应改为 is dear to。\nC. ✗ 错误。is dear with 同样不成立，固定说法是 is dear to。\nD. ✗ 错误。is dear of 改变了固定搭配，正确形式为 is dear to。\n📌 考点：be dear to sb 表示「对某人来说很珍贵」，介词固定用 to；易错：不用 dear for sb。"},{"sense":"对某人来说珍贵","opts":["The old oak was dear to the little Nightingale.","The old oak is dear for the little Nightingale.","The old oak is dear with the little Nightingale.","The old oak is dear of the little Nightingale."],"ans":"The old oak was dear to the little Nightingale.","why":"A. ✓ 正确。对某人来说珍贵；本句中 was dear to 的形式、搭配与时态均成立。\nB. ✗ 错误。is dear for 不是该短语的固定形式／介词，应改为 was dear to。\nC. ✗ 错误。is dear with 同样不成立，固定说法是 was dear to。\nD. ✗ 错误。is dear of 改变了固定搭配，正确形式为 was dear to。\n📌 考点：be dear to sb 表示「对某人来说很珍贵」，介词固定用 to；易错：不用 dear for sb。"}],"fill":[{"s":"Life ________ ________ ________ all living things.","a":"is dear to","cn":"生命对一切生灵都十分珍贵。"},{"s":"The old oak ________ ________ ________ the little Nightingale.","a":"was dear to","cn":"那棵老橡树对小夜莺来说很珍贵。"}],"pfill":[{"s":"Life is dear ___ all living things.","a":"to","cn":""},{"s":"The old oak was dear ___ the little Nightingale.","a":"to","cn":""}]},{"p":"night after night","cn":"一夜又一夜","en":"every night for many nights in succession","grp":"其他短语","cat":"other","para":"4","src":"“Night after night have I sung of him, though I knew him not and now I see him.”","srcCn":"“我终于找到一个真正的情种了。”夜莺说，“我年复一年，每天晚上都在为这样的人歌唱。现在，我终于找到了他。”","note":"night after night 表示「夜复一夜」，after 连接两个相同名词；易错：night by night 是「逐夜」。 【来源】课文 P4 原句；中文照抄《课文参考译文_U2.md》P4 全段；例句均教师自撰。","usage":[{"sense":"一夜又一夜","opts":["Night after night have I sung of him.","Night by night have I sung of him.","Night on night have I sung of him.","Night in night have I sung of him."],"ans":"Night after night have I sung of him.","why":"A. ✓ 正确。一夜又一夜；本句中 Night after night 的形式、搭配与时态均成立。\nB. ✗ 错误。night by night 不是该短语的固定形式／介词，应改为 Night after night。\nC. ✗ 错误。night on night 同样不成立，固定说法是 Night after night。\nD. ✗ 错误。night in night 改变了固定搭配，正确形式为 Night after night。\n📌 考点：night after night 表示「夜复一夜」，after 连接两个相同名词；易错：night by night 是「逐夜」。"},{"sense":"一夜又一夜","opts":["Night after night she waited beneath the oak tree.","Night by night she waited beneath the oak tree.","Night on night she waited beneath the oak tree.","Night in night she waited beneath the oak tree."],"ans":"Night after night she waited beneath the oak tree.","why":"A. ✓ 正确。一夜又一夜；本句中 Night after night 的形式、搭配与时态均成立。\nB. ✗ 错误。night by night 不是该短语的固定形式／介词，应改为 Night after night。\nC. ✗ 错误。night on night 同样不成立，固定说法是 Night after night。\nD. ✗ 错误。night in night 改变了固定搭配，正确形式为 Night after night。\n📌 考点：night after night 表示「夜复一夜」，after 连接两个相同名词；易错：night by night 是「逐夜」。"}],"fill":[{"s":"________ ________ ________ have I sung of him.","a":"Night after night","cn":"我夜复一夜地为他歌唱。"},{"s":"________ ________ ________ she waited beneath the oak tree.","a":"Night after night","cn":"她一夜又一夜地在橡树下等候。"}],"pfill":[{"s":"Night ___ night have I sung of him.","a":"after","cn":""},{"s":"Night ___ night she waited beneath the oak tree.","a":"after","cn":""}]},{"p":"compared to","cn":"与……相比","en":"in comparison with","grp":"其他短语","cat":"other","para":"27","src":"Yet Love is better than Life, and what is the heart of a bird compared to the heart of a man?”","srcCn":"“用生命来换取一朵红玫瑰，代价的确很高昂。”夜莺喊道，“生命对每个人都是珍贵的。可是，爱情比生命更重要。再说，一只鸟的心与一个人的心相比，又算得了什么?”","note":"compared to / with 表示「与……相比」；to 多用于比喻式比较，with 多用于异同比较。 【来源】课文 P27 原句；中文照抄《课文参考译文_U2.md》P27 全段；例句均教师自撰。","usage":[{"sense":"与……相比","opts":["What is the heart of a bird compared to the heart of a man?","What is the heart of a bird compared for the heart of a man?","What is the heart of a bird compared at the heart of a man?","What is the heart of a bird compared on the heart of a man?"],"ans":"What is the heart of a bird compared to the heart of a man?","why":"A. ✓ 正确。与……相比；本句中 compared to 的形式、搭配与时态均成立。\nB. ✗ 错误。compared for 不是该短语的固定形式／介词，应改为 compared to。\nC. ✗ 错误。compared at 同样不成立，固定说法是 compared to。\nD. ✗ 错误。compared on 改变了固定搭配，正确形式为 compared to。\n📌 考点：compared to / with 表示「与……相比」；to 多用于比喻式比较，with 多用于异同比较。"},{"sense":"与……相比","opts":["Compared to the rose, the daisy looks quite plain.","Compared for the rose, the daisy looks quite plain.","Compared at the rose, the daisy looks quite plain.","Compared on the rose, the daisy looks quite plain."],"ans":"Compared to the rose, the daisy looks quite plain.","why":"A. ✓ 正确。与……相比；本句中 Compared to 的形式、搭配与时态均成立。\nB. ✗ 错误。compared for 不是该短语的固定形式／介词，应改为 Compared to。\nC. ✗ 错误。compared at 同样不成立，固定说法是 Compared to。\nD. ✗ 错误。compared on 改变了固定搭配，正确形式为 Compared to。\n📌 考点：compared to / with 表示「与……相比」；to 多用于比喻式比较，with 多用于异同比较。"}],"fill":[{"s":"What is the heart of a bird ________ ________ the heart of a man?","a":"compared to","cn":"一只鸟的心和人的心相比又算得了什么？"},{"s":"________ ________ the rose, the daisy looks quite plain.","a":"Compared to","cn":"和玫瑰相比，雏菊显得很朴素。"}],"pfill":[{"s":"What is the heart of a bird compared ___ the heart of a man?","a":"to","cn":""},{"s":"Compared ___ the rose, the daisy looks quite plain.","a":"to","cn":""}]},{"p":"a piece of luck","cn":"一桩好运","en":"a stroke of good fortune","grp":"其他短语","cat":"other","para":"46","src":"“Why, what a wonderful piece of luck!” he cried; “here is a red rose!","srcCn":"“哎呀，我真幸运。”他喊道，“这儿有一朵红玫瑰。这是我一生中见到过的最红的玫瑰花。我敢肯定它一定有一个长长的拉丁名字。”他俯身把它摘了下来。","note":"a piece of luck 表示「一桩好运」；量词结构 a piece of 固定，of 不可换成 for。 【来源】课文 P46 原句；中文照抄《课文参考译文_U2.md》P46 全段；例句均教师自撰。","usage":[{"sense":"一桩好运","opts":["What a piece of luck to find a red rose here!","What a piece for luck to find a red rose here!","What a piece in luck to find a red rose here!","What a bit luck to find a red rose here!"],"ans":"What a piece of luck to find a red rose here!","why":"A. ✓ 正确。一桩好运；本句中 a piece of luck 的形式、搭配与时态均成立。\nB. ✗ 错误。a piece for luck 不是该短语的固定形式／介词，应改为 a piece of luck。\nC. ✗ 错误。a piece in luck 同样不成立，固定说法是 a piece of luck。\nD. ✗ 错误。a bit luck 改变了固定搭配，正确形式为 a piece of luck。\n📌 考点：a piece of luck 表示「一桩好运」；量词结构 a piece of 固定，of 不可换成 for。"},{"sense":"一桩好运","opts":["It was a piece of luck that he had not expected.","It was a piece for luck that he had not expected.","It was a piece in luck that he had not expected.","It was a bit luck that he had not expected."],"ans":"It was a piece of luck that he had not expected.","why":"A. ✓ 正确。一桩好运；本句中 a piece of luck 的形式、搭配与时态均成立。\nB. ✗ 错误。a piece for luck 不是该短语的固定形式／介词，应改为 a piece of luck。\nC. ✗ 错误。a piece in luck 同样不成立，固定说法是 a piece of luck。\nD. ✗ 错误。a bit luck 改变了固定搭配，正确形式为 a piece of luck。\n📌 考点：a piece of luck 表示「一桩好运」；量词结构 a piece of 固定，of 不可换成 for。"}],"fill":[{"s":"What ________ ________ ________ ________ to find a red rose here!","a":"a piece of luck","cn":"在这儿找到一朵红玫瑰，真是天大的好运！"},{"s":"It was ________ ________ ________ ________ that he had not expected.","a":"a piece of luck","cn":"那是他没料到的一桩好运。"}],"pfill":[{"s":"What a piece ___ luck to find a red rose here!","a":"of","cn":""},{"s":"It was a piece ___ luck that he had not expected.","a":"of","cn":""}]},{"p":"as...as","cn":"和……一样……","en":"used to say that two things are equal in some way","grp":"其他短语","cat":"other","para":"19","src":"“My roses are yellow,” it answered; “as yellow as the hair of the mermaiden ,and yellower than the daffodil that blooms in the meadow.","srcCn":"“我的玫瑰是黄色的，”它答道，“黄得像美人鱼头上的金发，黄得赛过草地上盛开的水仙花。但你可以去找我的兄弟，它就长在那个学生的窗子下面，或许他可以满足你的要求。”","note":"as + adj. + as 表同级比较，两个 as 都不能省；否定式可用 not so ... as。 【来源】课文 P19 原句；中文照抄《课文参考译文_U2.md》P19 全段；例句均教师自撰。","usage":[{"sense":"和……一样……","opts":["My roses are as yellow as the hair of the mermaiden.","My roses are as yellow than the hair of the mermaiden.","My roses are so yellow as the hair of the mermaiden.","My roses are as yellow so the hair of the mermaiden."],"ans":"My roses are as yellow as the hair of the mermaiden.","why":"A. ✓ 正确。和……一样……；本句中 as yellow as 的形式、搭配与时态均成立。\nB. ✗ 错误。as yellow than 不是该短语的固定形式／介词，应改为 as yellow as。\nC. ✗ 错误。so yellow as 同样不成立，固定说法是 as yellow as。\nD. ✗ 错误。as yellow so 改变了固定搭配，正确形式为 as yellow as。\n📌 考点：as + adj. + as 表同级比较，两个 as 都不能省；否定式可用 not so ... as。"},{"sense":"和……一样……","opts":["My roses are as red as the feet of the dove.","My roses are as yellow than the feet of the dove.","My roses are so yellow as the feet of the dove.","My roses are as yellow so the feet of the dove."],"ans":"My roses are as red as the feet of the dove.","why":"A. ✓ 正确。和……一样……；本句中 as red as 的形式、搭配与时态均成立。\nB. ✗ 错误。as yellow than 不是该短语的固定形式／介词，应改为 as red as。\nC. ✗ 错误。so yellow as 同样不成立，固定说法是 as red as。\nD. ✗ 错误。as yellow so 改变了固定搭配，正确形式为 as red as。\n📌 考点：as + adj. + as 表同级比较，两个 as 都不能省；否定式可用 not so ... as。"}],"fill":[{"s":"My roses are ________ ________ ________ the hair of the mermaiden.","a":"as yellow as","cn":"我的玫瑰黄得像美人鱼的头发。"},{"s":"My roses are ________ ________ ________ the feet of the dove.","a":"as red as","cn":"我的玫瑰红得像鸽子的脚。"}],"pfill":[]},{"p":"be fond of","cn":"喜爱","en":"to like someone or something very much","grp":"其他短语","cat":"other","para":"30","src":"The Student looked up from the grass, and listened, but he could not understand what the Nightingale was saying to him,.But the Oak‑tree understood, and felt sad, for he was very fond of the little Nightingale who had built her nest in his branches.”Sing me one last song,” he whispered; “I shall feel very lonely when you are gone.”","srcCn":"学生从草地上抬起头看着她，听着，但是他并不明白夜莺的话。可是橡树明白了，他感到非常悲伤，因为他喜欢这个在他树枝上筑巢的小夜莺。“给我唱最后一支歌吧，”他轻轻地说，“你不在了，我会感到孤单的。”","note":"be fond of 表示「喜欢」，介词固定用 of；易错：不用 fond with / fond to。 【来源】课文 P30 原句；中文照抄《课文参考译文_U2.md》P30 全段；例句均教师自撰。","usage":[{"sense":"喜爱","opts":["The old Oak-tree was fond of the little Nightingale.","The old Oak-tree was fond with the little Nightingale.","The old Oak-tree was fond to the little Nightingale.","The old Oak-tree was fond at the little Nightingale."],"ans":"The old Oak-tree was fond of the little Nightingale.","why":"A. ✓ 正确。喜爱；本句中 was fond of 的形式、搭配与时态均成立。\nB. ✗ 错误。was fond with 不是该短语的固定形式／介词，应改为 was fond of。\nC. ✗ 错误。was fond to 同样不成立，固定说法是 was fond of。\nD. ✗ 错误。was fond at 改变了固定搭配，正确形式为 was fond of。\n📌 考点：be fond of 表示「喜欢」，介词固定用 of；易错：不用 fond with / fond to。"},{"sense":"喜爱","opts":["She is fond of music and poetry.","She was fond with music and poetry.","She was fond to music and poetry.","She was fond at music and poetry."],"ans":"She is fond of music and poetry.","why":"A. ✓ 正确。喜爱；本句中 is fond of 的形式、搭配与时态均成立。\nB. ✗ 错误。was fond with 不是该短语的固定形式／介词，应改为 is fond of。\nC. ✗ 错误。was fond to 同样不成立，固定说法是 is fond of。\nD. ✗ 错误。was fond at 改变了固定搭配，正确形式为 is fond of。\n📌 考点：be fond of 表示「喜欢」，介词固定用 of；易错：不用 fond with / fond to。"}],"fill":[{"s":"The old Oak-tree ________ ________ ________ the little Nightingale.","a":"was fond of","cn":"老橡树喜爱小夜莺。"},{"s":"She ________ ________ ________ music and poetry.","a":"is fond of","cn":"她喜爱音乐与诗歌。"}],"pfill":[{"s":"The old Oak-tree was fond ___ the little Nightingale.","a":"of","cn":""},{"s":"She is fond ___ music and poetry.","a":"of","cn":""}]},{"p":"be something of a...","cn":"有点儿是……；算得上","en":"to be to some degree a particular kind of person","grp":"其他短语","cat":"other","para":"12","src":"“For a red rose?” they cried; “how very ridiculous!” and the little Lizard, who was something of a cynic, laughed outright.But the Nightingale understood the secret of the Student’s sorrow, and sat silent in the oak‑tree, and thought about the mystery of Love.","srcCn":"“一枝红玫瑰?”他们大声说，“真是傻透了!”那只愤世嫉俗的小蜥蜴当即大笑起来。可是夜莺理解那学生的悲伤，她一言不发地坐在橡树上，思考着爱情的奥秘。","note":"be something of a + n. 表示「有几分、算得上」；课文里说小蜥蜴「有点愤世嫉俗」。 【来源】课文 P12 原句；中文照抄《课文参考译文_U2.md》P12 全段；例句均教师自撰。","usage":[{"sense":"有点儿是……；算得上","opts":["The little Lizard was something of a cynic.","The little Lizard was something for a cynic.","The little Lizard was something in a cynic.","The little Lizard was some thing of a cynic."],"ans":"The little Lizard was something of a cynic.","why":"A. ✓ 正确。有点儿是……；算得上；本句中 something of a 的形式、搭配与时态均成立。\nB. ✗ 错误。something for a 不是该短语的固定形式／介词，应改为 something of a。\nC. ✗ 错误。something in a 同样不成立，固定说法是 something of a。\nD. ✗ 错误。some thing of a 改变了固定搭配，正确形式为 something of a。\n📌 考点：be something of a + n. 表示「有几分、算得上」；课文里说小蜥蜴「有点愤世嫉俗」。"},{"sense":"有点儿是……；算得上","opts":["He is something of a poet among his friends.","He is something for a poet among his friends.","He is something in a poet among his friends.","He is some thing of a poet among his friends."],"ans":"He is something of a poet among his friends.","why":"A. ✓ 正确。有点儿是……；算得上；本句中 something of a 的形式、搭配与时态均成立。\nB. ✗ 错误。something for a 不是该短语的固定形式／介词，应改为 something of a。\nC. ✗ 错误。something in a 同样不成立，固定说法是 something of a。\nD. ✗ 错误。some thing of a 改变了固定搭配，正确形式为 something of a。\n📌 考点：be something of a + n. 表示「有几分、算得上」；课文里说小蜥蜴「有点愤世嫉俗」。"}],"fill":[{"s":"The little Lizard was ________ ________ ________ cynic.","a":"something of a","cn":"那只小蜥蜴有点儿愤世嫉俗。"},{"s":"He is ________ ________ ________ poet among his friends.","a":"something of a","cn":"在朋友中间，他算得上是个诗人。"}],"pfill":[]},{"p":"bury one's face","cn":"把脸埋起来","en":"to cover one's face with one's hands","grp":"动宾搭配","cat":"vn","para":"7","src":"But with me she will not dance, for I have no red rose to give her”; and he flung himself down on the grass, and buried his face in his hands, and wept.","srcCn":"“乐师们将会坐在长廊，奏起弦乐，”年轻的学生说，“我的心上人将随着竖琴与小提琴的音乐翩翩起舞。她跳起舞来足不沾地，轻盈无比。但是她不会与我跳舞，因为我没有红玫瑰献给她。”说着，他就一头扑在草地上，双手捂住脸，哭了起来。","note":"bury one's face in one's hands 表示「双手捂脸」；物主代词随主语变化。 【来源】课文 P7 原句；中文照抄《课文参考译文_U2.md》P7 全段；例句均教师自撰。","usage":[{"sense":"把脸埋起来","opts":["He flung himself down and buried his face in his hands.","He flung himself down and buried his head in his hands.","He flung himself down and buried his face on in his hands.","He flung himself down and buried the face in his hands."],"ans":"He flung himself down and buried his face in his hands.","why":"A. ✓ 正确。把脸埋起来；本句中 buried his face 的形式、搭配与时态均成立。\nB. ✗ 错误。buried his head 不是该短语的固定形式／介词，应改为 buried his face。\nC. ✗ 错误。buried his face on 同样不成立，固定说法是 buried his face。\nD. ✗ 错误。buried the face 改变了固定搭配，正确形式为 buried his face。\n📌 考点：bury one's face in one's hands 表示「双手捂脸」；物主代词随主语变化。"},{"sense":"把脸埋起来","opts":["She buried her face in her hands and wept.","She buried his head in her hands and wept.","She buried his face on in her hands and wept.","She buried the face in her hands and wept."],"ans":"She buried her face in her hands and wept.","why":"A. ✓ 正确。把脸埋起来；本句中 buried her face 的形式、搭配与时态均成立。\nB. ✗ 错误。buried his head 不是该短语的固定形式／介词，应改为 buried her face。\nC. ✗ 错误。buried his face on 同样不成立，固定说法是 buried her face。\nD. ✗ 错误。buried the face 改变了固定搭配，正确形式为 buried her face。\n📌 考点：bury one's face in one's hands 表示「双手捂脸」；物主代词随主语变化。"}],"fill":[{"s":"He flung himself down and ________ ________ ________ in his hands.","a":"buried his face","cn":"他一头扑倒，双手捂住了脸。"},{"s":"She ________ ________ ________ in her hands and wept.","a":"buried her face","cn":"她双手捂脸哭了起来。"}],"pfill":[{"s":"He flung himself down and buried his face ___ his hands.","a":"in","cn":""},{"s":"She buried her face ___ her hands and wept.","a":"in","cn":""}]},{"p":"chill one's veins","cn":"使血液发冷／不寒而栗","en":"to make someone feel cold with fear","grp":"动宾搭配","cat":"vn","para":"22","src":"But the winter has chilled my veins, and the frost has nipped my buds, and the storm has broken my branches, and I shall have no roses at all this year.”","srcCn":"“我的玫瑰是红色的，”它答道，“红得像鸽子的脚，红得赛过绚烂的红珊瑚。但寒冬冻僵了我的血管，严霜冻死了我的花蕾，风暴折断了我的树枝。今年我根本长不出玫瑰了。”","note":"chill one's veins 是课文里的拟人表达，意为「寒气侵入血管」；动词 chill 后直接接宾语。 【来源】课文 P22 原句；中文照抄《课文参考译文_U2.md》P22 全段；例句均教师自撰。","usage":[{"sense":"使血液发冷／不寒而栗","opts":["The winter has chilled my veins and nipped my buds.","The winter has chilled to my veins and nipped my buds.","The winter has chilled my vein and nipped my buds.","The winter has chilled with my veins and nipped my buds."],"ans":"The winter has chilled my veins and nipped my buds.","why":"A. ✓ 正确。使血液发冷／不寒而栗；本句中 chilled my veins 的形式、搭配与时态均成立。\nB. ✗ 错误。chilled to my veins 不是该短语的固定形式／介词，应改为 chilled my veins。\nC. ✗ 错误。chilled my vein 同样不成立，固定说法是 chilled my veins。\nD. ✗ 错误。chilled with my veins 改变了固定搭配，正确形式为 chilled my veins。\n📌 考点：chill one's veins 是课文里的拟人表达，意为「寒气侵入血管」；动词 chill 后直接接宾语。"},{"sense":"使血液发冷／不寒而栗","opts":["The strange sound chilled her veins.","The strange sound chilled to my veins.","The strange sound chilled my vein.","The strange sound chilled with my veins."],"ans":"The strange sound chilled her veins.","why":"A. ✓ 正确。使血液发冷／不寒而栗；本句中 chilled her veins 的形式、搭配与时态均成立。\nB. ✗ 错误。chilled to my veins 不是该短语的固定形式／介词，应改为 chilled her veins。\nC. ✗ 错误。chilled my vein 同样不成立，固定说法是 chilled her veins。\nD. ✗ 错误。chilled with my veins 改变了固定搭配，正确形式为 chilled her veins。\n📌 考点：chill one's veins 是课文里的拟人表达，意为「寒气侵入血管」；动词 chill 后直接接宾语。"}],"fill":[{"s":"The winter has ________ ________ ________ and nipped my buds.","a":"chilled my veins","cn":"寒冬冻僵了我的叶脉，掐掉了我的花苞。"},{"s":"The strange sound ________ ________ ________.","a":"chilled her veins","cn":"那奇怪的声音让她不寒而栗。"}],"pfill":[]},{"p":"cost money","cn":"花钱；价钱高","en":"to require a certain amount of money","grp":"动宾搭配","cat":"vn","para":"50","src":"“I am afraid it will not go with my dress,” she answered; “and,besides, the Chamberlain’s nephew has sent me some real jewels, and everybody knows that jewels cost far more than flowers.”","srcCn":"“恐怕它和我的衣服不相配。”她答道，“再说，皇宫内务总管的侄子已经给我送来了珠宝。而大家都知道珠宝要比花值钱。”","note":"cost 后直接接钱数或代价，主语是物；易错：不用被动 is cost，也不用 costed。 【来源】课文 P50 原句；中文照抄《课文参考译文_U2.md》P50 全段；例句均教师自撰。","usage":[{"sense":"花钱；价钱高","opts":["Everybody knows that jewels cost far more than flowers.","Everybody knows that jewels are cost far more than flowers.","Everybody knows that jewels cost for far more than flowers.","Everybody knows that jewels costed far more than flowers."],"ans":"Everybody knows that jewels cost far more than flowers.","why":"A. ✓ 正确。花钱；价钱高；本句中 cost far more 的形式、搭配与时态均成立。\nB. ✗ 错误。are cost far more 不是该短语的固定形式／介词，应改为 cost far more。\nC. ✗ 错误。cost for far more 同样不成立，固定说法是 cost far more。\nD. ✗ 错误。costed far more 改变了固定搭配，正确形式为 cost far more。\n📌 考点：cost 后直接接钱数或代价，主语是物；易错：不用被动 is cost，也不用 costed。"},{"sense":"花钱；价钱高","opts":["The new instrument cost a great deal of money.","The new instrument are cost far more of money.","The new instrument cost for far more of money.","The new instrument costed far more of money."],"ans":"The new instrument cost a great deal of money.","why":"A. ✓ 正确。花钱；价钱高；本句中 cost a great deal 的形式、搭配与时态均成立。\nB. ✗ 错误。are cost far more 不是该短语的固定形式／介词，应改为 cost a great deal。\nC. ✗ 错误。cost for far more 同样不成立，固定说法是 cost a great deal。\nD. ✗ 错误。costed far more 改变了固定搭配，正确形式为 cost a great deal。\n📌 考点：cost 后直接接钱数或代价，主语是物；易错：不用被动 is cost，也不用 costed。"}],"fill":[{"s":"Everybody knows that jewels ________ ________ ________ than flowers.","a":"cost far more","cn":"人人都知道珠宝比花贵得多。"},{"s":"The new instrument ________ ________ ________ ________ of money.","a":"cost a great deal","cn":"这件新乐器花了不少钱。"}],"pfill":[]},{"p":"pay a price","cn":"付出代价","en":"to suffer or give something in order to get something","grp":"动宾搭配","cat":"vn","para":"27","src":"“Death is a great price to pay for a red rose,” cried the Nightingale, “and Life is very dear to all.","srcCn":"“用生命来换取一朵红玫瑰，代价的确很高昂。”夜莺喊道，“生命对每个人都是珍贵的。可是，爱情比生命更重要。再说，一只鸟的心与一个人的心相比，又算得了什么?”","note":"pay a price (for sth) 表示「付出代价」，for 引出目的；课文为 Death is a great price to pay for a red rose。 【来源】课文 P27 原句；中文照抄《课文参考译文_U2.md》P27 全段；例句均教师自撰。","usage":[{"sense":"付出代价","opts":["Death is a great price to pay for a red rose.","Death is a great price to pay on for a red rose.","Death is a great price for pay for a red rose.","Death is a great price paying for a red rose."],"ans":"Death is a great price to pay for a red rose.","why":"A. ✓ 正确。付出代价；本句中 a great price to pay 的形式、搭配与时态均成立。\nB. ✗ 错误。a great price to pay on 不是该短语的固定形式／介词，应改为 a great price to pay。\nC. ✗ 错误。a great price for pay 同样不成立，固定说法是 a great price to pay。\nD. ✗ 错误。a great price paying 改变了固定搭配，正确形式为 a great price to pay。\n📌 考点：pay a price (for sth) 表示「付出代价」，for 引出目的；课文为 Death is a great price to pay for a red rose。"},{"sense":"付出代价","opts":["She paid a high price for her dream.","She a great price to pay on for her dream.","She a great price for pay for her dream.","She a great price paying for her dream."],"ans":"She paid a high price for her dream.","why":"A. ✓ 正确。付出代价；本句中 paid a high price 的形式、搭配与时态均成立。\nB. ✗ 错误。a great price to pay on 不是该短语的固定形式／介词，应改为 paid a high price。\nC. ✗ 错误。a great price for pay 同样不成立，固定说法是 paid a high price。\nD. ✗ 错误。a great price paying 改变了固定搭配，正确形式为 paid a high price。\n📌 考点：pay a price (for sth) 表示「付出代价」，for 引出目的；课文为 Death is a great price to pay for a red rose。"}],"fill":[{"s":"Death is ________ ________ ________ ________ ________ for a red rose.","a":"a great price to pay","cn":"为得到一朵红玫瑰，死亡是极高的代价。"},{"s":"She ________ ________ ________ ________ for her dream.","a":"paid a high price","cn":"她为自己的梦想付出了高昂代价。"}],"pfill":[{"s":"Death is a great price to pay ___ a red rose.","a":"for","cn":""},{"s":"She paid a high price ___ her dream.","a":"for","cn":""}]},{"p":"deny the fact","cn":"否认事实","en":"to refuse to admit that something is true","grp":"动宾搭配","cat":"vn","para":"33","src":"“She has form,” he said to himself, as he walked away through the grove”That cannot be denied to her;.But has she got feeling?","srcCn":"他一面走过小树林一面自言自语，“她懂得一点音乐的形式。这点不可否认。但是她有真正的感情吗 ? 恐怕未必。实际上她同大多数艺术家一样，只有花哨的表现形式，就是缺乏真情。”于是他回到自己房间，在床上躺了下来，过了一会儿就睡着了。","note":"deny 后接名词／动名词，不接不定式；课文 P33 有 That cannot be denied to her 的被动式。 【来源】课文 P33 原句；中文照抄《课文参考译文_U2.md》P33 全段；例句均教师自撰。","usage":[{"sense":"否认事实","opts":["No honest reader can deny the fact that Love is better than Life.","No honest reader can deny of the fact that Love is better than Life.","No honest reader can deny to the fact that Love is better than Life.","No honest reader can deny for the fact that Love is better than Life."],"ans":"No honest reader can deny the fact that Love is better than Life.","why":"A. ✓ 正确。否认事实；本句中 deny the fact 的形式、搭配与时态均成立。\nB. ✗ 错误。deny of the fact 不是该短语的固定形式／介词，应改为 deny the fact。\nC. ✗ 错误。deny to the fact 同样不成立，固定说法是 deny the fact。\nD. ✗ 错误。deny for the fact 改变了固定搭配，正确形式为 deny the fact。\n📌 考点：deny 后接名词／动名词，不接不定式；课文 P33 有 That cannot be denied to her 的被动式。"},{"sense":"否认事实","opts":["He denied the fact when the professor asked him.","He deny of the fact when the professor asked him.","He deny to the fact when the professor asked him.","He deny for the fact when the professor asked him."],"ans":"He denied the fact when the professor asked him.","why":"A. ✓ 正确。否认事实；本句中 denied the fact 的形式、搭配与时态均成立。\nB. ✗ 错误。deny of the fact 不是该短语的固定形式／介词，应改为 denied the fact。\nC. ✗ 错误。deny to the fact 同样不成立，固定说法是 denied the fact。\nD. ✗ 错误。deny for the fact 改变了固定搭配，正确形式为 denied the fact。\n📌 考点：deny 后接名词／动名词，不接不定式；课文 P33 有 That cannot be denied to her 的被动式。"}],"fill":[{"s":"No honest reader can ________ ________ ________ that Love is better than Life.","a":"deny the fact","cn":"任何诚实的读者都无法否认「爱胜于生命」这一事实。"},{"s":"He ________ ________ ________ when the professor asked him.","a":"denied the fact","cn":"教授问他时，他否认了那个事实。"}],"pfill":[]},{"p":"pierce the heart","cn":"刺穿心脏","en":"to make a hole through the heart","grp":"动宾搭配","cat":"vn","para":"26","src":"All night long you must sing to me, and the thorn must pierce your heart, and your life‑blood must flow into my veins, and become mine.”","srcCn":"“如果你想得到一朵红玫瑰，”树说道，“你就必须在月光下以音乐来创造它，然后用你心里的鲜血去染红它。你必须用你的胸膛紧紧抵住我身上的一根刺为我歌唱。你必须为我歌唱整整一夜，让刺穿透你的心脏，使你的生命之血流进我的血管，变成我的血。”","note":"pierce 后直接接宾语，不加介词；课文为 the thorn must pierce your heart。 【来源】课文 P26 原句；中文照抄《课文参考译文_U2.md》P26 全段；例句均教师自撰。","usage":[{"sense":"刺穿心脏","opts":["All night long the thorn must pierce your heart.","All night long the thorn must pierce into your heart.","All night long the thorn must pierce to your heart.","All night long the thorn must pierce on your heart."],"ans":"All night long the thorn must pierce your heart.","why":"A. ✓ 正确。刺穿心脏；本句中 pierce your heart 的形式、搭配与时态均成立。\nB. ✗ 错误。pierce into your heart 不是该短语的固定形式／介词，应改为 pierce your heart。\nC. ✗ 错误。pierce to your heart 同样不成立，固定说法是 pierce your heart。\nD. ✗ 错误。pierce on your heart 改变了固定搭配，正确形式为 pierce your heart。\n📌 考点：pierce 后直接接宾语，不加介词；课文为 the thorn must pierce your heart。"},{"sense":"刺穿心脏","opts":["The thorn pierced her heart as she sang.","The thorn pierce into your heart as she sang.","The thorn pierce to your heart as she sang.","The thorn pierce on your heart as she sang."],"ans":"The thorn pierced her heart as she sang.","why":"A. ✓ 正确。刺穿心脏；本句中 pierced her heart 的形式、搭配与时态均成立。\nB. ✗ 错误。pierce into your heart 不是该短语的固定形式／介词，应改为 pierced her heart。\nC. ✗ 错误。pierce to your heart 同样不成立，固定说法是 pierced her heart。\nD. ✗ 错误。pierce on your heart 改变了固定搭配，正确形式为 pierced her heart。\n📌 考点：pierce 后直接接宾语，不加介词；课文为 the thorn must pierce your heart。"}],"fill":[{"s":"All night long the thorn must ________ ________ ________.","a":"pierce your heart","cn":"整整一夜，荆棘必须刺穿你的心。"},{"s":"The thorn ________ ________ ________ as she sang.","a":"pierced her heart","cn":"她歌唱时，荆棘刺穿了她的心。"}],"pfill":[]},{"p":"give a ball","cn":"举办舞会","en":"to hold a formal dance party","grp":"动宾搭配","cat":"vn","para":"5","src":"“The Prince gives a ball tomorrow night,” murmured the young Student, “and my love will be of the company.","srcCn":"“明天晚上，王子要举行舞会，”年轻的学生咕噜道，“我的心上人也将前往。如果我有一枝红玫瑰，我就能和她共舞到黎明。我就会把她紧紧搂在怀里，让她的头靠在我的肩膀上。但是现在我的花园里没有红玫瑰，我到时只好孤独地坐着，任由我的心破碎。”","note":"give a ball 表示「举行舞会」，动词 give 在此为固定搭配；易错：不用 make a ball。 【来源】课文 P5 原句；中文照抄《课文参考译文_U2.md》P5 全段；例句均教师自撰。","usage":[{"sense":"举办舞会","opts":["The Prince gives a ball tomorrow night.","The Prince makes a ball tomorrow night.","The Prince gives a ball to hold tomorrow night.","The Prince gives ball tomorrow night."],"ans":"The Prince gives a ball tomorrow night.","why":"A. ✓ 正确。举办舞会；本句中 gives a ball 的形式、搭配与时态均成立。\nB. ✗ 错误。makes a ball 不是该短语的固定形式／介词，应改为 gives a ball。\nC. ✗ 错误。gives a ball to hold 同样不成立，固定说法是 gives a ball。\nD. ✗ 错误。gives ball 改变了固定搭配，正确形式为 gives a ball。\n📌 考点：give a ball 表示「举行舞会」，动词 give 在此为固定搭配；易错：不用 make a ball。"},{"sense":"举办舞会","opts":["The Prince gave a ball in the palace garden.","The Prince makes a ball in the palace garden.","The Prince gives a ball to hold in the palace garden.","The Prince gives ball in the palace garden."],"ans":"The Prince gave a ball in the palace garden.","why":"A. ✓ 正确。举办舞会；本句中 gave a ball 的形式、搭配与时态均成立。\nB. ✗ 错误。makes a ball 不是该短语的固定形式／介词，应改为 gave a ball。\nC. ✗ 错误。gives a ball to hold 同样不成立，固定说法是 gave a ball。\nD. ✗ 错误。gives ball 改变了固定搭配，正确形式为 gave a ball。\n📌 考点：give a ball 表示「举行舞会」，动词 give 在此为固定搭配；易错：不用 make a ball。"}],"fill":[{"s":"The Prince ________ ________ ________ tomorrow night.","a":"gives a ball","cn":"王子明天晚上要举行舞会。"},{"s":"The Prince ________ ________ ________ in the palace garden.","a":"gave a ball","cn":"王子在宫廷花园里举办了一场舞会。"}],"pfill":[]},{"p":"shake one's head","cn":"摇头","en":"to move one's head from side to side to say no","grp":"动宾搭配","cat":"vn","para":"15","src":"But the Tree shook its head.","srcCn":"可是玫瑰树摇了摇头。","note":"shake one's head 表示「摇头（表示否定）」；物主代词随主语变化。 【来源】课文 P15 原句；中文照抄《课文参考译文_U2.md》P15 全段；例句均教师自撰。","usage":[{"sense":"摇头","opts":["But the Tree shook its head.","But the Tree shook the head.","But the Tree shook its heads.","But the Tree shook on its head."],"ans":"But the Tree shook its head.","why":"A. ✓ 正确。摇头；本句中 shook its head 的形式、搭配与时态均成立。\nB. ✗ 错误。shook the head 不是该短语的固定形式／介词，应改为 shook its head。\nC. ✗ 错误。shook its heads 同样不成立，固定说法是 shook its head。\nD. ✗ 错误。shook on its head 改变了固定搭配，正确形式为 shook its head。\n📌 考点：shake one's head 表示「摇头（表示否定）」；物主代词随主语变化。"},{"sense":"摇头","opts":["She shook her head and made no answer.","She shook the head and made no answer.","She shook its heads and made no answer.","She shook on its head and made no answer."],"ans":"She shook her head and made no answer.","why":"A. ✓ 正确。摇头；本句中 shook her head 的形式、搭配与时态均成立。\nB. ✗ 错误。shook the head 不是该短语的固定形式／介词，应改为 shook her head。\nC. ✗ 错误。shook its heads 同样不成立，固定说法是 shook her head。\nD. ✗ 错误。shook on its head 改变了固定搭配，正确形式为 shook her head。\n📌 考点：shake one's head 表示「摇头（表示否定）」；物主代词随主语变化。"}],"fill":[{"s":"But the Tree ________ ________ ________.","a":"shook its head","cn":"可是玫瑰树摇了摇头。"},{"s":"She ________ ________ ________ and made no answer.","a":"shook her head","cn":"她摇了摇头，没有回答。"}],"pfill":[]},{"p":"make no answer","cn":"不作回答","en":"to give no reply","grp":"动宾搭配","cat":"vn","para":"44","src":"“Look, look!” cried the Tree, “the rose is finished now”; but the Nightingale made no answer, for she was lying dead in the long grass, with the thorn in her heart.","srcCn":"“快看，快看 !”玫瑰树喊道，“玫瑰已经盛开了。”可是夜莺没有回答，因为她已经死了。她躺在高高的青草之中，心上插着那根尖刺。","note":"make no answer = give no answer，否定词 no 直接修饰名词；易错：不用 make not answer。 【来源】课文 P44 原句；中文照抄《课文参考译文_U2.md》P44 全段；例句均教师自撰。","usage":[{"sense":"不作回答","opts":["But the Nightingale made no answer, for she was lying dead.","But the Nightingale made not answer, for she was lying dead.","But the Nightingale did no answer, for she was lying dead.","But the Nightingale made no answers, for she was lying dead."],"ans":"But the Nightingale made no answer, for she was lying dead.","why":"A. ✓ 正确。不作回答；本句中 made no answer 的形式、搭配与时态均成立。\nB. ✗ 错误。made not answer 不是该短语的固定形式／介词，应改为 made no answer。\nC. ✗ 错误。did no answer 同样不成立，固定说法是 made no answer。\nD. ✗ 错误。made no answers 改变了固定搭配，正确形式为 made no answer。\n📌 考点：make no answer = give no answer，否定词 no 直接修饰名词；易错：不用 make not answer。"},{"sense":"不作回答","opts":["When they called her name, she made no answer.","When they called her name, she made not answer.","When they called her name, she did no answer.","When they called her name, she made no answers."],"ans":"When they called her name, she made no answer.","why":"A. ✓ 正确。不作回答；本句中 made no answer 的形式、搭配与时态均成立。\nB. ✗ 错误。made not answer 不是该短语的固定形式／介词，应改为 made no answer。\nC. ✗ 错误。did no answer 同样不成立，固定说法是 made no answer。\nD. ✗ 错误。made no answers 改变了固定搭配，正确形式为 made no answer。\n📌 考点：make no answer = give no answer，否定词 no 直接修饰名词；易错：不用 make not answer。"}],"fill":[{"s":"But the Nightingale ________ ________ ________, for she was lying dead.","a":"made no answer","cn":"可是夜莺没有回答，因为她已躺在草地上死去了。"},{"s":"When they called her name, she ________ ________ ________.","a":"made no answer","cn":"他们喊她名字时，她没有作声。"}],"pfill":[]},{"p":"spread one's wings","cn":"展开翅膀","en":"to open the wings wide before flying","grp":"动宾搭配","cat":"vn","para":"13","src":"Suddenly she spread her brown wings for flight, and soared into the air.","srcCn":"突然，她展开她那褐色的翅膀，冲向天空，像影子一样飞过了小树林，又像影子一样飞过了花园。","note":"spread one's wings 表示「展翅」，也可引申为「施展抱负」；spread 的过去式与原形同形。 【来源】课文 P13 原句；中文照抄《课文参考译文_U2.md》P13 全段；例句均教师自撰。","usage":[{"sense":"展开翅膀","opts":["Suddenly she spread her wings for flight.","Suddenly she spread on her wings for flight.","Suddenly she spread her wing for flight.","Suddenly she spreaded her wings for flight."],"ans":"Suddenly she spread her wings for flight.","why":"A. ✓ 正确。展开翅膀；本句中 spread her wings 的形式、搭配与时态均成立。\nB. ✗ 错误。spread on her wings 不是该短语的固定形式／介词，应改为 spread her wings。\nC. ✗ 错误。spread her wing 同样不成立，固定说法是 spread her wings。\nD. ✗ 错误。spreaded her wings 改变了固定搭配，正确形式为 spread her wings。\n📌 考点：spread one's wings 表示「展翅」，也可引申为「施展抱负」；spread 的过去式与原形同形。"},{"sense":"展开翅膀","opts":["The bird spread her wings and soared into the air.","The bird spread on her wings and soared into the air.","The bird spread her wing and soared into the air.","The bird spreaded her wings and soared into the air."],"ans":"The bird spread her wings and soared into the air.","why":"A. ✓ 正确。展开翅膀；本句中 spread her wings 的形式、搭配与时态均成立。\nB. ✗ 错误。spread on her wings 不是该短语的固定形式／介词，应改为 spread her wings。\nC. ✗ 错误。spread her wing 同样不成立，固定说法是 spread her wings。\nD. ✗ 错误。spreaded her wings 改变了固定搭配，正确形式为 spread her wings。\n📌 考点：spread one's wings 表示「展翅」，也可引申为「施展抱负」；spread 的过去式与原形同形。"}],"fill":[{"s":"Suddenly she ________ ________ ________ for flight.","a":"spread her wings","cn":"忽然，她展开翅膀准备起飞。"},{"s":"The bird ________ ________ ________ and soared into the air.","a":"spread her wings","cn":"那只鸟展开翅膀，腾空而起。"}],"pfill":[]},{"p":"nip the buds","cn":"掐掉花苞","en":"to pinch off flower buds (of frost)","grp":"动宾搭配","cat":"vn","para":"22","src":"But the winter has chilled my veins, and the frost has nipped my buds, and the storm has broken my branches, and I shall have no roses at all this year.”","srcCn":"“我的玫瑰是红色的，”它答道，“红得像鸽子的脚，红得赛过绚烂的红珊瑚。但寒冬冻僵了我的血管，严霜冻死了我的花蕾，风暴折断了我的树枝。今年我根本长不出玫瑰了。”","note":"nip the buds 是课文里「霜打花苞」的拟人说法；也构成习语 nip sth in the bud。 【来源】课文 P22 原句；中文照抄《课文参考译文_U2.md》P22 全段；例句均教师自撰。","usage":[{"sense":"掐掉花苞","opts":["The frost has nipped my buds and broken my branches.","The frost has nipped to my buds and broken my branches.","The frost has nipped my bud and broken my branches.","The frost has nipped on the buds and broken my branches."],"ans":"The frost has nipped my buds and broken my branches.","why":"A. ✓ 正确。掐掉花苞；本句中 nipped my buds 的形式、搭配与时态均成立。\nB. ✗ 错误。nipped to my buds 不是该短语的固定形式／介词，应改为 nipped my buds。\nC. ✗ 错误。nipped my bud 同样不成立，固定说法是 nipped my buds。\nD. ✗ 错误。nipped on the buds 改变了固定搭配，正确形式为 nipped my buds。\n📌 考点：nip the buds 是课文里「霜打花苞」的拟人说法；也构成习语 nip sth in the bud。"},{"sense":"掐掉花苞","opts":["A late frost nipped the buds before they could open.","A late frost nipped to my buds before they could open.","A late frost nipped my bud before they could open.","A late frost nipped on the buds before they could open."],"ans":"A late frost nipped the buds before they could open.","why":"A. ✓ 正确。掐掉花苞；本句中 nipped the buds 的形式、搭配与时态均成立。\nB. ✗ 错误。nipped to my buds 不是该短语的固定形式／介词，应改为 nipped the buds。\nC. ✗ 错误。nipped my bud 同样不成立，固定说法是 nipped the buds。\nD. ✗ 错误。nipped on the buds 改变了固定搭配，正确形式为 nipped the buds。\n📌 考点：nip the buds 是课文里「霜打花苞」的拟人说法；也构成习语 nip sth in the bud。"}],"fill":[{"s":"The frost has ________ ________ ________ and broken my branches.","a":"nipped my buds","cn":"严霜掐掉了我的花苞，折断了我的枝条。"},{"s":"A late frost ________ ________ ________ before they could open.","a":"nipped the buds","cn":"一场晚霜在花苞开放前把它们掐掉了。"}],"pfill":[]},{"p":"touch one's heart","cn":"触动心灵／刺入心脏","en":"to move someone deeply; (literally) to reach the heart","grp":"动宾搭配","cat":"vn","para":"40","src":"So the Nightingale pressed closer against the thorn, and the thorn touched her heart, and a fierce pang of pain shot through her.Bitter, bitter was the pain, and wilder and wilder grew her song,for she sang of the Love that is perfected by Death, of the Love that dies not in the tomb.","srcCn":"于是，夜莺就贴得更紧，尖刺触到了她的心脏，剧烈的疼痛传遍了她的全身。她的疼痛越剧烈，她的歌声越宏亮。她在歌唱因死亡而完美的爱，那即便在坟墓里也永远不会消失的爱。","note":"touch one's heart 既可指字面「触及心脏」，也常指「打动某人」；touch 后直接接宾语。 【来源】课文 P40 原句；中文照抄《课文参考译文_U2.md》P40 全段；例句均教师自撰。","usage":[{"sense":"触动心灵／刺入心脏","opts":["The thorn touched her heart and a fierce pang shot through her.","The thorn touched to her heart and a fierce pang shot through her.","The thorn touched on her heart and a fierce pang shot through her.","The thorn touched at his heart and a fierce pang shot through her."],"ans":"The thorn touched her heart and a fierce pang shot through her.","why":"A. ✓ 正确。触动心灵／刺入心脏；本句中 touched her heart 的形式、搭配与时态均成立。\nB. ✗ 错误。touched to her heart 不是该短语的固定形式／介词，应改为 touched her heart。\nC. ✗ 错误。touched on her heart 同样不成立，固定说法是 touched her heart。\nD. ✗ 错误。touched at his heart 改变了固定搭配，正确形式为 touched her heart。\n📌 考点：touch one's heart 既可指字面「触及心脏」，也常指「打动某人」；touch 后直接接宾语。"},{"sense":"触动心灵／刺入心脏","opts":["The song touched his heart more than any jewel could.","The song touched to her heart more than any jewel could.","The song touched on her heart more than any jewel could.","The song touched at his heart more than any jewel could."],"ans":"The song touched his heart more than any jewel could.","why":"A. ✓ 正确。触动心灵／刺入心脏；本句中 touched his heart 的形式、搭配与时态均成立。\nB. ✗ 错误。touched to her heart 不是该短语的固定形式／介词，应改为 touched his heart。\nC. ✗ 错误。touched on her heart 同样不成立，固定说法是 touched his heart。\nD. ✗ 错误。touched at his heart 改变了固定搭配，正确形式为 touched his heart。\n📌 考点：touch one's heart 既可指字面「触及心脏」，也常指「打动某人」；touch 后直接接宾语。"}],"fill":[{"s":"The thorn ________ ________ ________ and a fierce pang shot through her.","a":"touched her heart","cn":"荆棘刺入了她的心，一阵剧痛穿透全身。"},{"s":"The song ________ ________ ________ more than any jewel could.","a":"touched his heart","cn":"这首歌比任何珠宝都更能打动他的心。"}],"pfill":[]},{"p":"open its petals","cn":"绽开花瓣","en":"(of a flower) to unfold its petals","grp":"动宾搭配","cat":"vn","para":"43","src":"The red rose heard it, and trembled all over with ecstasy, and opened its petals to the cold morning air.","srcCn":"然后，她用尽全力发出了最后的歌声。皎洁的月亮听见了她的歌，她忘记了黎明，依然挂在天空。红玫瑰听见了她的歌，狂喜地颤抖，在寒冷的黎明绽放了它的全部花瓣。","note":"open its petals 表示「花瓣张开」；物主代词 its 指花，易错：不用 open on its petals。 【来源】课文 P43 原句；中文照抄《课文参考译文_U2.md》P43 全段；例句均教师自撰。","usage":[{"sense":"绽开花瓣","opts":["The red rose trembled with ecstasy and opened its petals.","The red rose trembled with ecstasy and opened its petal.","The red rose trembled with ecstasy and opened the petals of it.","The red rose trembled with ecstasy and opened on its petals."],"ans":"The red rose trembled with ecstasy and opened its petals.","why":"A. ✓ 正确。绽开花瓣；本句中 opened its petals 的形式、搭配与时态均成立。\nB. ✗ 错误。opened its petal 不是该短语的固定形式／介词，应改为 opened its petals。\nC. ✗ 错误。opened the petals of it 同样不成立，固定说法是 opened its petals。\nD. ✗ 错误。opened on its petals 改变了固定搭配，正确形式为 opened its petals。\n📌 考点：open its petals 表示「花瓣张开」；物主代词 its 指花，易错：不用 open on its petals。"},{"sense":"绽开花瓣","opts":["At dawn the flower opened its petals to the cold air.","At dawn the flower opened its petal to the cold air.","At dawn the flower opened the petals of it to the cold air.","At dawn the flower opened on its petals to the cold air."],"ans":"At dawn the flower opened its petals to the cold air.","why":"A. ✓ 正确。绽开花瓣；本句中 opened its petals 的形式、搭配与时态均成立。\nB. ✗ 错误。opened its petal 不是该短语的固定形式／介词，应改为 opened its petals。\nC. ✗ 错误。opened the petals of it 同样不成立，固定说法是 opened its petals。\nD. ✗ 错误。opened on its petals 改变了固定搭配，正确形式为 opened its petals。\n📌 考点：open its petals 表示「花瓣张开」；物主代词 its 指花，易错：不用 open on its petals。"}],"fill":[{"s":"The red rose trembled with ecstasy and ________ ________ ________.","a":"opened its petals","cn":"红玫瑰欣喜得颤动起来，张开了花瓣。"},{"s":"At dawn the flower ________ ________ ________ to the cold air.","a":"opened its petals","cn":"黎明时分，花儿迎着寒气绽开了花瓣。"}],"pfill":[]}];
+const TOTAL = PHRASES.length;
+const CATS = [
+  {k:"v", n:"动词短语 Verb Phrases", i:"🟢"},
+  {k:"prep", n:"介词短语 Prepositional", i:"🔵"},
+  {k:"other", n:"其他短语 Others", i:"🟠"},
+  {k:"vn", n:"动宾搭配 v+n Collocations", i:"🟣"}
+];
+const TYPES = [
+  {id:'def_to_ph', name:'Definition → Phrase', level:'basic',    en:'Read the English definition, then choose the phrase.'},
+  {id:'cn_to_ph',  name:'CN → Phrase',         level:'basic',    en:'Choose the English phrase for the Chinese meaning.'},
+  {id:'ph_to_def', name:'Phrase → Definition', level:'basic',    en:'Choose the correct English meaning of the phrase.'},
+  {id:'usage',     name:'Correct Usage',       level:'advanced', en:'Choose the sentence in which the phrase is used correctly.'},
+  {id:'fill',      name:'Phrase Fill',         level:'advanced', en:'Complete the sentence with the phrase (Chinese given).'},
+  {id:'prep',      name:'Preposition Fill',    level:'advanced', en:'Fill in the missing preposition / particle only.'},
+];
+
+/* ================= 存储 ================= */
+const PREFIX='u2ngl_p_';
+function b64(s){ return encodeURIComponent(s); }
+function keyStu(name){ return PREFIX+'stu_'+b64(name); }
+function loadStudents(){ try{ return JSON.parse(localStorage.getItem(PREFIX+'students')||'[]'); }catch(e){ return []; } }
+function saveStudents(a){ localStorage.setItem(PREFIX+'students',JSON.stringify(a)); if(window.Hub)Hub.setRoster(a); }
+function getCurrent(){ return localStorage.getItem(PREFIX+'current')||''; }
+function setCurrent(n){ localStorage.setItem(PREFIX+'current',n); if(window.Hub)Hub.setCurrent(n); }
+function loadRec(n){ try{ return JSON.parse(localStorage.getItem(keyStu(n))||'null'); }catch(e){ return null; } }
+function defaultRec(){ return {items:{}, wrong:[]}; }
+function saveRec(n,r){ localStorage.setItem(keyStu(n),JSON.stringify(r)); }
+let CUR=getCurrent();
+let REC=CUR?(loadRec(CUR)||defaultRec()):defaultRec();
+/* 旧版错题记录的键名与 v1.1 不一致（usage 无“序号|”前缀），答对永远无法累计到 3 次。
+   载入时统一迁移：按“正确答案”回定位小题序号，重写 qp / si，miss/right 计数保留。 */
+function newWrongId(){ return 'w_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,8); }
+function normalizeWrong(){
+  if(!REC.wrong||!REC.wrong.length) return;
+  let changed=false;
+  /* 旧记录没有稳定 id；移除时若按 word/type/qp 反查，遇到重复记录会删错或删不干净。 */
+  REC.wrong.forEach(r=>{ if(!r._wid){ r._wid=newWrongId(); changed=true; } });
+  REC.wrong.forEach(r=>{
+    if(r.type!=='usage') return;
+    if(typeof r.si==='number'&&r.si>=0&&/^\d+\|/.test(r.qp||'')) return;
+    const it=PHRASES.find(x=>x.p===r.word); if(!it) return;
+    const items=subItems(it,'usage');
+    let si=-1;
+    if(r.correct) si=items.findIndex(x=>x.a===r.correct);
+    if(si<0&&r.sn&&typeof r.sn.si==='number'&&r.sn.si>=0&&r.sn.si<items.length) si=r.sn.si;
+    if(si<0) si=0;
+    r.si=si;
+    r.qp=si+'|'+(items[si]?items[si].p:'');
+    if(r.sn){ r.sn=Object.assign({},r.sn,{si:si}); }
+    changed=true;
+  });
+  /* 同一小题的历史重复记录合并，避免“删掉一条、列表里还剩一条”的假象。 */
+  const seen={}, merged=[];
+  REC.wrong.forEach(r=>{
+    const k=wrongKey(r);
+    if(!seen[k]){ seen[k]=r; merged.push(r); return; }
+    const old=seen[k];
+    old.miss=(old.miss||1)+(r.miss||1);
+    old.right=Math.max(old.right||0,r.right||0);
+    if((r.ts||0)>(old.ts||0)){
+      old.ts=r.ts; old.given=r.given; old.correct=r.correct; old.q=r.q; old.sn=r.sn||old.sn;
+    }
+    changed=true;
+  });
+  if(merged.length!==REC.wrong.length){ REC.wrong=merged; changed=true; }
+  if(changed&&CUR) saveRec(CUR,REC);
+}
+const SUB_TYPES={usage:'usage', fill:'fill', prep:'pfill'};
+/* 必须在 SUB_TYPES 初始化后再迁移：normalizeWrong 会调用 subItems。 */
+normalizeWrong();
+function practiceTypes(it){
+  let t=['def_to_ph','cn_to_ph','ph_to_def','usage','fill'];
+  if(it.pfill && it.pfill.length) t.push('prep');
+  return t;
+}
+function availTypes(it){ return practiceTypes(it); }
+function subItems(it,type){
+  const k=SUB_TYPES[type]; if(!k) return [];
+  const arr=it[k]||[];
+  if(type==='usage') return arr.map(u=>({p:u.sense, a:u.ans, h:u.why, o:u.opts, stem:u.stem||''}));
+  return arr.map(f=>({p:f.s, a:f.a, h:(type==='prep'?'':(f.cn||''))}));
+}
+/* 快照必须带小题序号 si：usage 的两个小题 sense 文本完全相同，
+   靠 prompt 文本回查会永远命中第 0 题（2026-10-28 修复） */
+function subSnap(type,it,idx){ return {t:type,si:(typeof idx==='number'?idx:-1),p:it.p,a:it.a,h:it.h,pt:''}; }
+function typeKey(it){ return it.p; }
+function subMask(it,type){
+  const items=subItems(it,type); const n=items.length;
+  if(!n) return null;
+  const rec=REC.items[it.p];
+  const d=rec&&rec.sub&&rec.sub[type]&&Array.isArray(rec.sub[type].d)?rec.sub[type].d:null;
+  if(!d&&rec&&rec.passed&&rec.passed[type]) return new Array(n).fill(true);
+  const m=new Array(n).fill(false);
+  if(d) for(let i=0;i<n&&i<d.length;i++) m[i]=!!d[i];
+  return m;
+}
+function subDone(it,type){
+  const items=subItems(it,type); if(!items.length) return null;
+  const m=subMask(it,type)||new Array(items.length).fill(false);
+  return {done:m.filter(Boolean).length,n:items.length};
+}
+function typePassed(it,type){
+  const rec=REC.items[it.p]; const passed=(rec&&rec.passed)||{};
+  const s=subDone(it,type);
+  if(!s) return !!passed[type];
+  if(passed[type]&&!(rec&&rec.sub&&rec.sub[type])) return true;
+  return s.done>=s.n;
+}
+function isMastered(it){
+  if(!REC.items[it.p]) return false;
+  return availTypes(it).every(t=>typePassed(it,t));
+}
+function markPass(it,type,si){
+  if(!REC.items[it.p]) REC.items[it.p]={passed:{}};
+  if(!REC.items[it.p].passed) REC.items[it.p].passed={};
+  const items=subItems(it,type);
+  if(!items.length){ REC.items[it.p].passed[type]=true; if(CUR) saveRec(CUR,REC); return; }
+  if(!REC.items[it.p].sub) REC.items[it.p].sub={};
+  const n=items.length;
+  const cur=REC.items[it.p].sub[type]; let d;
+  if(cur&&Array.isArray(cur.d)) d=cur.d.slice(0,n);
+  else if(REC.items[it.p].passed[type]) d=new Array(n).fill(true);
+  else d=new Array(n).fill(false);
+  while(d.length<n) d.push(false);
+  if(typeof si==='number'&&si>=0&&si<n) d[si]=true;
+  REC.items[it.p].sub[type]={d:d,n:n};
+  REC.items[it.p].passed[type]=d.every(Boolean);
+  if(CUR) saveRec(CUR,REC);
+}
+const FILLISH=['usage','fill','prep'];
+/* 错题唯一键：usage 的两个小题 sense 相同，必须加序号区分，否则两次错会合并成一条 */
+function qpOf(q){
+  if(!q) return '';
+  if(FILLISH.indexOf(q.type)<0) return '';
+  const pre=(q.type==='usage')?((typeof q.si==='number'&&q.si>=0?q.si:'x')+'|'):'';
+  return pre+(q.prompt||'');
+}
+function snapQp(snap){
+  if(!snap) return '';
+  if(FILLISH.indexOf(snap.t)<0) return '';
+  const pre=(snap.t==='usage')?((typeof snap.si==='number'&&snap.si>=0?snap.si:'x')+'|'):'';
+  return pre+(snap.p||'');
+}
+function addWrong(it,type,qtext,given,correct,snap){
+  const qp=snapQp(snap);
+  const sidx=(snap&&typeof snap.si==='number')?snap.si:-1;
+  const hit=REC.wrong.filter(r=>r.word===it.p&&r.type===type&&(r.qp||'')===qp).pop();
+  if(hit){ hit.miss=(hit.miss||1)+1; hit.given=given; hit.correct=correct; hit.q=qtext; hit.ts=Date.now(); hit.si=sidx; if(snap) hit.sn=snap; if(!hit._wid) hit._wid=newWrongId(); }
+  else REC.wrong.push({_wid:newWrongId(),word:it.p,type:type,q:qtext,given:given,correct:correct,ts:Date.now(),miss:1,right:0,sn:snap||null,qp:qp,si:sidx});
+  if(REC.wrong.length>600) REC.wrong=REC.wrong.slice(-600);
+  if(CUR) saveRec(CUR,REC);
+}
+function wrongKey(r){ return r.word+'||'+r.type+'||'+(r.qp||''); }
+function noteRight(it,type,qp){
+  qp=qp||'';
+  let hit=REC.wrong.filter(r=>r.word===it.p&&r.type===type&&(r.qp||'')===qp).pop();
+  /* 兼容旧记录：qp/si 与当前小题不完全一致时，若该词组该题型只有一条错题，
+     仍把答对次数计入它，避免“反复答对但永远显示 0/3”。 */
+  if(!hit){
+    const same=REC.wrong.filter(r=>r.word===it.p&&r.type===type);
+    if(same.length===1) hit=same[0];
+  }
+  if(!hit) return null;
+  hit.right=(hit.right||0)+1; hit.lastTs=Date.now();
+  if(CUR) saveRec(CUR,REC);
+  return hit;
+}
+function dropWrong(k){ REC.wrong=REC.wrong.filter(r=>wrongKey(r)!==k); if(CUR) saveRec(CUR,REC); }
+function dropWrongById(id){ REC.wrong=REC.wrong.filter(r=>r._wid!==id); if(CUR) saveRec(CUR,REC); }
+function dropWrongEl(el){
+  if(!el||!el.getAttribute) return;
+  const wid=el.getAttribute('data-wid'), k=el.getAttribute('data-k');
+  if(!wid&&!k) return;
+  if(wid) dropWrongById(wid); else dropWrong(k);
+  const flash='已移出错题本 ✓';
+  if(document.getElementById('wrongOv').classList.contains('show')){ openWrong(); toast(flash); }
+  else { el.closest('.small')&&(el.closest('.small').innerHTML=flash); toast(flash); }
+}
+function chooseStuEl(el){ const n=el&&el.getAttribute?el.getAttribute('data-n'):''; if(n) chooseStu(n); }
+
+/* ================= 通用工具 ================= */
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1800); }
+function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+/* usage 解析：每个选项独立一行，正确/错误/考点分色显示 */
+function usageWhyHtml(text){
+  /* 选项在出题时被 shuffle 过，解析里的 A/B/C/D 必须按"当前实际顺序"重排并按字母排序，
+     否则学生看到的正确项在 C，解析却写着 A（2026-10-29 修复，U3→U2 移植 2026-11-08） */
+  var L=['A','B','C','D'];
+  var src=(CURQ&&CURQ.optSrc)||[];
+  var opts=(CURQ&&CURQ.options)||[];
+  var rows=[], tips=[];
+  String(text||'').split('\n').filter(Boolean).forEach(function(line){
+    var cls=/^[A-D]\. ✓/.test(line)?'ok':(/^[A-D]\. ✗/.test(line)?'no':'tip');
+    var out=line, mm=line.match(/^([A-D])\./), at=90;
+    if(mm){
+      if(src.length===opts.length && src.length>1){
+        var v=src[L.indexOf(mm[1])];
+        var ni=(typeof v==='undefined')?-1:opts.indexOf(v);
+        if(ni>=0&&ni<4){ out=out.replace(/^[A-D]\./, L[ni]+'.'); at=ni; }
+      } else { at=L.indexOf(mm[1]); }
+    }
+    var h='<div class="why-line '+cls+'">'+esc(out)+'</div>';
+    if(cls==='tip') tips.push(h); else rows.push([at,h]);
+  });
+  rows.sort(function(a,b){ return a[0]-b[0]; });
+  return rows.map(function(r){ return r[1]; }).join('')+tips.join('');
+}
+/* 2026-11-08 用户要求：词组卡不使用机器 TTS 朗读。
+   页面已移除全部 🔊 按钮与自动朗读；保留空实现仅为兼容旧调用。
+   答题提示音 ding() 是短音效，不是语音朗读，保留。 */
+let voices=[];
+function loadVoices(){}
+function speak(){}
+function speakPhrase(){}
+function foldChars(s){ return String(s)
+  .replace(/[\u200B-\u200F\u2060\uFEFF]/g,'')
+  .replace(/\u3000/g,' ')
+  .replace(/[\uFF01-\uFF5E]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0xFEE0);})
+  .replace(/[\u2010-\u2015\u2212\uFE63\uFF0D\u00AD]/g,'-')
+  .replace(/[\u2018\u2019]/g,"'")
+  .replace(/\u00A0/g,' '); }
+function normAns(s){ return foldChars(s==null?'':s).trim().toLowerCase().replace(/\s*-\s*/g,'-').replace(/\s+/g,' '); }
+function ansMatch(given,answer){
+  const g=normAns(given); if(!g) return false;
+  const A=normAns(answer); if(!A) return false;
+  if(g===A) return true;
+  const loose=x=>normAns(x).replace(/\s+/g,'-').replace(/[^a-z0-9'/-]/g,'-').replace(/-+/g,'-').replace(/^-+|-+$/g,'');
+  return loose(given)===loose(answer);
+}
+function sameAns(a,b){ const A=normAns(a),B=normAns(b); if(!A||!B) return false; return A===B||A.split('/').some(x=>B.split('/').indexOf(x)>=0); }
+function randPick(arr,n){ const a=arr.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a.slice(0,n); }
+function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+function hlPhrase(text,phr){
+  if(!phr) return esc(text);
+  const core=phr.replace(/\b(one's|sb\.|sth\.)\b/g,'').split(' ').filter(w=>w.length>2).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+  if(!core.length) return esc(text);
+  let re;
+  try{ re=new RegExp('\\b('+core.join('|')+')(s|es|ed|d|ing)?\\b','gi'); }catch(e){ return esc(text); }
+  return esc(text).replace(re,m=>'<span class="hl">'+m+'</span>');
+}
+
+/* ================= 卡片 ================= */
+let activeCat='all', searchTerm='', paraSort=false;
+function renderChips(){
+  const c=document.getElementById('chips');
+  let html='<div class="chip '+(activeCat==='all'?'active':'')+'" data-c="all">All '+TOTAL+'</div>';
+  CATS.forEach(cat=>{
+    const n=PHRASES.filter(x=>x.cat===cat.k).length;
+    html+='<div class="chip '+(activeCat===cat.k?'active':'')+'" data-c="'+cat.k+'">'+cat.i+' '+esc(cat.n)+' <span style="opacity:.7">'+n+'</span></div>';
+  });
+  c.innerHTML=html;
+  c.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{activeCat=ch.dataset.c;renderChips();renderCards();});
+}
+function renderCards(){
+  const g=document.getElementById('cards'); g.innerHTML='';
+  const term=searchTerm.trim().toLowerCase();
+  let list=PHRASES.filter(it=>activeCat==='all'||it.cat===activeCat);
+  if(term){
+    list=list.filter(it=>[it.p,it.cn,it.en,it.src,it.srcCn,it.note].join(' ').toLowerCase().indexOf(term)>=0);
+  }
+  if(paraSort){ list=list.map(function(x,i){return [x,i];}).sort(function(a,b){return (parseInt(a[0].para,10)||9999)-(parseInt(b[0].para,10)||9999)||(a[1]-b[1]);}).map(function(p){return p[0];}); }
+  const _pc={}; if(paraSort) list.forEach(function(x){const k=String(x.para||'?');_pc[k]=(_pc[k]||0)+1;});
+  let _lastPara=null;
+  list.forEach(it=>{
+    const gi=PHRASES.indexOf(it);
+    const total=availTypes(it).length;
+    const done=availTypes(it).filter(t=>typePassed(it,t)).length;
+    const longCls=it.p.length>18?' long':'';
+    const div=document.createElement('div');
+    div.className='flip-card'+(isMastered(it)?' mastered':'');
+    div.innerHTML=
+      '<div class="flip-inner">'+
+        '<div class="flip-front">'+
+          '<div class="para-tag">Para '+esc(it.para)+'</div>'+
+          '<div class="mastered-badge">✓ Mastered</div>'+
+          '<div class="fc-body">'+
+            '<div class="word'+longCls+'">'+esc(it.p)+'</div>'+
+            '<div class="def-cn-wrap" style="margin-top:12px;">'+
+              '<button class="reveal-cn" onclick="event.stopPropagation();toggleCn(this)">显示中文释义</button>'+
+              '<div class="cn hidden">'+esc(it.cn)+'</div>'+
+            '</div>'+
+            '<div class="en def-en" style="font-size:14px;">'+esc(it.en)+'</div>'+
+          '</div>'+
+          '<div class="meta-bar">'+
+            '<span class="scene">'+esc(it.cat==='v'?'动词短语':it.cat==='prep'?'介词短语':it.cat==='vn'?'动宾搭配':'其他')+'</span>'+
+            '<span class="sp"></span>'+
+            '<span class="small">题型 '+done+'/'+total+'</span>'+
+          '</div>'+
+        '</div>'+
+        '<div class="flip-back">'+
+          '<div class="back-sec"><h4>📖 Textbook Sentence</h4>'+
+            '<div class="en" style="font-size:15px;">'+hlPhrase(it.src,it.p)+'</div>'+
+            '<div class="cn">'+esc(it.srcCn)+'</div></div>'+
+          '<div class="back-sec"><h4>💡 Usage Note</h4><div class="en" style="font-size:14px;">'+esc(it.note)+'</div></div>'+
+          '<div class="back-sec"><h4>🇬🇧 English Definition</h4><div class="en" style="font-size:14px;">'+esc(it.en)+'</div></div>'+
+        '</div>'+
+      '</div>';
+    div.onclick=()=>openPhrase(it);
+    if(paraSort&&String(it.para||'?')!==_lastPara){const k=String(it.para||'?');const hd=document.createElement('div');hd.className='pgroup';hd.id='pg_'+k;hd.innerHTML='<b>Para '+esc(k)+'</b><span>'+_pc[k]+' 条</span>';g.appendChild(hd);_lastPara=k;}
+    g.appendChild(div);
+  });
+  if(paraSort){const pc=document.getElementById('paraChips');pc.innerHTML=Object.keys(_pc).sort(function(a,b){return (parseInt(a,10)||9999)-(parseInt(b,10)||9999);}).map(function(k){return '<div class="chip pchip" data-p="'+k+'">P'+k+' · '+_pc[k]+'</div>';}).join('');}
+  updateMasterBar();
+}
+function toggleCn(btn){ const wrap=btn.parentElement; const cn=wrap.querySelector('.cn'); if(cn) cn.classList.remove('hidden'); btn.style.display='none'; }
+/* ===== 合并版：向单元首页汇报真实掌握进度 ===== */
+function publishProgress(){
+  try{
+    if(!CUR) return;
+    var m=0;
+    PHRASES.forEach(function(it){ if(isMastered(it)) m++; });
+    localStorage.setItem(PREFIX+'sum_'+b64(CUR), JSON.stringify({
+      m:m, t:PHRASES.length, w:(REC.wrong||[]).length, s:CUR, ts:Date.now()
+    }));
+  }catch(e){}
+}
+function updateMasterBar(){
+  const done=PHRASES.filter(isMastered).length;
+  const pct=Math.round(done/TOTAL*100);
+  document.getElementById('masterBar').style.width=pct+'%';
+  let suffix='';
+  if(done>=TOTAL){
+    const ch=REC.chal;
+    if(ch&&ch.finished) suffix=' · 🏆 Final Challenge 完成，全部通关';
+    else if(ch) suffix=' · 🏆 Final Challenge '+chalDoneCount()+'/'+ch.qs.length+'（必须完成）';
+    else suffix=' · 🏆 还差 Final Challenge 一轮';
+  }
+  document.getElementById('masterTxt').textContent='Mastered '+done+' / '+TOTAL+' phrases ('+pct+'%)'+suffix;
+  publishProgress();
+  updateChalUI();
+}
+
+function openPhrase(it){
+  const total=availTypes(it).length;
+  const done=availTypes(it).filter(t=>typePassed(it,t)).length;
+  let th='<div class="type-list">';
+  practiceTypes(it).forEach(t=>{
+    const td=TYPES.find(x=>x.id===t);
+    const doneT=typePassed(it,t); const s=subDone(it,t);
+    const prog=s?'<span class="t-sub">'+s.done+'/'+s.n+' 题</span>':'';
+    const ico=doneT?'✓':'○';
+    const go=s?(s.done>=s.n?'▶ 重做全部 '+s.n+' 道':'▶ 练完剩下 '+(s.n-s.done)+' 道'):'▶ practice';
+    th+='<div class="type-item '+(doneT?'done':'miss')+'" data-p="'+esc(it.p)+'" data-t="'+t+'" onclick="practiceOne(this.dataset.p,this.dataset.t)" title="点击进入练习">'+
+        '<span class="t-ico">'+ico+'</span><span class="t-name">'+esc(td?td.name:'')+'</span>'+prog+
+        '<span class="t-lvl">'+esc(td?td.level:'')+'</span><span class="t-go">'+go+'</span></div>';
+  });
+  th+='</div>';
+  const gi=PHRASES.indexOf(it);
+  const panel=document.getElementById('phrasePanel');
+  panel.innerHTML='<button class="exit-x" title="Close" onclick="closeOv(\'phraseOv\')">✕</button>'+
+    '<div class="wd-head"><div class="wd-word">'+esc(it.p)+'</div>'+
+    '<div class="wd-pos">'+esc(it.grp)+'</div>'+
+    '</div>'+    '<div class="wd-meta"><span class="scene">Para '+esc(it.para)+'</span></div>'+
+    '<div class="wd-cn">'+esc(it.cn)+'</div>'+
+    '<div class="wd-sec"><h4>🇬🇧 English Definition</h4><div class="en">'+esc(it.en)+'</div></div>'+
+    '<div class="wd-sec"><h4>📖 Textbook Sentence</h4><div class="en">'+hlPhrase(it.src,it.p)+'</div><div class="cn">'+esc(it.srcCn)+'</div></div>'+
+    '<div class="wd-sec"><h4>💡 Usage Note</h4><div class="en">'+esc(it.note)+'</div></div>'+
+    '<h3 style="margin-top:16px;">Question Progress <span class="small">('+done+'/'+total+')</span></h3>'+
+    '<p class="small">✓ 该题型已全过 · ○ 未全过。点任意一行进入练习：<b>会从该题型起，自动依次练完这个单词其余未通过的题型</b>，中途无需退出重进。</p>'+
+    th;
+  openOv('phraseOv');
+}
+
+/* ================= 出题 ================= */
+function otherPool(it){
+  // 干扰项优先同类别，其次全表
+  const same=PHRASES.filter(x=>x!==it&&x.cat===it.cat);
+  const rest=PHRASES.filter(x=>x!==it&&x.cat!==it.cat);
+  return shuffle(same).concat(shuffle(rest));
+}
+function makeQuestion(it,type,snap){
+  const q={type:type, word:it.p, wi:PHRASES.indexOf(it)};
+  const pool=otherPool(it);
+  if(type==='def_to_ph'){
+    q.prompt=it.en;
+    let opts=shuffle([it.p].concat(randPick(pool.filter(x=>!sameAns(x.p,it.p)),3).map(x=>x.p)));
+    if(snap&&snap.o&&snap.o.length===4) opts=snap.o.slice();
+    if(opts.indexOf(it.p)<0) opts[3]=it.p;
+    q.options=opts; q.answer=it.p; q.cnHint=it.cn;
+  } else if(type==='cn_to_ph'){
+    q.prompt=it.cn;
+    let opts=shuffle([it.p].concat(randPick(pool.filter(x=>x.cn!==it.cn),3).map(x=>x.p)));
+    if(snap&&snap.o&&snap.o.length===4) opts=snap.o.slice();
+    if(opts.indexOf(it.p)<0) opts[3]=it.p;
+    q.options=opts; q.answer=it.p;
+  } else if(type==='ph_to_def'){
+    q.prompt=it.p;
+    let opts=shuffle([it.en].concat(randPick(pool.filter(x=>x.en!==it.en),3).map(x=>x.en)));
+    if(snap&&snap.o&&snap.o.length===4) opts=snap.o.slice();
+    if(opts.indexOf(it.en)<0) opts[3]=it.en;
+    q.options=opts; q.answer=it.en;
+  } else {
+    const items=subItems(it,type);
+    let idx=-1;
+    if(snap){
+      /* 1) 首选序号（唯一可靠） 2) 退化为文本+答案匹配 3) 再退化为文本匹配 */
+      if(typeof snap.si==='number'&&snap.si>=0&&snap.si<items.length) idx=snap.si;
+      else{
+        const key=snap.p||(snap.item&&snap.item.p)||'';
+        if(key){
+          const ak=snap.a||(snap.item&&snap.item.a)||'';
+          idx=items.findIndex(x=>x.p===key&&(!ak||x.a===ak));
+          if(idx<0) idx=items.findIndex(x=>x.p===key);
+        }
+      }
+    }
+    if(idx<0||!items[idx]) idx=Math.floor(Math.random()*items.length);
+    const f=items[idx];
+    q.prompt=f.p; q.answer=f.a;
+    q.si=idx;
+    if(type==='usage'){ q.options=shuffle(f.o?f.o.slice():[f.a]); q.optSrc=(f.o?f.o.slice():[f.a]); q.hint=f.h; q.sense=f.p; if(f.stem) q.stem=f.stem; }
+    else if(type==='fill'){ q.hint=f.h; }
+    else { q.hint=''; }
+  }
+  return q;
+}
+function findItem(it,p){
+  const f=subItems(it,'usage').concat(subItems(it,'fill'),subItems(it,'prep')).find(x=>x.p===p);
+  return f||null;
+}
+function findItemIdx(it,p){
+  return subItems(it,FILLISH.find(t=>subItems(it,t).some(x=>x.p===p))||'fill').findIndex(x=>x.p===p);
+}
+function qSnap(q){
+  if(!q) return null;
+  const si=(typeof q.si==='number')?q.si:-1;
+  const s={t:q.type,si:si,p:q.prompt,a:q.answer,item:{p:q.prompt,a:q.answer,h:q.hint||''}};
+  if(q.options) { s.o=q.options.slice(); s.item.o=q.options.slice(); }
+  return s;
+}
+
+/* ================= 会话 ================= */
+let SESSION=null,QIDX=0,RETRY=[],RETRY_ROUND=0,CURQ=null,ANSWERED=false,CHAL_MODE=false;
+function openOv(id){
+  document.querySelectorAll('.ov').forEach(o=>{ if(o.id!==id) o.classList.remove('show'); });
+  document.getElementById(id).classList.add('show');
+  if(id==='qOv') document.body.classList.add('locked');
+}
+function closeOv(id){ const el=document.getElementById(id); if(el) el.classList.remove('show'); if(id==='qOv') document.body.classList.remove('locked'); }
+function setupTypeGrid(){
+  const g=document.getElementById('typeGrid'); g.innerHTML='';
+  TYPES.forEach(t=>{
+    const lab=document.createElement('label');
+    lab.className='type-opt'+(t.level==='advanced'?' adv':'');
+    lab.innerHTML='<input type="checkbox" value="'+t.id+'" checked> '+t.name+' <span class="small">('+t.level+')</span>';
+    g.appendChild(lab);
+  });
+}
+function selectedTypes(){
+  const lvl=document.querySelector('input[name=lvl]:checked').value;
+  const checked=[...document.querySelectorAll('#typeGrid input:checked')].map(x=>x.value);
+  return TYPES.filter(t=>(lvl==='all'||t.level===lvl)&&checked.indexOf(t.id)>=0).map(t=>t.id);
+}
+function buildSession(items,types,count,keepOrder){
+  let units=[];
+  items.forEach(it=>{ types.forEach(t=>{
+    if(practiceTypes(it).indexOf(t)<0) return;
+    const its=subItems(it,t);
+    if(!its.length){ units.push({it:it,t:t,sn:null}); return; }
+    const m=subMask(it,t)||[];
+    const pend=its.map((x,i)=>i).filter(i=>!m[i]);
+    (pend.length?pend:its.map((x,i)=>i)).forEach(i=>units.push({it:it,t:t,sn:subSnap(t,its[i],i)}));
+  }); });
+  if(!keepOrder) shuffle(units);
+  if(count<units.length) units=units.slice(0,count);
+  return units;
+}
+function startSession(units){
+  SESSION=units; QIDX=0; RETRY=[]; RETRY_ROUND=0;
+  openOv('qOv'); renderQuestion();
+}
+function renderQuestion(){
+  if(!SESSION||QIDX>=SESSION.length){ return finishRound(); }
+  const u=SESSION[QIDX];
+  CURQ=makeQuestion(u.it,u.t,u.sn);
+  if(typeof u.ci==='number') CURQ.chalIdx=u.ci;
+  ANSWERED=false; picked=null;
+  const tdef=TYPES.find(t=>t.id===CURQ.type);
+  /* 题型内序号 + 题型总数（按单词串联练习时给学习者定位） */
+  const sameU=SESSION.filter(x=>x.t===u.t&&x.it===u.it);
+  const posInType=sameU.indexOf(u)+1;
+  const typeSeq=[...new Set(SESSION.map(x=>x.t))];
+  const typeNo=typeSeq.indexOf(u.t)+1;
+  let html='<button class="exit-x" title="Exit" onclick="askExit()">✕</button>';
+  const prev=(QIDX>0)?SESSION[QIDX-1]:null;
+  if(prev&&prev.t!==u.t){
+    html+='<div style="margin:0 0 12px;padding:8px 12px;border-radius:12px;background:rgba(28,176,246,.12);border:1px solid rgba(28,176,246,.35);font-size:13px;font-weight:800;color:#0b6fa4;">↪ 已自动进入下一题型：'+esc(tdef.name)+' · 题型 '+typeNo+'/'+typeSeq.length+'</div>';
+  }
+  html+='<div class="q-type'+(FILLISH.indexOf(CURQ.type)>=0?' adv':'')+'">'+esc(tdef.name)+' · '+esc(tdef.level)+(sameU.length>1?'　·　第 '+posInType+'/'+sameU.length+' 题':'')+'</div>';
+  html+='<div class="q-instr">'+esc(tdef.en)+'</div>';
+  if(CURQ.type==='def_to_ph'||CURQ.type==='ph_to_def'){
+    html+='<div class="q-word-row"><span class="w" style="font-size:21px;line-height:1.4;">'+esc(CURQ.prompt)+'</span></div>';
+    if(CURQ.type==='def_to_ph') html+='<div class="hint-cn">💡 English definition above — choose the phrase it defines.</div>';
+    CURQ.options.forEach(o=>{ html+='<button class="opt" data-v="'+esc(o)+'" onclick="pickOpt(this)">'+esc(o)+'</button>'; });
+  } else if(CURQ.type==='cn_to_ph'){
+    html+='<div class="q-text" style="font-size:22px;">'+esc(CURQ.prompt)+'</div>';
+    CURQ.options.forEach(o=>{ html+='<button class="opt" data-v="'+esc(o)+'" onclick="pickOpt(this)">'+esc(o)+'</button>'; });
+  } else if(CURQ.type==='usage'){
+    if(!CHAL_MODE) html+='<div class="usage-tag">Sense / 义项：'+esc(CURQ.sense)+((CURQ.sense!==PHRASES[CURQ.wi].cn)?('　·　'+esc(PHRASES[CURQ.wi].cn)):'')+'</div>';
+    /* 个别小题（如 change into 的“换衣”义）选项考的是动词多种搭配，题干按数据里自定义的 stem 出 */
+    html+='<div class="q-text">'+(CURQ.stem?esc(CURQ.stem):('Which sentence uses <b>“'+esc(PHRASES[CURQ.wi].p)+'”</b> correctly?'))+'</div>';
+    CURQ.options.forEach(o=>{ html+='<button class="opt sent" data-v="'+esc(o)+'" onclick="pickOpt(this)">'+esc(o)+'</button>'; });
+  } else if(CURQ.type==='fill'){
+    html+='<div class="q-text q-sent">'+esc(CURQ.prompt).replace(/_{2,}/g,'<span class="blank">&nbsp;</span>')+'</div>';
+    if(!CHAL_MODE) html+='<div class="hint-cn">💬 '+esc(CURQ.hint)+'</div>';
+    html+='<input class="answer-input" id="ans" placeholder="type the phrase…" autocomplete="off">';
+    html+='<button class="btn btn-blue" id="submit">Check</button>';
+  } else if(CURQ.type==='prep'){
+    html+='<div class="q-text q-sent">'+esc(CURQ.prompt).replace(/_{3,}/g,'<span class="blank" style="min-width:60px;">&nbsp;</span>')+'</div>';
+    html+='<div class="pfill-no">⚠ No translation given — think about the fixed preposition / particle.</div>';
+    html+='<input class="answer-input" id="ans" placeholder="one word only…" autocomplete="off" style="max-width:220px;">';
+    html+='<button class="btn btn-blue" id="submit">Check</button>';
+  }
+  html+='<div class="feedback" id="fb"></div>';
+  const card=document.getElementById('qCard');
+  card.innerHTML=html; card.scrollTop=0;
+  const sub=document.getElementById('submit'); if(sub) sub.onclick=submitAnswer;
+  const inp=document.getElementById('ans'); if(inp){ inp.focus(); inp.onkeydown=e=>{ if(e.key==='Enter') submitAnswer(); }; }
+}
+let picked=null;
+function pickOpt(el){
+  if(ANSWERED) return;
+  document.querySelectorAll('.opt').forEach(o=>o.classList.remove('sel'));
+  el.classList.add('sel'); picked=el.dataset.v;
+  /* 词组卡不朗读选项（用户要求：不用机器发音，2026-11-08） */
+  submitAnswer();
+}
+function submitAnswer(){
+  const fb=document.getElementById('fb'); if(!fb) return;
+  if(ANSWERED) return; ANSWERED=true;
+  let correct=false,given='';
+  if(CURQ.type==='fill'||CURQ.type==='prep'){
+    given=(document.getElementById('ans')||{}).value||''; given=given.trim();
+    if(!given){ ANSWERED=false; toast('Please type your answer'); return; }
+    correct=ansMatch(given,CURQ.answer);
+  } else {
+    if(!picked){ ANSWERED=false; toast('Please choose an answer'); return; }
+    given=picked; correct=ansMatch(picked,CURQ.answer);
+  }
+  const it=PHRASES[CURQ.wi];
+  const baseChip=(CURQ.type==='fill')?'<div class="base-chip">'+esc(it.cn)+'</div>':'';
+  if(correct){
+    ding();
+    fb.className='feedback ok praise-pop'; fb.textContent='✓ '+PRAISE[Math.floor(Math.random()*PRAISE.length)];
+    fb.innerHTML+=baseChip;
+    markPass(it,CURQ.type,CURQ.si);
+    /* Final Challenge：答对该题即存档；走 Retry 后答对同样会写入 */
+    if(typeof CURQ.chalIdx==='number'&&REC.chal&&Array.isArray(REC.chal.done)){
+      REC.chal.done[CURQ.chalIdx]=true;
+      if(CUR) saveRec(CUR,REC);
+      updateChalUI();
+    }
+    const _hit=noteRight(it,CURQ.type,qpOf(CURQ));
+    if(_hit){
+      const _r=_hit.right||0, _k=wrongKey(_hit), _wid=_hit._wid||'';
+      const _link='<a href="#" data-wid="'+esc(_wid)+'" data-k="'+esc(_k)+'" onclick="dropWrongEl(this);return false;" style="color:#2f7d32;font-weight:800;">从错题本移除 ›</a>';
+      if(_r>=3) fb.innerHTML+='<div class="small" style="margin-top:6px;">🎉 已累计答对 3 次，这道题已达标 — '+_link+'</div>';
+      else fb.innerHTML+='<div class="small" style="margin-top:6px;">已累计答对 '+_r+'/3 次（满 3 次自动达标；如计数异常可直接 '+_link+'）</div>';
+    }
+    if(CURQ.type==='fill'||CURQ.type==='prep'){
+      const inp=document.getElementById('ans'); if(inp) inp.disabled=true;
+      const sb=document.getElementById('submit'); if(sb) sb.style.display='none';
+      fb.innerHTML+='<div class="hint-cn" style="margin-top:8px;">'+esc(filledPrompt(CURQ.prompt,CURQ.answer,false))+'</div>';
+    } else {
+      document.querySelectorAll('.opt').forEach(o=>{ if(ansMatch(o.dataset.v,CURQ.answer)) o.classList.add('correct'); else o.classList.add('dim'); });
+      if(CURQ.type==='usage'&&CURQ.hint) fb.innerHTML+='<div class="usage-why">'+usageWhyHtml(CURQ.hint)+'</div>';
+    }
+    fb.insertAdjacentHTML('afterend','<button class="btn btn-blue" id="contBtn" style="margin-top:12px;width:100%;">'+nextLabel()+'</button><button class="btn btn-ghost" id="quitBtn" style="margin-top:8px;width:100%;">Exit ✕</button>');
+  } else {
+    fb.className='feedback no';
+    fb.innerHTML='✗ Correct answer: <b>'+esc(CURQ.answer)+'</b>'+baseChip;
+    addWrong(it,CURQ.type,questionText(CURQ),given,CURQ.answer,qSnap(CURQ));
+    RETRY.push([it,CURQ.type,qSnap(CURQ),CURQ.chalIdx]);
+    if(CURQ.type==='fill'||CURQ.type==='prep'){
+      const inp=document.getElementById('ans'); if(inp) inp.disabled=true;
+      const sb=document.getElementById('submit'); if(sb) sb.style.display='none';
+      fb.innerHTML+='<div class="hint-cn" style="margin-top:8px;">'+esc(filledPrompt(CURQ.prompt,CURQ.answer,true))+'</div>';
+      if(CURQ.type==='fill'&&CURQ.hint) fb.innerHTML+='<div class="hint-cn">💬 '+esc(CURQ.hint)+'</div>';
+      if(CURQ.type==='prep') fb.innerHTML+='<div class="hint-cn">'+esc(it.p)+' ＝ '+esc(it.cn)+'</div>';
+    } else {
+      document.querySelectorAll('.opt').forEach(o=>{ if(ansMatch(o.dataset.v,CURQ.answer)) o.classList.add('correct'); else if(o.dataset.v===picked) o.classList.add('wrong'); else o.classList.add('dim'); });
+      if(CURQ.type==='usage'&&CURQ.hint) fb.innerHTML+='<div class="usage-why">'+usageWhyHtml(CURQ.hint)+'</div>';
+    }
+    fb.insertAdjacentHTML('afterend','<button class="btn btn-blue" id="contBtn" style="margin-top:12px;width:100%;">'+nextLabel()+'</button><button class="btn btn-ghost" id="quitBtn" style="margin-top:8px;width:100%;">Exit ✕</button>');
+  }
+  document.getElementById('contBtn').onclick=()=>{ QIDX++; renderQuestion(); };
+  document.getElementById('quitBtn').onclick=()=>{ doExit(); };
+  document.getElementById('contBtn').focus();
+}
+const PRAISE=['Excellent!','Great job!','Well done!','Perfect!','Nice work!','Awesome!'];
+/* 双空填空回显：两个空各填答案的一个词，避免“change into change into”式重复 */
+function filledPrompt(prompt,ans,quote){
+  const parts=String(ans).trim().split(/\s+/);
+  const blanks=String(prompt).match(/_{2,}/g)||[];
+  let i=0;
+  return String(prompt).replace(/_{2,}/g,function(){
+    const w=(blanks.length>1&&parts.length===blanks.length)?(parts[i++]||ans):ans;
+    return quote?('「'+w+'」'):w;
+  });
+}
+function ding(){
+  try{
+    const c=new (window.AudioContext||window.webkitAudioContext)();
+    const o=c.createOscillator(),g=c.createGain();
+    o.connect(g); g.connect(c.destination); o.type='sine';
+    o.frequency.setValueAtTime(880,c.currentTime); o.frequency.setValueAtTime(1174.66,c.currentTime+0.09);
+    g.gain.setValueAtTime(0.15,c.currentTime); g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+0.4);
+    o.start(); o.stop(c.currentTime+0.42);
+  }catch(e){}
+}
+function questionText(q){ return (q.prompt||'')+' '+(q.answer||''); }
+/* 按单词串联练习：最后一题显示“完成本轮”，跨题型时提示“下一题型” */
+function nextLabel(){
+  const cur=SESSION&&SESSION[QIDX]; const nx=SESSION&&SESSION[QIDX+1];
+  if(!nx) return '完成本轮 ✓';
+  if(cur&&nx.t!==cur.t) return '下一题型 ▶';
+  return 'Next ▶';
+}
+function askExit(){
+  document.getElementById('exitPanel').innerHTML='<h2>Exit Practice?</h2>'+
+    '<p class="small" style="margin-top:6px;">Your progress so far has been saved. Wrong answers are kept in your Wrong Notebook.</p>'+
+    '<div style="display:flex;gap:10px;margin-top:16px;">'+
+    '<button class="btn btn-ghost" style="flex:1;" onclick="closeOv(\'exitOv\')">Keep Practicing</button>'+
+    '<button class="btn btn-red" style="flex:1;" onclick="doExit()">Exit</button></div>';
+  openOv('exitOv');
+}
+function doExit(){ closeOv('exitOv'); closeOv('qOv'); SESSION=null; CURQ=null; CHAL_MODE=false; renderCards(); updateChalUI(); toast('Progress saved ✓'); }
+function finishRound(){
+  closeOv('qOv');
+  if(RETRY.length&&RETRY_ROUND<3){
+    const n=RETRY.length; RETRY_ROUND++;
+    SESSION=RETRY.map(([it,t,sn,ci])=>({it:it,t:t,sn:sn,ci:(typeof ci==='number'?ci:undefined)})); RETRY=[]; QIDX=0;
+    toast('Retry '+n+' wrong question(s)… (round '+RETRY_ROUND+')');
+    setTimeout(()=>{ openOv('qOv'); renderQuestion(); },600);
+    return;
+  }
+  RETRY=[]; RETRY_ROUND=0;
+  const wasChal=CHAL_MODE; CHAL_MODE=false;
+  if(wasChal&&REC.chal){ finishChallenge(); return; }
+  fireworks();
+  const done=PHRASES.filter(isMastered).length;
+  const ch=REC.chal;
+  let chalHtml='';
+  if(ch){
+    const d=chalDoneCount(), n=ch.qs.length, fin=ch.finished||d>=n;
+    chalHtml='<div class="chal-block'+(fin?' fin':'')+'">'+
+      '<div style="font-weight:900;font-size:15px;">🏆 Final Challenge：'+(fin?'<span style="color:#2e7d32;">全部完成 ✓</span>':'<span style="color:#8e24aa;">'+d+' / '+n+' 已完成</span>')+'</div>'+
+      '<div class="small" style="margin-top:4px;">'+(fin?'全部词组通关 + 一轮随机抽题完成，本单元彻底毕业。':'还剩 '+(n-d)+' 道抽定的题；必须全部完成才算最终通关。')+'</div>'+
+      (fin?'':'<button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');startChallenge()">▶ 继续 Final Challenge</button>')+
+      '</div>';
+  }
+  let unlockHtml='';
+  if(allMastered()&&(!ch||!ch.finished)){
+    unlockHtml='<div class="chal-block">'+
+      '<div style="font-weight:900;font-size:16px;">🎉 全部词组已通关，还差最后一关</div>'+
+      '<div class="small" style="margin-top:6px;">完成 <b>一轮随机抽题</b>：每个词组随机抽 1 题、题型尽量均匀；抽题只进行一次，可退出续做。</div>'+
+      '<button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');openChal()">🏆 进入 Final Challenge ▶</button></div>';
+  }
+  document.getElementById('resPanel').innerHTML='<h2>🎉 Round Complete!</h2>'+
+    '<p class="small">Student: <b>'+esc(CUR)+'</b></p>'+
+    '<div class="stat-grid">'+
+      '<div class="stat"><div class="n">'+done+'</div><div class="t">Phrases Mastered</div></div>'+
+      '<div class="stat"><div class="n">'+TOTAL+'</div><div class="t">Total Phrases</div></div>'+
+      '<div class="stat" style="cursor:pointer;" onclick="closeOv(\'resOv\');openWrong();"><div class="n">'+REC.wrong.length+'</div><div class="t">Wrong Records ↗</div></div>'+
+    '</div>'+unlockHtml+chalHtml+
+    '<p style="margin-top:14px;font-weight:800;">Great job! All questions in this round were answered correctly.</p>'+
+    '<button class="btn btn-purple" style="margin-top:14px;width:100%;" onclick="closeOv(\'resOv\');openWrong();">📒 Review Wrong Notebook</button>'+
+    '<button class="btn btn-blue" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');renderCards();">Back to Cards</button>';
+  openOv('resOv');
+}
+/* ================= Final Challenge：全部词组通关后随机抽一轮 ================= */
+function allMastered(){ return PHRASES.every(isMastered); }
+function chalDoneCount(){ const ch=REC.chal; return (ch&&Array.isArray(ch.done))?ch.done.filter(Boolean).length:0; }
+function drawChallenge(){
+  closeOv('chalOv');
+  if(REC.chal){ startChallenge(); return; }
+  const pool=shuffle(PHRASES.slice()), useCount={}, qs=[];
+  pool.forEach(function(it){
+    const ts=availTypes(it);
+    let best=ts[0], bestN=Infinity;
+    shuffle(ts.slice()).forEach(function(t){ const n=useCount[t]||0; if(n<bestN){ bestN=n; best=t; } });
+    useCount[best]=(useCount[best]||0)+1;
+    qs.push({p:it.p,t:best,sn:qSnap(makeQuestion(it,best))});
+  });
+  REC.chal={qs:qs,done:qs.map(()=>false),finished:false};
+  if(CUR) saveRec(CUR,REC);
+  startChallenge();
+}
+function startChallenge(){
+  const ch=REC.chal; if(!ch){ openChal(); return; }
+  const units=[];
+  ch.qs.forEach(function(d,i){
+    if(ch.done[i]) return;
+    const it=PHRASES.find(function(x){ return x.p===d.p; }); if(!it) return;
+    units.push({it:it,t:d.t,sn:d.sn,ci:i});
+  });
+  if(!units.length){ finishChallenge(); return; }
+  closeOv('chalOv');
+  CHAL_MODE=true; /* §1.3：先置位再渲染，否则首题会带义项提示 */
+  startSession(units);
+  toast('Final Challenge：剩余 '+units.length+' 题');
+}
+function finishChallenge(){
+  const ch=REC.chal;
+  if(!ch){ openChal(); return; }
+  const n=ch.qs.length, d=chalDoneCount(), allDone=n>0&&d>=n;
+  if(allDone&&!ch.finished){ ch.finished=true; if(CUR) saveRec(CUR,REC); }
+  updateMasterBar();
+  fireworks();
+  document.getElementById('resPanel').innerHTML='<h2>'+(allDone?'🎉🏆 全部通关！':'⏸ Final Challenge 暂停')+'</h2>'+
+    '<p class="small">Student: <b>'+esc(CUR)+'</b></p>'+
+    '<div class="stat-grid">'+
+      '<div class="stat"><div class="n">'+PHRASES.filter(isMastered).length+'</div><div class="t">Phrases Mastered</div></div>'+
+      '<div class="stat"><div class="n">'+(allDone?n:d+'/'+n)+'</div><div class="t">Challenge Done</div></div>'+
+      '<div class="stat" style="cursor:pointer;" onclick="closeOv(\'resOv\');openWrong();"><div class="n">'+REC.wrong.length+'</div><div class="t">Wrong Records ↗</div></div>'+
+    '</div>'+
+    (allDone?'<div class="chal-block fin"><div style="font-weight:900;color:#2e7d32;">🏆 随机抽题 Final Challenge：全部完成 ✓（'+n+'/'+n+'）</div><div class="small" style="margin-top:4px;">全部词组通关 + 一轮随机抽题完成 — 本单元彻底毕业！本页可截图存档。</div></div>'
+      :'<div class="chal-block"><div style="font-weight:900;">🏆 Final Challenge：'+d+' / '+n+' 已完成</div><div class="small" style="margin-top:4px;">还有 '+(n-d)+' 道未完成（含本轮未答对的题）。必须全部完成才算最终通关。</div><button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');startChallenge()">▶ 继续挑战</button></div>')+
+    '<button class="btn btn-purple" style="margin-top:14px;width:100%;" onclick="closeOv(\'resOv\');openWrong();">📒 Review Wrong Notebook</button>'+
+    '<button class="btn btn-blue" style="margin-top:10px;width:100%;" onclick="closeOv(\'resOv\');renderCards();">Back to Cards</button>';
+  openOv('resOv');
+}
+function updateChalUI(){
+  const btn=document.getElementById('chalBtn'); if(!btn) return;
+  const ch=REC.chal, unlocked=allMastered();
+  if(unlocked){
+    btn.disabled=false; btn.classList.remove('chal-locked');
+    if(ch&&ch.finished) btn.innerHTML='🏆 Final Challenge ✓';
+    else if(ch) btn.innerHTML='🏆 Final Challenge '+chalDoneCount()+'/'+ch.qs.length;
+    else btn.innerHTML='🏆 Final Challenge ▶';
+  } else {
+    btn.disabled=true; btn.classList.add('chal-locked');
+    btn.innerHTML='🏆 Final Challenge 🔒';
+  }
+  const wrap=document.getElementById('chalBarWrap'), txt=document.getElementById('chalTxt');
+  if(!wrap||!txt) return;
+  if(ch){
+    const d=chalDoneCount(), n=ch.qs.length, pct=n?Math.round(d/n*100):0;
+    wrap.style.display=''; txt.style.display='';
+    document.getElementById('chalBar').style.width=pct+'%';
+    txt.innerHTML='🏆 Final Challenge（随机抽题）：<b>'+d+' / '+n+'</b>（'+pct+'%）'+(ch.finished?' · 已全部完成 ✓':'');
+  } else { wrap.style.display='none'; txt.style.display='none'; }
+}
+function openChal(){
+  if(!allMastered()){ toast('🔒 完成全部 '+TOTAL+' 个词组通关后解锁 Final Challenge'); return; }
+  const ch=REC.chal, panel=document.getElementById('chalPanel');
+  if(!ch){
+    panel.innerHTML='<button class="exit-x" title="Close" onclick="closeOv(\'chalOv\')">✕</button>'+
+      '<h2>🎉🏆 恭喜全部词组通关！</h2>'+
+      '<p class="small">你已完成全部 <b>'+TOTAL+'</b> 个词组。最后一步：完成 <b>一轮随机抽题</b>，才算本单元最终通关。</p>'+
+      '<div class="chal-block"><div class="chal-pair">🎲 每个词组随机抽 <b>1 道</b>题，共 '+TOTAL+' 道，题型尽量均匀</div>'+
+      '<div class="chal-pair">📌 抽题只进行一次，抽完题目固定</div>'+
+      '<div class="chal-pair">⏸ 可随时退出，下次从没做完的题继续</div>'+
+      '<div class="chal-pair">📊 进度显示在上方紫色进度条</div></div>'+
+      '<button class="btn btn-purple" style="margin-top:14px;width:100%;" onclick="drawChallenge()">🎲 抽题并开始 ▶</button>'+
+      '<button class="btn btn-ghost" style="margin-top:8px;width:100%;" onclick="closeOv(\'chalOv\')">稍后再说</button>';
+  } else if(!ch.finished){
+    const d=chalDoneCount(), n=ch.qs.length;
+    panel.innerHTML='<button class="exit-x" title="Close" onclick="closeOv(\'chalOv\')">✕</button>'+
+      '<h2>🏆 Final Challenge · 进行中</h2>'+
+      '<p class="small">本轮共抽定 <b>'+n+'</b> 道题（题目固定），已完成 <b>'+d+'</b> 道，还剩 '+(n-d)+' 道。</p>'+
+      '<div class="bar chal" style="margin:10px 0;"><i style="width:'+(n?Math.round(d/n*100):0)+'%;"></i></div>'+
+      '<button class="btn btn-green" style="width:100%;" onclick="startChallenge()">▶ 继续做题</button>'+
+      '<button class="btn btn-ghost" style="margin-top:8px;width:100%;" onclick="closeOv(\'chalOv\')">稍后再做（进度已保存）</button>';
+  } else {
+    panel.innerHTML='<button class="exit-x" title="Close" onclick="closeOv(\'chalOv\')">✕</button>'+
+      '<h2>🏆 Final Challenge · 已完成 ✓</h2>'+
+      '<p class="small">🎉 全部 '+ch.qs.length+' 道随机抽题都已完成！全部词组通关 + 随机抽题一轮 — 本单元彻底毕业！</p>'+
+      '<div class="stat-grid"><div class="stat"><div class="n">'+TOTAL+'</div><div class="t">Phrases Mastered</div></div>'+
+      '<div class="stat"><div class="n">'+ch.qs.length+'</div><div class="t">Challenge Done</div></div></div>'+
+      '<button class="btn btn-green" style="margin-top:14px;width:100%;" onclick="closeOv(\'chalOv\')">Close</button>';
+  }
+  openOv('chalOv');
+}
+
+function fireworks(){
+  const cv=document.getElementById('fw'),ctx=cv.getContext('2d');
+  cv.width=innerWidth; cv.height=innerHeight;
+  const parts=[],colors=['#58cc02','#1cb0f6','#ffc800','#ce82ff','#ff4b4b'];
+  for(let b=0;b<6;b++){ const cx=Math.random()*cv.width,cy=Math.random()*cv.height*0.6+60;
+    for(let i=0;i<60;i++){ const a=Math.PI*2*i/60,sp=Math.random()*6+3;
+      parts.push({x:cx,y:cy,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:1,col:colors[b%colors.length]}); } }
+  let t=0;
+  (function tick(){
+    ctx.clearRect(0,0,cv.width,cv.height);
+    parts.forEach(p=>{ p.x+=p.vx;p.y+=p.vy;p.vy+=0.12;p.life-=0.012; ctx.globalAlpha=Math.max(0,p.life); ctx.fillStyle=p.col; ctx.fillRect(p.x,p.y,4,4); });
+    t++; if(t<120) requestAnimationFrame(tick); else ctx.clearRect(0,0,cv.width,cv.height);
+  })();
+}
+
+/* ================= 错题本 / 进度 / 未掌握 ================= */
+function redoWrong(n){
+  const list=REC.wrong.slice(-n);
+  const units=list.map(r=>{
+    const it=PHRASES.find(x=>x.p===r.word);
+    if(!it) return null;
+    /* 快照缺失/过旧时用记录里的 si 兜底，确保重做的是同一道小题 */
+    let sn=r.sn||null;
+    const si=(typeof r.si==='number')?r.si:-1;
+    if(sn){ if(!(typeof sn.si==='number'&&sn.si>=0)&&si>=0) sn=Object.assign({},sn,{si:si}); }
+    else sn={t:r.type,si:si,p:r.qp,a:r.correct,h:''};
+    return {it:it,t:r.type,sn:sn};
+  }).filter(Boolean);
+  if(!units.length){ toast('没有可重做的错题'); return; }
+  closeOv('wrongOv'); startSession(units);
+}
+function openWrong(){
+  const panel=document.getElementById('wrongPanel');
+  if(!REC.wrong.length){
+    panel.innerHTML='<h2>📒 Wrong Notebook</h2><p class="small">No wrong answers yet. Keep practicing!</p>'+
+      '<button class="btn btn-ghost" style="margin-top:12px;" onclick="closeOv(\'wrongOv\')">Close</button>';
+    openOv('wrongOv'); return;
+  }
+  const total=REC.wrong.length, ready=REC.wrong.filter(r=>(r.right||0)>=3), pending=total-ready.length;
+  let cand=total<=8?Array.from({length:total-1},(_,i)=>i+1):[5,10,20,30,50].filter(x=>x<total);
+  const uniq=[...new Set(cand.concat([total]))];
+  const dflt=uniq.indexOf(20)>=0?20:(uniq.indexOf(10)>=0?10:total);
+  let html='<h2>📒 Wrong Notebook</h2><p class="small">Student: <b>'+esc(CUR)+'</b> · '+total+' record(s) · <b style="color:#c62828;">待巩固 '+pending+'</b> · <b style="color:#2e7d32;">已达标 '+ready.length+'</b></p>';
+  html+='<h3>How many questions this round?</h3><div class="sync-row">';
+  uniq.forEach(n=>{ html+='<button class="btn '+(n===dflt?'btn-blue':'btn-ghost')+' btn-sm" onclick="redoWrong('+n+')">'+(n>=total?'All ('+total+')':n)+'</button>'; });
+  html+='</div><p class="small" style="margin-top:8px;">累计答对 3 次会自动标记“已达标”；若计数异常或你确认已掌握，也可以对任意一条<b>手动移出</b>。</p>';
+  REC.wrong.slice().reverse().forEach(r=>{
+    const tdef=TYPES.find(t=>t.id===r.type);
+    const right=r.right||0, doneOK=right>=3;
+    html+='<div class="wrong-item"><div class="meta">'+esc(r.word)+' · '+esc(tdef?tdef.name:r.type)+' · 错 '+r.miss+' 次 · 答对 '+right+' 次</div>'+
+      '<div class="q">'+esc(r.q||'').slice(0,220)+'</div>'+
+      '<div class="q"><span class="given">你的答案：'+esc(r.given||'')+'</span>　<span class="corr">正确：'+esc(r.correct||'')+'</span></div>'+
+      '<button type="button" class="btn btn-ghost btn-sm wrong-remove" data-wid="'+esc(r._wid||'')+'" data-k="'+esc(wrongKey(r))+'" onclick="dropWrongEl(this)">'+(doneOK?'✓ 已达标 · 从错题本移除':'手动移出错题本')+'</button>'+
+      (doneOK?'':'<div class="small" style="margin-top:4px;">还差 '+(3-right)+' 次自动达标；如已掌握可直接手动移出。</div>')+
+      '</div>';
+  });
+  html+='<button class="btn btn-ghost" style="margin-top:12px;width:100%;" onclick="closeOv(\'wrongOv\')">Close</button>';
+  panel.innerHTML=html; openOv('wrongOv');
+}
+function openProg(){
+  const done=PHRASES.filter(isMastered).length;
+  let html='<h2>📊 My Progress</h2><p class="small">Student: <b>'+esc(CUR)+'</b></p>';
+  CATS.forEach(cat=>{
+    const list=PHRASES.filter(x=>x.cat===cat.k);
+    const d=list.filter(isMastered).length;
+    html+='<div style="margin:10px 0;"><div style="font-weight:800;font-size:14px;">'+cat.i+' '+esc(cat.n)+'　'+d+'/'+list.length+'</div>'+
+      '<div class="bar" style="margin-top:4px;"><i style="width:'+Math.round(d/list.length*100)+'%;"></i></div></div>';
+  });
+  html+='<h3>Detail</h3><div style="max-height:340px;overflow:auto;">';
+  PHRASES.forEach(it=>{
+    const t=availTypes(it),x=t.filter(y=>typePassed(it,y)).length;
+    html+='<div class="pill '+(x>=t.length?'':'miss')+'" style="cursor:pointer;" onclick="closeOv(\'progOv\');openPhrase(PHRASES['+PHRASES.indexOf(it)+'])">'+esc(it.p)+' '+x+'/'+t.length+'</div>';
+  });
+  html+='</div>';
+  const ch=REC.chal;
+  if(ch){
+    const d=chalDoneCount(), n=ch.qs.length, fin=ch.finished||d>=n;
+    html+='<div class="chal-block'+(fin?' fin':'')+'"><div style="font-weight:900;">🏆 Final Challenge：'+(fin?'全部完成 ✓':'<span style="color:#8e24aa;">'+d+' / '+n+' 已完成</span>')+'</div>'+
+      '<div class="small" style="margin-top:4px;">'+(fin?'全部词组通关 + 一轮随机抽题完成。':'必须完成这一轮随机抽题，才算最终通关。')+'</div></div>';
+  } else if(allMastered()){
+    html+='<div class="chal-block"><div style="font-weight:900;">🏆 Final Challenge：待开始</div><div class="small" style="margin-top:4px;">全部词组已通关，还差一轮随机抽题。</div></div>';
+  }
+  html+='<button class="btn btn-ghost" style="margin-top:12px;width:100%;" onclick="closeOv(\'progOv\')">Close</button>';
+  document.getElementById('progPanel').innerHTML=html; openOv('progOv');
+}
+function openWeak(){
+  const list=PHRASES.filter(it=>!isMastered(it));
+  let html='<h2>🎯 Not Mastered</h2>';
+  if(!list.length){
+    const ch=REC.chal;
+    if(ch&&ch.finished) html+='<p class="small">全部 '+TOTAL+' 个词组已掌握，Final Challenge 也已完成 — 本单元彻底通关。</p>';
+    else if(ch) html+='<p class="small">全部 '+TOTAL+' 个词组已掌握，但 Final Challenge 还剩 '+(ch.qs.length-chalDoneCount())+' 题；必须完成才判定最终通关。</p>'+
+      '<button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'weakOv\');openChal()">🏆 继续 Final Challenge</button>';
+    else html+='<p class="small">全部 '+TOTAL+' 个词组已掌握，但还差一轮 Final Challenge 随机抽题；完成后才判定最终通关。</p>'+
+      '<button class="btn btn-purple" style="margin-top:10px;width:100%;" onclick="closeOv(\'weakOv\');openChal()">🏆 进入 Final Challenge</button>';
+  } else{
+    html+='<p class="small">'+list.length+' phrase(s) left. Tap one to open its practice list.</p>';
+    html+='<div style="max-height:380px;overflow:auto;">';
+    list.forEach(it=>{
+      const t=availTypes(it),x=t.filter(y=>typePassed(it,y)).length;
+      html+='<div class="wrong-item" style="cursor:pointer;" onclick="closeOv(\'weakOv\');openPhrase(PHRASES['+PHRASES.indexOf(it)+'])">'+
+        '<div class="meta">'+esc(it.grp)+' · Para '+esc(it.para)+' · '+x+'/'+t.length+'</div>'+
+        '<div class="q">'+esc(it.p)+' — '+esc(it.cn)+'</div></div>';
+    });
+    html+='</div>';
+    html+='<button class="btn btn-blue" style="margin-top:12px;width:100%;" onclick="practiceAllWeak()">▶ 练这 '+list.length+' 条的全部未过题</button>';
+  }
+  html+='<button class="btn btn-ghost" style="margin-top:10px;width:100%;" onclick="closeOv(\'weakOv\')">Close</button>';
+  document.getElementById('weakPanel').innerHTML=html; openOv('weakOv');
+}
+function practiceAllWeak(){
+  const items=PHRASES.filter(it=>!isMastered(it));
+  const units=buildSession(items,TYPES.map(t=>t.id),400);
+  closeOv('weakOv');
+  if(!units.length){ toast('没有未掌握的题'); return; }
+  startSession(units);
+}
+/* 按单词练习：从点击的题型起，串行练完该词其余未通过题型，无需退出重进 */
+function practiceOne(p,type){
+  const it=PHRASES.find(x=>x.p===p); if(!it) return;
+  const all=practiceTypes(it);
+  const i0=all.indexOf(type);
+  const order=i0>=0?all.slice(i0).concat(all.slice(0,i0)):all.slice();
+  let units=[];
+  order.forEach((t,k)=>{
+    if(k>0&&typePassed(it,t)) return;          // 已 ✓ 的题型跳过；点击的那一型始终保留
+    buildSession([it],[t],50,true).forEach(u=>units.push(u));
+  });
+  if(!units.length){ toast('暂无该题型的题'); return; }
+  closeOv('phraseOv'); startSession(units);
+}
+
+/* ================= 导出 / 导入 ================= */
+function openSync(){
+  const json=JSON.stringify({v:1,stu:CUR,rec:REC});
+  document.getElementById('syncPanel').innerHTML='<h2>⇄ Export / Import</h2>'+
+    '<p class="small">换设备或换浏览器时为防止进度丢失：先 <b>导出</b> 得到 u2-phrase-progress.json，在新设备的位置方式<b>导入</b>同一个文件即可。</p>'+
+    '<h3>Export</h3><button class="btn btn-blue" style="width:100%;" onclick="exportRec()">⬇ Download progress file</button>'+
+    '<h3>Import</h3><button class="btn btn-ghost" style="width:100%;" onclick="document.getElementById(\'importFile\').click()">⬆ Choose progress file…</button>'+
+    '<p class="small" style="margin-top:8px;">当前：'+esc(CUR||'(无)')+' · 已掌握 '+PHRASES.filter(isMastered).length+'/'+TOTAL+' 条 · 错题 '+REC.wrong.length+' 条</p>'+
+    '<button class="btn btn-ghost" style="margin-top:12px;width:100%;" onclick="closeOv(\'syncOv\')">Close</button>';
+  openOv('syncOv');
+}
+function exportRec(){
+  try{
+    const blob=new Blob([JSON.stringify({v:1,stu:CUR,rec:REC},null,1)],{type:'application/json'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download='u2-phrase-progress-'+(CUR||'anon')+'.json';
+    document.body.appendChild(a); a.click();
+    setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },400);
+    toast('已导出 ✓');
+  }catch(e){ toast('导出失败'); }
+}
+function importRec(file){
+  const fr=new FileReader();
+  fr.onload=function(){
+    try{
+      const d=JSON.parse(fr.result);
+      if(!d||!d.rec) throw 0;
+      const name=(d.stu||CUR||'Student').slice(0,30);
+      REC=d.rec; if(!REC.items) REC.items={}; if(!Array.isArray(REC.wrong)) REC.wrong=[];
+      normalizeWrong();
+      if(loadStudents().indexOf(name)<0) saveStudents(loadStudents().concat([name]));
+      CUR=name; setCurrent(name); saveRec(name,REC);
+      document.getElementById('stuName').textContent=name;
+      renderCards(); toast('导入成功 ✓'); closeOv('syncOv');
+    }catch(e){ toast('文件格式不对'); }
+  };
+  fr.readAsText(file);
+}
+
+/* ================= 学生选择 ================= */
+function showNameModal(){
+  if(CUR){ document.getElementById('stuName').textContent=CUR; renderCards(); return; }
+  const names=loadStudents();
+  document.getElementById('stuListBox').innerHTML=names.length?('已在使用的名字：'+names.map(n=>'<span class="pill" data-n="'+esc(n)+'" onclick="chooseStuEl(this)">'+esc(n)+'</span>').join('')):
+    '<span class="small">首次使用请输入姓名，进度保存在本机。</span>';
+  openOv('nameOv');
+  setTimeout(()=>document.getElementById('nameInput').focus(),120);
+}
+function chooseStu(n){
+  CUR=n; setCurrent(n);
+  REC=loadRec(n)||defaultRec();
+  if(!REC.items) REC.items={}; if(!Array.isArray(REC.wrong)) REC.wrong=[];
+  normalizeWrong();
+  document.getElementById('stuName').textContent=n;
+  closeOv('nameOv'); renderCards(); toast('Welcome back, '+n+'!');
+}
+function doNameOk(){
+  const v=(document.getElementById('nameInput').value||'').trim();
+  if(!v){ toast('Please enter your name'); return; }
+  chooseStu(v.slice(0,30));
+}
+
+/* ================= 初始化 ================= */
+document.getElementById('covStart').addEventListener('click',function(ev){
+  ev.stopPropagation();
+  const ov=document.getElementById('coverOv');
+  if(ov.classList.contains('out')) return;
+  ov.classList.add('out');
+  setTimeout(function(){ ov.style.display='none'; showNameModal(); },600);
+});
+document.getElementById('nameOk').onclick=doNameOk;
+document.getElementById('nameInput').onkeydown=e=>{ if(e.key==='Enter') doNameOk(); };
+document.getElementById('startPracticeBtn').onclick=()=>{ setupTypeGrid(); openOv('setupOv'); };
+document.getElementById('wrongBtn').onclick=openWrong;
+document.getElementById('progressBtn').onclick=openProg;
+document.getElementById('weakBtn').onclick=openWeak;
+document.getElementById('chalBtn').onclick=openChal;
+document.getElementById('switchBtn').onclick=()=>{ setCurrent(''); location.reload(); };
+document.getElementById('syncBtn').onclick=openSync;
+/* ---- 按课文顺序 (2026-10-27) ---- */
+document.getElementById('paraSortBtn').onclick=function(){
+  paraSort=!paraSort;
+  this.classList.toggle('on',paraSort);
+  document.getElementById('paraChips').style.display=paraSort?'flex':'none';
+  renderCards();
+  window.scrollTo({top:0,behavior:'smooth'});
+};
+document.getElementById('paraChips').onclick=function(e){
+  const b=e.target.closest('.pchip'); if(!b) return;
+  const t=document.getElementById('pg_'+b.dataset.p);
+  if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+};
+document.getElementById('importFile').onchange=e=>{ const f=e.target.files[0]; if(f) importRec(f); e.target.value=''; };
+document.getElementById('search').oninput=e=>{ searchTerm=e.target.value; renderCards(); };
+document.getElementById('beginBtn').onclick=()=>{
+  const types=selectedTypes();
+  if(!types.length){ toast('Please choose at least one question type'); return; }
+  const rng=document.querySelector('input[name=rng]:checked').value;
+  let pool=PHRASES;
+  if(rng==='weak') pool=PHRASES.filter(it=>!isMastered(it));
+  if(rng==='wrong'){
+    const set={}; REC.wrong.forEach(r=>set[r.word]=1);
+    pool=PHRASES.filter(it=>set[it.p]);
+  }
+  const count=Math.max(1,Math.min(400,parseInt(document.getElementById('qcount').value,10)||20));
+  const units=buildSession(pool,types,count);
+  closeOv('setupOv');
+  if(!units.length){ toast('没有符合范围的题目'); return; }
+  startSession(units);
+};
+document.querySelectorAll('.ov').forEach(o=>{
+  o.addEventListener('click',function(e){ if(e.target===this&&this.id!=='qOv'&&this.id!=='nameOv') this.classList.remove('show'); });
+});
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ document.querySelectorAll('.ov').forEach(o=>o.classList.remove('show')); document.body.classList.remove('locked'); } });
+renderChips();
+showNameModal();
+renderCards();
+</script>
+<script>
+/* 合并版：注册根级 Service Worker（原版未注册，无法离线/安装）；立即注册，不等 load */
+if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){
+  navigator.serviceWorker.register('../sw.js').catch(()=>{});
+}
+</script>
+</body>
+</html>

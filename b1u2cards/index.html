@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Unit 2 · The Nightingale and the Rose · 学习卡</title>
-<meta name="app-build" content="hub-v1.0.0-2026-11-11">
+<meta name="app-build" content="hub-v1.1.0-2026-11-17">
 
 <link rel="manifest" href="./manifest.json">
 <meta name="theme-color" content="#58cc02">
@@ -214,9 +214,79 @@
     opacity:0;pointer-events:none;transition:.25s;z-index:1200;max-width:86vw;text-align:center;
   }
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* 封面图内自带书名 → 放大裁掉底部那行字，避免与页面标题重复 */
+  .hero{background-size:auto 145%;background-position:center top}
+  @media(min-width:760px){ .hero{background-size:auto 150%;background-position:center 24%} }
+
+  /* ---------------- 封面闸门：先出封面，点击进入 ---------------- */
+  #coverOv{
+    position:fixed;inset:0;z-index:9999;background:#0a0f1c;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    cursor:pointer;transition:opacity .55s ease;overflow:auto;
+  }
+  #coverOv.out{opacity:0;pointer-events:none}
+  .cov-art{
+    width:100%;aspect-ratio:16/9;flex:none;background:#0a0f1c url('./assets/cover.jpg') center/cover no-repeat;
+  }
+  .cov-body{
+    flex:none;display:flex;flex-direction:column;align-items:center;text-align:center;
+    padding:28px 24px calc(30px + env(safe-area-inset-bottom));width:100%;max-width:620px;
+  }
+  .cov-kicker{display:inline-block;font-size:12.5px;font-weight:900;letter-spacing:1.4px;
+    color:#f6e7ef;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24);
+    padding:5px 13px;border-radius:999px}
+  .cov-sub{margin-top:12px;font-size:clamp(13.5px,3.8vw,16px);font-weight:700;color:#cdd6ea}
+  .cov-btn{margin-top:24px;padding:14px 52px;border:none;border-radius:999px;
+    background:#58cc02;color:#fff;font-family:inherit;font-size:18px;font-weight:900;
+    box-shadow:0 6px 18px rgba(88,204,2,.4);cursor:pointer}
+  .cov-btn:active{transform:scale(.97)}
+  .cov-credit{margin:24px auto 0;max-width:380px;text-align:center}
+  .cov-credit::before{content:'';display:block;width:34px;height:2px;border-radius:2px;
+    background:rgba(255,255,255,.26);margin:0 auto 14px}
+  .cc-lead{display:block;font-size:12.5px;font-weight:700;color:rgba(226,233,247,.8);letter-spacing:.4px}
+  .cc-names{display:block;margin-top:5px;font-size:16.5px;font-weight:900;color:#fff;letter-spacing:.7px}
+  .cc-tail{display:block;margin-top:5px;font-size:12.5px;font-weight:600;color:rgba(226,233,247,.8)}
+  @media(min-width:820px){
+    #coverOv{padding:36px}
+    .cov-art{width:min(86vw,860px);max-height:60vh;border-radius:22px;
+      box-shadow:0 30px 70px rgba(0,0,0,.6)}
+    .cov-body{padding:26px 24px 0}
+  }
+/* ===== 本单元累计学习（skill §14.7 · 只读两卡 REC.stat） ===== */
+.stu-time{display:flex;align-items:center;gap:9px;flex-wrap:wrap;background:#fff;border:2px solid var(--line);
+  border-radius:18px;padding:13px 16px;box-shadow:0 6px 20px rgba(20,40,70,.07);margin:0 0 16px;}
+.stu-time .st-ico{font-size:18px;flex:none}
+.stu-time .st-main{font-size:15px;font-weight:800;color:var(--ink2)}
+.stu-time .st-main b{font-size:17px;font-weight:900;color:var(--green-dark);margin-left:2px}
+.stu-time .st-sub{flex:1 1 100%;font-size:12.5px;font-weight:700;color:var(--ink3);
+  padding-left:27px;line-height:1.7}
+.stu-time .st-sub .ns{white-space:nowrap}
+@media(max-width:520px){
+  .stu-time{padding:11px 13px;gap:7px}
+  .stu-time .st-main{font-size:14px}
+  .stu-time .st-main b{font-size:15.5px}
+  .stu-time .st-sub{font-size:11.5px;padding-left:0}
+}
+/* ===== 本单元累计学习 end ===== */
 </style>
 </head>
 <body>
+
+<!-- ===== 封面闸门：先出封面，点击任意处进入 ===== -->
+<div id="coverOv" role="dialog" aria-label="进入本单元">
+  <div class="cov-art" role="img" aria-label="The Nightingale and the Rose"></div>
+  <div class="cov-body">
+    <span class="cov-kicker">综合英语 1 · UNIT 2</span>
+    <div class="cov-sub">自学卡片 · 生词 + 词组</div>
+    <button class="cov-btn" id="covStart">进入 ▶</button>
+    <div class="cov-credit">
+      <span class="cc-lead">With special thanks to</span>
+      <span class="cc-names">Willow, Claire and Cecilia</span>
+      <span class="cc-tail">for their help in testing this app.</span>
+    </div>
+  </div>
+</div>
 
 <div class="hero">
   <div class="hero-inner">
@@ -234,6 +304,13 @@
     <button id="whoBtn">切换</button>
   </div>
 
+  <!-- STUDY_TIME_BEGIN 本单元累计学习（读两卡 REC.stat，勿手改） -->
+  <div class="stu-time" id="hubStudy" hidden>
+    <span class="st-ico">⏱</span>
+    <span class="st-main">本单元累计学习<b id="hubStudyMain">—</b></span>
+    <span class="st-sub" id="hubStudySub"></span>
+  </div>
+  <!-- STUDY_TIME_END -->
   <div class="entries">
     <a class="entry words" href="./words/index.html" id="entryWords">
       <span class="e-ico">📘</span>
@@ -365,8 +442,42 @@
       if (roster.length === 1) name = roster[0];
     }
     $('whoName').textContent = name || '未选择';
+    paintStudy(name);
   }
 
+
+  /* ---------------- 本单元累计学习（只读两卡 REC.stat，不写回） ---------------- */
+  /* STUDY_TIME_JS_BEGIN */
+  function studyStat(prefix, name) {
+    if (!name) return null;
+    var rec = json(prefix + 'stu_' + encodeURIComponent(name), null);
+    return (rec && rec.stat) ? rec.stat : null;
+  }
+  function fmtDur(ms) {
+    if (!ms || ms <= 0) return '未开始';
+    var m = Math.round(ms / 60000);
+    if (m < 1) return '不足 1 分钟';
+    var h = Math.floor(m / 60); m = m % 60;
+    return h ? (h + ' 小时' + (m ? (' ' + m + ' 分钟') : '')) : (m + ' 分钟');
+  }
+  function paintStudy(name) {
+    var box = $('hubStudy'); if (!box) return;
+    var a = studyStat('u2ngl_', name), b = studyStat('u2ngl_p_', name);
+    var ms = ((a && a.ms) || 0) + ((b && b.ms) || 0);
+    if (!name || ms <= 0) { box.hidden = true; return; }
+    var days = {};
+    [a, b].forEach(function (s) {
+      if (!s || !s.days) return;
+      for (var k in s.days) { if (Object.prototype.hasOwnProperty.call(s.days, k) && s.days[k] > 0) days[k] = 1; }
+    });
+    var nDays = Object.keys(days).length;
+    box.hidden = false;
+    $('hubStudyMain').textContent = fmtDur(ms);
+    $('hubStudySub').innerHTML = '<span class="ns">生词卡 ' + fmtDur(a && a.ms) + '</span> · '
+      + '<span class="ns">词组卡 ' + fmtDur(b && b.ms) + '</span> · '
+      + '<span class="ns">已学习 ' + nDays + ' 天</span>';
+  }
+  /* STUDY_TIME_JS_END */
   /* ---------------- 学生切换 ---------------- */
   function openName() {
     var names = (window.Hub && window.Hub.students) || json('u2ngl_hub_students', []);
@@ -521,6 +632,36 @@
 
   paint();
   installHint();
+})();
+</script>
+<script>
+(function(){
+  var ov = document.getElementById('coverOv');
+  if (!ov) return;
+  var body = document.body;
+
+  /* 从生词卡/词组卡点「← 首页」回来时不再重复出封面 */
+  var fromCard = false;
+  try { fromCard = /\/words\/|\/phrases\//.test(document.referrer || ''); } catch (e) {}
+  if (fromCard) { ov.style.display = 'none'; return; }
+
+  body.style.overflow = 'hidden';
+
+  function enter(){
+    if (ov.classList.contains('out')) return;
+    ov.classList.add('out');
+    body.style.overflow = '';
+    setTimeout(function(){ ov.style.display = 'none'; }, 620);
+  }
+
+  document.getElementById('covStart').addEventListener('click', function(e){
+    e.stopPropagation();
+    enter();
+  });
+  ov.addEventListener('click', enter);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') enter();
+  });
 })();
 </script>
 </body>

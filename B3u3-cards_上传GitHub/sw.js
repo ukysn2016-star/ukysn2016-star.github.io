@@ -22,7 +22,7 @@
    · 安装尽力缓存（45 s 预算）；activate 与 repair 消息可补齐缺失项（自愈）
    · 只清理本应用自己的旧缓存（u3cards-*），不触碰同域名下其它应用
    ========================================================================== */
-const VERSION = '1.0.2-u3res-vbcfec884-coveraa70d5';
+const VERSION = '1.0.3-u3res-v09b61dc9-coveraa70d5-icon0325bc-hubad37e5';
 const CACHE = 'u3cards-' + VERSION;
 
 const CORE = [

@@ -99,6 +99,17 @@
   }
   .who button:active{transform:translateY(1px)}
 
+  /* ---------------- 本单元累计学习时长 ---------------- */
+  .study{display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,#f4fbf0,#eef7ff);
+    border:2px solid #dcecd2;border-radius:18px;padding:13px 16px;margin-bottom:16px;}
+  .study[hidden]{display:none}
+  .study .s-ico{width:42px;height:42px;border-radius:13px;background:#fff;border:2px solid #e2efd9;
+    display:flex;align-items:center;justify-content:center;font-size:20px;flex:none;}
+  .study .s-main{font-size:13.5px;font-weight:800;color:var(--ink2);}
+  .study .s-main b{font-size:19px;font-weight:900;color:var(--green-dark);margin-left:3px;}
+  .study .s-sub{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;font-weight:700;color:var(--ink3);margin-top:3px;}
+  .study .s-sub .ns{white-space:nowrap;}
+  @media(max-width:600px){.study{padding:12px 13px;gap:10px}.study .s-main b{font-size:17px;}}
   /* ---------------- 两个入口 ---------------- */
   .entries{display:grid;gap:16px}
 
@@ -234,6 +245,14 @@
     <button id="whoBtn">切换</button>
   </div>
 
+    <div class="study" id="studyBox" hidden>
+    <div class="s-ico">⏱</div>
+    <div>
+      <div class="s-main">本单元累计学习<b id="studyTotal">0 分钟</b></div>
+      <div class="s-sub" id="studySplit"></div>
+    </div>
+  </div>
+
   <div class="entries">
     <a class="entry words" href="./words/index.html" id="entryWords">
       <span class="e-ico">📘</span>
@@ -355,6 +374,42 @@
     }
   }
 
+  /* 累计学习时长：读两张卡写在同一 localStorage 里的 REC.stat，相加显示 */
+  function studyStat(prefix, name) {
+    if (!name) return null;
+    var rec = json(prefix + 'stu_' + encodeURIComponent(name), null);
+    return (rec && rec.stat) || null;
+  }
+  function fmtStudy(ms) {
+    var s = Math.round((ms || 0) / 1000);
+    if (s < 60) return (s > 0 ? s + ' 秒' : '0 分钟');
+    var m = Math.floor(s / 60);
+    if (m < 60) return m + ' 分钟';
+    return Math.floor(m / 60) + ' 小时' + ((m % 60) ? ' ' + (m % 60) + ' 分钟' : '');
+  }
+  function paintStudy(name) {
+    var box = $('studyBox'); if (!box) return;
+    var a = studyStat('u3fc_', name), b = studyStat('u3gb_p_', name);
+    var msA = (a && a.ms) || 0, msB = (b && b.ms) || 0, tot = msA + msB;
+    if (!name || tot <= 0) { box.hidden = true; return; }
+    box.hidden = false;
+    $('studyTotal').textContent = fmtStudy(tot);
+    var parts = [];
+    if (msA > 0) parts.push('生词卡 ' + fmtStudy(msA));
+    if (msB > 0) parts.push('词组卡 ' + fmtStudy(msB));
+    /* 学习天数按两张卡的日期键取并集，同一天算 1 天 */
+    var days = {};
+    [a, b].forEach(function (st) {
+      if (st && st.days) Object.keys(st.days).forEach(function (k) { if (st.days[k] > 0) days[k] = 1; });
+    });
+    var dn = Object.keys(days).length;
+    if (dn) parts.push('已学习 ' + dn + ' 天');
+    /* 每项独立不换行，窄屏按项折行，避免中文被拆成孤字 */
+    $('studySplit').innerHTML = parts.map(function (t) {
+      return '<span class="ns">' + t + '</span>';
+    }).join('');
+  }
+
   function paint() {
     paintCard('u3fc_', TOTAL_WORDS, { bar: 'barWords', meta: 'metaWords', wrong: 'wrongWords' });
     paintCard('u3gb_p_', TOTAL_PHRASES, { bar: 'barPhrases', meta: 'metaPhrases', wrong: 'wrongPhrases' });
@@ -365,6 +420,7 @@
       if (roster.length === 1) name = roster[0];
     }
     $('whoName').textContent = name || '未选择';
+    paintStudy(name);
   }
 
   /* ---------------- 学生切换 ---------------- */
